@@ -1,0 +1,158 @@
+/*
+Theme Name:     GeneratePress Child
+Theme URI:      https://generatepress.com
+Description:    Child theme for GeneratePress
+Author:         Eunika
+Author URI:     https://your-site.com
+Template:       generatepress
+Version:        1.0
+License:        GNU General Public License v2 or later
+License URI:    http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:    generatepress-child
+*/
+
+/* ==============================
+   FONT-FACE DECLARATIONS
+   ============================== */
+
+/* ------------------------------
+   Harmonia Sans
+   ------------------------------ */
+
+
+
+@font-face {
+    font-family: 'Akko Sans';
+    src: url('/wp-content/themes/generatepress-child/fonts/AkkoPro-Regular.woff2') format('woff2'),
+         url('/wp-content/themes/generatepress-child/fonts/AkkoPro-Regular.woff') format('woff'),
+         url('/wp-content/themes/generatepress-child/fonts/AkkoPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Harmonia Sans';
+    src: url('/wp-content/themes/generatepress-child/assets/fonts/Harmonia-Sans-Font/Harmonia Sans W01 Regular.woff2') format('woff2'),
+         url('/wp-content/themes/generatepress-child/assets/fonts/Harmonia-Sans-Font/Harmonia Sans W01 Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Harmonia Sans';
+    src: url('/wp-content/themes/generatepress-child/assets/fonts/Harmonia-Sans-Font/Harmonia Sans W01 Bold.woff2') format('woff2'),
+         url('/wp-content/themes/generatepress-child/assets/fonts/Harmonia-Sans-Font/Harmonia Sans W01 Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Harmonia Sans';
+    src: url('/wp-content/themes/generatepress-child/assets/fonts/Harmonia-Sans-Font/Harmonia Sans W06 Black Italic.woff2') format('woff2'),
+         url('/wp-content/themes/generatepress-child/assets/fonts/Harmonia-Sans-Font/Harmonia Sans W06 Black Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* ==============================
+   GLOBAL FONT APPLICATION
+   ============================== */
+
+/* Choose global font here: either Harmonia Sans or Akko Sans */
+body {
+    font-family: 'Akko Sans', sans-serif !important;
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button, input, textarea, .threads-nav-menu {
+    font-family: 'Akko Sans', sans-serif !important;
+}
+
+/* ==============================
+   HOVER BUTTON STYLE
+   ============================== */
+
+.hover-con {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    background-color: #0066cc;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover state */
+.hover-con:hover {
+    background-color: #0052a3;
+}
+
+/* Text animation */
+.hover-con > span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Arrow icon */
+.hover-icon::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    opacity: 0;
+    width: 20px;
+    height: 14px;
+    background: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.1712 1.15214L14.9895 0.98149L14.8183 1.16262L14.3286 1.68074L14.1561 1.86323L14.3393 2.03491L18.9951 6.39689L1 6.3969L0.75 6.3969L0.75 6.6469L0.75 7.35665L0.75 7.60665L1 7.60665L18.9955 7.60665L14.3393 11.9722L14.1549 12.1451L14.3298 12.3276L14.8195 12.8386L14.9907 13.0173L15.1711 12.8479L21.2041 7.18404L21.3981 7.00183L21.2041 6.81956L15.1712 1.15214Z' fill-rule='evenodd' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat center;
+    mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.1712 1.15214L14.9895 0.98149L14.8183 1.16262L14.3286 1.68074L14.1561 1.86323L14.3393 2.03491L18.9951 6.39689L1 6.3969L0.75 6.3969L0.75 6.6469L0.75 7.35665L0.75 7.60665L1 7.60665L18.9955 7.60665L14.3393 11.9722L14.1549 12.1451L14.3298 12.3276L14.8195 12.8386L14.9907 13.0173L15.1711 12.8479L21.2041 7.18404L21.3981 7.00183L21.2041 6.81956L15.1712 1.15214Z' fill-rule='evenodd' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Hover animations */
+.hover-con:hover > span {
+    transform: translateX(-10px);
+}
+
+.hover-con:hover.hover-icon::after {
+    right: 15px;
+    opacity: 1;
+}
+
+/* Ensure custom font on specific elements */
+#post-6 a span,
+.hover-con span,
+#post-6 button {
+    font-family: 'Akko Sans', 'Harmonia Sans', system-ui, Arial, sans-serif !important;
+}
+
+
+.breadcrumbs {
+    font-size: 12px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+}
+.breadcrumbs a {
+    color: #000000;
+    text-decoration: underline;
+}
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.breadcrumb-sep {
+    display: inline-flex;
+    align-items: center;
+    color: #000000;
+    padding: 0px 12px;
+}

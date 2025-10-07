@@ -1,0 +1,7 @@
+{
+    "header":[
+        "/wp-content/themes/generatepress-child/header-custom.php"
+        ,"/wp-content/themes/generatepress-child/header-style.css"
+        ,"/wp-content/themes/generatepress-child/header-script.js"
+    ]
+}

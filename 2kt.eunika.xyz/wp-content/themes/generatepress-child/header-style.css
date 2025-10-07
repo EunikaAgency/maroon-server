@@ -1,0 +1,577 @@
+/* Base Header Styles */
+.threads-header {
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    background-color: white;
+}
+
+.threads-header:before {
+    content: "";
+    position: absolute;
+    max-width: calc(100% - 3rem);
+    width: 1300px;
+    height: 3px;
+    background-color: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.threads-header-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Top Banner */
+.threads {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.threads span {
+    font-size: 11px;
+    padding: 10px 0px;
+}
+
+/* Top Row Layout */
+.threads-top-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.threads-top-col {
+    /* Empty column - can be used for future elements */
+}
+
+.threads-logo-container > a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.threads-search-container {
+    justify-self: end;
+}
+
+/* Logo Image */
+body > header > div > div > div.threads-logo-container > a > img {
+    max-width: 70% !important;
+    height: auto;
+}
+
+/* Main Navigation */
+.threads-nav-row {
+    width: 100%;
+}
+
+.threads-primary-nav {
+    position: relative;
+}
+
+/* Navigation Menu */
+.threads-primary-nav .threads-nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding-bottom: 10px;
+    margin: 0;
+    width: 100%;
+}
+
+.threads-primary-nav .threads-nav-menu li {
+    position: relative;
+}
+
+/* Link Styles */
+.threads-primary-nav .threads-nav-menu a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: transparent;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .125em;
+    height: 1em;
+    line-height: 1em;
+    vertical-align: middle;
+    z-index: 0;
+}
+
+.threads-primary-nav .threads-nav-menu a::before,
+.threads-primary-nav .threads-nav-menu a::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    line-height: 1em;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: .125em;
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.threads-primary-nav .threads-nav-menu a::before {
+    transform: translateY(0%);
+    color: #000000BF;
+}
+
+.threads-primary-nav .threads-nav-menu a::after {
+    transform: translateY(100%);
+    color: #555;
+}
+
+.threads-primary-nav .threads-nav-menu a:hover::before {
+    transform: translateY(-100%);
+}
+
+.threads-primary-nav .threads-nav-menu a:hover::after {
+    transform: translateY(0%);
+}
+
+.threads-primary-nav .threads-nav-menu a:hover {
+    color: #555;
+}
+
+/* Dropdown Indicators */
+.threads-primary-nav .threads-nav-menu .menu-item-has-children > a {
+    position: relative;
+    padding-right: 20px;
+}
+
+.threads-primary-nav .threads-nav-menu .menu-item-has-children > a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 33%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    transition: transform 0.3s ease;
+    font-weight: bolder;
+}
+
+.threads-primary-nav .threads-nav-menu .menu-item-has-children > a .icon-caret {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 7px;
+    transition: transform 0.3s ease;
+    color: #000;
+}
+
+.threads-primary-nav .threads-nav-menu .icon-caret {
+    color: #000000BF;
+    fill: #000000BF;
+}
+
+/* Submenu Styles */
+.threads-primary-nav .threads-nav-menu ul {
+    display: none;
+    position: absolute;
+    background: black;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    min-width: 200px;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: start;
+}
+
+.threads-primary-nav .threads-nav-menu ul li a {
+    text-align: start;
+    width: 100%;
+    text-decoration: none;
+}
+
+.threads-primary-nav .threads-nav-menu ul ul {
+    left: 100%;
+    top: 0;
+    transform: none;
+}
+
+.threads-primary-nav .threads-nav-menu li:hover > ul {
+    display: block;
+}
+
+/* Submenu Text Styles */
+.threads-primary-nav .threads-nav-menu ul a::before,
+.threads-primary-nav .threads-nav-menu ul a::after {
+    color: white !important;
+}
+
+.threads-primary-nav .threads-nav-menu ul a:hover::before,
+.threads-primary-nav .threads-nav-menu ul a:hover::after {
+    color: #ccc !important;
+}
+
+.threads-primary-nav .threads-nav-menu ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.threads-primary-nav .threads-nav-menu ul li:last-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Current Menu Item Styles */
+.threads-primary-nav .current-menu-item > a {
+    color: #000;
+    font-weight: normal;
+}
+
+.threads-primary-nav .current-menu-ancestor > a {
+    color: #333;
+}
+
+/* Hamburger Menu Styles */
+.threads-mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger-box {
+    width: 24px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -6px;
+}
+
+.hamburger-inner::after {
+    bottom: -6px;
+}
+
+.hamburger-inner.is-active {
+    transform: rotate(45deg);
+    background-color: #000;
+}
+
+.hamburger-inner.is-active::before {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #000;
+}
+
+.hamburger-inner.is-active::after {
+    bottom: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    background-color: #000;
+}
+
+/* Mobile Overlay to prevent scrolling */
+body.mobile-menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/* Mobile Navigation Overlay */
+.mobile-nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.mobile-nav-overlay.active {
+    display: block;
+}
+
+.nav-login-container{
+    display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 1024px) {
+    .threads-header {
+        position: relative; /* Ensure header has positioning context */
+    }
+
+    .threads-top-row {
+        display: flex;
+        position: relative;
+        padding: 10px 0px;
+    }
+
+
+    .threads-mobile-toggle {
+        display: block !important;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-40%);
+    }
+
+        .threads-mobile-toggle:hover {
+       background-color: transparent;
+    }
+
+
+    .threads-nav-row {
+        order: 1;
+        width: 100%;
+        position: relative;
+    }
+
+    .threads-logo-container {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .threads-search-container {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .threads-primary-nav {
+        position: absolute !important; /* Changed from fixed to absolute */
+        top: 100%; /* Position below the header */
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        display: none;
+        z-index: 1000;
+        max-height: calc(100vh - 100px); /* Limit height to viewport minus some space */
+        overflow-y: auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better separation */
+        height: 100vh;
+    }
+
+    .threads-primary-nav.active {
+        display: block !important;
+        margin-top: 32px !important;
+        width: 100vw !important; /* Viewport width instead of 100% */
+        left: 0 !important;
+        box-sizing: border-box;
+    }
+
+    .threads-primary-nav .threads-nav-menu {
+        display: flex !important;
+        flex-direction: column;
+        background: transparent;
+        width: 100%;
+        padding: 0px 24px;
+        margin: 0;
+        list-style: none;
+        gap: 0;
+    }
+
+    .threads-primary-nav .threads-nav-menu li {
+        width: 100%;
+        text-align: left;
+        padding: 15px 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.521);
+    }
+
+
+    .threads-primary-nav .threads-nav-menu a {
+        font-size: 11px !important;
+        height: auto !important;
+        line-height: 1.4 !important;
+        color: black;
+        overflow: visible !important;
+    }
+    .threads-primary-nav .threads-nav-menu a::before {
+        display: none !important;
+    }
+
+    .threads-primary-nav .threads-nav-menu a::before,
+    .threads-primary-nav .threads-nav-menu a::after {
+        color: black !important;
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+        position: static !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .threads-primary-nav .threads-nav-menu a::after {
+        display: none !important;
+    }
+
+    .threads-primary-nav .threads-nav-menu a:hover::before,
+    .threads-primary-nav .threads-nav-menu a:hover::after {
+        color: #ccc !important;
+        transform: none !important;
+    }
+
+    .threads-primary-nav .threads-nav-menu ul {
+        position: static !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        display: none !important;
+        background: transparent !important;
+        transform: none !important;
+        margin: 0 !important;
+    }
+
+    .threads-primary-nav .threads-nav-menu ul.active {
+        display: block !important;
+    }
+
+    .threads-primary-nav .threads-nav-menu li:first-child{
+        
+        border-bottom: 1px solid rgba(0, 0, 0, 0.521);
+    }
+
+    /* Style for dropdown menu items */
+    .threads-primary-nav .threads-nav-menu ul li {
+        border-top: 1px solid rgba(0, 0, 0, 0.226);
+        border-bottom: none !important;
+        padding: 10px 0 !important;
+    }
+
+    /* Remove double borders between parent and first child */
+    .threads-primary-nav .threads-nav-menu li.menu-item-has-children + ul li:first-child {
+        border-top: none !important;
+    }
+
+    .threads-primary-nav .threads-nav-menu ul a::before,
+    .threads-primary-nav .threads-nav-menu ul a::after {
+        color: #ccc !important;
+        font-size: 14px !important;
+    }
+
+    .threads-primary-nav .threads-nav-menu .menu-item-has-children > a {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .threads-primary-nav .threads-nav-menu .menu-item-has-children > a::after {
+        content: "+" !important;
+        position: absolute !important;
+        right: 0 !important;
+        top: 0 !important;
+        color: white !important;
+        font-size: 20px !important;
+        transform: none !important;
+        transition: none !important;
+        line-height: 1.4 !important;
+    }
+
+    .threads-primary-nav .threads-nav-menu .menu-item-has-children > a.active::after {
+        content: "−" !important;
+        color: white !important;
+    }
+
+    .threads-primary-nav .threads-nav-menu ul .menu-item-has-children > a::after {
+        content: "+" !important;
+        color: #ccc !important;
+        font-size: 18px !important;
+    }
+
+    .threads-primary-nav .threads-nav-menu ul .menu-item-has-children > a.active::after {
+        content: "−" !important;
+        color: #ccc !important;
+    }
+
+    .threads-logo-container img {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    body > header > div > div > div.threads-logo-container > a > img {
+        max-width: 100% !important;
+    }
+    /* Remove the close button since menu is no longer fullscreen */
+    .threads-primary-nav::before {
+        display: none;
+    }
+
+     .threads-primary-nav .nav-login-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 24px;
+        margin-top: 150px;
+    }
+
+    /* Login button with icon */
+    .threads-primary-nav .nav-login-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 12px 0;
+        background-color: #000;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Account icon styling */
+    .threads-primary-nav .nav-login-button .icon-account {
+        width: 16px;
+        height: 16px;
+        color: currentColor; /* Inherits text color */
+    }
+
+    .threads-primary-nav .nav-login-button:hover {
+        background-color: #333;
+    }
+}
