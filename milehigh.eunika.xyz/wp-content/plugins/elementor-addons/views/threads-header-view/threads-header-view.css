@@ -1,0 +1,887 @@
+/* ============================= */
+/* Variables */
+/* ============================= */
+:root {
+    --header-height: 80px;
+    --pad-x: 20px;
+    --ls: 0.12em;
+    --black: #000;
+    --dropdown-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Announcement */
+.top-bar {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    padding: 6px 10px;
+}
+
+/* Header */
+.header {
+    font-family: 'Titanium', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid #000000;
+    background: #fff;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 16px;
+    padding: 38px 0px;
+    position: relative;
+    min-height: 52px;
+    /* Ensure minimum height */
+}
+
+.nav a {
+    color: var(--black);
+    text-decoration: none;
+    text-transform: inherit;
+}
+
+/* ============================= */
+/* SWAP TEXT NAV EFFECT - Main Navigation Only */
+/* ============================= */
+.nav-left a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1.2;
+}
+
+.nav-left a .swap-text {
+    display: inline-block;
+    transition: transform 0.35s ease;
+    transform: translateY(0);
+}
+
+.nav-left a::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    white-space: nowrap;
+    transition: transform 0.35s ease;
+}
+
+.nav-left a:hover .swap-text {
+    transform: translateY(-100%);
+}
+
+.nav-left a:hover::after {
+    transform: translateY(-100%);
+}
+
+/* ============================= */
+
+.nav-left {
+    justify-self: start;
+    overflow: visible;
+    /* Changed to visible for dropdowns */
+}
+
+.nav-left ul,
+.nav-right ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allow wrapping if needed */
+    gap: 26px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* ============================= */
+/* DROPDOWN STYLES */
+/* ============================= */
+
+.nav-left li {
+    position: relative;
+}
+
+/* Top-level Chevron Styles */
+.dropdown-arrow {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.25s ease;
+    transform: rotate(0deg);
+}
+
+.dropdown-arrow svg {
+    width: 12px;
+    height: 12px;
+    display: block;
+}
+
+/* Top-level Hover and Open States */
+.nav-left li.has-dropdown:hover .dropdown-arrow,
+.nav-left li.has-dropdown.dropdown-open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Base submenu styles - ALL levels start hidden */
+.nav-left .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background: #000000;
+    border: 1px solid #e0e0e0;
+    box-shadow: var(--dropdown-shadow);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+    padding: 8px 8px;
+    margin: 0;
+    list-style: none;
+    display: block;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* Nested submenu (third level and beyond) positioning */
+.nav-left .submenu .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 180px;
+    z-index: 1002;
+    margin-left: 0px;
+    /* Reset visibility for nested levels */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+}
+
+/* Support for deeper nesting */
+.nav-left .submenu .submenu .submenu {
+    z-index: 1003;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+}
+
+.nav-left .submenu .submenu .submenu .submenu {
+    z-index: 1004;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+}
+
+/* Show first level submenu on parent hover */
+.nav-left li.has-dropdown:hover>.submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Show nested submenus on direct parent hover */
+.nav-left .submenu .has-dropdown:hover>.submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Ensure deeper nesting works correctly */
+.nav-left .submenu .submenu .has-dropdown:hover>.submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-left .submenu .submenu .submenu .has-dropdown:hover>.submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Nested dropdown indicators - Right arrow for ALL nested levels */
+.nav-left .submenu .has-dropdown>a {
+    position: relative;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left .submenu .has-dropdown>a::after {
+    content: "▶";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    font-size: 10px;
+    color: #fff;
+    transition: transform 0.25s ease;
+}
+
+/* Hover states for nested items */
+.nav-left .submenu .has-dropdown {
+    position: relative;
+}
+
+.nav-left .submenu .has-dropdown>a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Standard submenu item styles */
+.nav-left .submenu li {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-left .submenu li:last-child {
+    border-bottom: none;
+}
+
+.nav-left .submenu a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 14px;
+    white-space: nowrap;
+    border: none;
+    transition: background-color 0.2s ease;
+    position: static;
+    overflow: visible;
+}
+
+nav.nav-left ul li.menu-item-has-children>a {
+    display: flex;
+    gap: 6px;
+}
+
+.nav-left .submenu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Remove swap text effect from submenu items */
+.nav-left .submenu a .swap-text {
+    transform: none !important;
+    transition: none;
+}
+
+.nav-left .submenu a::after {
+    display: none;
+}
+
+.nav-left .submenu a:hover .swap-text {
+    transform: none !important;
+}
+
+/* Override the ::after for nested dropdowns */
+.nav-left .submenu .has-dropdown>a::after {
+    display: block !important;
+    content: "▶" !important;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: #fff;
+    transition: transform 0.25s ease;
+}
+
+
+
+/* Keep submenu visible when hovering over nested items */
+.nav-left .submenu:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-left .submenu .submenu:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Prevent submenu from closing when moving cursor between levels */
+.nav-left .has-dropdown:hover>.submenu,
+.nav-left .has-dropdown:focus-within>.submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-left .submenu .has-dropdown:hover>.submenu,
+.nav-left .submenu .has-dropdown:focus-within>.submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ============================= */
+
+/* Highlight active menu item */
+.nav-left .current-menu-item>a,
+.drawer-menu .current-menu-item>a {
+    font-weight: bold !important;
+}
+
+/* Remove hardcoded font styles to allow Elementor typography */
+.nav a.item {
+    white-space: nowrap;
+}
+
+/* Centered logo - now uses grid positioning */
+.logo-wrap {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block;
+    line-height: 0;
+    /* Remove absolute positioning */
+}
+
+.logo img {
+    height: 28px;
+    display: block;
+    max-width: 100%;
+    /* Ensure logo is responsive */
+}
+
+/* Right navigation */
+.nav-right {
+    justify-self: end;
+}
+
+/* Icons */
+.icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+.icon .label {
+    font-size: 12px;
+    letter-spacing: 0.16em;
+}
+
+.nav-right li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Divider under header row */
+.divider {
+    height: 2px;
+    background: #000;
+    margin: 0 var(--pad-x);
+}
+
+/* Buttons */
+.hamburger {
+    background: none;
+    border: 0;
+    line-height: 1;
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+    /* hidden on desktop */
+}
+
+.drawer-close {
+    background: none;
+    border: 0;
+    line-height: 1;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+/* NEW: Mobile nested submenu styles */
+.drawer-menu .submenu .submenu {
+    display: none;
+    background: #e8e8e8;
+    /* Lighter background for nested levels */
+    border-top: 1px solid #d0d0d0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.drawer-menu .submenu .has-dropdown.mobile-open .submenu {
+    display: block;
+}
+
+/* NEW: Mobile nested submenu items */
+.drawer-menu .submenu .submenu a {
+    padding: 12px calc(var(--pad-x) + 40px);
+    /* More indent for nested items */
+    font-size: 12px;
+    color: #333;
+    background: #e8e8e8;
+}
+
+/* NEW: Mobile nested dropdown arrows */
+.drawer-menu .submenu .has-dropdown>a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drawer-menu .submenu .has-dropdown>a .dropdown-arrow {
+    font-size: 12px;
+}
+
+/* NEW: Support for 4th level in mobile */
+.drawer-menu .submenu .submenu .submenu a {
+    padding: 10px calc(var(--pad-x) + 60px);
+    /* Even more indent */
+    background: #ddd;
+    font-size: 11px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ===== Overlay drawer ===== */
+.drawer {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    height: calc(100vh - var(--header-height));
+    width: 100vw;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.28s ease;
+    will-change: transform;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.drawer.open {
+    transform: translateX(0);
+}
+
+.drawer-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.drawer-top {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 12px var(--pad-x);
+    position: relative;
+    z-index: 2;
+}
+
+.drawer-menu {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Drawer logo */
+.logo-drawer {
+    display: inline-block;
+    line-height: 0;
+}
+
+.logo-drawer img {
+    height: 28px;
+    display: block;
+}
+
+/* ============================= */
+/* Mobile Drawer Menu Borders */
+/* ============================= */
+.drawer-menu ul {
+    margin: 10px 10px;
+    padding: 0;
+    list-style: none;
+    font-family: 'Titanium', sans-serif;
+}
+
+.drawer-menu li {
+    border-bottom: 1px solid #000;
+    /* every item has a bottom border */
+}
+
+.drawer-menu a {
+    display: block;
+    padding: 16px var(--pad-x);
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: var(--ls);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* ============================= */
+/* Mobile Drawer Submenu Styles */
+/* ============================= */
+.drawer-menu .has-dropdown>a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drawer-menu .submenu {
+    display: none;
+    background: #f5f5f5;
+    border-top: 1px solid #e0e0e0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.drawer-menu .has-dropdown.mobile-open .submenu {
+    display: block;
+}
+
+.drawer-menu .submenu li {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.drawer-menu .submenu li:last-child {
+    border-bottom: none;
+}
+
+.drawer-menu .submenu a {
+    padding: 14px calc(var(--pad-x) + 20px);
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: 0.05em;
+    color: #444;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .nav-left {
+        display: none;
+    }
+
+    .header {
+        margin: 0px 10px;
+    }
+
+    /* Adjust grid for mobile - logo takes center, hamburger and nav-right split the sides */
+    .nav {
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .hamburger {
+        display: block;
+        /* show on mobile */
+        justify-self: start;
+    }
+
+    .logo-wrap {
+        justify-self: center;
+    }
+
+    .nav-right {
+        justify-self: end;
+    }
+
+    .logo img {
+        height: 26px;
+    }
+
+    .nav-right .label {
+        display: none;
+    }
+
+    .nav-right li:nth-child(2) {
+        display: none;
+    }
+
+    /* Reduce gaps on mobile */
+    .nav {
+        gap: 12px;
+    }
+}
+
+/* Extra small screens - stack vertically if needed */
+@media (max-width: 480px) {
+    .nav {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 8px;
+    }
+
+    .hamburger {
+        position: absolute;
+        left: var(--pad-x);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .nav-right {
+        position: absolute;
+        right: var(--pad-x);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .logo-wrap {
+        justify-self: center;
+        grid-row: 1;
+    }
+}
+
+.threads-header-widget.hide {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.header.stuck {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header.stuck+.top-bar,
+.stuck .top-bar {
+    display: none;
+}
+
+
+.widget_search:before,
+.woocommerce-product-search:before,
+.wp-block-search__inside-wrapper:before,
+form.search-form:before {
+    display: none !important;
+}
+
+
+
+.header-search-panel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #000;
+    z-index: 1001;
+}
+
+.header-search-panel.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1300px !important;
+    background: #000;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 1320px) {
+    .header-search-panel.active {
+        width: 100% !important;
+        left: 0;
+        transform: none;
+        position: relative;
+    }
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    padding: 20px 40px 40px 40px;
+    background: #000;
+    margin: 0 auto;
+}
+
+.search-input-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-bottom: solid 1px #aaa;
+}
+
+.search-form .search-icon {
+    flex-shrink: 0;
+    margin-right: 10px;
+    stroke: #aaa;
+}
+
+.search-form .search-field {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.search-form .search-field::placeholder {
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.search-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-tabs {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px 30px;
+    background: #000;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.tab-button.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.search-results {
+    background: #000;
+    padding: 0;
+    /* padding: 20px 40px; */
+    overflow-y: auto;
+    max-height: 70vh;
+    width: 100%;
+    /* max-width: 1300px; */
+    margin: 0 auto;
+}
+
+.results-grid {
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.results-grid.active {
+    display: grid;
+}
+
+.suggestion-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.suggestion-item:hover {
+    background: #222;
+}
+
+.suggestion-item img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.suggestion-item span {
+    display: block;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.suggestion-item .price {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.no-results {
+    color: #aaa;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+
+@media (max-width: 1300px) {
+
+    .search-form,
+    .search-tabs,
+    .search-results {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .search-form {
+        padding: 15px 20px 30px 20px;
+    }
+
+    .search-results {
+        padding: 15px 20px;
+        max-height: 70vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-tabs {
+        padding: 10px 15px;
+        gap: 15px;
+    }
+}

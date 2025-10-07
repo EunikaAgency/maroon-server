@@ -1,0 +1,102 @@
+/**
+ * Gallery Addon Main Styles
+ * 
+ * Edit this file to customise:
+ * - Layout container: .gallery-container
+ * - Slides: .swiper-slide
+ * - Captions below image: .caption
+ * - Full overlay captions: .caption-overlay
+ * - Overlay positioning: .overlay-top, .overlay-center, .overlay-bottom
+ *
+ * For per-widget custom CSS, use the Elementor editor's "Custom CSS" field.
+ */
+
+.gallery-container {
+  padding: 0;
+  margin: 0;
+}
+
+.gallery-container .swiper-slide {
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0 !important;
+  position: relative;
+}
+
+.gallery-container .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-container .swiper-slide:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-container .swiper {
+  min-height: 500px;
+}
+
+@media (min-width: 768px) {
+  .gallery-container .swiper {
+    min-height: 700px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-container .swiper-slide img {
+    /* height: 500px; */
+  }
+}
+
+/* Overlay Captions Full Slide */
+.gallery-container .caption-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  text-align: center;
+  flex-direction: column;
+}
+
+.gallery-container .caption-overlay.overlay-top {
+  justify-content: flex-start;
+}
+
+.gallery-container .caption-overlay.overlay-bottom {
+  justify-content: flex-end;
+}
+
+.gallery-container .caption-overlay.overlay-center {
+  justify-content: center;
+}
+
+.gallery-container .caption-overlay .title,
+.gallery-container .caption-overlay .description {
+  color: #fff;
+}
+
+/* Grid Layout */
+.gallery-container.grid-layout .swiper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.gallery-container.grid-layout .swiper-wrapper {
+  display: contents !important;
+}
+
+.gallery-container.grid-layout .swiper-slide {
+  width: 100% !important;
+  margin: 0 !important;
+}

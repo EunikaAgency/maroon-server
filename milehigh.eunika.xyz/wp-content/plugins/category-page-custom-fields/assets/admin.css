@@ -1,0 +1,7 @@
+/* Admin CSS */
+.CodeMirror {
+    border: 1px solid #ccc;
+    font-size: 14px;
+    height: auto;
+    min-height: 200px;
+}

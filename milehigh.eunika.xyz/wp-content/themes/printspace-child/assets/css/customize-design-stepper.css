@@ -1,0 +1,66 @@
+.stepper-wrapper {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+
+.step::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.step.active::before {
+  background: #4caf50;
+}
+
+.line {
+  height: 4px;
+  background: #ccc;
+  flex: 1;
+  margin: 0 4px;
+}
+
+.step-content .step-panel {
+  display: none;
+}
+
+.step-content .step-panel.active {
+  display: block;
+}
+
+.step-nav {
+  text-align: right;
+}
+
+.step-nav button {
+  background: #0073aa;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.step-nav button[disabled] {
+  background: #ccc;
+}

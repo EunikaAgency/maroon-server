@@ -1,0 +1,88 @@
+.ea-wft-slider-container {
+  width: 100%;
+  overflow: hidden;
+  font-family: "Akko Pro", sans-serif;
+}
+
+.ea-wft-slider-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.ea-wft-slide {
+  flex: 0 0 100%;
+  padding: 0;
+  text-align: start;
+  box-sizing: border-box;
+}
+
+.ea-wft-card {
+  padding: 1rem;
+}
+
+.ea-wft-card img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.ea-wft-step-title {
+  font-family: "Akko Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.ea-wft-text {
+  font-size: 14px;
+  color: #000000bf;
+}
+
+.ea-wft-slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.ea-wft-slider-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: inherit;
+}
+
+.ea-wft-slider-btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.ea-wft-slider-counter {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 992px) {
+  .ea-wft-slider-controls {
+    display: none;
+  }
+
+  .ea-wft-slider-track {
+    flex-wrap: nowrap;
+    transform: none !important;
+    width: 100%;
+  }
+
+  .ea-wft-slide {
+    flex: 1 1 auto;
+    max-width: 100%;
+    text-align: start;
+  }
+}
