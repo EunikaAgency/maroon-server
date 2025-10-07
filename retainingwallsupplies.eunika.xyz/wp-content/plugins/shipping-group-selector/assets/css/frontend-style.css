@@ -1,0 +1,98 @@
+/* Overlay backdrop */
+.sgs-modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal box styling */
+.sgs-modal {
+  background: #fff;
+  padding: 25px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  position: relative;
+  animation: sgsModalIn 0.3s ease-out;
+}
+
+/* Modal header */
+.sgs-modal h3 {
+  margin-top: 0;
+  color: #2a4365;
+  font-size: 1.5rem;
+}
+
+/* Close button */
+.sgs-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.sgs-close:hover {
+  color: #000;
+}
+
+/* Group selection button */
+.sgs-group-btn {
+  display: block;
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.sgs-group-btn:hover {
+  background: #edf2f7;
+  border-color: #cbd5e0;
+}
+
+.sgs-group-btn strong {
+  display: block;
+  color: #2d3748;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.sgs-item-count {
+  display: inline-block;
+  background: #4299e1;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.sgs-products {
+  display: block;
+  color: #4a5568;
+  font-size: 13px;
+  margin-top: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Animation */
+@keyframes sgsModalIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}

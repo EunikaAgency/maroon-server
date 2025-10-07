@@ -1,0 +1,178 @@
+body.woocommerce-checkout {
+    .woocommerce-shipping-methods{
+        li{
+            label{
+                font-size: 13px;
+            }
+        }
+    }    
+}
+
+/* Styles for screens larger than 576px (i.e., small and up) */
+@media (min-width: 576px) {
+    ul.site-header-cart.menu{
+        display: block;
+        li.phone{
+            display: none;
+        }
+    }
+  }
+
+
+/* Styles for screens smaller than 576px (i.e., extra small only) */
+@media (max-width: 575.98px) {
+
+    ul.site-header-cart.menu{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex !important;
+
+        li.phone i.fa{
+            margin-right: 10px;
+            font-size: 26px;
+            color: #dc9833;
+        }
+    }
+    
+  }
+
+
+
+
+
+  $electric_pink: #ff1493; // Deep pink color
+
+.btn-outline-electric_pink {
+  color: $electric_pink;
+  background-color: transparent;
+  border: 1px solid $electric_pink;
+  padding: 0.375rem 0.75rem; // Bootstrap default padding
+  font-size: 1rem; // Bootstrap default font-size
+  line-height: 1.5; // Bootstrap default line-height
+  border-radius: 0.25rem; // Bootstrap default border-radius
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; // Transition for smooth effect
+
+  &:hover {
+    color: #fff;
+    background-color: $electric_pink;
+    border-color: $electric_pink;
+  }
+
+  &:focus, 
+  &:active {
+    color: #fff;
+    background-color: $electric_pink;
+    border-color: $electric_pink;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba($electric_pink, .5);
+  }
+
+  &:disabled {
+    color: $electric_pink;
+    background-color: transparent;
+    border-color: $electric_pink;
+    opacity: 0.65;
+  }
+}
+
+
+
+
+.btn-electric_pink {
+  color: #fff; // White text color for contrast
+  background-color: $electric_pink;
+  border: 1px solid $electric_pink;
+  padding: 0.375rem 0.75rem; // Bootstrap default padding
+  font-size: 1rem; // Bootstrap default font-size
+  line-height: 1.5; // Bootstrap default line-height
+  border-radius: 0.25rem; // Bootstrap default border-radius
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; // Transition for smooth effect
+
+  &:hover {
+    color: $electric_pink; // Electric pink text color on hover
+    background-color: transparent; // Transparent background on hover
+    border-color: $electric_pink;
+  }
+
+  &:focus, 
+  &:active {
+    background-color: darken($electric_pink, 10%);
+    border-color: darken($electric_pink, 10%);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba($electric_pink, .5); // Pink glow for focus
+  }
+
+  &:disabled {
+    background-color: $electric_pink;
+    border-color: $electric_pink;
+    opacity: 0.65;
+  }
+}
+
+
+$light_sea_green: #23aca5; // Light sea green color
+
+.btn-outline-light_sea_green {
+  color: $light_sea_green;
+  background-color: transparent;
+  border: 1px solid $light_sea_green;
+  padding: 0.375rem 0.75rem; // Bootstrap default padding
+  font-size: 1rem; // Bootstrap default font-size
+  line-height: 1.5; // Bootstrap default line-height
+  border-radius: 0.25rem; // Bootstrap default border-radius
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; // Transition for smooth effect
+
+  &:hover {
+    color: #fff;
+    background-color: $light_sea_green;
+    border-color: $light_sea_green;
+  }
+
+  &:focus, 
+  &:active {
+    color: #fff;
+    background-color: $light_sea_green;
+    border-color: $light_sea_green;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba($light_sea_green, .5);
+  }
+
+  &:disabled {
+    color: $light_sea_green;
+    background-color: transparent;
+    border-color: $light_sea_green;
+    opacity: 0.65;
+  }
+}
+
+.btn-light_sea_green {
+  color: #fff; // White text color for contrast
+  background-color: $light_sea_green;
+  border: 1px solid $light_sea_green;
+  padding: 0.375rem 0.75rem; // Bootstrap default padding
+  font-size: 1rem; // Bootstrap default font-size
+  line-height: 1.5; // Bootstrap default line-height
+  border-radius: 0.25rem; // Bootstrap default border-radius
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; // Transition for smooth effect
+
+  &:hover {
+    color: $light_sea_green; // Light sea green text color on hover
+    background-color: transparent; // Transparent background on hover
+    border-color: $light_sea_green;
+  }
+
+  &:focus, 
+  &:active {
+    background-color: darken($light_sea_green, 10%);
+    border-color: darken($light_sea_green, 10%);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba($light_sea_green, .5); // Light sea green glow for focus
+  }
+
+  &:disabled {
+    background-color: $light_sea_green;
+    border-color: $light_sea_green;
+    opacity: 0.65;
+  }
+}

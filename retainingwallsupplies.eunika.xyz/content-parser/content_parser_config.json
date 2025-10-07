@@ -1,0 +1,22 @@
+{
+    "project_caucasus": [
+        "/wp-config.php",
+        "/wp-content/plugins"
+    ],
+    "shipping-matrix": [
+       
+        "/wp-content/plugins/shipping-cost-matrix"
+    ],
+    "shipping-cart-filter": [
+        "/wp-content/plugins/cart-shipping-address-filter"
+    ],
+    "restrict-checkout-shipping": [
+        "/wp-content/plugins/restrict-checkout-shipping"
+    ],
+    "shipping-group-selector": [
+        "/wp-content/plugins/shipping-group-selector"
+    ],
+    "wc-request-quote": [
+        "/wp-content/plugins/wc-request-quote"
+    ]
+}

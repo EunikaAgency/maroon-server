@@ -1,0 +1,63 @@
+# Increase PHP memory limit (only if using mod_php)
+<IfModule mod_php7.c>
+    php_value memory_limit 512M
+</IfModule>
+
+# BEGIN WpFastestCache
+# Modified Time: 30-03-24 2:40:53
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# HTTPS check if needed (optional)
+RewriteCond %{HTTPS} =on
+
+# Start WPFC Exclude
+RewriteCond %{REQUEST_URI} !33f86330f1a345caadd33eb381970926.txt [NC]
+# End WPFC Exclude
+
+# Start_WPFC_Exclude_Admin_Cookie
+RewriteCond %{HTTP:Cookie} !wordpress_logged_in_[^\=]+\=akshay|alena|anna|Brian|forhad|growmyads|info@retainingwallsupplies.com.au|kaptivmedia.com|sanskar
+# End_WPFC_Exclude_Admin_Cookie
+
+RewriteCond %{HTTP_USER_AGENT} !(facebookexternalhit|WP_FASTEST_CACHE_CSS_VALIDATOR|Twitterbot|LinkedInBot|WhatsApp|Mediatoolkitbot)
+RewriteCond %{HTTP_USER_AGENT} !(WP\sFastest\sCache\sPreload(\siPhone\sMobile)?\s*Bot)
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{REQUEST_URI} !(\/){2,}
+RewriteCond %{THE_REQUEST} !(\/){2,}
+RewriteCond %{REQUEST_URI} \/$
+RewriteCond %{QUERY_STRING} !.+
+RewriteCond %{HTTP:Cookie} !comment_author_
+RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/all/$1/index.html -f
+RewriteRule ^(.*) "/wp-content/cache/all/$1/index.html" [L]
+</IfModule>
+
+<FilesMatch "index\.(html|htm)$">
+    AddDefaultCharset UTF-8
+    <IfModule mod_headers.c>
+        FileETag None
+        Header unset ETag
+        Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "Mon, 29 Oct 1923 20:30:00 GMT"
+    </IfModule>
+</FilesMatch>
+# END WpFastestCache
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+# Handle requests that aren't files or directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+
+# BEGIN WP Cloudflare Super Page Cache
+# (Leave empty or managed by plugin)
+# END WP Cloudflare Super Page Cache

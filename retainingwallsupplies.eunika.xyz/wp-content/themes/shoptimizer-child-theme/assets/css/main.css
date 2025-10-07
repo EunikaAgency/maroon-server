@@ -1,0 +1,23 @@
+/* Styles for screens larger than 576px (i.e., small and up) */
+@media (min-width: 576px) {
+  ul.site-header-cart.menu {
+    display: block;
+  }
+  ul.site-header-cart.menu li.phone {
+    display: none;
+  }
+}
+/* Styles for screens smaller than 576px (i.e., extra small only) */
+@media (max-width: 575.98px) {
+  ul.site-header-cart.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex !important;
+  }
+  ul.site-header-cart.menu li.phone i.fa {
+    margin-right: 10px;
+    font-size: 26px;
+    color: #dc9833;
+  }
+}

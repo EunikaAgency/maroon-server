@@ -1,0 +1,161 @@
+.border-electric_pink {
+  border-color: #ff1493 !important;
+}
+
+.card-shadow {
+  box-shadow: 2px 2px 0px #ff1493, 1px 2px 0px #ff1493, 2px 0px 0px #ff1493;
+}
+
+ul.products {
+  li.card {
+    font-size: 14px;
+    padding-bottom: 0 !important;
+    border-left: 1px solid #8080806e;
+    border-right: none;
+    list-style-type: none;
+    border-radius: 0;
+    border-bottom: none;
+    border-top: none;
+    margin-top: 2em !important;
+    margin-bottom: 1em !important;
+
+    &.first {
+      border-left: 1px solid #8080806e;
+    }
+
+    &.last {
+      border-right: 1px solid #8080806e;
+    }
+
+    .product-headings {
+      min-height: 118px;
+      margin-bottom: 1em;
+
+      .product_title {
+        font-size: 16px;
+        text-align: left;
+
+        &:hover {
+          color: #ff1493;
+        }
+      }
+
+
+      ul.product-categories {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+
+        li {
+          display: inline;
+
+          a {
+            color: #444444;
+
+            &:hover {
+              color: #ff1493;
+            }
+          }
+        }
+
+
+      }
+
+
+      ul.product-categories li:not(:last-child)::after {
+        content: ", ";
+        /* additional styling for the comma, if needed */
+      }
+
+
+
+    }
+
+    .thumbnail-wrapper {
+      display: flex;
+      justify-content: left;
+      flex-wrap: wrap;
+      margin-top: 1em;
+      margin-bottom: 1em;
+
+      .img-thumbnail {
+        cursor: pointer;
+        padding: 0;
+        border: none;
+        font-size: 75%;
+        text-align: center;
+
+        &:hover {
+          color: #23aca5;
+          font-weight: bold;
+          scale: 1.1;
+          transition: 2s;
+
+          img {
+            border: 1px solid #23aca5;
+          }
+        }
+
+        img {
+          flex: 0 0 auto;
+          max-width: 50px;
+        }
+      }
+    }
+
+    select {
+      &:hover {
+        color: #23aca5;
+        border: 1px solid #23aca5;
+
+        option {
+          color: #23aca5;
+        }
+      }
+    }
+
+    .variation-cheapest {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      width: 100%;
+
+      .price {
+        del bdi {
+          font-size: 14px;
+          color: #555;
+        }
+
+        bdi {
+          font-size: 18px;
+          color: #ff1493;
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+
+  li.product:hover::before {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.aspect-square {
+  aspect-ratio: 1/1;
+}
+
+
+.attribute-variation-colour{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+
+  button{
+    max-width: 130px;
+  }
+}

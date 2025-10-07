@@ -1,0 +1,27 @@
+.woocommerce-billing-fields .form-row,
+.woocommerce-shipping-fields .form-row,
+.woocommerce form .form-row {
+  display: block;
+}
+
+.woocommerce .col2-set .col-1,
+.woocommerce-page .col2-set .col-1,
+.woocommerce .col2-set .col-2,
+.woocommerce-page .col2-set .col-2 {
+  max-width: unset;
+}
+
+a{
+  color: red;
+}
+
+#wcpay-payment-request-button-separator{
+  display:none;
+}
+.woocommerce-product-page .payment-request-button {
+  display: none !important;
+}
+
+.wcpay-payment-request-wrapper,  #wcpay-payment-request-button-separator{
+  display: none;
+}

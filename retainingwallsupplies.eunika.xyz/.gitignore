@@ -1,0 +1,32 @@
+# Ignore uploads directory
+wp-content/uploads/
+
+
+# Ignore node modules
+node_modules/
+vendor/
+
+# Ignore compiled theme files
+*.min.css
+*.min.js
+
+# Ignore log files
+*.log
+
+# Ignore development and build files
+Gruntfile.js
+package.json
+package-lock.json
+
+# Ignore cache files
+wp-content/cache/
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+
+# Ignore miscellaneous files
+.sass-cache/
+Thumbs.db
+.DS_Store
+
+# Ignore environment configuration files
+.env

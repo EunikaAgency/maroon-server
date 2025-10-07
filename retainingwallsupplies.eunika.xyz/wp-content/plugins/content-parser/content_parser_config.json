@@ -1,0 +1,13 @@
+{
+    "project_caucasus": [
+        "wp-config.php",
+        "wp-content/plugins"
+    ],
+    "shipping-matrix": [
+       
+        "wp-content/plugins/shipping-cost-matrix"
+    ],
+    "shipping-cart-filter": [
+        "wp-content/plugins/cart-shipping-address-filter"
+    ]
+}

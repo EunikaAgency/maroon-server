@@ -1,0 +1,118 @@
+
+.alert-success{
+  z-index: 999999 !important;
+}
+
+.nav-menus-php .dmidp_launchs {
+	margin-left: 10px;
+	font-size: 0.8em;
+	cursor: pointer;
+	color: white;
+	display: inline-block;
+	width: auto;
+	font-weight: normal;
+	height: auto;
+	background: #999;
+	border-color: #444;
+	border-width: 1px;
+	padding: 1px 5px;
+	border-radius: 3px;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	z-index: 1;
+	position: relative;
+}
+
+.nav-menus-php .dmidp_launchs::before {
+	font-family: dashicons;
+	content: "\f111";
+	font-size: 10px;
+	margin-right: 2px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.nav-menus-php .menu-item-bar .menu-item-handle:hover .dmidp_launchs {
+	opacity: 1;
+}
+
+.button.insert-user-shortcode {
+	position: absolute;
+	right: 110px;
+	top: 31px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.different-menu-item.user-roles label {
+	padding-right: 15px;
+}
+.for-logged-in-users{
+	display: none;
+}
+#userPopup.popup {
+	display: none;
+	position: absolute;
+	top: 190px;
+	transform: translate(-50%, -50%);
+	background: white;
+	padding: 10px 0;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	right: 46px;
+}
+
+#userPopup .options-list {
+	list-style: none;
+	padding: 0;
+}
+
+#userPopup .options-list li {
+	padding: 6px 20px;
+	cursor: pointer;
+}
+
+.disabled-for-pro{
+	pointer-events: none;
+	filter: blur(8px);
+	-webkit-filter: blur(0.7px);
+}
+
+#different_menu_nav_menu_metabox .accordion-section-title.hndle::after {
+	content: "\f533";
+	font-family: dashicons;
+	color: #4ab722;
+}
+
+#different-menu-user-meta-box.registration_disabled li:nth-child(2) {
+	filter: blur(0.6px);
+	-webkit-filter: blur(0.6px);
+	pointer-events: none;
+}
+
+.go-to-different-menu {
+	display: inline-block;
+	padding: 10px 20px;
+	border: 2px solid #28a745;
+	border-radius: 5px;
+	background-color: transparent;
+	text-decoration: none;
+	color: #28a745;
+	font-weight: bold;
+	transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+	margin-top: 20px;
+}
+
+.go-to-different-menu a {
+	color: #28a745;
+}
+
+.item-controls .dashicons-image-filter {
+	color: #4ab722;
+	position: relative;
+	top: 12px;
+}

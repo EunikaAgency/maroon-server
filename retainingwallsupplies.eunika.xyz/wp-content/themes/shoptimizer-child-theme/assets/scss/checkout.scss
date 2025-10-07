@@ -1,0 +1,36 @@
+body.woocommerce-checkout{
+
+    .woocommerce-checkout-review-order{
+        .cart-custom-field{
+            h4{
+                display:none;
+            }
+        }
+    }
+
+
+    .woocommerce-shipping-methods{
+        li{
+
+            label.long-label{
+                color: red !important;
+            }
+
+            label{
+                font-size: 13px;
+            }
+        }
+    }    
+
+
+
+}
+
+#text-5{
+    fieldset{
+        display: none;
+    }
+}
+
+
+
