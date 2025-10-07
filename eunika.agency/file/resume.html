@@ -1,0 +1,944 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Emmanuel Gabion — A4 Resume (Indigo, Spaced)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    /* ===== Theme Variables ===== */
+    :root {
+      --paper: #ffffff;
+      --bg: #f1f4f8;
+      --sidebar: #0f1e3a;
+      --side-text: #e6ecf6;
+      --side-muted: #b7c4d6;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #4f46e5;
+      --accent-2: #2563eb;
+      --line: #e5e7eb;
+      --sidebar-width: 68mm;
+      --page-padding-top: 12mm;
+      --page-padding-bottom: 12mm;
+    }
+
+    /* ===== Base Styles ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background: var(--bg);
+      color: var(--text);
+      font: 14px/1.55 "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    body {
+      padding: 10px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    /* ===== Page Layout ===== */
+    .page {
+      width: 210mm;
+      height: 297mm;
+      margin: 10px auto;
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.10);
+      background: var(--paper);
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      padding-top: var(--page-padding-top);
+      padding-bottom: var(--page-padding-bottom);
+      page-break-after: always;
+    }
+
+    /* ===== Sidebar - Full Height ===== */
+    .sidebar {
+      width: var(--sidebar-width);
+      background: var(--sidebar);
+      color: var(--side-text);
+      padding: 0 10mm;
+      display: flex;
+      flex-direction: column;
+      gap: 12mm;
+      /* Full height ignoring page padding */
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      /* Add padding to match main content */
+      padding-top: var(--page-padding-top);
+      padding-bottom: var(--page-padding-bottom);
+      overflow: hidden;
+    }
+
+    /* ===== Main Content ===== */
+    .main {
+      flex: 1;
+      padding: 0 12mm;
+      display: flex;
+      flex-direction: column;
+      gap: 8mm;
+      height: 100%;
+      /* Push main content to the right of sidebar */
+      margin-left: var(--sidebar-width);
+      overflow: hidden;
+    }
+
+    /* ===== Sidebar Elements ===== */
+    .avatar {
+      width: 50mm;
+      height: 50mm;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(255, 255, 255, 0.18);
+      background: #dce6ef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #566b84;
+      font-size: 14px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .name {
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: 0.3px;
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    .role {
+      font-weight: 600;
+      color: #bcd3ff;
+      text-align: center;
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .side-section h4 {
+      margin: 0 0 6px 0;
+      font-size: 11.5px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--side-text);
+    }
+
+    .side-muted {
+      color: var(--side-muted);
+      font-size: 12px;
+    }
+
+    .contact {
+      display: grid;
+      gap: 6px;
+    }
+
+    .contact div {
+      display: grid;
+      grid-template-columns: 14px auto;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .side-list {
+      display: grid;
+      gap: 6px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    /* ===== Skill Logos ===== */
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .skill-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .skill-logo {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+
+    .skill-name {
+      font-size: 11px;
+      color: var(--side-text);
+      white-space: nowrap;
+    }
+
+    .sidebar .chip {
+      background: rgba(255, 255, 255, 0.22);
+      color: #ffffff;
+      padding: 3px 9px;
+      border-radius: 999px;
+      font-size: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      white-space: nowrap;
+    }
+
+    /* ===== Technical Highlights ===== */
+    .tech-highlight {
+      background: linear-gradient(120deg, #e0f2fe 0%, #f0fdf4 100%);
+      border-left: 4px solid var(--accent);
+      padding: 12px 16px;
+      margin: 8px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 13.5px;
+    }
+
+    .tech-highlight strong {
+      color: var(--accent);
+    }
+
+    /* ===== Main Content Elements ===== */
+    .header {
+      display: grid;
+      gap: 2px;
+    }
+
+    .big-name {
+      font-weight: 800;
+      font-size: 24px;
+      letter-spacing: 0.3px;
+    }
+
+    .subtitle {
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    h2 {
+      margin: 0 0 8px 0;
+      font-size: 16px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    h2 .bar {
+      flex: 0 0 6px;
+      height: 16px;
+      border-radius: 8px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    }
+
+    h3 {
+      margin: 0 0 4px 0;
+      font-size: 14.5px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--line);
+      margin-top: 6px;
+    }
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    ul {
+      margin: 4px 0 0 0;
+      padding-left: 18px;
+    }
+
+    .role-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+
+    .when {
+      color: var(--muted);
+      font-size: 13.5px;
+    }
+
+    .chip {
+      background: transparent;
+      color: var(--accent);
+      padding: 3px 9px;
+      border-radius: 999px;
+      font-size: 12px;
+      border: 1px solid var(--accent);
+      white-space: nowrap;
+    }
+
+    /* ===== Print Styles ===== */
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .page {
+        margin: 0;
+        border: 0;
+        box-shadow: none;
+        page-break-after: always;
+      }
+      
+      a {
+        color: inherit;
+      }
+      
+      .tech-highlight {
+        background: #f8fafc !important;
+        border-left: 4px solid #94a3b8;
+      }
+    }
+
+    /* ===== Mobile Styles ===== */
+    @media (max-width: 920px) {
+      .page {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 12mm 0;
+      }
+      
+      .sidebar {
+        width: 100%;
+        padding: 0 16px 16px;
+        position: relative;
+        margin-bottom: 0;
+      }
+      
+      .main {
+        padding: 0 16px 16px;
+        margin-left: 0;
+      }
+      
+      .avatar {
+        width: 120px;
+        height: 120px;
+      }
+      
+      .skill-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ========= PAGE 1 ========= -->
+  <section class="page">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div style="display:flex;flex-direction:column;align-items:center">
+        <!-- Replace with real photo -->
+        <div class="avatar">
+          <div>Your Photo</div>
+        </div>
+        <div class="name">Emmanuel Gabion</div>
+        <div class="role">Full Stack Web Developer • Project Lead • E-Commerce &amp; SEO Specialist</div>
+      </div>
+
+      <div class="side-section">
+        <h4>Contact</h4>
+        <div class="contact side-muted">
+          <div><span>📞</span><span>+63 900 000 0000</span></div>
+          <div><span>✉️</span><span><a href="mailto:your.email@example.com" style="color:#d7e4ff">your.email@example.com</a></span></div>
+          <div><span>📍</span><span>Metro Manila, Philippines</span></div>
+        </div>
+      </div>
+
+      <div class="side-section">
+        <h4>Education</h4>
+        <div class="side-list">
+          <div><strong>BS in Information Technology</strong><br><span class="side-muted">Cavite State University (2008–2012)</span></div>
+        </div>
+      </div>
+
+      <div class="side-section">
+        <h4>Seminars &amp; Certifications</h4>
+        <div class="side-list side-muted">
+          <div>• Cavite IT Congress, ICT Conferences (2009–2010)</div>
+          <div>• Continuous learning in SEO, Agile, CloudOps, DevOps &amp; AI</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <section class="block">
+        <div class="header">
+          <div class="big-name">EMMANUEL <span>GABION</span></div>
+          <div class="subtitle">Full Stack Web Developer • Project Lead • E-Commerce Specialist</div>
+        </div>
+        <div class="divider"></div>
+      </section>
+
+      <section class="block">
+        <h2><span class="bar"></span>Profile</h2>
+        <p>I started out as a developer and still love building things, and over time added planning, leadership, and project management. I've spent more than a decade creating marketplaces and e-commerce systems that rank well on Google, attract users at scale, and deliver real business results in the UK and Australia.</p>
+        <p>My expertise spans full-stack development, SEO optimization, and cloud infrastructure management. I specialize in transforming complex business requirements into scalable, high-performance web applications that drive measurable results.</p>
+      </section>
+
+      <section class="block">
+        <h2><span class="bar"></span>How I Work</h2>
+
+        <div class="block">
+          <div>
+            <h3>Building with Code</h3>
+            <p class="muted">From Figma wireframes to full-stack builds, ship a real MVP people can use—then iterate.</p>
+            <div class="chips">
+              <span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">WordPress</span><span class="chip">CodeIgniter</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">TypeScript</span><span class="chip">ES6</span><span class="chip">HTML5</span><span class="chip">CSS3</span>
+              <span class="chip">SCSS</span><span class="chip">Bootstrap</span><span class="chip">Tailwind</span><span class="chip">Git</span>
+              <span class="chip">REST APIs</span><span class="chip">Test-Driven Development</span>
+            </div>
+          </div>
+
+          <div>
+            <h3>E-Commerce Know-How</h3>
+            <p class="muted">Smooth checkout, lead capture, and CRM integrations; when plugins don't fit, build bespoke.</p>
+            <div class="chips">
+              <span class="chip">WooCommerce</span><span class="chip">Stripe</span><span class="chip">Payment Gateways</span>
+              <span class="chip">Shopify (custom)</span><span class="chip">CRM Integrations</span><span class="chip">API-driven flows</span>
+            </div>
+          </div>
+
+          <div>
+            <h3>Keeping Things Running</h3>
+            <p class="muted">Deployments, servers, and performance are first-class—fast, secure, resilient under spikes.</p>
+            <div class="chips">
+              <span class="chip">AWS</span><span class="chip">Linux/Apache/Nginx</span><span class="chip">MySQL</span>
+              <span class="chip">Docker</span><span class="chip">CI/CD</span><span class="chip">Cloudflare</span><span class="chip">DNS Security</span>
+              <span class="chip">DevOps</span><span class="chip">Automated backups</span>
+            </div>
+            <div class="tech-highlight">
+              <strong>Performance &amp; Security:</strong> Proactive security hardening and comprehensive speed optimization—from server-level caching to fine-tuning database queries—for a seamless user experience.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </section>
+
+  <!-- ========= PAGE 2 ========= -->
+  <section class="page">
+    <aside class="sidebar">
+      <div style="display:flex;flex-direction:column;align-items:center">
+        <div class="name">Skills Snapshot</div>
+        <div class="role">Technical &amp; Professional</div>
+      </div>
+      <div class="side-section">
+        <h4>Core Technologies</h4>
+        <div class="skill-grid">
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+            <span class="skill-name">PHP</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel">
+            <span class="skill-name">Laravel</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress">
+            <span class="skill-name">WordPress</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <span class="skill-name">React</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue">
+            <span class="skill-name">Vue</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+            <span class="skill-name">Node.js</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+            <span class="skill-name">TypeScript</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            <span class="skill-name">ES6</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+            <span class="skill-name">HTML5</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+            <span class="skill-name">CSS3</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass">
+            <span class="skill-name">SCSS</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind">
+            <span class="skill-name">Tailwind</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+            <span class="skill-name">Bootstrap</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+            <span class="skill-name">MySQL</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+            <span class="skill-name">Git</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+            <span class="skill-name">Docker</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-section">
+        <h4>Platforms &amp; Tools</h4>
+        <div class="skill-grid">
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg" alt="WooCommerce">
+            <span class="skill-name">WooCommerce</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg" alt="Shopify">
+            <span class="skill-name">Shopify</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS">
+            <span class="skill-name">AWS</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+            <span class="skill-name">Linux</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx">
+            <span class="skill-name">Nginx</span>
+          </div>
+          <div class="skill-item">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache">
+            <span class="skill-name">Apache</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-section">
+        <h4>Advanced Capabilities</h4>
+        <div class="chips">
+          <span class="chip">WordPress Core</span>
+          <span class="chip">ACF Pro</span>
+          <span class="chip">Gutenberg</span>
+          <span class="chip">REST API</span>
+          <span class="chip">Headless WP</span>
+          <span class="chip">OOP PHP</span>
+          <span class="chip">Composer</span>
+          <span class="chip">WP-CLI</span>
+          <span class="chip">Security</span>
+          <span class="chip">Performance</span>
+          <span class="chip">JAMstack</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Testing</span>
+          <span class="chip">PWAs</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="block">
+        <h2><span class="bar"></span>How I Work (Continued)</h2>
+
+        <div class="block">
+          <div>
+            <h3>Getting Seen Online</h3>
+            <p class="muted">Launch is step one. Sites must be fast, rank well, feel smooth, and convert.</p>
+            <div class="chips">
+              <span class="chip">Technical SEO</span><span class="chip">Core Web Vitals</span><span class="chip">Google Algorithm</span>
+              <span class="chip">Mobile responsive</span><span class="chip">CRO</span><span class="chip">HubSpot</span><span class="chip">GA4/GTM</span>
+            </div>
+          </div>
+
+          <div>
+            <h3>Pioneering Solutions</h3>
+            <p class="muted">Because sometimes, the best solution is one you build yourself. If it doesn't exist, create it. AI-assisted solutions &amp; custom plugins keep progress moving.</p>
+            <div class="chips">
+              <span class="chip">Custom plugins</span><span class="chip">Theme customization</span><span class="chip">Custom builds</span>
+              <span class="chip">AI integrations</span><span class="chip">API dev</span><span class="chip">Wireframes &amp; prototypes</span>
+            </div>
+            <div class="tech-highlight">
+              <strong>Appliying WordPress Expertise:</strong> Advanced Custom Fields, custom post types, taxonomies, and extending WordPress through actions/filters. Building maintainable, scalable solutions.
+            </div>
+          </div>
+
+          <div>
+            <h3>Working with People</h3>
+            <p class="muted">I keep collaboration simple and effective. Through regular updates and a transparent process, we'll make sure the work not only meets but exceeds your expectations.</p>
+            <div class="chips">
+              <span class="chip">Agile/Scrum</span><span class="chip">Stakeholder updates</span><span class="chip">Sprint planning</span>
+              <span class="chip">Pair-Programming</span><span class="chip">Client consulting</span>
+            </div>
+          </div>
+
+          <div>
+            <h3>Mindset</h3>
+            <p class="muted">I believe a good solution today is better than a perfect one next year. We'll get to a working version quickly and make it even better together.</p>
+            <div class="chips">
+              <span class="chip">Continuous improvement</span><span class="chip">Adaptable</span><span class="chip">Minimum Viable Product</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2><span class="bar"></span>Work Experience</h2>
+
+        <div class="role-row">
+          <div><strong>Freelance Web Developer / Project Lead <span class="muted">(Remote)</span></strong></div>
+          <div class="when">2023 – Present</div>
+        </div>
+        <p>Fully remote, collaborating with clients in the UK, Australia, and the US. Mix of hands-on development with consulting, planning, deployments, SEO, and optimisation—from strategy calls and wireframes to server setups and post-launch improvements. <span class="muted">See "Notable Projects" for details.</span></p>
+
+        <div class="tech-highlight">
+          <strong>Modern Stack:</strong> Headless WordPress with React/Next.js frontends, TypeScript for robust applications, and modern DevOps practices with Docker and CI/CD pipelines.
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="role-row">
+          <div><strong>To The Top Agency — Lead Software Engineer / Web Server Admin / SEO Specialist</strong></div>
+          <div class="when">Feb 2020 – 2023 • Taguig, Metro Manila</div>
+        </div>
+        <ul>
+          <li>Lead developer for <strong>WhatStorage.co.uk</strong>, <strong>WhatRemovals.co.uk</strong>, and <strong>WhatManAndVan.co.uk</strong>—top UK marketplace platforms ranking highly on Google and generating thousands of monthly leads.</li>
+          <li>Owned planning, development, deployments, operations (24/7 uptime), SEO strategy, and cloud hosting.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">PHP</span><span class="chip">WordPress (Sage)</span><span class="chip">Laravel</span>
+          <span class="chip">WooCommerce</span><span class="chip">SEO</span><span class="chip">CloudOps</span>
+        </div>
+        <div class="tech-highlight">
+          <strong>Technical Leadership:</strong> Implemented WordPress multisite architectures, custom WooCommerce extensions, and performance optimization strategies that improved Core Web Vitals scores by 40%.
+        </div>
+      </section>
+    </main>
+  </section>
+
+  <!-- ========= PAGE 3 ========= -->
+  <section class="page">
+    <aside class="sidebar">
+      <div style="display:flex;flex-direction:column;align-items:center">
+        <div class="name">Work History</div>
+        <div class="role">2012 - 2020</div>
+      </div>
+      <div class="side-section">
+        <h4>Earlier Career</h4>
+        <div class="side-muted">Progression from developer to team lead with increasing responsibilities across web development, server administration, and project leadership.</div>
+      </div>
+      <div class="side-section">
+        <h4>Development Evolution</h4>
+        <div class="side-muted">From foundational HTML/CSS/JavaScript to advanced full-stack development with modern frameworks and DevOps practices.</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="block">
+        <h2><span class="bar"></span>Work Experience (Continued)</h2>
+
+        <div class="role-row" style="margin-top:2mm">
+          <div><strong>R Financial Educators Pty Ltd — Software Engineer / Web Server Admin / Web Marketing Specialist</strong></div>
+          <div class="when">Sept 2018 – Jan 2020 • Alabang, Muntinlupa</div>
+        </div>
+        <ul>
+          <li>Planned, developed, and deployed company websites; managed databases, SSL, domains, and hosting.</li>
+          <li>Built <em>retirementservicesaustralia.com.au</em>, <em>rfinancialeducators.com.au</em>, <em>rfegroup.com.au</em>; supported EDMs, video, and social campaigns.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">PHP</span><span class="chip">WordPress</span><span class="chip">MySQL</span>
+          <span class="chip">Bootstrap</span><span class="chip">HubSpot CMS</span><span class="chip">Litmus</span><span class="chip">Adobe Suite</span>
+        </div>
+
+        <div class="tech-highlight">
+          <strong>Full-Stack Growth:</strong> Expanded into modern JavaScript (ES6+), build tools like Webpack/Vite, and advanced WordPress development with custom plugins and theme architectures.
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="role-row">
+          <div><strong>Pinion Software Consulting and Apps Inc — PHP Developer / AWS Administrator</strong></div>
+          <div class="when">Feb 2018 – Sept 2018 • Makati City</div>
+        </div>
+        <ul>
+          <li>WordPress &amp; Laravel projects, including a Norwegian crowdfunding platform and local e-commerce sites.</li>
+          <li>Managed AWS hosting and server-side setups.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">PHP</span><span class="chip">WordPress</span><span class="chip">Laravel</span>
+          <span class="chip">React</span><span class="chip">Vue</span><span class="chip">NodeJS</span><span class="chip">AWS</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="role-row">
+          <div><strong>Forthmedia Interactive Solutions — Senior PHP Developer</strong></div>
+          <div class="when">May 2017 – Jan 2018 • Makati City</div>
+        </div>
+        <ul>
+          <li>Built the SM Advantage Card portal; contributed to SM Home's online product catalogue and a commercial property website.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">Native PHP</span><span class="chip">jQuery</span><span class="chip">Bootstrap</span>
+          <span class="chip">MySQL</span><span class="chip">REST</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="role-row">
+          <div><strong>Truelogic Online Solutions — PHP Developer</strong></div>
+          <div class="when">Jul 2016 – Feb 2017 • Makati City</div>
+        </div>
+        <ul>
+          <li>Maintained and enhanced an internal project monitoring system; learned agile workflows and modern JS stacks.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">CodeIgniter</span><span class="chip">Laravel</span><span class="chip">React</span>
+          <span class="chip">AngularJS</span><span class="chip">SASS</span><span class="chip">MySQL</span><span class="chip">Git</span>
+        </div>
+        
+      </section>
+    </main>
+  </section>
+
+  <!-- ========= PAGE 4 ========= -->
+  <section class="page">
+    <aside class="sidebar">
+      <div style="display:flex;flex-direction:column;align-items:center">
+        <div class="name">Early Career</div>
+        <div class="role">Team Leadership &amp; Development</div>
+      </div>
+      <div class="side-section">
+        <h4>Career Progression</h4>
+        <div class="side-muted">From internship to team leadership, demonstrating consistent growth in technical skills and project responsibility.</div>
+      </div>
+      <div class="side-section">
+        <h4>Foundational Skills</h4>
+        <div class="side-muted">Built expertise in core web technologies, database management, and server administration that form the foundation of modern full-stack development.</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="block">
+        <h2><span class="bar"></span>Work Experience (Continued)</h2>
+
+        <div class="role-row">
+          <div><strong>Mobile Group Inc — Team Leader / Software Engineer</strong></div>
+          <div class="when">Oct 2012 – Jul 2016 • Makati City</div>
+        </div>
+        <ul>
+          <li>Lead developer for SM Tickets; evolved from system developer to team lead covering APIs, POS/CMS, and device integrations.</li>
+          <li>Built coupon validation, turnstile integration, handheld validation, and kiosk redemption systems.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">CodeIgniter</span><span class="chip">C#</span><span class="chip">.NET Compact</span>
+          <span class="chip">REST APIs</span><span class="chip">MySQL</span><span class="chip">Linux</span><span class="chip">Python</span>
+        </div>
+
+        <div class="tech-highlight">
+          <strong>API &amp; Integration Expertise:</strong> Developed robust RESTful APIs, database design skills, and system integration capabilities that translate directly to modern headless and microservices architectures.
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="role-row">
+          <div><strong>InfoMan — Developer / SEO Officer (Internship)</strong></div>
+          <div class="when">Apr 2011 – May 2011 • Makati City</div>
+        </div>
+        <ul>
+          <li>WordPress development, layout tweaks, content management, and moderation for foodfor2.com.</li>
+        </ul>
+        <div class="tech-highlight">
+          <strong>Career Foundation:</strong> Began with core WordPress knowledge, HTML/CSS fundamentals, and SEO principles that have evolved into comprehensive full-stack expertise.
+        </div>
+      </section>
+
+      <section class="block">
+        <h2><span class="bar"></span>Notable Projects — Law Firms</h2>
+        <ul>
+          <li><strong>filepino.com</strong> — Company formation &amp; compliance services (PH). Lead-gen CMS with hubs, guides, and quote/contact flows that convert into booked consultations.</li>
+          <li><strong>telehrsolutions.com</strong> — Employer of Record/PEO. Credibility site with consultation booking, testimonials, and service pages converting organic &amp; referral traffic.</li>
+          <li><strong>akasyavirtualoffice.com</strong> — Virtual office in BGC. Plan-comparison enquiry site with feature tables, location proof, and prompts nudging enquiries.</li>
+          <li><strong>duranschulze.com</strong> — Full-service PH law firm. Practice-area hub with lawyer bios, articles, and "book a consult" CTAs converting info queries into appointments.</li>
+          <li><strong>apostillepinoy.com</strong> — Document authentication/procurement. Quote/order platform with service menus and turnaround info that convert into paid processing.</li>
+        </ul>
+        <div class="tech-highlight">
+          <strong>Technical Implementation:</strong> Custom WordPress themes with Advanced Custom Fields, WooCommerce integrations, performance optimization, and security hardening for client data protection.
+        </div>
+      </section>
+    </main>
+  </section>
+
+  <!-- ========= PAGE 5 ========= -->
+  <section class="page">
+    <aside class="sidebar">
+      <div style="display:flex;flex-direction:column;align-items:center">
+        <div class="name">Portfolio</div>
+        <div class="role">AU &amp; US Projects</div>
+      </div>
+      <div class="side-section">
+        <h4>Tech &amp; Ops</h4>
+        <div class="chips">
+          <span class="chip">WooCommerce</span><span class="chip">Payment gateways</span>
+          <span class="chip">Custom themes</span><span class="chip">Cloud hosting</span>
+          <span class="chip">SEO &amp; CRO</span><span class="chip">Analytics</span>
+        </div>
+      </div>
+      <div class="side-section">
+        <h4>Modern Architecture</h4>
+        <div class="side-muted">Implementing JAMstack, headless architectures, and modern DevOps practices for scalable, high-performance applications.</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="block">
+        <h2><span class="bar"></span>Notable Projects — AU</h2>
+        <ul>
+          <li><strong>fencingquotesonline.com.au</strong> — Online estimator for residential fencing. Form-driven funnel with calculators &amp; suburb pages capturing SEO/ads intent into a sales queue.</li>
+          <li><strong>pavingsupplies.com.au</strong> — Natural stone pavers/tile storefront. Category catalogue with cart &amp; quick-quote; location hubs (Melbourne/Sydney/Brisbane) + remarketing.</li>
+          <li><strong>newlinepainting.com.au</strong> — Residential/commercial painters. Service-area lead site with instant-quote CTAs, suburb pages, galleries; turns traffic into booked visits.</li>
+          <li><strong>sidepost.com.au</strong> — Nationwide home-services marketplace. Postcode-based booking with service/location landers; converts via online scheduling, 1300 calls, contractor onboarding.</li>
+          <li><strong>retainingwallsupplies.com.au</strong> — Concrete sleepers &amp; posts supplier (AU-wide). Quote-led catalogue, regional landers, specs, and click-to-call driving phone quotes &amp; enquiries.</li>
+          <li><strong>gymnearme.net.au</strong> — National gym directory/comparison. Two-sided listings with SEO suburb pages for consumers and owner signups/featured placements driving enquiries.</li>
+        </ul>
+        <div class="tech-highlight">
+          <strong>Technical Stack:</strong> WordPress multisite, custom WooCommerce implementations, Advanced Custom Fields for complex data structures, and performance optimization for Australian audiences.
+        </div>
+      </section>
+
+      <section class="block">
+        <h2><span class="bar"></span>Notable Projects — US</h2>
+        <ul>
+          <li><strong>redbrickwinery.com</strong> — Winery with online shop &amp; wine club (PA). DTC shopfront with products, subscriptions, venues/events; drives orders, club signups &amp; footfall.</li>
+          <li><strong>guavasourcing.com</strong> — Sourcing &amp; QC partner for SMEs/e-com. Credibility site with intake forms &amp; case-style copy converting SEO/founder networks/LinkedIn into calls.</li>
+          <li><strong>supernovasourcing.com</strong> — Remote-team &amp; sourcing support. Consultation-driven site with role-based landers capturing demand via bookings, niche SEO &amp; referrals.</li>
+          <li><strong>zervasourcing.com</strong> — VAs for home-service businesses. Specialisation-led lander with simple 4-step hiring flow, testimonials, and "book a consult" CTAs that convert.</li>
+        </ul>
+        <div class="tech-highlight">
+          <strong>Modern Development:</strong> Headless WordPress setups, React/Next.js frontends, TypeScript for type safety, and modern deployment pipelines with Docker and CI/CD.
+        </div>
+        <div class="divider"></div>
+        <p class="muted">Detailed stacks, infra choices, and measurable outcomes available on request.</p>
+      </section>
+    </main>
+  </section>
+
+  <!-- ========= PAGE 6 ========= -->
+  <section class="page">
+    <aside class="sidebar">
+      <div style="display:flex;flex-direction:column;align-items:center">
+        <div class="name">Additional Information</div>
+        <div class="role">References &amp; Availability</div>
+      </div>
+      <div class="side-section">
+        <h4>References</h4>
+        <div class="side-muted">Professional references available upon request from previous clients and employers.</div>
+      </div>
+      <div class="side-section">
+        <h4>Availability</h4>
+        <div class="side-muted">Available for full-time remote positions or project-based contracts. Flexible to work across time zones.</div>
+      </div>
+      <div class="side-section">
+        <h4>Portfolio</h4>
+        <div class="side-muted">Complete portfolio with live project links and case studies available upon request.</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="block">
+        <h2><span class="bar"></span>Professional Summary</h2>
+        <p>With over a decade of experience in full-stack web development, I bring a unique combination of technical expertise and business acumen to every project. My journey from hands-on coding to project leadership has given me a comprehensive understanding of the entire software development lifecycle.</p>
+        
+        <div class="tech-highlight">
+          <strong>Key Strengths:</strong> Technical architecture, performance optimization, SEO strategy, team leadership, and client communication. Able to bridge the gap between technical requirements and business objectives.
+        </div>
+      </section>
+
+      <section class="block">
+        <h2><span class="bar"></span>Methodology &amp; Approach</h2>
+        
+        <div class="block">
+          <div>
+            <h3>Agile Development</h3>
+            <p class="muted">I follow agile principles with a focus on delivering working software quickly and iterating based on feedback. Regular communication and transparency are key to successful project outcomes.</p>
+          </div>
+
+          <div>
+            <h3>Quality Assurance</h3>
+            <p class="muted">Every project undergoes rigorous testing including cross-browser compatibility, mobile responsiveness, performance optimization, and security hardening before deployment.</p>
+          </div>
+
+          <div>
+            <h3>Continuous Improvement</h3>
+            <p class="muted">I believe in constantly learning and adapting to new technologies and methodologies. Regular code reviews, performance monitoring, and post-launch optimizations ensure long-term success.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2><span class="bar"></span>Contact Information</h2>
+        <div class="contact">
+          <div><span>📞</span><span>+63 900 000 0000</span></div>
+          <div><span>✉️</span><span><a href="mailto:your.email@example.com">your.email@example.com</a></span></div>
+          <div><span>📍</span><span>Metro Manila, Philippines</span></div>
+          <div><span>🌐</span><span><a href="https://yourportfolio.com">yourportfolio.com</a></span></div>
+          <div><span>💼</span><span><a href="https://linkedin.com/in/yourprofile">LinkedIn Profile</a></span></div>
+        </div>
+        <div class="divider"></div>
+        <p class="muted" style="text-align: center; margin-top: 10mm;">Thank you for reviewing my resume. I look forward to the opportunity to discuss how I can contribute to your organization.</p>
+      </section>
+    </main>
+  </section>
+
+</body></html>

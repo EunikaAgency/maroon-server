@@ -1,0 +1,1 @@
+console.log('Custom WPForm script loaded');
