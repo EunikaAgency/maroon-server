@@ -1,0 +1,592 @@
+<?php
+// Shortcode handler
+add_shortcode('shortcode', function ($attr) {
+    if (isset($attr['name'])) {
+        $form_name = sanitize_file_name($attr['name']);
+        $template_path = get_template_directory() . "/shortcode/{$form_name}.php";
+
+        if (file_exists($template_path)) {
+            wp_enqueue_style('dropzone-css', 'https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css', [], '5.9.3');
+            wp_enqueue_script('dropzone-js', 'https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js', [], '5.9.3', true);
+
+            $css_path = get_template_directory() . "/shortcode/assets/css/{$form_name}.css";
+            if (file_exists($css_path)) {
+                wp_enqueue_style("{$form_name}-css", get_template_directory_uri() . "/shortcode/assets/css/{$form_name}.css", [], filemtime($css_path));
+            }
+
+            $js_path = get_template_directory() . "/shortcode/assets/js/{$form_name}.js";
+            if (file_exists($js_path)) {
+                wp_enqueue_script("{$form_name}-js", get_template_directory_uri() . "/shortcode/assets/js/{$form_name}.js", ['dropzone-js'], filemtime($js_path), true);
+                wp_localize_script("{$form_name}-js", 'formSubmits', [
+                    'ajax_url' => admin_url('admin-ajax.php'),
+                    'nonce'    => wp_create_nonce('form_submits')
+                ]);
+            }
+
+            ob_start();
+            include $template_path;
+            return ob_get_clean();
+        }
+    }
+    return '';
+});
+
+// Dropzone upload returns file URL
+add_action('wp_ajax_dropzone_upload', 'handle_dropzone_upload');
+add_action('wp_ajax_nopriv_dropzone_upload', 'handle_dropzone_upload');
+
+function handle_dropzone_upload() {
+    check_ajax_referer('form_submits');
+    require_once ABSPATH . 'wp-admin/includes/file.php';
+
+    $uploaded_file = $_FILES['file'] ?? null;
+    if (!$uploaded_file) {
+        wp_send_json_error(['message' => 'No file received']);
+    }
+
+    $upload = wp_handle_upload($uploaded_file, ['test_form' => false]);
+
+    if (!empty($upload['url'])) {
+        wp_send_json_success(['url' => $upload['url']]);
+    } else {
+        wp_send_json_error(['message' => 'Upload failed']);
+    }
+}
+
+// Save image to media library, return attachment ID
+function save_url_to_media_library($url) {
+    require_once ABSPATH . 'wp-admin/includes/image.php';
+    require_once ABSPATH . 'wp-admin/includes/file.php';
+    require_once ABSPATH . 'wp-admin/includes/media.php';
+
+    $tmp = download_url($url);
+    if (is_wp_error($tmp)) return false;
+
+    $filename = basename($url);
+    $file_array = [
+        'name'     => $filename,
+        'tmp_name' => $tmp,
+    ];
+
+    $id = media_handle_sideload($file_array, 0);
+
+    if (is_wp_error($id)) {
+        @unlink($tmp);
+        return false;
+    }
+
+    return $id;
+}
+
+// Subscribe form AJAX handler
+add_action('wp_ajax_submit_subscribe_form', 'handle_subscribe_form');
+add_action('wp_ajax_nopriv_submit_subscribe_form', 'handle_subscribe_form');
+
+function handle_subscribe_form() {
+    check_ajax_referer('form_submits');
+    global $wpdb;
+
+    $email = sanitize_email($_POST['email'] ?? '');
+    if (!$email || !is_email($email)) {
+        wp_send_json_error(['message' => 'Invalid email address.']);
+    }
+
+    // Insert email into database
+    $inserted = $wpdb->insert('form_subscribe', [
+        'email' => $email,
+        'created_at' => current_time('mysql', 1)
+    ]);
+
+    if (false === $inserted) {
+        wp_send_json_error(['message' => 'Failed to save subscription.']);
+    }
+
+    // Send notification email
+    $admin_email = 'kamiyokuno@gmail.com';
+    $subject = "New Email Subscription";
+    $email_body_header = "New Email Subscription";
+
+    ob_start();
+    include get_template_directory() . '/shortcode/email/email-subscribe.php';
+    $message = ob_get_clean();
+
+    $headers = ['Content-Type: text/html; charset=UTF-8'];
+    $sent = wp_mail($admin_email, $subject, $message, $headers);
+
+    if ($sent) {
+        wp_send_json_success(['sent' => true]);
+    } else {
+        wp_send_json_error(['message' => 'Subscription saved but failed to send notification.']);
+    }
+}
+
+// Contact form handler
+add_action('wp_ajax_submit_contact_form', 'handle_contact_form');
+add_action('wp_ajax_nopriv_submit_contact_form', 'handle_contact_form');
+
+function handle_contact_form() {
+    check_ajax_referer('form_submits');
+    global $wpdb;
+
+    $firstname         = sanitize_text_field($_POST['firstname'] ?? '');
+    $phonenumber       = sanitize_text_field($_POST['phonenumber'] ?? '');
+    $email             = sanitize_email($_POST['email'] ?? '');
+    $message_body      = sanitize_textarea_field($_POST['message'] ?? '');
+    $quantity          = sanitize_text_field($_POST['quantity'] ?? '');
+    $contact_methods    = array_map('sanitize_text_field', $_POST['prefercontact_method'] ?? []);
+    $garment_types      = array_map('sanitize_text_field', $_POST['garment_type'] ?? []);
+    $decoration_methods = array_map('sanitize_text_field', $_POST['decoration_method'] ?? []);
+
+    $uploaded_file_urls = json_decode(stripslashes($_POST['uploaded_files'][0] ?? '[]'), true);
+    $attachment_ids = [];
+    $attachments = [];
+
+    if (!empty($uploaded_file_urls)) {
+        foreach ($uploaded_file_urls as $url) {
+            $id = save_url_to_media_library($url);
+            if ($id) {
+                $attachment_ids[] = $id;
+            }
+
+            // Prepare temp files for email attachment
+            if (filter_var($url, FILTER_VALIDATE_URL)) {
+                $file_path = download_url($url);
+                if (!is_wp_error($file_path)) {
+                    $attachments[] = $file_path;
+                }
+            }
+        }
+    }
+
+    // Insert to form_contact table
+    $wpdb->insert('form_contact', [
+        'name'                     => $firstname,
+        'contact_number'           => $phonenumber,
+        'email'                    => $email,
+        'preferred_contact_method' => implode(',', $contact_methods),
+        'type_of_garments'         => implode(',', $garment_types),
+        'decoration_method'        => implode(',', $decoration_methods),
+        'quantity'                 => $quantity,
+        'idea'                     => $message_body,
+        'image_uploaded'           => implode(',', $attachment_ids),
+        'created_at' => current_time('mysql', 1)
+    ]);
+
+    $admin_email = 'christianleemontero@gmail.com';
+    $email_data = compact('firstname', 'phonenumber', 'email', 'message_body', 'quantity', 'contact_methods', 'garment_types', 'decoration_methods');
+    $email_data['email_body_header'] = 'New Contact Submission';
+    extract($email_data);
+
+    ob_start();
+    include get_template_directory() . '/shortcode/email/email-contact.php';
+    $email_message = ob_get_clean();
+
+    $headers = ['Content-Type: text/html; charset=UTF-8'];
+    $subject = 'New Contact Form Submission';
+
+    $sent = wp_mail($admin_email, $subject, $email_message, $headers, $attachments);
+
+    // Cleanup temp files
+    foreach ($attachments as $file) {
+        @unlink($file);
+    }
+
+    if ($sent) {
+        wp_send_json_success(['sent' => true]);
+    } else {
+        wp_send_json_error(['message' => 'Email failed to send.']);
+    }
+}
+
+// Mockup form handler
+add_action('wp_ajax_submit_mockup_form', 'handle_mockup_form');
+add_action('wp_ajax_nopriv_submit_mockup_form', 'handle_mockup_form');
+
+function handle_mockup_form() {
+    check_ajax_referer('form_submits');
+    global $wpdb;
+
+    // Get form data
+    $businessname   = sanitize_text_field($_POST['businessname'] ?? '');
+    $firstname      = sanitize_text_field($_POST['firstname'] ?? '');
+    $phonenumber    = sanitize_text_field($_POST['phonenumber'] ?? '');
+    $email          = sanitize_email($_POST['email'] ?? '');
+    $message_body   = sanitize_textarea_field($_POST['message'] ?? '');
+    $quantity       = intval($_POST['quantity'] ?? 0);
+    // $type_of_print  = sanitize_text_field($_POST['type_of_print'] ?? '');
+    $type_of_print  = isset($_POST['type_of_print']) ? implode(', ', array_map('sanitize_text_field', (array)$_POST['type_of_print'])) : [];
+    $type_of_print  = isset($_POST['type_of_print']) ? implode(', ', array_map('sanitize_text_field', (array)$_POST['type_of_print'])) : '';
+    $print_location = isset($_POST['print_location']) ? array_map('sanitize_text_field', (array)$_POST['print_location']) : [];
+
+    $has_product    = isset($_POST['has_product']) && $_POST['has_product'] === 'true';
+    $product_id     = $has_product && !empty($_POST['product_id']) ? intval($_POST['product_id']) : null;
+    $productname    = $has_product ? sanitize_text_field($_POST['productname'] ?? '') : '';
+
+    // If a product is specified, validate it exists
+    if ($has_product && $product_id) {
+        $product_exists = $wpdb->get_var(
+            $wpdb->prepare("SELECT COUNT(*) FROM wp_wc_product_meta_lookup WHERE product_id = %d", $product_id)
+        );
+        if (!$product_exists) {
+            wp_send_json_error(['message' => 'Invalid product ID']);
+        }
+    }
+
+    // Initialize file handling variables
+    $attachment_ids  = [];
+    $attachments     = [];
+    $uploaded_files  = [];
+
+    if (!$has_product) {
+        $uploaded_file_urls = isset($_POST['uploaded_files']) ? json_decode(stripslashes($_POST['uploaded_files'][0]), true) : [];
+
+        if (!empty($uploaded_file_urls)) {
+            foreach ($uploaded_file_urls as $url) {
+                if (filter_var($url, FILTER_VALIDATE_URL)) {
+                    // Save to media library
+                    $id = save_url_to_media_library($url);
+                    if ($id) {
+                        $attachment_ids[] = $id;
+                    }
+
+                    // Prepare for email attachment
+                    $file_path = download_url($url);
+                    if (!is_wp_error($file_path)) {
+                        $attachments[] = $file_path;
+                    }
+
+                    $uploaded_files[] = $url;
+                }
+            }
+        }
+    }
+
+    // Insert into database
+    $wpdb->insert('form_mockup', [
+        'business_name'   => $businessname,
+        'name'            => $firstname,
+        'contact_number'  => $phonenumber,
+        'email'           => $email,
+        'quantity'        => $quantity,
+        // 'type_of_print'   => implode(', ', $type_of_print),
+        'type_of_print'   => $type_of_print, // already a string now
+        'print_location'  => implode(', ', $print_location),
+        'idea'            => $message_body,
+        'image_uploaded'  => implode(',', $attachment_ids),
+        'product_id'      => $product_id, // null if no valid product
+        'created_at' => current_time('mysql', 1)
+    ]);
+
+    // If product exists, add to cart
+    if ($has_product && $product_id) {
+        // Clear any existing cart items
+        // WC()->cart->empty_cart();
+        
+        // Add product to cart with form data as cart item data
+        $cart_item_data = [
+            'mockup_data' => [
+                'business_name'  => $businessname,
+                'contact_name'  => $firstname,
+                'phone_number'   => $phonenumber,
+                'email'          => $email,
+                'message'       => $message_body,
+                'type_of_print' => $type_of_print,
+                'print_location' => $print_location,
+                'uploaded_files' => $uploaded_files,
+            ]
+        ];
+        
+        $added = WC()->cart->add_to_cart($product_id, $quantity, 0, [], $cart_item_data);
+        
+        if (!$added) {
+            wp_send_json_error(['message' => 'Failed to add product to cart']);
+        }
+    }
+
+    // Prepare email data
+    // mail.2kthreads@gmail.com
+    $admin_email = 'christianleemontero@gmail.com';
+    $email_body_header = "New Qoute Request Submission";
+    $email_data = [
+        'businessname'     => $businessname,
+        'firstname'        => $firstname,
+        'phonenumber'      => $phonenumber,
+        'email'            => $email,
+        'quantity'         => $quantity,
+        'type_of_print'    => $type_of_print,
+        'print_location'   => $print_location,
+        'message_body'     => $message_body,
+        'productname'      => $productname,
+        'has_product'      => $has_product,
+        'uploaded_files'   => $uploaded_files,
+        'email_body_header'=> 'New Qoute Request Submission'
+    ];
+
+    // Generate email message
+    ob_start();
+    include get_template_directory() . '/shortcode/email/email-mockup.php';
+    $email_message = ob_get_clean();
+
+    $headers = ['Content-Type: text/html; charset=UTF-8'];
+    $subject = $has_product ? 
+        "New Qoute Request Submission" : 
+        "New Qoute Request Submission";
+
+    $sent = wp_mail($admin_email, $subject, $email_message, $headers, $attachments);
+
+    // Cleanup temp files
+    foreach ($attachments as $file) {
+        if (file_exists($file)) {
+            @unlink($file);
+        }
+    }
+
+    if ($sent) {
+        $response = ['message' => 'Form submitted successfully'];
+        
+        // If product was added to cart, include cart URL in response
+        if ($has_product && $product_id) {
+            $response['redirect_url'] = wc_get_cart_url();
+        } else {
+            $response['redirect_url'] = '/submission/';
+        }
+        
+        wp_send_json_success($response);
+    } else {
+        wp_send_json_error(['message' => 'Email failed to send']);
+    }
+}
+
+
+// Getquote form handler
+add_action('wp_ajax_submit_getquote_form', 'handle_getquote_form');
+add_action('wp_ajax_nopriv_submit_getquote_form', 'handle_getquote_form');
+
+function handle_getquote_form() {
+    check_ajax_referer('form_submits');
+    global $wpdb;
+
+    // Get and sanitize form data
+    $businessname   = sanitize_text_field($_POST['businessname'] ?? '');
+    $firstname      = sanitize_text_field($_POST['firstname'] ?? '');
+    $phonenumber    = sanitize_text_field($_POST['phonenumber'] ?? '');
+    $email          = sanitize_email($_POST['email'] ?? '');
+    $message_body   = sanitize_textarea_field($_POST['message'] ?? '');
+    $quantity       = intval($_POST['quantity'] ?? 0);
+    $type_of_print  = sanitize_text_field($_POST['type_of_print'] ?? '');
+    $print_location = array_map('sanitize_text_field', $_POST['print_location'] ?? []);
+    $colour         = sanitize_text_field($_POST['colour'] ?? '');
+    $canvas_data    = $_POST['canvas_data'] ?? '';
+    $uploaded_images_data = isset($_POST['uploaded_images_data']) ? json_decode(stripslashes($_POST['uploaded_images_data']), true) : [];
+
+    $product_id     = !empty($_POST['product_id']) ? intval($_POST['product_id']) : 0;
+    $productname    = '';
+    $product_permalink = '';
+
+
+    if ($product_id) {
+        $product = wc_get_product($product_id);
+        if ($product) {
+            $productname = $product->get_name();
+            $product_permalink = get_permalink($product_id);
+        }
+    }
+
+    // Handle canvas image (base64)
+    $canvas_attachment_ids = []; // Only canvas images
+    $attachments = [];
+
+    if (!empty($canvas_data) && strpos($canvas_data, 'data:image/') === 0) {
+        $upload_dir = wp_upload_dir();
+        $filename = 'custom-design-' . time() . '.png';
+        $file_path = $upload_dir['path'] . '/' . $filename;
+
+        $canvas_data = str_replace('data:image/png;base64,', '', $canvas_data);
+        $canvas_data = str_replace(' ', '+', $canvas_data);
+        $image_data = base64_decode($canvas_data);
+
+        if ($image_data && file_put_contents($file_path, $image_data)) {
+            $file_url = $upload_dir['url'] . '/' . $filename;
+
+            $attach_id = save_url_to_media_library($file_url);
+            if ($attach_id) $canvas_attachment_ids[] = $attach_id;
+
+            $attachments[] = $file_path;
+        }
+    }
+
+    // Process uploaded images (not part of design_image)
+    $uploaded_image_urls = [];
+    $uploaded_attachment_ids = [];
+
+    if (!empty($uploaded_images_data) && is_array($uploaded_images_data)) {
+        foreach ($uploaded_images_data as $image_url) {
+            $clean_url = esc_url_raw($image_url);
+            if ($clean_url) {
+                $uploaded_image_urls[] = $clean_url;
+
+                // Download the image to a temp file
+                $tmp_file = download_url($clean_url);
+
+                if (!is_wp_error($tmp_file)) {
+                    $attachments[] = $tmp_file; // Add temp file to email attachments
+
+                    // Optional: Save to media library
+                    $attach_id = save_url_to_media_library($clean_url);
+                    if ($attach_id) {
+                        $uploaded_attachment_ids[] = $attach_id;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Insert to DB
+    $wpdb->insert('form_getquote', [
+        'business_name'    => $businessname,
+        'name'             => $firstname,
+        'contact_number'   => $phonenumber,
+        'email'            => $email,
+        'message'          => $message_body,
+        'quantity'         => $quantity,
+        'type_of_print'    => $type_of_print,
+        'print_location'   => implode(', ', $print_location),
+        'product_id'       => $product_id,
+        'colour'           => $colour,
+        'design_image'     => implode(',', $canvas_attachment_ids), // ✅ Only canvas images
+        'uploaded_images'  => implode(', ', $uploaded_image_urls),
+        'created_at'       => current_time('mysql', 1)
+    ]);
+
+    $redirect_url = '/submission/';
+
+    // Add to cart if product exists
+    if ($product_id && $quantity > 0 && function_exists('WC')) {
+        if (!WC()->cart) {
+            wc_load_cart();
+        }
+
+        $product = wc_get_product($product_id);
+        if (!$product || !$product->is_purchasable()) {
+            wp_send_json_error(['message' => 'Product not available for purchase.']);
+        }
+
+        // Prepare cart item data
+        $cart_item_data = [
+            'getquote_data' => [
+                'business_name'   => $businessname,
+                'contact_name'    => $firstname,
+                'phone_number'    => $phonenumber,
+                'email'           => $email,
+                'message'         => $message_body,
+                'type_of_print'   => $type_of_print,
+                'print_location'  => $print_location,
+                'colour'          => $colour,
+                'design_image'    => $canvas_attachment_ids,
+                'uploaded_images' => $uploaded_image_urls
+            ],
+            // Only add unique_key if you want to force separate items
+            // 'unique_key' => md5(json_encode($custom_data)) // Optional
+        ];
+
+        // Handle variable product attributes
+        $attributes = [];
+        $variation_id = 0;
+        
+        if ($colour) {
+            $attributes['attribute_pa_colour'] = $colour;
+        }
+
+        if ($product->get_type() === 'variable') {
+            $data_store = WC_Data_Store::load('product');
+            $variation_id = $data_store->find_matching_product_variation($product, $attributes);
+            
+            if (!$variation_id) {
+                wp_send_json_error(['message' => 'Matching variation not found.']);
+            }
+        }
+
+        // Check if an identical item already exists in the cart
+        $found_item_key = false;
+        foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
+            if (
+                $cart_item['product_id'] == $product_id &&
+                $cart_item['variation_id'] == $variation_id &&
+                isset($cart_item['getquote_data']) &&
+                $cart_item['getquote_data'] == $cart_item_data['getquote_data']
+            ) {
+                $found_item_key = $cart_item_key;
+                break;
+            }
+        }
+
+        if ($found_item_key) {
+            // Update quantity if the same item exists
+            $new_quantity = $quantity + WC()->cart->get_cart_item($found_item_key)['quantity'];
+            WC()->cart->set_quantity($found_item_key, $new_quantity);
+        } else {
+            // Add as new item if not found
+            $cart_result = WC()->cart->add_to_cart(
+                $product_id, 
+                $quantity, 
+                $variation_id, 
+                $attributes, 
+                $cart_item_data
+            );
+
+            if (!$cart_result) {
+                wp_send_json_error(['message' => 'Failed to add product to cart.']);
+            }
+        }
+
+        $redirect_url = wc_get_cart_url();
+    }
+
+    // Prepare email
+    $admin_email = 'christianleemontero@gmail.com';
+    $email_data = [
+        'businessname'         => $businessname,
+        'firstname'            => $firstname,
+        'phonenumber'          => $phonenumber,
+        'email'                => $email,
+        'message_body'         => $message_body,
+        'quantity'             => $quantity,
+        'type_of_print'        => $type_of_print,
+        'print_location'       => $print_location,
+        'colour'               => $colour,
+        'product_id'           => $product_id,
+        'productname'          => $productname,
+        'product_permalink'    => $product_permalink,
+        'uploaded_images_data' => $uploaded_image_urls,
+        'email_body_header'    => 'New Quote Request'
+    ];
+
+    extract($email_data);
+
+    ob_start();
+    include get_template_directory() . '/shortcode/email/email-quote.php';
+    $email_message = ob_get_clean();
+
+    $headers = ['Content-Type: text/html; charset=UTF-8'];
+    $subject = $productname ? "New Quote Request for: {$productname}" : "New Custom Quote Request";
+
+    $sent = wp_mail($admin_email, $subject, $email_message, $headers, $attachments);
+
+    // Cleanup temp files
+    foreach ($attachments as $file) {
+        if (file_exists($file)) @unlink($file);
+    }
+
+    if ($sent) {
+        wp_send_json_success([
+            'sent' => true,
+            'redirect_url' => $redirect_url
+        ]);
+    } else {
+        wp_send_json_error(['message' => 'Email failed to send.']);
+    }
+}
+
+
+

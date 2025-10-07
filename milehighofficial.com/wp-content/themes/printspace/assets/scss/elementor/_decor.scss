@@ -1,0 +1,407 @@
+$root: '.haru-decor';
+
+#{$root} {
+  &--style-1 {
+    #{$root}__content {
+
+    }
+
+    #{$root}__circle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+
+      &--gradient {
+        background: linear-gradient(225.78deg, $cl-primary 23.8%, rgba($cl-primary, 0.403383) 92.87%);
+      }
+    }
+  }
+
+  &--style-2 {
+    #{$root}__circle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+
+      &--gradient-2 {
+        background: linear-gradient(339deg, rgba(242, 186, 154, 0.00) 0%, rgba(239, 148, 228, 0.60) 60.89%, #9F96F6 100%);
+      }
+    }
+  }
+
+  &--style-3 {
+    #{$root}__ellipse {
+      padding-bottom: 77%;
+      border-radius: 50%;
+
+      &--blur {
+        background: $cl-primary;
+        filter: blur(150px)!important;
+
+        @media screen and (max-width: $screen-lg-max) {
+          filter: blur(125px)!important;
+        }
+
+        @media screen and (max-width: $screen-md-max) {
+          filter: blur(100px)!important;
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+          filter: blur(80px)!important;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+          filter: blur(60px)!important;
+        }
+      }
+    }
+  }
+
+  &--style-4 {
+    #{$root}__dotted {
+      padding-bottom: 100%;
+      background: transparent;
+      background-size: 28px 28px!important;
+      background-position: -5px -5px;
+    }
+  }
+
+  &--style-5 {
+    #{$root}__circle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+      position: relative;
+
+      &:before {
+        content: '';
+        border-radius: 50%;
+        border: 2px solid $cl-border;
+        position: absolute;
+        width: 75%;
+        height: 75%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:after {
+        content: '';
+        border-radius: 50%;
+        border: 2px solid $cl-border;
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &--layered {
+        border: 2px solid $cl-border;
+      }
+    }
+  }
+
+  &--style-6 {
+    #{$root}__circle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+
+      &--gradient-6 {
+        background: linear-gradient(148deg, #ffb36c 2.17%, #fff3fc 100%);
+        filter: blur(250px);
+
+        @media screen and (max-width: $screen-lg-max) {
+          filter: blur(200px);
+        }
+
+        @media screen and (max-width: $screen-md-max) {
+          filter: blur(170px);
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+          filter: blur(140px);
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+          filter: blur(110px);
+        }
+      }
+    }
+  }
+
+  &--style-8 {
+    #{$root}__circle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+
+      &--gradient-8 {
+        background: linear-gradient(180deg, #facade 0%, #facade 100% );
+        filter: blur(250px);
+
+        @media screen and (max-width: $screen-lg-max) {
+          filter: blur(200px);
+        }
+
+        @media screen and (max-width: $screen-md-max) {
+          filter: blur(170px);
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+          filter: blur(140px);
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+          filter: blur(110px);
+        }
+      }
+    }
+  }
+
+  &--style-9 {
+    #{$root}__circle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+      position: relative;
+      background-clip: padding-box;
+
+      &-1 {
+        content: '';
+        border-radius: 50%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(to bottom, #d4e5ff, #fff 100%) border-box;
+        border: 2px solid transparent;
+      }
+
+      &-2 {
+        content: '';
+        border-radius: 50%;
+        position: absolute;
+        width: 55%;
+        height: 55%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(to bottom, #d4e5ff 0% , #fff 100% ) border-box;
+        border: 2px solid transparent;
+      }
+
+      &--layered-gradient {
+
+      }
+    }
+  }
+
+  &--style-10 {
+    #{$root}__ellipse {
+      &--gradient {
+        svg {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &--style-11 {
+    #{$root}__wave {
+      &--gradient {
+        svg {
+          max-width: 100%;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &--style-12 {
+    #{$root}__wave {
+      &--gradient-2 {
+        svg {
+          max-width: 100%;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &--style-13 {
+    #{$root}__line {
+      &--horizontal {
+        svg {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &--style-14 {
+    #{$root}__line {
+      &--horizontal {
+        svg {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &--style-15 {
+    #{$root}__circle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+
+      &--gradient-15 {
+        background: linear-gradient(143deg, #4d58bb 8.27%, rgba(#f049c1, 0.58) 94.69%);
+        filter: blur(125px);
+
+        @media screen and (max-width: $screen-lg-max) {
+          filter: blur(100px);
+        }
+
+        @media screen and (max-width: $screen-md-max) {
+          filter: blur(80px);
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+          filter: blur(60px);
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+          filter: blur(40px);
+        }
+      }
+    }
+  }
+
+  &--style-16 {
+    #{$root}__shape {
+      &--z {
+        svg {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &--style-17 {
+    #{$root}__shape {
+      &--star {
+        svg {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &--style-18 {
+    #{$root}__grid {
+      &--circle {
+        svg {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &--style-19 {
+    #{$root}__circle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+
+      &--gradient-19 {
+        background: linear-gradient(143deg, #2e1736 26.4%, #20316f 59.53%, #8229ac 94.69%);
+        filter: blur(150px);
+
+        @media screen and (max-width: $screen-lg-max) {
+          filter: blur(125px);
+        }
+
+        @media screen and (max-width: $screen-md-max) {
+          filter: blur(100px);
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+          filter: blur(80px);
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+          filter: blur(60px);
+        }
+      }
+    }
+  }
+
+  &--style-20 {
+    #{$root}__ellipse {
+      &--gradient-20 {
+        svg {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &--style-21 {
+    #{$root}__ellipse {
+      &--double-21 {
+        svg {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &--style-22 {
+    #{$root}__circle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+
+      &--gradient-22 {
+        background: linear-gradient(7deg, rgba($cl-gr-1, .17) 6.12%, rgba($cl-gr-2, .49) 50.69%, $cl-gr-3 95.08%);
+      }
+    }
+  }
+
+  &--style-23 {
+    #{$root}__circle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+
+      &--gradient-23 {
+        background: linear-gradient(7deg, rgba($cl-gr-1, 0) 6.12%, rgba($cl-gr-2, .49) 50.69%, $cl-gr-3 95.08%);
+      }
+    }
+  }
+}
+
+#{$dark-mode},
+#{$background-dark} {
+  #{$root} {
+    &--style-1 {
+
+    }
+  }
+}
+

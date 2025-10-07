@@ -1,0 +1,50 @@
+$root: '.haru-background-creative';
+
+#{$root} {
+  &--style-1 {
+    height: 100%;
+
+    #{$root}__list {
+      height: 100%;
+    }
+
+    .slick-list {
+      height: 100%;
+    }
+
+    .slick-track {
+      height: 100%;
+    }
+
+    .slick-slide {
+      > div {
+        height: 100%;
+      }
+    }
+
+    #{$root}__item {
+      height: 100%;
+    }
+  }
+
+  &--style-2 {
+    height: 100%;
+
+    #{$root}__content {
+      height: 100%;
+      transition: all .3s;
+    }
+  }
+
+}
+
+#{$dark-mode},
+#{$background-dark} {
+  #{$root} {
+
+    &--style-1 {
+      
+    }
+
+  }
+}

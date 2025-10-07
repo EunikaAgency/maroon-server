@@ -1,0 +1,306 @@
+@font-face {
+  font-family: 'pricon';
+  src:  url('fonts/pricon.eot?fe99wu');
+  src:  url('fonts/pricon.eot?fe99wu#iefix') format('embedded-opentype'),
+    url('fonts/pricon.ttf?fe99wu') format('truetype'),
+    url('fonts/pricon.woff?fe99wu') format('woff'),
+    url('fonts/pricon.svg?fe99wu#pricon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="pricon-"], [class*=" pricon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pricon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pricon-cube:before {
+  content: "\e900";
+}
+.pricon-supplies:before {
+  content: "\e901";
+}
+.pricon-equalizer:before {
+  content: "\e902";
+}
+.pricon-delivery:before {
+  content: "\e903";
+}
+.pricon-credit-card:before {
+  content: "\e904";
+}
+.pricon-box-order:before {
+  content: "\e905";
+}
+.pricon-database:before {
+  content: "\e906";
+}
+.pricon-design:before {
+  content: "\e907";
+}
+.pricon-ecology:before {
+  content: "\e908";
+}
+.pricon-global:before {
+  content: "\e909";
+}
+.pricon-globe-address:before {
+  content: "\e90a";
+}
+.pricon-mix-circle:before {
+  content: "\e90b";
+}
+.pricon-package:before {
+  content: "\e90c";
+}
+.pricon-payment:before {
+  content: "\e90d";
+}
+.pricon-phone:before {
+  content: "\e90e";
+}
+.pricon-printer:before {
+  content: "\e90f";
+}
+.pricon-printing:before {
+  content: "\e910";
+}
+.pricon-return:before {
+  content: "\e911";
+}
+.pricon-tree:before {
+  content: "\e912";
+}
+.pricon-universe:before {
+  content: "\e913";
+}
+.pricon-no-dollar:before {
+  content: "\e914";
+}
+.pricon-image:before {
+  content: "\e915";
+}
+.pricon-shape:before {
+  content: "\e916";
+}
+.pricon-text-t:before {
+  content: "\e917";
+}
+.pricon-bounding-box:before {
+  content: "\e918";
+}
+.pricon-uniE919:before {
+  content: "\e919";
+}
+.pricon-uniE91A:before {
+  content: "\e91a";
+}
+.pricon-uniE91B:before {
+  content: "\e91b";
+}
+.pricon-uniE91C:before {
+  content: "\e91c";
+}
+.pricon-uniE91D:before {
+  content: "\e91d";
+}
+.pricon-uniE91E:before {
+  content: "\e91e";
+}
+.pricon-tshirt-1:before {
+  content: "\e91f";
+}
+.pricon-tshirt-2:before {
+  content: "\e920";
+}
+.pricon-worldwide:before {
+  content: "\e921";
+}
+.pricon-uniE922:before {
+  content: "\e922";
+}
+.pricon-uniE923:before {
+  content: "\e923";
+}
+.pricon-uniE924:before {
+  content: "\e924";
+}
+.pricon-uniE925:before {
+  content: "\e925";
+}
+.pricon-uniE926:before {
+  content: "\e926";
+}
+.pricon-uniE927:before {
+  content: "\e927";
+}
+.pricon-box:before {
+  content: "\e928";
+}
+.pricon-uniE929:before {
+  content: "\e929";
+}
+.pricon-uniE92A:before {
+  content: "\e92a";
+}
+.pricon-laptop-2:before {
+  content: "\e92b";
+}
+.pricon-smartphone:before {
+  content: "\e92c";
+}
+.pricon-tablet:before {
+  content: "\e92d";
+}
+.pricon-laptop:before {
+  content: "\e92e";
+}
+.pricon-package-2:before {
+  content: "\e92f";
+}
+.pricon-photo-filter:before {
+  content: "\e930";
+}
+.pricon-gallery:before {
+  content: "\e931";
+}
+.pricon-speedometer:before {
+  content: "\e932";
+}
+.pricon-checked:before {
+  content: "\e933";
+}
+.pricon-tshirt-3:before {
+  content: "\e934";
+}
+.pricon-return-2:before {
+  content: "\e935";
+}
+.pricon-telephone:before {
+  content: "\e936";
+}
+.pricon-secure-payment:before {
+  content: "\e937";
+}
+.pricon-d-printing:before {
+  content: "\e938";
+}
+.pricon-design-2:before {
+  content: "\e939";
+}
+.pricon-printer-2:before {
+  content: "\e93a";
+}
+.pricon-suitcase:before {
+  content: "\e93b";
+}
+.pricon-tshirt-4:before {
+  content: "\e93c";
+}
+.pricon-click:before {
+  content: "\e93d";
+}
+.pricon-web-browser:before {
+  content: "\e93e";
+}
+.pricon-elementor:before {
+  content: "\e93f";
+}
+.pricon-web-browser-2:before {
+  content: "\e940";
+}
+.pricon-right-arrow:before {
+  content: "\e941";
+}
+.pricon-woo:before {
+  content: "\e942";
+}
+.pricon-css3:before {
+  content: "\e943";
+}
+.pricon-file:before {
+  content: "\e944";
+}
+.pricon-mobile:before {
+  content: "\e945";
+}
+.pricon-support:before {
+  content: "\e946";
+}
+.pricon-web-browser-3:before {
+  content: "\e947";
+}
+.pricon-tips:before {
+  content: "\e948";
+}
+.pricon-images:before {
+  content: "\e949";
+}
+.pricon-branding:before {
+  content: "\e94a";
+}
+.pricon-save-money:before {
+  content: "\e94b";
+}
+.pricon-mixer:before {
+  content: "\e94c";
+}
+.pricon-megaphone:before {
+  content: "\e94d";
+}
+.pricon-web-browser-4:before {
+  content: "\e94e";
+}
+.pricon-coin:before {
+  content: "\e94f";
+}
+.pricon-card-payment:before {
+  content: "\e950";
+}
+.pricon-heart:before {
+  content: "\e951";
+}
+.pricon-download:before {
+  content: "\e952";
+}
+.pricon-internet:before {
+  content: "\e953";
+}
+.pricon-tshirt-5:before {
+  content: "\e954";
+}
+.pricon-pillow:before {
+  content: "\e955";
+}
+.pricon-paintbrush:before {
+  content: "\e956";
+}
+.pricon-frame:before {
+  content: "\e957";
+}
+.pricon-flash:before {
+  content: "\e958";
+}
+.pricon-dog:before {
+  content: "\e959";
+}
+.pricon-cat:before {
+  content: "\e95a";
+}
+.pricon-paw:before {
+  content: "\e95b";
+}
+.pricon-bone:before {
+  content: "\e95c";
+}

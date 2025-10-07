@@ -1,0 +1,271 @@
+$root: '.haru-header-contact';
+$root-widget: '.elementor-widget-haru-header-contact';
+$header: '.haru-header';
+
+#{$root} {
+
+  ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    // 
+  }
+
+  &__icon {
+    margin-right: 10px;
+    line-height: 1;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  &--none {
+    #{$root}__icon {
+      color: $cl-primary;
+    }
+  }
+
+  &--style-1 {
+    a {
+      color: $cl-black;
+      transition: all .3s;
+
+      &:hover,
+      &:active {
+        color: $cl-primary;
+        transition: all .3s;
+      }
+    }
+
+    #{$root}__icon {
+      display: none;
+    }
+
+    #{$root}__title {
+      color: $cl-text-2;
+      font-size: 14px;
+      font-weight: $fw-bold;
+      margin-bottom: 0;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    #{$root}__desc {
+      color: $cl-black;
+      font-size: 18px;
+
+      @media screen and (max-width: $screen-lg-max) {
+        font-size: 17px;
+      }
+
+      @media screen and (max-width: $screen-md-max) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $screen-sm-max) {
+        font-size: $fs-base;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        
+      }
+    }
+
+    li {
+      &:last-child {
+        #{$root}__desc {
+          font-weight: $fw-medium;
+        }
+      }
+
+      &:only-child {
+        #{$root}__desc {
+          font-weight: $fw-normal;
+        }
+      }
+    }
+  }
+
+  &--style-2 {
+    a {
+      color: $cl-black;
+      transition: all .3s;
+
+      &:hover,
+      &:active {
+        color: $cl-primary;
+        transition: all .3s;
+      }
+    }
+
+    #{$root}__icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background-color: $cl-gray;
+      border-radius: 50%;
+      font-size: 24px;
+      color: $cl-black;
+    }
+
+    #{$root}__title {
+      font-size: 16px;
+      font-weight: $fw-semi-bold;
+      margin-top: 3px;
+      margin-bottom: 1px;
+
+      @media screen and(max-width: $screen-md-max) {
+        font-size: Max(15px, $fs-base);
+      }
+
+      span {
+        font-size: $fs-base - 1px;
+        font-weight: $fw-bold;
+      }
+    }
+
+    #{$root}__desc {
+      font-size: $fs-base - 1px;
+      font-weight: $fw-normal;
+      color: $cl-text;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+
+      &:last-child {
+        #{$root}__desc {
+          
+        }
+      }
+
+      &:only-child {
+        #{$root}__desc {
+          
+        }
+      }
+    }
+  }
+}
+
+// Theme Skin
+.theme-skin-6 {
+  #{$root} {
+    &--style-1 {
+      #{$root}__title {
+        font-family: $font-primary;
+        font-size: 16px;
+        font-weight: $fw-normal;
+        text-transform: none;
+      }
+
+      #{$root}__desc {
+        font-size: 18px;
+
+        @media screen and(max-width: $screen-lg-max) {
+          font-size: 17px;
+        }
+
+        @media screen and (max-width: $screen-md-max) {
+          font-size: 16px;
+        }
+
+        strong,
+        b {
+          font-size: 20px;
+
+          @media screen and(max-width: $screen-lg-max) {
+            font-size: 19px;
+          }
+
+          @media screen and (max-width: $screen-md-max) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#{$dark-mode},
+#{$background-dark} {
+  #{$root} {
+    &--style-1 {
+      a {
+        color: $cl-white-dark;
+
+        &:hover,
+        &:active {
+          color: $cl-primary;
+        }
+      }
+
+      #{$root}__title {
+        color: $cl-text-dark;
+      }
+
+      #{$root}__desc {
+        color: $cl-white-dark;
+      }
+    }
+  }
+}
+
+#{$header} {
+  &--transparent {
+    &-light:not(.haru-header--sticky-on) {
+      #{$root} {
+        &--style-1 {
+          a {
+            color: $cl-white-dark;
+
+            &:hover,
+            &:active {
+              color: $cl-primary;
+            }
+          }
+
+          #{$root}__title {
+            color: $cl-white-dark;
+          }
+
+          #{$root}__desc {
+            color: $cl-white-dark;
+          }
+        }
+      }
+    }
+
+    &-dark:not(.haru-header--sticky-on) {
+      #{$root} {
+        &--style-1 {
+          a {
+            color: $cl-black;
+
+            &:hover,
+            &:active {
+              
+            }
+          }
+
+          #{$root}__title {
+            color: $cl-black;
+          }
+
+          #{$root}__desc {
+            color: $cl-black;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,470 @@
+/* 
+#mockupForm .dropzone {
+    border: 2px dashed #000;
+    border-radius: 8px;
+    background: #fafafa;
+    padding: 30px;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#mockupForm .dropzone-button {
+    background: transparent;
+    color: black;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#mockupForm .dropzone-button:hover {
+    background: #000;
+    color: white;
+}
+
+#mockupForm .dropzone .dz-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#mockupForm .dropzone-previews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#mockupForm .custom-preview {
+    width: 150px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #eee;
+    text-align: center;
+    font-family: sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#mockupForm .custom-preview .dz-image {
+    width: 100% !important;
+    height: 100px;
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0px !important;
+}
+
+#mockupForm .custom-preview .dz-image img {
+    filter: none !important;
+    scale: 1 !important;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#mockupForm .custom-preview .dz-info {
+    border-top: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: #333;
+}
+
+#mockupForm .custom-preview .dz-filename {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#mockupForm .custom-preview .dz-remove {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+#mockupForm .custom-preview .uploading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: 12px;
+    color: #000;
+}
+
+#mockupForm .uploading-spinner {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 0.7s linear infinite;
+}
+
+#mockupForm .custom-preview:hover .dz-image img,
+#mockupForm .dz-preview:hover .dz-image img {
+    transform: none !important;
+    filter: none !important;
+    scale: 1 !important;
+    transition: none !important;
+}
+
+#mockupForm .input-group {
+    position: relative;
+    width: 100%;
+}
+
+#mockupForm .input-group input,
+#mockupForm .input-group textarea {
+    background-color: #ededed !important;
+    padding: 35px 10px 20px 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.2s;
+    color: #000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 57px;
+}
+
+#mockupForm .input-group select {
+    padding: 20px 10px 0px 8px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.2s;
+    color: #000 !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 57px;
+}
+
+#mockupForm .input-group textarea {
+    min-height: 120px;
+    resize: vertical;
+    padding-top: 35px !important;
+}
+
+#mockupForm .input-group label {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    color: #000;
+    font-weight: normal;
+    pointer-events: none;
+    transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease, letter-spacing 0.2s ease;
+}
+
+#mockupForm .input-group input:focus+label,
+#mockupForm .input-group input:not(:placeholder-shown)+label,
+#mockupForm .input-group textarea:focus+label,
+#mockupForm .input-group textarea:not(:placeholder-shown)+label,
+#mockupForm .input-group select.has-value+label,
+#mockupForm .input-group select:focus+label {
+    top: 5px;
+    font-size: 11px;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+#mockupForm .input-group input::placeholder,
+#mockupForm .input-group textarea::placeholder {
+    color: transparent;
+    transition: color 0.2s ease;
+}
+
+#mockupForm .input-group input:focus::placeholder,
+#mockupForm .input-group textarea:focus::placeholder {
+    color: #999;
+}
+
+#mockupForm .input-group select:focus {
+    color: transparent;
+}
+
+#mockupForm .input-group select:focus option[value=""] {
+    color: #999;
+}
+
+#mockupForm .input-group select:not(:focus) {
+    color: #000;
+}
+
+#mockupForm .input-group select:not(:focus) option[value=""] {
+    color: transparent;
+}
+
+#mockupForm .input-group input:focus,
+#mockupForm .input-group textarea:focus,
+#mockupForm .input-group select:focus {
+    border: 1px solid #1b6f58;
+    outline: none;
+}
+
+
+
+#mockupForm .checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#mockupForm .checkbox-label {
+    flex: 0 0 calc(50% - 8px);
+    position: relative;
+}
+
+#mockupForm .checkbox-label input[type="checkbox"],
+#mockupForm .checkbox-label input[type="radio"] {
+    display: none;
+}
+
+#mockupForm .checkbox-label label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #ededed;
+    font-size: 14px;
+}
+
+#mockupForm .checkbox-label .checkbox-main-text {
+    color: #000;
+}
+
+#mockupForm .checkbox-label .checkbox-note {
+    background-color: #d8ebd2;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    white-space: nowrap;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+#mockupForm .checkbox-label input[type="checkbox"]:checked+label,
+#mockupForm .checkbox-label input[type="radio"]:checked+label {
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
+}
+
+#mockupForm .checkbox-label input[type="checkbox"]:checked+label .checkbox-main-text,
+#mockupForm .checkbox-label input[type="radio"]:checked+label .checkbox-main-text {
+    color: #fff;
+}
+
+#mockupForm .checkbox-label input[type="checkbox"]:checked+label .checkbox-note,
+#mockupForm .checkbox-label input[type="radio"]:checked+label .checkbox-note {
+    background-color: #fff;
+    color: #000;
+}
+
+
+#mockupForm .quantity-selector {
+    display: flex;
+    align-items: center;
+    background-color: #ededed;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+#mockupForm .quantity-btn {
+    width: 48px;
+    height: 57px;
+    background-color: #dedede;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding: 0px !important;
+    border-radius: 0px;
+}
+
+#mockupForm .quantity-btn:hover {
+    background-color: #c0c0c0;
+}
+
+#mockupForm .quantity-selector input[type="number"] {
+    flex: 1;
+    height: 48px;
+    font-size: 14px;
+    border: none;
+    background-color: #ededed;
+    -moz-appearance: textfield;
+}
+
+#mockupForm .quantity-selector input[type="number"]::-webkit-outer-spin-button,
+#mockupForm .quantity-selector input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#mockupForm .quantity-input-group {
+    flex: 1;
+    position: relative;
+    margin-bottom: 0;
+}
+
+#mockupForm .quantity-input-group input {
+    background-color: #ededed !important;
+    padding: 35px 10px 20px 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    height: 57px;
+    transition: all 0.2s;
+    color: #000;
+}
+
+#mockupForm .quantity-selector.input-error {
+    border: 1px solid red !important;
+}
+
+#mockupForm .type-of-print-container .checkbox-label {
+    flex: 0 0 calc(25% - 12px);
+}
+
+#mockupForm .type-of-print-container .checkbox-label label {
+    flex-direction: column;
+}
+
+#mockupForm .type-of-print-container .print_location_img {
+    width: 100px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+#mockupForm .submit_btn {
+    background: #000;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all .3s;
+    width: 100%;
+}
+
+#mockupForm .submit_btn:hover {
+    background: #000;
+    color: white;
+}
+
+#mockupForm .submit_btn[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #ccc !important;
+    color: #666 !important;
+    border-color: #bbb !important;
+    transition: all 0.3s ease;
+}
+
+
+#mockupForm .input-error {
+    border-color: red !important;
+}
+
+#mockupForm .error-message {
+    color: red;
+    font-size: 13px;
+
+}
+
+#mockupForm .checkbox-error {
+    color: red;
+    font-size: 13px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    #mockupForm .checkbox-label {
+        flex: 0 0 100%;
+    }
+
+    #mockupForm .dropzone {
+        padding: 15px;
+        min-height: 120px;
+    }
+
+    #mockupForm .contact-form__row--cols-2 .contact-form__col {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    #mockupForm .contact-form__row--cols-2 .contact-form__col {
+        margin-bottom: 20px;
+    }
+
+    #mockupForm .contact-form__row--cols-2 .contact-form__col:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#mockupForm .contact-form__label {
+    text-transform: none !important;
+} */

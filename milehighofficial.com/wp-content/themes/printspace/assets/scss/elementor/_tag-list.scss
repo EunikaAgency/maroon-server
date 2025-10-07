@@ -1,0 +1,227 @@
+$root: '.haru-tag-list';
+
+#{$root} {
+  &__list {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    
+  }
+
+  &--style-1 {
+    #{$root}__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -8px;
+    }
+
+    #{$root}__item {
+      .tag-title {
+        display: block;
+        height: 56px;
+        line-height: 56px;
+        font-size: 18px;
+        font-weight: $fw-semi-bold;
+        background-color: $cl-primary;
+        border-radius: $border-radius-e;
+        color: $cl-white;
+        padding: 0 24px;
+        transition: all .3s;
+
+        @media screen and(max-width: $screen-lg-max) {
+          font-size: 16px;
+          height: $e-height-base;
+          line-height: $e-height-base;
+        }
+
+        @media screen and(max-width: $screen-md-max) {
+
+        }
+
+        @media screen and(max-width: $screen-xs-max) {
+          font-size: $fs-base - 1px;
+          height: $e-height-base - 4px;
+          line-height: $e-height-base - 4px;
+          padding: 0 20px;
+        }
+
+        &:hover {
+          // text-decoration: underline;
+          transition: all .3s;
+        }
+      }
+
+      a {
+        display: block;
+        margin: 0 8px 16px 8px;
+
+        @media screen and(max-width: $screen-lg-max) {
+          margin: 0 6px 12px 6px;
+        }
+      }
+    }
+  }
+
+  &--style-2 {
+    #{$root}__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -8px;
+    }
+
+    #{$root}__item {
+      padding: 0 8px 16px 8px;
+
+      @media screen and(max-width: $screen-lg-max) {
+        padding: 0 6px 12px 6px;
+      }
+
+      .tag-title {
+        display: block;
+        font-size: 18px;
+        font-weight: $fw-semi-bold;
+        background-color: $cl-primary;
+        border-radius: $border-radius;
+        color: $cl-white;
+        padding: 20px 15px;
+        text-align: center;
+        transition: all .3s;
+
+        @media screen and(max-width: $screen-lg-max) {
+          font-size: 17px;
+          padding: 15px 15px;
+        }
+
+        @media screen and(max-width: $screen-md-max) {
+          font-size: 16px;
+        }
+
+        @media screen and(max-width: $screen-xs-max) {
+          font-size: $fs-base;
+        }
+
+        &:hover {
+          // text-decoration: underline;
+          transition: all .3s;
+        }
+
+        a {
+          display: block;
+          padding: 0 8px 16px 8px;
+
+          @media screen and(max-width: $screen-lg-max) {
+            padding: 0 6px 12px 6px;
+          }
+        }
+      }
+    }
+  }
+
+  &--style-3 {
+    #{$root}__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -8px;
+    }
+
+    #{$root}__item {
+      padding: 0 8px 16px 8px;
+
+      @media screen and(max-width: $screen-lg-max) {
+        padding: 0 6px 12px 6px;
+      }
+
+      .tag-title {
+        display: block;
+        font-size: 18px;
+        font-weight: $fw-medium;
+        font-family: $font-secondary;
+        background: linear-gradient(180deg, #222 0%, #303030 100%);
+        border-radius: $border-radius;
+        color: $cl-white;
+        padding: 20px 15px;
+        text-align: center;
+        position: relative;
+        transition: all .3s;
+
+        @media screen and(max-width: $screen-lg-max) {
+          font-size: 16px;
+          padding: 15px 15px;
+        }
+
+        @media screen and(max-width: $screen-md-max) {
+
+        }
+
+        @media screen and(max-width: $screen-xs-max) {
+          font-size: $fs-base;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: calc(100% + 2px);
+          height: calc(100% + 2px);
+          top: -1px;
+          left: -1px;
+          background: 
+            linear-gradient(rgba(#161616, 1) 0 0) padding-box, /*this is your grey background*/
+            linear-gradient(90deg, $cl-gr-1 -27.66%, $cl-gr-2 52.28%, $cl-gr-3 131.91%) border-box;
+          border: 1px solid transparent;
+          border-radius: $border-radius;
+          z-index: -1;
+          opacity: 0;
+          transition: all .3s;
+        }
+
+        &:hover {
+          &:before {
+            opacity: 1;
+            transition: all .3s;
+          }
+
+          .tag-text {
+            @include bggradient34();
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all .3s;
+          }
+        }
+
+        a {
+          display: block;
+          padding: 0 8px 16px 8px;
+
+          @media screen and(max-width: $screen-lg-max) {
+            padding: 0 6px 12px 6px;
+          }
+        }
+
+        .tag-text {
+          display: inline-block;
+          margin: 0 auto;
+          transition: all .3s;
+        }
+      }
+    }
+  }
+}
+
+#{$dark-mode},
+#{$background-dark} {
+  #{$root} {
+    &--style-1 {
+      
+    }
+
+    &--style-2 {
+     
+    }
+  }
+}

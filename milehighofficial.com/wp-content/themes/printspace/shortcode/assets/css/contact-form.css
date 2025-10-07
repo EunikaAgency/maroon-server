@@ -1,0 +1,452 @@
+/* do not touch */
+#contactForm .dropzone {
+    border: 2px dashed #000;
+    border-radius: 8px;
+    background: #fafafa;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 0% !important;
+}
+
+#contactForm .dropzone-button {
+    background: transparent;
+    color: black;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#contactForm .dropzone-button:hover {
+    background: #000;
+    color: white;
+}
+
+#contactForm .dropzone .dz-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#contactForm .dropzone-previews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#contactForm .custom-preview {
+    width: 150px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #eee;
+    text-align: center;
+    font-family: sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contactForm .custom-preview .dz-image {
+    width: 100% !important;
+    height: 100px;
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0px !important;
+}
+
+#contactForm .custom-preview .dz-image img {
+    filter: none !important;
+    scale: 1 !important;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#contactForm .custom-preview .dz-info {
+    border-top: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: #333;
+}
+
+#contactForm .custom-preview .dz-filename {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#contactForm .custom-preview .dz-remove {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+#contactForm .custom-preview .uploading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: 12px;
+    color: #000;
+}
+
+#contactForm .uploading-spinner {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 0.7s linear infinite;
+}
+
+#contactForm .custom-preview:hover .dz-image img,
+#contactForm .dz-preview:hover .dz-image img {
+    transform: none !important;
+    filter: none !important;
+    scale: 1 !important;
+    transition: none !important;
+}
+
+/* Input Group - Container for all form fields */
+#contactForm .input-group {
+    position: relative;
+    /* margin-bottom: 20px; */
+    width: 100%;
+}
+
+/* Base Styling for ALL Form Fields */
+#contactForm .input-group input,
+#contactForm .input-group textarea {
+    background-color: #ededed !important;
+    padding: 35px 10px 20px 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.2s;
+    color: #000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 57px;
+}
+
+/* Select input styling */
+#contactForm .input-group select {
+    padding: 20px 10px 0px 8px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.2s;
+    color: #000 !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 57px;
+}
+
+/* Textarea Specific Styling */
+#contactForm .input-group textarea {
+    min-height: 120px;
+    resize: vertical;
+    padding-top: 35px !important;
+}
+
+/* Select Specific Styling */
+#contactForm .input-group select {
+    background-image: none !important;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Labels - Floating Effect */
+#contactForm .input-group label {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    color: #000;
+    /* font-size: 14px; */
+    font-weight: normal;
+    pointer-events: none;
+    transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease, letter-spacing 0.2s ease;
+}
+
+/* Floating Label States */
+#contactForm .input-group input:focus + label,
+#contactForm .input-group input:not(:placeholder-shown) + label,
+#contactForm .input-group textarea:focus + label,
+#contactForm .input-group textarea:not(:placeholder-shown) + label,
+#contactForm .input-group select.has-value + label,
+#contactForm .input-group select:focus + label {
+    top: 5px;
+    font-size: 11px;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+/* Placeholder Styling */
+#contactForm .input-group input::placeholder,
+#contactForm .input-group textarea::placeholder {
+    color: transparent;
+    transition: color 0.2s ease;
+}
+
+/* Show Placeholder on Focus */
+#contactForm .input-group input:focus::placeholder,
+#contactForm .input-group textarea:focus::placeholder {
+    color: #999;
+}
+
+/* Select Placeholder Handling */
+#contactForm .input-group select:focus {
+    color: transparent;
+}
+
+#contactForm .input-group select:focus option[value=""] {
+    color: #999;
+}
+
+#contactForm .input-group select:not(:focus) {
+    color: #000;
+}
+
+#contactForm .input-group select:not(:focus) option[value=""] {
+    color: transparent;
+}
+
+/* Focus States */
+#contactForm .input-group input:focus,
+#contactForm .input-group textarea:focus,
+#contactForm .input-group select:focus {
+    border: 1px solid #1b6f58;
+    outline: none;
+}
+
+/* Checkbox Styling */
+#contactForm .checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 15px;
+    width: 100%;
+}
+#contactForm .checkbox-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#contactForm .checkbox-label {
+    flex: 0 0 calc(33.333% - 10px);
+    margin-right: 0;
+}
+
+#contactForm .checkbox-label label {
+    cursor: pointer;
+    color: #000 !important;
+}
+
+#contactForm input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    vertical-align: middle;
+}
+
+#contactForm input[type="checkbox"]:checked {
+    background-color: #000;
+    border-color: #000;
+}
+
+#contactForm input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* quantity */
+#contactForm .quantity-selector {
+    display: flex;
+    align-items: center;
+    background-color: #ededed;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+#contactForm .quantity-btn {
+    width: 48px;
+    /* height: 48px; */
+    height: 57px;
+    background-color: #dedede;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding: 0px !important;
+    border-radius: 0px;
+}
+
+#contactForm .quantity-btn:hover {
+    background-color: #c0c0c0;
+}
+
+#contactForm .quantity-selector input[type="number"] {
+    flex: 1;
+    height: 48px;
+    font-size: 14px;
+    border: none;
+    background-color: #ededed;
+    -moz-appearance: textfield;
+}
+
+#contactForm .quantity-selector input[type="number"]::-webkit-outer-spin-button,
+#contactForm .quantity-selector input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#contactForm .quantity-input-group {
+    flex: 1;
+    position: relative;
+    margin-bottom: 0;
+}
+
+#contactForm .quantity-input-group input {
+    background-color: #ededed !important;
+    padding: 35px 10px 20px 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    height: 57px; /* match quantity button height */
+    transition: all 0.2s;
+    color: #000;
+}
+
+#contactForm .quantity-selector.input-error {
+    border: 1px solid red !important;
+}
+/* Submit Button */
+#contactForm .submit_btn {
+    background: #000;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all .3s;
+    width: 100%;
+}
+
+#contactForm .submit_btn:hover {
+    background: #000;
+    color: white;
+}
+
+#contactForm .submit_btn[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #ccc !important;
+    color: #666 !important;
+    border-color: #bbb !important;
+    transition: all 0.3s ease;
+}
+
+
+#contactForm .input-error {
+    border-color: red !important;
+}
+
+#contactForm .error-message {
+    color: red;
+    font-size: 13px;
+    /* margin-top: 2px; */
+}
+
+#contactForm .checkbox-error {
+    color: red;
+    font-size: 13px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 767px) {
+    #contactForm .checkbox-label {
+        flex: 0 0 100%;
+    }
+    
+    #contactForm .dropzone {
+        padding: 15px;
+        min-height: 120px;
+    }
+    
+    #contactForm .contact-form__row--cols-2 .contact-form__col {
+        width: 100%;
+        padding: 0 !important;
+        margin-bottom: 20px;
+    }
+    #contactForm .contact-form__row {
+        margin-bottom: 0px;
+    }
+    #contactForm .contact-form__row input[name="email"] {
+        margin-bottom: 15px;
+    }
+}
+
+/* Animation for Upload Spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

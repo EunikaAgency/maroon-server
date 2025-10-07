@@ -1,0 +1,37 @@
+{
+    
+    "custom-wpforms": [
+       
+        "/wp-content/plugins/custom-wpform"
+    ],
+    "elementor-gallery":[
+        "/wp-content/plugins/elementor-gallery-addon"
+    ],
+
+    "controller": [
+       
+        "/wp-content/plugins/custom-wpform/controller"
+    ],
+
+   "qoute-mailer": [
+        "/wp-content/plugins/custom-wpform/mailer/request-for-a-quote"
+    ],
+
+    "js-mailer": [
+        "/wp-content/plugins/custom-wpform/assets/js"
+    ],
+
+    "shortcode": [
+        "/wp-content/themes/printspace/shortcode",
+        "/wp-content/themes/printspace/functions.php"
+    ],
+
+    "custom-wpform-plugin": [
+        "/wp-content/plugins/custom-wpform-plugin"
+    ],
+
+    "category-fields": [
+        "/wp-content/plugins/category-page-custom-fields"
+    ]
+    
+}
