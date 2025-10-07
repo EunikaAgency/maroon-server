@@ -1,0 +1,42 @@
+.workflow-slider-container {
+  font-family: inherit;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.workflow-slider-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.workflow-slide {
+  flex: 0 0 100%;
+  padding: 0 1rem;
+}
+.workflow-card { padding: 1rem; }
+.workflow-slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.workflow-slider-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: inherit;
+}
+.workflow-slider-btn:disabled { opacity: .5; cursor: not-allowed; }
+.workflow-slider-counter { font-size: 12px; }
+.workflow-step-title { font-size: 20px; text-align: start; }
+.workflow-step-desc { font-size: 14px; color: #000000bf; text-align: start; }
+
+@media screen and (min-width: 992px) {
+  .workflow-slider-controls { display: none; }
+  .workflow-slider-track { flex-wrap: wrap; transform: none !important; }
+  .workflow-slide { flex: 0 0 25%; max-width: 25%; }
+}

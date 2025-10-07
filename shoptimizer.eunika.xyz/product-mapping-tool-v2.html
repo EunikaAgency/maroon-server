@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product ID Mapping Tool</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- ✅ jQuery MUST be loaded first -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Then Popper and Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .product-table {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        .table thead th {
+            border-top: none;
+            font-weight: 600;
+        }
+        .counterpart-id {
+            width: 120px;
+            text-align: center;
+        }
+        .counterpart-id input {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #dee2e6;
+            border-radius: 3px;
+            padding: 5px;
+        }
+        .counterpart-id input:focus {
+            outline: none;
+            border-color: #80bdff;
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+        }
+        .loading-spinner {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+        }
+        .status-message {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: none;
+        }
+        .saving {
+            background-color: #fffde7;
+        }
+        .saved {
+            background-color: #e8f5e9;
+            transition: background-color 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Product ID Mapping Tool</h1>
+        <div class="card product-table mb-4">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Product ID</th>
+                                <th>Product Name</th>
+                                <th>Variations</th>
+                                <th>Counterpart ID</th>
+                                <th>Counterpart Info</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productTableBody">
+                            <!-- Products will be loaded here -->
+                        </tbody>
+                    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="text-right">
+    <button class="btn btn-primary mt-3" id="generateTableBtn">
+        <i class="fas fa-table"></i> Generate Spreadsheet Table
+    </button>
+</div>
+
+<!-- This is where the HTML table output will appear -->
+<div class="mt-4" id="exportTableContainer" style="display:none;">
+    <h5>Copyable Table Output</h5>
+    <div class="table-responsive">
+        <table class="table table-bordered table-sm" id="exportTable">
+            <thead>
+                <tr>
+                    <th>Product URL</th>
+                    <th>Counterpart URL</th>
+                    <th>Counterpart ID</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Continue below your current scripts... -->
+
+<script>
+    // Bulk fetch function: gets all counterpart URLs at once
+    function fetchBulkCounterpartUrls(idsArray) {
+        const ids = idsArray.filter(id => id && !isNaN(id)).join(',');
+        return new Promise((resolve, reject) => {
+            if (!ids) return resolve({});
+            $.ajax({
+                url: `https://shoptimizer.eunika.xyz/wp-json/custom/products/get_product_urls_by_ids?ids=${ids}`,
+                method: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.success && response.found) {
+                        resolve(response.found);
+                    } else {
+                        resolve({});
+                    }
+                },
+                error: function() {
+                    reject({});
+                }
+            });
+        });
+    }
+
+    // Generate copyable HTML table
+    $('#generateTableBtn').on('click', async function() {
+        const rows = $('#productTableBody tr');
+        const data = [];
+
+        rows.each(function() {
+            const productUrl = $(this).find('td:eq(1) a').attr('href');
+            const counterpartId = $(this).find('input.counterpart-input').val();
+            data.push({
+                productUrl: productUrl || '',
+                counterpartId: counterpartId || '',
+                counterpartUrl: '' // placeholder
+            });
+        });
+
+        const ids = data.map(item => item.counterpartId).filter(Boolean);
+        const urlMap = await fetchBulkCounterpartUrls(ids);
+
+        // Fill counterpart URL from bulk response
+        data.forEach(row => {
+            const entry = urlMap[row.counterpartId];
+            row.counterpartUrl = entry ? entry.url : '';
+        });
+
+        // Build HTML table
+        const tbody = $('#exportTable tbody');
+        tbody.empty();
+
+        data.forEach(row => {
+            const tr = $('<tr>');
+            tr.append($('<td>').text(row.productUrl));
+            tr.append($('<td>').text(row.counterpartUrl));
+            tr.append($('<td>').text(row.counterpartId));
+            tbody.append(tr);
+        });
+
+        $('#exportTableContainer').show();
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner-border text-light" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <div class="alert alert-success status-message" id="statusMessage" role="alert">
+        <span id="messageText"></span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function debounce(func, wait, immediate) {
+            var timeout;
+            return function() {
+                var context = this, args = arguments;
+                var later = function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        }
+
+        $(document).ready(function() {
+            $('#loadingSpinner').css('display', 'flex');
+
+            $.ajax({
+                url: 'https://shoptimizer.eunika.xyz/wp-json/custom/products/get_all_woocommerce_products_array',
+                method: 'GET',
+                dataType: 'json',
+                success: function(products) {
+                    $.ajax({
+                        url: 'https://shoptimizer.eunika.xyz/wp-json/custom/products/get_all_counterpart_ids',
+                        method: 'GET',
+                        dataType: 'json',
+                        success: function(counterpartIds) {
+                            populateProductTable(products, counterpartIds);
+                            $('#loadingSpinner').hide();
+                        },
+                        error: function() {
+                            populateProductTable(products, {});
+                            $('#loadingSpinner').hide();
+                        }
+                    });
+                },
+                error: function() {
+                    $('#loadingSpinner').hide();
+                    showStatusMessage('Error loading products. Please try again.', 'danger');
+                }
+            });
+        });
+
+        function populateProductTable(products, counterpartIds) {
+            const tableBody = $('#productTableBody');
+            tableBody.empty();
+
+            products.forEach(product => {
+                const row = $('<tr>').attr('data-product-id', product.id);
+                row.append($('<td>').text(product.id));
+                const nameLink = $('<a>')
+                    .attr('href', product.url)
+                    .attr('target', '_blank')
+                    .text(product.name);
+                row.append($('<td>').append(nameLink));
+                const variationCount = product.variations ? product.variations.length : 0;
+                row.append($('<td>').text(variationCount));
+
+                const input = $('<input>')
+                    .attr('type', 'number')
+                    .attr('placeholder', 'Enter ID')
+                    .attr('data-product-id', product.id)
+                    .addClass('counterpart-input');
+
+                const inputTd = $('<td>').addClass('counterpart-id').append(input);
+                row.append(inputTd);
+
+                const counterpartInfoTd = $('<td>').addClass('counterpart-info').text('-');
+                row.append(counterpartInfoTd);
+
+                tableBody.append(row);
+
+                if (counterpartIds[product.id]) {
+                    const cpId = counterpartIds[product.id];
+                    input.val(cpId);
+                    fetchCounterpartUrl(cpId).then(data => {
+                        if (data && data[cpId]) {
+                            const link = $('<a>')
+                                .attr('href', data[cpId].url)
+                                .attr('target', '_blank')
+                                .text(data[cpId].title || 'View Product');
+                            counterpartInfoTd.empty().append(link);
+                        } else {
+                            counterpartInfoTd.text('Not found');
+                        }
+                    }).catch(() => {
+                        counterpartInfoTd.text('Error fetching URL');
+                    });
+                }
+
+                input.on('input', debounce(function() {
+                    const $this = $(this);
+                    const productId = $this.data('product-id');
+                    const counterpartId = $this.val();
+                    const infoCell = $this.closest('tr').find('.counterpart-info');
+
+                    $this.closest('tr').addClass('saving').removeClass('saved');
+
+                    saveCounterpartId(productId, counterpartId)
+                        .then(() => {
+                            $this.closest('tr').removeClass('saving').addClass('saved');
+                            setTimeout(() => {
+                                $this.closest('tr').removeClass('saved');
+                            }, 1000);
+
+                            fetchCounterpartUrl(counterpartId).then(data => {
+                                if (data && data[counterpartId]) {
+                                    const link = $('<a>')
+                                        .attr('href', data[counterpartId].url)
+                                        .attr('target', '_blank')
+                                        .text(data[counterpartId].title || 'View Product');
+                                    infoCell.empty().append(link);
+                                } else {
+                                    infoCell.text('Not found');
+                                }
+                            }).catch(() => {
+                                infoCell.text('Error fetching URL');
+                            });
+                        })
+                        .catch(() => {
+                            $this.closest('tr').removeClass('saving');
+                            showStatusMessage('Error saving counterpart ID. Please try again.', 'danger');
+                        });
+                }, 500));
+            });
+        }
+
+        function saveCounterpartId(productId, counterpartId) {
+            return new Promise((resolve, reject) => {
+                $.ajax({
+                    url: 'https://shoptimizer.eunika.xyz/wp-json/custom/products/update_product_meta',
+                    method: 'POST',
+                    dataType: 'json',
+                    data: {
+                        product_id: productId,
+                        meta_key: 'counterpart_product_id',
+                        meta_value: counterpartId
+                    },
+                    success: function(response) {
+                        showStatusMessage('Counterpart ID saved successfully!', 'success');
+                        resolve(response);
+                    },
+                    error: function() {
+                        reject();
+                    }
+                });
+            });
+        }
+
+        function fetchCounterpartUrl(counterpartId) {
+            return new Promise((resolve, reject) => {
+                $.ajax({
+                    url: `https://2kthreads.eunika.xyz/wp-json/custom/products/get_product_urls_by_ids?ids=${counterpartId}`,
+                    method: 'GET',
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.success && response.found) {
+                            resolve(response.found);
+                        } else {
+                            reject();
+                        }
+                    },
+                    error: function() {
+                        reject();
+                    }
+                });
+            });
+        }
+
+        function showStatusMessage(message, type) {
+            const statusMessage = $('#statusMessage');
+            const messageText = $('#messageText');
+            statusMessage.removeClass('alert-success alert-danger').addClass(`alert-${type}`);
+            messageText.text(message);
+            statusMessage.fadeIn();
+            setTimeout(() => {
+                statusMessage.fadeOut();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.elementor-8094 .elementor-element.elementor-element-1fccbdb{--display:flex;}.elementor-8094 .elementor-element.elementor-element-9ba54ba .my-carousel{min-height:80px;}.elementor-8094 .elementor-element.elementor-element-9ba54ba .my-carousel__slide p{font-family:"Akko", san serif;font-size:12px;text-align:center;}.elementor-8094 .elementor-element.elementor-element-505b86b > .elementor-widget-container{margin:40px 0px 50px 0px;}.elementor-8094 .elementor-element.elementor-element-505b86b .breadcrumbs{color:#333333;}.elementor-8094 .elementor-element.elementor-element-7e9d885{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--margin-top:0rem;--margin-bottom:5rem;--margin-left:0rem;--margin-right:0rem;}.elementor-8094 .elementor-element.elementor-element-e5df57e{text-align:center;}.elementor-8094 .elementor-element.elementor-element-e5df57e .elementor-heading-title{font-family:"Akko", san serif;font-size:55px;font-weight:400;-webkit-text-stroke-color:#000;stroke:#000;color:#211C1C;}.elementor-8094 .elementor-element.elementor-element-027958a{margin:2rem 0rem calc(var(--kit-widget-spacing, 0px) + 2rem) 0rem;text-align:center;font-family:"Akko Pro Regular", san serif;font-size:14px;font-weight:400;}.elementor-8094 .elementor-element.elementor-element-dbb9ff5 .elementor-button{background-color:#000000;font-family:"Harmonia Sans", san serif;font-size:10px;font-weight:700;text-transform:uppercase;line-height:12px;letter-spacing:1.2px;fill:#FFFFFF;color:#FFFFFF;border-radius:0px 0px 0px 0px;}.elementor-8094 .elementor-element.elementor-element-dbb9ff5{margin:0px 20px calc(var(--kit-widget-spacing, 0px) + 11px) 20px;}.elementor-8094 .elementor-element.elementor-element-6f2c351{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-8094 .elementor-element.elementor-element-1d432e0{width:100%;max-width:100%;}.elementor-8094 .elementor-element.elementor-element-1d432e0 .ea-newsletter-subscribe .nl-left h2{font-family:"Akko", san serif;}.elementor-8094 .elementor-element.elementor-element-1d432e0 .ea-newsletter-subscribe .meta{font-family:"Akko", san serif;}.elementor-8094 .elementor-element.elementor-element-1d432e0 .ea-newsletter-subscribe .email-input, .elementor-8094 .elementor-element.elementor-element-1d432e0 .ea-newsletter-subscribe .email-input::placeholder{font-family:"Akko", san serif;}.elementor-8094 .elementor-element.elementor-element-1d432e0 .ea-newsletter-subscribe .btn{font-family:"Akko", san serif;}body.elementor-page-8094{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}@media(min-width:768px){.elementor-8094 .elementor-element.elementor-element-6f2c351{--content-width:100%;}}/* Start custom CSS for button, class: .elementor-element-dbb9ff5 */.elementor-8094 .elementor-element.elementor-element-dbb9ff5 .elementor-button-content-wrapper {
+    /* Make the parent wrapper the flex container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px; /* Move the height here if possible */
+}/* End custom CSS */
+/* Start custom CSS */.col-full {
+    max-width: none !important;
+    width: 100%;
+    padding: 0;
+}
+.archive-header{
+    display: none;
+}/* End custom CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Akko';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://shoptimizer.eunika.xyz/wp-content/uploads/2025/08/AkkoPro-Regular.woff2') format('woff2'),
+		url('https://shoptimizer.eunika.xyz/wp-content/uploads/2025/08/AkkoPro-Regular.woff') format('woff'),
+		url('https://shoptimizer.eunika.xyz/wp-content/uploads/2025/08/AkkoPro-Regular.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Harmonia Sans';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://shoptimizer.eunika.xyz/wp-content/uploads/2025/08/Harmonia-Sans-W01-Regular-1.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */

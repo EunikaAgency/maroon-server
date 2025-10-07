@@ -1,0 +1,524 @@
+
+
+.quote-form-container * {
+    transition: all 0.3s ease-in-out;
+    font-family: "Titillium Web", sans-serif !important;
+}
+
+/* Form Container */
+.form-container {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/*Error Message*/
+
+/* Hide errors by default */
+.error-message {
+  display: none;
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+/* Highlight invalid inputs */
+.form-input-text.error {
+  border: 1px solid red !important;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+/* Header */
+.header-wpf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-form {
+    font-family: "Titillium Web", sans-serif !important;
+    font-size: 45px !important;
+    font-weight: 400;
+    line-height: 1.15;
+    color: rgb(33, 28, 28);
+}
+.text-form {
+    font-size: 14px !important;
+    color: rgba(0, 0, 0, .75);
+    margin-bottom: .5rem !important;
+}
+.link-form {
+    color: rgb(0, 0, 0);
+    text-decoration: underline !important;
+    margin-bottom: .5rem !important;
+}
+.contact-methods {
+    font-size: 14px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form Content */
+.quote-form-container .form-content {
+    /* padding: 20px 20px; */
+    margin-top: 50px;
+}
+
+/* Input Groups */
+.form-group-text,
+.form-group-text-two-coumn,
+.form-group-text-two-coumn-two {
+    position: relative;
+    margin-bottom: 25px;
+}
+.form-group-text-two-coumn,
+.form-group-text-two-coumn-two {
+    margin-bottom: 0;
+}
+
+/* KENNETH */
+/* Input Styles */
+/* .form-input-text {
+    width: 100%;
+    padding: 1.5rem !important;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    background-color: #f1f1f1;
+    color: #333;
+    border: none !important;
+}
+
+.form-input-text.input-textarea {
+    min-height: 150px;
+    resize: vertical;
+    font-family: inherit;
+}
+.form-input-text:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.form-label-text {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    padding: 0 4px;
+    font-size: 16px;
+    color: #444;
+    font-weight: 600;
+    transition: top 0.3s ease, left 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+    pointer-events: none;
+    background: transparent;
+}
+
+.form-input-text::placeholder {
+    color: transparent;
+}
+
+.form-input-text:focus::placeholder {
+    color: #999; 
+}
+
+.form-input-text:focus + .form-label-text,
+.form-input-text.has-value + .form-label-text {
+    top: 2px;
+    left: 8px;
+    font-size: 11px;
+    color: #333;
+} */
+
+
+/* NEWWWW */
+/* Input Styles */
+.form-input-text {
+    width: 100%;
+    /* padding: 1.5rem !important; */
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    background-color: #f1f1f1;
+    color: #333;
+    border: none !important;
+    padding: 20px 30px 10px 24px !important;
+    height: 60px !important; /* added */
+}
+
+.form-input-text.input-textarea {
+    min-height: 150px;
+    resize: vertical;
+    font-family: inherit;
+    padding: 25px 30px 10px 24px !important;
+}
+.form-input-text:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Floating Labels */
+.form-label-text {
+    position: absolute;
+    /* top: 14px;
+    left: 12px; */
+    top: 18px;
+    left: 15px;
+    padding: 0 4px;
+    font-size: 16px;
+    color: #444;
+    /* font-weight: 600; */
+    font-weight: 400;
+    transition: top 0.3s ease, left 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+    pointer-events: none;
+    background: transparent;
+}
+
+.form-input-text::placeholder {
+    color: transparent; /* Make placeholder invisible */
+}
+
+.form-input-text:focus::placeholder {
+    color: #999; /* Optional: show placeholder on focus if desi#ff0000 */
+}
+
+.form-input-text:focus + .form-label-text,
+.form-input-text.has-value + .form-label-text {
+    top: 8px;
+    /* left: 8px;  */
+    left: 20px;
+    font-size: 11px;
+    color: #333;
+}
+
+/* Required Indicator */
+.required:after {
+    content: " *";
+    color: #e74c3c;
+}
+
+/* Two Column Layout */
+.two-column {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+.two-column > * {
+    flex: 1;
+}
+
+/* Submit Button */
+.submit-btn-request {
+    background-color: #000;
+    border: #000 solid 1px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    padding: 18px 30px;
+}
+.submit-btn-request:hover {
+    background-color: #fff;
+    color: #000;
+    border: #000 solid 1px;
+}
+
+.form-group-checkbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-label-select {
+    margin-bottom:.5rem !important;
+    color: #000;
+}
+
+.form-group-checkbox .select-choice {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 20px; /* row-gap | column-gap */
+}
+
+.form-group-checkbox .select-choice label {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* space between checkbox and text */
+  cursor: pointer;
+}
+
+
+/* Target all checkboxes inside your form */
+.form-group-checkbox input[type="checkbox"] {
+  appearance: none; /* remove default look */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 15px;
+  height: 15px;
+  border: 1px solid #333;  /* border color */
+  border-radius: 4px;      /* rounded corners */
+  background: #fff;        /* background color */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* When checked */
+.form-group-checkbox input[type="checkbox"]:checked {
+  background-color: #000;  /* background when checked */
+  border-color: #000;
+
+  /* Add your SVG checkmark */
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80% 80%;
+}
+
+
+
+
+
+
+
+/* FILE UPLOAD*/
+
+/* === File Upload Section === */
+.form-group-upload {
+    border: 2px dashed #000;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    transition: border-color 0.3s ease;
+    position: relative;
+    background-color: #fafafa;
+}
+
+.form-group-upload:hover {
+    border: 2px solid #000 !important;
+}
+
+.form-group-upload.dragover {
+    border-color: #0073aa; /* WP blue or your theme color */
+    background-color: #f0f8ff;
+}
+
+/* Upload content area */
+.upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none; /* prevents interfering with drag */
+}
+
+.upload-placeholder-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.upload-placeholder-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.upload-btn {
+    background-color: #f1f1f1;
+    color: #000;
+    border: 1px solid #000 !important;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    pointer-events: auto; /* re-enable button click */
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #000;
+    color: #f1f1f1;
+    border: 1px solid #f1f1f1 !important;
+}
+
+/* Hidden input */
+.upload-input {
+    display: none;
+}
+
+/* Preview area */
+.upload-preview-area {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.upload-preview-area img,
+.upload-preview-area .file-item {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 4px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-container {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .form-content {
+        padding: 30px 20px;
+    }
+    .two-column {
+        flex-direction: column;
+        gap: 0;
+    }
+    .form-group-text-two-coumn-two {
+        margin-bottom: 25px;
+    }
+}
+
+
+
+/* DropZone.js Css */
+
+#mockup-dropzone {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    background: #fafafa;
+    min-height: 150px;
+    cursor: pointer;
+}
+#mockup-dropzone .dz-preview .dz-image {
+    border-radius: 6px;
+    overflow: hidden;
+}
+#mockup-dropzone .dz-remove {
+    font-size: 12px;
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Upload area styling */
+#mockup-dropzone {
+  border: none;
+  border-radius: 8px;
+  background: #fafafa;
+  padding: 0;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover state */
+/* #mockup-dropzone:hover {
+  background: #f0f8ff;
+  border-color: var(--gfb-primary-color, #4a90e2);
+  color: var(--gfb-primary-color, #4a90e2);
+} */
+
+/* When dragging files over */
+#mockup-dropzone.dz-drag-hover {
+  background: #e6f7ff;
+  border-color: #2a7de1;
+  box-shadow: 0 0 10px rgba(42, 125, 225, 0.3);
+}
+
+
+/* My Custom Shit */
+/* Each preview item container */
+.gfb__dropzone--preview--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px; /* adjust as needed */
+  margin: 8px;
+  font-family: sans-serif;
+}
+
+/* Thumbnail wrapper */
+.gfb__dropzone--preview--item-thumb {
+    border: 1px solid #000 !important;
+    border-bottom: none !important;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+
+.gfb__dropzone--preview--item-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Filename + remove button container */
+.gfb__dropzone--preview--item-title {
+  border: 1px solid #000 !important; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  background: #fff;
+}
+
+/* Filename */
+.gfb__dropzone--preview--item-filename {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9rem;
+  max-width: calc(100% - 24px); /* keep space for the X */
+  color: #000;
+}
+
+/* Remove button */
+.gfb__dropzone--preview--item-remove {
+  cursor: pointer !important;
+  flex-shrink: 0;
+}
+
+.gfb__dropzone--preview--item-remove svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  color: #333;
+}
+
+
+.dropzone .dz-message {
+    padding: 2em 0;
+    margin: 0;
+}

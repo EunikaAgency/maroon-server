@@ -1,0 +1,76 @@
+{
+    
+
+    "elementor-gallery":[
+        "/wp-content/plugins/elementor-gallery-addon"
+    ],
+    
+    "elementor-addons":[
+        "/wp-content/plugins/elementor-addons"
+    ],
+  
+    "elementor-faq":[
+        "/wp-content/plugins/elementor-addons/includes/widgets/class-faq-widget.php"
+        ,"/wp-content/plugins/elementor-addons/views/faq-view"
+    ],
+
+    "elementor-panels":[
+        "/wp-content/plugins/elementor-addons/includes/widgets/class-split-panels-widget.php"
+        ,"/wp-content/plugins/elementor-addons/views/split-panels-view"
+    ],
+
+    "request":[
+        "/wp-content/plugins/custom-wpform/views/request-for-a-quote.php",
+        "/wp-content/plugins/custom-wpform/assets/js/request-for-a-quote.js",
+        "/wp-content/plugins/custom-wpform/controller/request-for-a-quote.php"
+    ],
+
+    "mock":[
+        "/wp-content/plugins/custom-wpform/views/mockup.php",
+        "/wp-content/plugins/custom-wpform/assets/js/mockup.js",
+        "/wp-content/plugins/custom-wpform/controller/mockup.php",
+        "/wp-content/plugins/custom-wpform/custom-wpform.php"
+    ],
+
+    "carousel":[
+        "/wp-content/plugins/elementor-addons/includes/widgets/class-carousel-widget.php",
+        "/wp-content/plugins/elementor-addons/views/carousel-view"
+    ],
+
+    "catalogue":[
+        "/wp-content/plugins/elementor-addons/includes/widgets/class-catalogue-widget.php",
+        "/wp-content/plugins/elementor-addons/views/catalogue-view"
+    ],
+
+    "faq":[
+        "/wp-content/plugins/elementor-addons/includes/widgets/class-faq-widget.php",
+        "/wp-content/plugins/elementor-addons/views/faq-view"
+    ],
+
+    "newsletter": [
+        "/wp-content/plugins/elementor-addons/views/newsletter-subscribe-view",
+        "/wp-content/plugins/elementor-addons/includes/widgets/class-newsletter-subscribe-view.php",
+        "/wp-content/plugins/elementor-addons/elementor-addons.php"
+    ],
+
+    "workflow": [
+        "/wp-content/plugins/elementor-addons/includes/widgets/class-workflow-widget.php",
+        "/wp-content/plugins/elementor-addons/views/workflow-view"
+    ],
+
+    "workflow-text": [
+        "/wp-content/plugins/elementor-addons/includes/widgets/class-workflow-image-text-widget.php",
+        "/wp-content/plugins/elementor-addons/views/workflow-media-text-view"
+    ],
+
+    "header": [
+        "/wp-content/plugins/elementor-addons/includes/widgets/class-threads-header-widget.php",
+        "/wp-content/plugins/elementor-addons/includes/class-threads-nav-walker.php",
+        "/wp-content/plugins/elementor-addons/views/threads-header-view"
+    ],
+    "work": [
+        "/wp-content/plugins/custom-wpform/views/workwear.php",
+        "/wp-content/plugins/custom-wpform/assets/js/workwear.js",
+        "/wp-content/plugins/custom-wpform/controller/workwear.php"
+    ]
+}

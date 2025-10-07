@@ -1,0 +1,21 @@
+.breadcrumbs {
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #333333;
+    justify-content: center;
+    gap:10px !important;  
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.breadcrumb-sep {
+    margin: 0 6px;
+    display: inline-flex;
+    vertical-align: middle;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product ID Mapping Tool</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fafafa; color: #333; line-height: 1.5;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+    h1 { font-size: 2rem; font-weight: 300; margin-bottom: 2rem; color: #333; }
+    .card { background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); overflow: hidden; }
+    .table-container { overflow-x: auto; }
+    .table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .table th { background: #f8f9fa; padding: 1rem; text-align: left; font-weight: 500; color: #666; border-bottom: 1px solid #e9ecef; }
+    .table td { padding: 1rem; border-bottom: 1px solid #f1f3f4; vertical-align: middle; }
+    .table tr:hover { background: #fafafa; }
+    .product-link {
+  color: #1a73e8;
+  text-decoration: none;
+  display: inline-block;
+  max-width: none;       /* remove width restriction */
+  overflow: visible;     /* no cutting */
+  text-overflow: unset;  /* disable ellipsis */
+  white-space: normal;   /* allow wrapping */
+  word-break: break-word; /* handle very long words gracefully */
+}
+
+    .product-link:hover { text-decoration: underline; }
+    .copy-btn { background: none; border: 1px solid #dadce0; border-radius: 4px; padding: 6px 8px; margin-left: 8px; cursor: pointer; color: #666; font-size: 12px; }
+    .copy-btn:hover { background: #f8f9fa; }
+    .counterpart-input { width: 180px; padding: 8px 12px; border: 1px solid #dadce0; border-radius: 4px; text-align: center; font-size: 0.9rem; }
+    .counterpart-input:focus { outline: none; border-color: #1a73e8; }
+    .variations-badge { background: #f1f3f4; color: #666; padding: 4px 8px; border-radius: 12px; font-size: 0.85rem; min-width: 24px; text-align: center; display: inline-block; }
+    .counterpart-link { color: #137333; text-decoration: none; }
+    .counterpart-link:hover { text-decoration: underline; }
+    .generate-btn { background: #1a73e8; color: white; border: none; padding: 12px 24px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; margin: 1.5rem 1rem; }
+    .generate-btn:hover { background: #1557b0; }
+    .generate-btn:disabled { background: #ccc; cursor: not-allowed; }
+    .export-section { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e9ecef; }
+    .export-section h3 { font-size: 1.1rem; font-weight: 500; margin-bottom: 1rem; color: #333; }
+    .loading-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.9); display: none; justify-content: center; align-items: center; z-index: 9999; }
+    .spinner { width: 40px; height: 40px; border: 3px solid #f3f3f3; border-top: 3px solid #1a73e8; border-radius: 50%; animation: spin 1s linear infinite; }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    .status-toast { position: fixed; bottom: 20px; right: 20px; background: #333; color: white; padding: 12px 16px; border-radius: 4px; font-size: 0.9rem; transform: translateX(300px); transition: transform 0.3s ease; z-index: 10000; }
+    .status-toast.show { transform: translateX(0); }
+    .status-toast.success { background: #137333; }
+    .status-toast.danger { background: #d93025; }
+    .saving { background: #fff3cd !important; }
+    .saved { background: #d1edff !important; transition: background 0.5s ease; }
+    @media (max-width: 768px) {
+      .container { padding: 1rem; }
+      h1 { font-size: 1.5rem; }
+      .table th, .table td { padding: 0.75rem 0.5rem; }
+      .counterpart-input { width: 140px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Product ID Mapping</h1>
+    
+    <div class="card">
+      <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Product</th>
+              <th>Variations</th>
+              <th>Counterpart ID</th>
+              <th>Counterpart Info</th>
+              <th>Match?</th>
+            </tr>
+          </thead>
+          <tbody id="productTableBody">
+            <!-- Products will be injected here -->
+          </tbody>
+        </table>
+      </div>
+      
+      <button class="generate-btn" id="generateTableBtn">Generate Export Table</button>
+      
+      <div class="export-section" id="exportTableContainer" style="display: none;">
+        <h3>Export Data</h3>
+        <div class="table-container">
+          <table class="table" id="exportTable">
+            <thead>
+              <tr>
+                <th>Product URL</th>
+                <th>Counterpart URL</th>
+                <th>Counterpart ID</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading Overlay -->
+  <div class="loading-overlay" id="loadingSpinner"><div class="spinner"></div></div>
+  <!-- Status Toast -->
+  <div class="status-toast" id="statusToast"><span id="toastMessage"></span></div>
+
+  <script>
+    let copiedValue = null;
+    function debounce(func, wait, immediate) {
+      let timeout;
+      return function() {
+        const context = this, args = arguments;
+        const later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        const callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+      };
+    }
+
+    $(document).ready(function() {
+      $('#loadingSpinner').css('display', 'flex');
+      $.ajax({
+        url: 'https://shoptimizer.eunika.xyz/wp-json/custom/products/get_full_woocommerce_products_dataset',
+        method: 'GET',
+        dataType: 'json',
+        success: function(products) {
+          $.ajax({
+            url: 'https://shoptimizer.eunika.xyz/wp-json/custom/products/get_all_counterpart_ids',
+            method: 'GET',
+            dataType: 'json',
+            success: function(counterpartIds) {
+              populateProductTable(products, counterpartIds);
+              $('#loadingSpinner').hide();
+            },
+            error: function() {
+              populateProductTable(products, {});
+              $('#loadingSpinner').hide();
+            }
+          });
+        },
+        error: function() {
+          $('#loadingSpinner').hide();
+          showStatusMessage('Error loading products. Please try again.', 'danger');
+        }
+      });
+    });
+
+    function populateProductTable(products, counterpartIds) {
+      const tableBody = $('#productTableBody');
+      tableBody.empty();
+
+      products.forEach(product => {
+        const row = $('<tr>').attr('data-product-id', product.id);
+        row.append($('<td>').text(product.id));
+
+        // Product with copy
+        const nameLink = $('<a>').addClass('product-link').attr('href', product.url).attr('target', '_blank').attr('title', product.name).text(product.name);
+        const copyBtn = $('<button>').addClass('copy-btn').attr('title', 'Copy Product Name').text('Copy').on('click', function(e) {
+          e.preventDefault();
+          copiedValue = product.name;
+          navigator.clipboard.writeText(copiedValue).then(() => {
+            showStatusMessage(`Copied: ${copiedValue}`, 'success');
+          });
+        });
+        row.append($('<td>').append(nameLink).append(copyBtn));
+
+        // Variations
+        const variationCount = product.variations ? product.variations.length : 0;
+        row.append($('<td>').append($('<span>').addClass('variations-badge').text(variationCount)));
+
+        // Counterpart input
+        const input = $('<input>').addClass('counterpart-input').attr('type', 'text').attr('placeholder', 'Enter ID').attr('data-product-id', product.id);
+        row.append($('<td>').append(input));
+
+        // Counterpart info + match cell
+        const infoTd = $('<td>').addClass('counterpart-info').text('—');
+        row.append(infoTd);
+        const matchTd = $('<td>').addClass('match-status').text('—');
+        row.append(matchTd);
+
+        tableBody.append(row);
+
+        // Preload counterpart IDs
+        if (counterpartIds[product.id]) {
+          const cpId = counterpartIds[product.id];
+          input.val(cpId);
+          fetchCounterpartUrl(cpId).then(data => updateCounterpartInfo(row, product.name, cpId, data)).catch(() => infoTd.text('Error'));
+        }
+
+        // Input auto-save
+        input.on('input', debounce(function() {
+          const $this = $(this);
+          const productId = $this.data('product-id');
+          const counterpartId = $this.val();
+          const row = $this.closest('tr');
+          const infoCell = row.find('.counterpart-info');
+
+          row.addClass('saving').removeClass('saved');
+          saveCounterpartId(productId, counterpartId).then(() => {
+            row.removeClass('saving').addClass('saved');
+            setTimeout(() => row.removeClass('saved'), 1000);
+
+            if (counterpartId) {
+              fetchCounterpartUrl(counterpartId).then(data => updateCounterpartInfo(row, product.name, counterpartId, data)).catch(() => infoCell.text('Error'));
+            } else {
+              infoCell.text('—');
+              row.find('.match-status').text('—');
+            }
+          }).catch(() => {
+            row.removeClass('saving');
+            infoCell.text('Save failed');
+            showStatusMessage('Error saving counterpart. Please try again.', 'danger');
+          });
+        }, 800));
+      });
+    }
+
+    function updateCounterpartInfo(row, productName, cpId, data) {
+      const infoCell = row.find('.counterpart-info');
+      const matchCell = row.find('.match-status');
+      if (data && data[cpId]) {
+        const link = $('<a>').addClass('counterpart-link').attr('href', data[cpId].url).attr('target', '_blank').text(data[cpId].title || 'View Product');
+        infoCell.empty().append(link);
+        const productNameNorm = productName.trim().toLowerCase();
+        const cpNameNorm = (data[cpId].title || '').trim().toLowerCase();
+        if (productNameNorm === cpNameNorm) {
+          matchCell.text('✅ Match');
+        } else {
+          matchCell.text('❌ Mismatch');
+        }
+      } else {
+        infoCell.text('Not found');
+        matchCell.text('—');
+      }
+    }
+
+    function saveCounterpartId(productId, counterpartId) {
+      return new Promise((resolve, reject) => {
+        $.ajax({
+          url: 'https://shoptimizer.eunika.xyz/wp-json/custom/products/update_product_meta',
+          method: 'POST',
+          dataType: 'json',
+          data: { product_id: productId, meta_key: 'counterpart_product_id', meta_value: counterpartId },
+          success: function(response) {
+            showStatusMessage('Counterpart saved successfully!', 'success');
+            resolve(response);
+          },
+          error: function() { reject(); }
+        });
+      });
+    }
+
+    function fetchCounterpartUrl(counterpartId) {
+      return new Promise((resolve, reject) => {
+        $.ajax({
+          url: `https://2kthreads.eunika.xyz/wp-json/custom/products/get_product_urls_by_ids?ids=${counterpartId}`,
+          method: 'GET',
+          dataType: 'json',
+          success: function(response) {
+            if (response.success && response.found) resolve(response.found);
+            else reject();
+          },
+          error: function() { reject(); }
+        });
+      });
+    }
+
+    function fetchBulkCounterpartUrls(idsArray) {
+      const ids = idsArray.filter(id => id && !isNaN(id)).join(',');
+      return new Promise((resolve, reject) => {
+        if (!ids) return resolve({});
+        $.ajax({
+          url: `https://shoptimizer.eunika.xyz/wp-json/custom/products/get_product_urls_by_ids?ids=${ids}`,
+          method: 'GET',
+          dataType: 'json',
+          success: function(response) {
+            if (response.success && response.found) resolve(response.found);
+            else resolve({});
+          },
+          error: function() { reject({}); }
+        });
+      });
+    }
+
+    $('#generateTableBtn').on('click', async function() {
+      const $btn = $(this);
+      $btn.prop('disabled', true).text('Generating...');
+      const rows = $('#productTableBody tr');
+      const data = [];
+      rows.each(function() {
+        const productUrl = $(this).find('.product-link').attr('href');
+        const counterpartId = $(this).find('.counterpart-input').val();
+        data.push({ productUrl: productUrl || '', counterpartId: counterpartId || '', counterpartUrl: '' });
+      });
+      try {
+        const ids = data.map(item => item.counterpartId).filter(Boolean);
+        const urlMap = await fetchBulkCounterpartUrls(ids);
+        data.forEach(row => {
+          const entry = urlMap[row.counterpartId];
+          row.counterpartUrl = entry ? entry.url : '';
+        });
+        const tbody = $('#exportTable tbody');
+        tbody.empty();
+        data.forEach(row => {
+          const tr = $('<tr>');
+          tr.append($('<td>').html(row.productUrl ? `<a href="${row.productUrl}" target="_blank">${row.productUrl}</a>` : '—'));
+          tr.append($('<td>').html(row.counterpartUrl ? `<a href="${row.counterpartUrl}" target="_blank">${row.counterpartUrl}</a>` : '—'));
+          tr.append($('<td>').text(row.counterpartId || '—'));
+          tbody.append(tr);
+        });
+        $('#exportTableContainer').show();
+        showStatusMessage('Export table generated successfully!', 'success');
+      } catch (error) {
+        showStatusMessage('Error generating export table.', 'danger');
+      } finally {
+        $btn.prop('disabled', false).text('Generate Export Table');
+      }
+    });
+
+    function showStatusMessage(message, type) {
+      const toast = $('#statusToast');
+      const messageEl = $('#toastMessage');
+      toast.removeClass('success danger').addClass(type);
+      messageEl.text(message);
+      toast.addClass('show');
+      setTimeout(() => { toast.removeClass('show'); }, 3000);
+    }
+  </script>
+</body>
+</html>

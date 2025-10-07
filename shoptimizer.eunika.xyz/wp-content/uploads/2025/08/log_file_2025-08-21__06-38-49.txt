@@ -1,0 +1,101 @@
+
+---Downloaded files---
+The import files for: Shoptimizer Demo Data were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://shoptimizer.eunika.xyz
+Data file = /var/www/html/shoptimizer.eunika.xyz/wp-content/uploads/2025/08/demo-content-import-file_2025-08-21__06-38-49.xml
+Widget file = /var/www/html/shoptimizer.eunika.xyz/wp-content/uploads/2025/08/demo-widgets-import-file_2025-08-21__06-38-49.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+---ocdi/before_content_import---
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Sidebar : 
+
+Product Categories - Product categories - Imported
+Filter Products by Attribute - Filter by size - Imported
+Filter Products by Attribute - Filter by color - Imported
+Filter Products by Price - Filter by price - Imported
+Products by Rating list - Top rated products - Imported
+Product Tag Cloud - Tags - Imported
+
+Sidebar Posts : 
+
+Text - No Title - Imported
+Archives - No Title - Imported
+Categories - No Title - Imported
+Tag Cloud - No Title - Imported
+
+Sidebar Pages : 
+
+Recent Posts - No Title - Imported
+Meta - No Title - Imported
+Tag Cloud - No Title - Imported
+
+Below Header : 
+
+Text - No Title - Imported
+
+Top Bar Left : 
+
+Text - No Title - Imported
+
+Top Bar Center : 
+
+Text - No Title - Imported
+
+Top Bar Right : 
+
+Custom HTML - No Title - Imported
+
+Single Product Custom Area : 
+
+Text - No Title - Imported
+
+Floating Button Modal Content : 
+
+Text - No Title - Imported
+
+Cart Custom Area : 
+
+Text - No Title - Imported
+
+Checkout Custom Area : 
+
+Text - No Title - Imported
+
+Below Content : 
+
+Custom HTML - Free Worldwide shipping - Imported
+Custom HTML - Easy 30 days returns - Imported
+Custom HTML - International Warranty - Imported
+Custom HTML - 100% Secure Checkout - Imported
+
+Footer : 
+
+Text - About - Imported
+Text - Help - Imported
+Text - Follow - Imported
+Text - Over 1,000 5-star reviews - Imported
+
+Copyright : 
+
+Text - No Title - Imported
+Text - No Title - Imported
+
+Mobile Extra : 
+
+Text - No Title - Imported
+
+
+
+---ocdi/after_import---
+Shoptimizer demo content imported!

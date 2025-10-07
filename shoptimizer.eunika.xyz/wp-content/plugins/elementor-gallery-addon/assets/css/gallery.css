@@ -1,0 +1,294 @@
+/* ===== Shared Container ===== */
+.gallery-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* ===== Swiper Layout (Slider Mode) ===== */
+.gallery-container:not(.grid-layout) .swiper {
+  width: 100%;
+}
+
+.gallery-container:not(.grid-layout) .swiper-slide {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: var(--ega-slide-height, auto) !important;
+}
+
+.gallery-container:not(.grid-layout) .swiper-slide:hover {
+  transform: scale(1.02);
+}
+
+.gallery-container:not(.grid-layout) .swiper-slide:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-container:not(.grid-layout) .swiper-slide .image-container {
+  width: 100%;
+  height: 100% !important;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gallery-container:not(.grid-layout) .swiper-slide img {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Static Grid Layout (grid-wrapper structure) ===== */
+.gallery-container.grid-layout .grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.gallery-container.grid-layout .grid-item {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+  height: var(--ega-slide-height, auto);
+}
+
+.gallery-container.grid-layout .grid-item:hover {
+  transform: scale(1.02);
+}
+
+.gallery-container.grid-layout .grid-item .image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gallery-container.grid-layout .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Captions Shared ===== */
+.gallery-container .caption .title,
+.gallery-container .caption-overlay .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.gallery-container .caption .description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== Overlay Captions ===== */
+.gallery-container .caption-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  padding: var(--ega-overlay-padding, 80px);
+}
+
+.gallery-container .caption-overlay.overlay-top {
+  justify-content: flex-start;
+}
+
+.gallery-container .caption-overlay.overlay-bottom {
+  justify-content: flex-end;
+}
+
+.gallery-container .caption-overlay.overlay-center {
+  justify-content: center;
+}
+
+.gallery-container .caption-overlay .title,
+.gallery-container .caption-overlay .description {
+  color: #fff;
+}
+
+/* ===== Hover-to-Show Overlay ===== */
+.gallery-container .hover-overlay-desktop .caption-overlay {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-container .hover-overlay-desktop:hover .caption-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .gallery-container .hover-overlay-tablet .caption-overlay {
+    opacity: 0;
+  }
+  .gallery-container .hover-overlay-tablet:hover .caption-overlay {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-container .hover-overlay-mobile .caption-overlay {
+    opacity: 0;
+  }
+  .gallery-container .hover-overlay-mobile:hover .caption-overlay {
+    opacity: 1;
+  }
+}
+
+/* ===== Overlay Layout Adjustments (Swiper) ===== */
+.gallery-container.overlay-layout:not(.grid-layout) .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: var(--ega-slide-height, 100%) !important;
+}
+
+.gallery-container.overlay-layout:not(.grid-layout) .swiper-slide .image-container {
+  width: 100%;
+  height: 100% !important;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gallery-container.overlay-layout:not(.grid-layout) .swiper-slide img {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Spacing & Radius (Shared for Both Modes) ===== */
+.gallery-container.spacing-none .swiper-slide,
+.gallery-container.grid-layout .grid-item.spacing-none {
+  margin-right: 0 !important;
+}
+
+.gallery-container.spacing-thin .swiper-slide,
+.gallery-container.grid-layout .grid-item.spacing-thin {
+  margin-right: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.gallery-container.spacing-large .swiper-slide,
+.gallery-container.grid-layout .grid-item.spacing-large {
+  margin-right: 24px !important;
+  margin-bottom: 24px !important;
+}
+
+.gallery-container .swiper-slide.radius-none,
+.gallery-container.grid-layout .grid-item.radius-none {
+  border-radius: 0;
+}
+
+.gallery-container .swiper-slide.radius-medium,
+.gallery-container.grid-layout .grid-item.radius-medium {
+  border-radius: 8px;
+}
+
+.gallery-container .swiper-slide.radius-large,
+.gallery-container.grid-layout .grid-item.radius-large {
+  border-radius: 50px;
+}
+
+/* ===== Overlay Captions for Static Grid ===== */
+.gallery-container.grid-layout .grid-item .caption-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  padding: var(--ega-overlay-padding, 80px);
+}
+
+.gallery-container.grid-layout .grid-item.hover-overlay-desktop .caption-overlay {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-container.grid-layout .grid-item.hover-overlay-desktop:hover .caption-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .gallery-container.grid-layout .grid-item.hover-overlay-tablet .caption-overlay {
+    opacity: 0;
+  }
+  .gallery-container.grid-layout .grid-item.hover-overlay-tablet:hover .caption-overlay {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-container.grid-layout .grid-item.hover-overlay-mobile .caption-overlay {
+    opacity: 0;
+  }
+  .gallery-container.grid-layout .grid-item.hover-overlay-mobile:hover .caption-overlay {
+    opacity: 1;
+  }
+}
+
+/* ===== Caption Padding Shared ===== */
+.gallery-container .caption {
+  padding: var(--ega-caption-padding, 12px);
+}
+
+.gallery-container.grid-layout .grid-item .caption {
+  padding: var(--ega-caption-padding, 12px);
+}
+
+/* ===== Fallbacks ===== */
+.gallery-container .caption {
+  padding: 12px;
+}
+
+.gallery-container .caption-overlay {
+  padding: 80px;
+}
+
+.gallery-container.grid-layout .grid-item .caption {
+  padding: 12px;
+}
+
+.gallery-container.grid-layout .grid-item .caption-overlay {
+  padding: 80px;
+}
