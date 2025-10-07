@@ -1,0 +1,25 @@
+
+@import "../../../@common/common.less";
+
+
+.iconCustomColor() when (iscolor(@iconCustomColor))		{ background-color: @iconCustomColor !important; border-color: @iconCustomColor !important; }
+
+#@{el}-main{
+	
+	.elm-facilities .item .item-thumbnail .item-icon	{ .iconCustomColor(); }	
+
+}
+
+.itemCustomBg() when (iscolor(@itemCustomBg))		{ background-color: @itemCustomBg; }
+
+#@{el}-main{
+	
+	.elm-facilities		{ .itemCustomBg(); }	
+
+}
+
+
+
+.@{el}{
+	clear:both;
+}

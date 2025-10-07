@@ -1,0 +1,4 @@
+Sitemap: http://122.52.11.116:10090/otsuka-pts/sitemap.xml
+User-agent: *
+
+

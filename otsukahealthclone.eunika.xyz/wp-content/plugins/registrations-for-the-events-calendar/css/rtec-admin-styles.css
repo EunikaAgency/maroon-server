@@ -1,0 +1,1193 @@
+/* Notices */
+.rtec-notice-all-admin {
+    display: block;
+    margin-top:30px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.rtec-all-admin-error {
+    border-left: 4px solid #dc3232;
+}
+.rtec-notice-all-admin:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.rtec-tooltip-link i {
+    font-size: 16px;
+    padding: 0 5px;
+}
+.rtec-img-wrap {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    padding: 10px;
+}
+.rtec-img-wrap img {
+    width: 100%;
+}
+.rtec-msg-wrap {
+    display: inline;
+    float: left;
+    max-width: 500px;
+    padding: 10px;
+}
+.rtec-msg-wrap p:first-child {
+    margin-top: 0px;
+}
+.rtec-instructions {
+    font-weight: bold;
+    color: #a00;
+}
+.rtec-admin-wrap .rtec-notice,
+.rtec-notice{
+    display: inline-block;
+    margin: 5px 0 15px;
+    padding: 1px 12px;
+    border-radius: 5px;
+    background: #CFF7F3;
+    border: 1px solid #9EE6DE;
+}
+#rtec-admin-addons .rtec-notice {
+    margin-bottom: 10px;
+}
+.rtec-admin-wrap .rtec-notice {
+    margin-bottom: 0;
+}
+.rtec-wrapper {
+    box-sizing: border-box;
+    padding-bottom: 100px;
+}
+.rtec-radio-label {
+    margin-right: 20px;
+}
+.rtec-view-selector a{
+    display: inline-block;
+    margin-right: 15px;
+}
+.rtec-fade {
+    opacity: .7;
+}
+.rtec-single-event + .rtec-single-event.rtec-single-mvt {
+    float: right;
+}
+/* remove notice */
+.rtec-conf-alert {
+    margin: 10px 0;
+    box-shadow: 2px 2px 3px #ddd;
+}
+.rtec-individual-available {
+    font-size: 16px;
+    color: #d54e21;
+}
+/*
+9EE6DE
+46A99E
+
+*/
+div.rtec-green-bg,
+div.rtec-a-button {
+    display: inline-block;
+    text-align: center;
+}
+.rtec-clear:after {
+    display: table;
+    clear: both;
+    content: " ";
+    visibility: hidden;
+}
+.rtec-admin-wrap hr {
+    margin: 40px 0;
+}
+.rtec-admin-2-columns {
+    width: 45.5%;
+    display: inline-block;
+}
+.rtec-single-event {
+    display: inline-block;
+    vertical-align: top;
+    width: 47.5%;
+    margin: 0 2% 2em 0;
+    border-radius: 5px;
+}
+.rtec-single-event:nth-child(2n) {
+    margin-right: 0;
+    margin-left: 2%;
+}
+#rtec-back-overview {
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+.rtec-event-actions,
+.rtec-outline {
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.rtec-event-actions {
+    border-bottom: 1px solid #ccc;
+}
+.rtec-single-event .rtec-event-meta,
+.rtec-single-event .rtec-event-actions,
+.rtec-email-creator {
+    background: #e5e5e5;
+}
+.rtec-single-event .rtec-mvt-list-item .rtec-event-actions {
+    background: #FFEECD;
+}
+#rtec_csv_export_form {
+    display: inline-block;
+    vertical-align: top;
+}
+.rtec-event-meta {
+    position: relative;
+}
+.rtec-single-event h3{
+    margin: .25em 60px .25em 0;
+    padding: .5em 10px 0;
+}
+.rtec-event-meta a,
+.rtec-mvt-list-item a {
+    text-decoration: none;
+}
+.rtec-event-meta a h3:hover,
+.rtec-mvt-list-item a h3:hover {
+    color: #00a0d2;
+}
+.rtec-event-meta p,
+.rtec-mvt-list-item p {
+    margin: 0;
+    padding: .25em 10px;
+}
+.rtec-single .rtec-event-meta .rtec-reg-info p {
+    padding-left: 0;
+}
+.rtec-venue-highlight,
+.widefat  td.rtec-venue-highlight{
+    color: #333;
+    background-color: #ccc;
+}
+.rtec-single-mvt-event .rtec-venue-highlight,
+.widefat .rtec-single-mvt-event td.rtec-venue-highlight {
+    background-color: #FFEECD;
+}
+.rtec-single-mvt-event p.rtec-venue-highlight {
+    border: 1px solid #D7B46F;
+}
+.rtec-admin-wrap .rtec-input-notice {
+    background-color: #FFEECD;
+    border: 1px solid #D7B46F;
+}
+.rtec-single .rtec-border-sides {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.rtec-event-meta .rtec-reg-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: .5em 5px 0 0;
+    text-align: center;
+}
+.rtec-single .rtec-event-meta .rtec-reg-info {
+    position: relative;
+    border-radius: 0;
+}
+.rtec-primary-button {
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    -webkit-box-shadow: 0 1px 0 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799,1px 0 1px #006799,0 1px 1px #006799,-1px 0 1px #006799;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 26px;
+    height: 28px;
+    margin: 0;
+    padding: 0 10px 1px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.rtec-next { float: right; }
+.rtec-view-all {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+a.rtec-wide {
+    display: inline-block;
+    width: 100%;
+}
+
+.rtec-admin-wrap .rtec-add-field,
+.rtec-admin-wrap .rtec-add-mvt {
+    width: 425px;
+}
+.rtec-single-event table td {
+    word-wrap: break-word;
+    max-width: 120px;
+}
+.rtec-wrapper .rtec-admin-secondary-button,
+.rtec-wrapper .tablenav a.button {
+    margin: 0 0 0 1em;
+    display: inline-block;
+}
+.rtec-overview .rtec-admin-secondary-button{
+    float: right;
+    margin: .5em 1em .5em 1em;
+}
+.rtec-manage-match-actions {
+    position: relative;
+    display: none;
+}
+.rtec-manage-match-actions .spinner {
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.rtec-overview .rtec-match-action {
+    display: block;
+    margin-top: .5em;
+}
+.rtec-admin-wrap .rtec-green-bg {
+    font-weight: 700;
+    background-color: #009688;
+    border: none;
+    border-radius: 2px;
+}
+.rtec-admin-wrap .rtec-green-bg a,
+.rtec-admin-wrap .rtec-green-bg span {
+    box-sizing: border-box;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.rtec-admin-wrap .rtec-green-bg:hover,
+.rtec-admin-wrap .rtec-green-bg:active,
+.rtec-admin-wrap .rtec-green-bg:focus {
+    opacity: .8;
+}
+
+.rtec-admin-wrap .rtec-green-bg:focus {
+    border-color: #46A99E;
+    -webkit-box-shadow: 0 0 3px #46A99E;
+    box-shadow: 0 0 3px #46A99E;
+}
+.rtec-admin-wrap .wp-editor-wrap,
+#wp-rtecSingleCustomConfirmation-wrap{
+    max-width: 620px;
+}
+/* hidden event options */
+.rtec-hidden-option-wrap {
+    margin-bottom: 10px;
+}
+.rtec-sameline {
+    display: inline-block;
+}
+.rtec-sameline label {
+    margin-right: 10px;
+}
+.rtec-hidden-option-wrap code,
+#rtec-event-details code{
+    line-height: 2.0;
+}
+.rtec-hidden-options h4 {
+    margin-bottom: .66em;
+}
+
+/* Single */
+.rtec-single .rtec-single-event {
+    width: 100%;
+}
+.rtec-single .rtec-reg-info {
+    text-align: left;
+    padding: .25em 10px;
+}
+.rtec-single table {
+    position: relative;
+}
+.rtec-single .rtec-single-event table td {
+    max-width: none;
+}
+.rtec-single table td input[type="checkbox"] {
+    width: auto;
+    margin: 0 0 0 8px;
+}
+.rtec-single table .rtec-checkbox {
+    padding: 11px 0 0 3px;
+}
+.rtec-single .rtec-event-actions {
+    padding-top: 1px;
+}
+.rtec-new-registration input,
+.rtec-reg-row input {
+    max-width: 100%;
+}
+.rtec-table-changing {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 50%;
+    left: 50%;
+}
+.rtec-first-data,
+.rtec-checkbox {
+    position: relative;
+}
+.rtec-status-icon-wrap {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    width: 23px;
+}
+.rtec-notice-new {
+    position: absolute;
+    left: -15px;
+    top: -2px;
+    padding: 4px 5px 5px;
+    line-height: 1;
+    border-radius:50%;
+    background: #ff6600;
+    color: #fff;
+    font-size: 10px;
+}
+.rtec-status-icon-wrap .rtec-notice-new {
+    left: 0;
+    top: 0;
+}
+.rtec-status-explanation {
+    display: none;
+    position: absolute;
+    z-index: 200;
+    padding: 4px 8px;
+    width: 150px;
+    line-height: 1.2;
+    right: -166px;
+    top: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.rtec-status-icon-wrap:hover .rtec-status-explanation {
+    display: block;
+}
+#rtec-new-dismiss {
+    padding-bottom: 5px;
+    display: block;
+}
+#rtec-new-dismiss .rtec-notice-new {
+    position: relative;
+    top:auto;
+    left:auto;
+    margin:0;
+    padding: 3px 5px;
+}
+.rtec-field-options-wrapper {
+    width: 425px;
+}
+.rtec-field-options-wrapper,
+.rtec-availability-options-wrapper {
+    position: relative;
+    margin-bottom: .5em;
+    border: 1px solid #ddd;
+    background: #fbfbfb;
+}
+.rtec-field-options-wrapper h4,
+.rtec-availability-options-wrapper h4 {
+    margin: 0;
+    padding: .5em 1em;
+    font-size: 1.2em;
+    background: #ddd;
+}
+.rtec-field-options-wrapper .fa-trash{
+    font-size: 1.2em;
+}
+.rtec-admin-wrap .rtec-field-options-wrapper > p,
+.rtec-admin-wrap .rtec-field-options-wrapper .rtec-padded-group{
+    padding: 0 1em;
+    margin-bottom: 10px;
+}
+/* Form Settings */
+.rtec-admin-wrap .rtec-box{
+    max-width: 600px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+.rtec-admin-wrap .rtec-form-location-example img {
+    float: left;
+    margin-right: 10px;
+    background: #fff;
+}
+.rtec-form-location-example p > span {
+    font-style: italic;
+}
+
+.rtec-admin-wrap .rtec-field-options-wrapper label {
+    font-weight: 600;
+}
+.rtec-reveal-field-atts {
+    padding: 0 1em;
+    margin: 5px 1em 1em !important;
+}
+.rtec-field-atts {
+    padding: 0 1em;
+    display: none;
+}
+.rtec-field-atts ul {
+    list-style: disc inside;
+}
+#rtec-message-text-wrapper-up,
+#rtec-message-text-wrapper-down,
+#rtec-message-text-wrapper-other {
+    margin-top: 0;
+}
+.rtec-message-group-wrap {
+    box-sizing: border-box;
+}
+.rtec-message-group-wrap .rtec-admin-2-columns {
+    width: 48.75%;
+    margin: 0 0 5px;
+    vertical-align: top;
+}
+.rtec-message-group-wrap .rtec-admin-row .rtec-admin-2-columns:first-child {
+    margin-right: 1%;
+}
+.rtec-message-group-wrap .rtec-input-group {
+    padding: 1em;
+}
+.rtec-field-options-wrapper h4 span {
+    font-size: 12px;
+    font-weight: normal;
+}
+.rtec-field-options-wrapper .rtec-other-input {
+    width: 300px;
+}
+.rtec-field-options-wrapper .rtec-valid-count-input {
+    width: 130px;
+}
+.rtec-custom-field-remove{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: .5em;
+    font-size: 1.2em;
+    background: #FDA7AD;
+    color: #23282d;
+}
+.rtec-checkbox-row label {
+    margin-right: 1em;
+}
+.rtec-availability-options-wrapper {
+    margin: 1.5em 0 .5em;
+}
+.rtec-confirmation-message-tr td {
+    width: 400px;
+    vertical-align: top;
+}
+.rtec-button-wrapper {
+    display: block;
+}
+#rtec_registration_deadline {
+    width: 70px;
+}
+.rtec-admin-wrap .form-table tbody tr td .description {
+    display: block;
+    width: 415px;
+}
+.rtec-admin-wrap .form-table th {
+    min-width: 200px;
+}
+.rtec-mvt-field-remove i {
+    font-size: 16px;
+}
+/* Tooltip */
+.rtec-tooltip {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Tooltip table */
+.rtec-tooltip-table{
+    display: block;
+    width: 94%;
+    margin: 30px 0;
+}
+.rtec-tooltip-table .rtec-col-1,
+.rtec-tooltip-table .rtec-col-2{
+    padding: 4px 1%;
+    border-bottom: 1px solid #ddd;
+}
+.rtec-tooltip-table .rtec-col-1{
+    display: inline-block;
+    width: 26%;
+}
+.rtec-tooltip-table .rtec-col-2{
+    display: inline-block;
+    width: 70%;
+}
+.rtec-preview-image {
+    width: 300px;
+}
+.rtec-preview-image img {
+    max-width: 290px;
+}
+.wp-core-ui .rtec-media-button {
+    padding-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+    padding-right: 7px;
+}
+.rtec-media-button span.wp-media-buttons-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: text-top;
+    margin: 0 2px;
+}
+.rtec-media-button span.wp-media-buttons-icon:before {
+    font: 400 18px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f104";
+}
+
+.rtec-support-button {
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 3px 6px 4px;
+    margin-bottom: 1em;
+    width: auto;
+    background-color: rgba(0, 102, 102, .8);
+    color: #fff !important;
+    text-decoration: none;
+    text-align: center;
+}
+.rtec-support-button:hover {
+    background-color: rgb(0, 102, 102);
+}
+.rtec-admin-event-registration-options-wrapper {
+    width: 100%;
+}
+.rtec-admin-event-registration-options-wrapper a {
+    float: right;
+}
+
+/** Styles added that can be removed once sortable elements introduced **/
+
+.rtec-wrapper .rtec-event-options.postbox.open .toggle-indicator:before,
+.rtec-mvt-list-item .rtecbox.open .toggle-indicator:before {
+    content: "\f142";
+    display: inline-block;
+    font: 400 20px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none!important;
+}
+.rtec-wrapper .rtec-event-options.postbox.closed .toggle-indicator:before,
+.rtec-mvt-list-item .rtecbox.closed .toggle-indicator:before {
+    content: "\f140";
+    display: inline-block;
+    font: 400 20px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none!important;
+}
+
+.rtec-event-options.postbox {
+    margin: 0;
+    padding: 8px 2px 8px 10px;
+    border: 1px solid #ddd;
+    background: #e5e5e5;
+}
+.rtec-hidden-options.postbox {
+    background-color: #eee;
+}
+.rtec-event-options.postbox .handlediv,
+.rtec-mvt-list-item .handlediv{
+    width: 32px;
+    height: 32px;
+    margin-top: -8px;
+}
+.rtec-event-options.postbox .hndle {
+    cursor: pointer;
+    border-bottom: none;
+}
+.rtec-event-options .rtec-update-event-options {
+    float: left;
+    margin: 16px 0 0;
+}
+
+@media all and (max-width: 910px) and (min-width: 600px){
+    .rtec-overview .rtec-single-event tr th:nth-child(4),
+    .rtec-overview .rtec-single-event tr td:nth-child(4) {
+        display: none;
+    }
+}
+
+@media all and (max-width: 600px){
+    .rtec-overview .rtec-single-event,
+    .rtec-overview .rtec-single-event {
+        width: 100%;
+        margin: 2em 2% 2em 2%;
+    }
+}
+
+/* List View */
+.rtec-registrations-data td {
+    max-width: 150px;
+}
+
+.rtec-toolbar-secondary {
+    max-width: 66%;
+    display: inline-block;
+}
+.wp-core-ui .rtec-toolbar-button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px 0 0;
+}
+.rtec-highlight {
+    background: #ddd;
+    font-weight: bold;
+}
+.rtec-wrapper .striped tbody .rtec-unconfirmed {
+    background: #efefef;
+}
+span.rtec-unconfirmed,
+span.rtec-is-user{
+    padding: 4px 5px;
+}
+.rtec-wrapper .striped tbody .rtec-is-user {
+    background: #C8F6F1;
+}
+.rtec-wrapper .striped tbody .rtec-unconfirmed.rtec-notice-new,
+.rtec-legend.rtec-unconfirmed i {
+    background: #333;
+    color: #fff;
+}
+.rtec-admin-wrap .rtec-in-use .rtec-create-field.rtec-create-format {
+    background: #d0aa27;
+    color: #fff;
+    font-weight: bold;
+}
+.rtec-wrapper .striped tbody .rtec-is-user.rtec-notice-new,
+.rtec-legend.rtec-is-user i {
+    background: #009688;
+    color: #fff;
+}
+.rtec-legend.rtec-is-user i {
+    padding: 4px 5px;
+}
+.rtec-legend i {
+    padding: 4px;
+    border-radius: 50%;
+    font-size: 10px
+}
+.rtec-event-meta {
+    margin-top: 10px
+}
+.rtec-unverified {
+    background: #FDACB2;
+}
+.rtec-block {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    border: 1px solid #333;
+}
+
+.rtec-list-attendance {
+    text-align: center;
+}
+.rtec-alert {
+    display: inline-block;
+    line-height: 19px;
+    padding: 11px 15px;
+    font-size: 14px;
+    text-align: left;
+    margin: 25px 20px 0 2px;
+    background-color: #fff;
+    border-left: 4px solid #ffba00;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.rtec-overview-nav a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+#rtec-date-picker {
+    background-color: #9EE6DE;
+    border-color: #46A99E;
+}
+
+/* icons */
+.rtec-field-options-wrapper .fa-question-circle {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* hidden event options */
+.rtec-hidden-options .rtec-field-options-wrapper {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Support tab */
+.rtec-support-title { font-size: 16px; font-weight: bold; }
+
+/* Date Picker */
+.rtec-ui-datepicker .ui-datepicker-prev .ui-icon,
+.rtec-ui-datepicker .ui-datepicker-next .ui-icon {
+    display: none;
+}
+
+/* Overview Actions */
+.rtec-overview .rtec-event-actions {
+    text-align: right;
+}
+.rtec-event-actions {
+    text-align: left;
+}
+.rtec-overview .rtec-admin-secondary-button {
+    padding: 3px 5px;
+    height: auto;
+    margin: 3px 10px 3px 0;
+    min-height: 1px;
+    line-height: 1;
+}
+.rtec-overview .rtec-admin-secondary-button .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+/* Lite Notice */
+@media screen and (max-width: 900px) {
+    #rtec-notice-bar {
+        display:none !important
+    }
+}
+
+#rtec-notice-bar {
+    background-color: #DDDDDD;
+    color: #777777;
+    text-align: center;
+    position: relative;
+    padding: 7px;
+    margin-bottom: 0;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+    max-height: 100px;
+    overflow: hidden
+}
+
+#rtec-notice-bar.out {
+    opacity: .5;
+    max-height: 0
+}
+
+#rtec-notice-bar a {
+    color: #009688;
+}
+
+#rtec-notice-bar a:hover {
+    opacity: .7;
+}
+
+#rtec-notice-bar .dismiss {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: 5px;
+    margin-top: 1px;
+    background: 0 0;
+    color: #72777c;
+    cursor: pointer
+}
+
+#rtec-notice-bar .dismiss:before {
+    background: 0 0;
+    color: #72777c;
+    content: "\f335";
+    display: block;
+    font: normal 20px/20px dashicons;
+    speak: none;
+    height: 20px;
+    text-align: center;
+    width: 20px;
+    -webkit-font-smoothing: antialiased
+}
+
+/* ad */
+#rtec-admin-footer .rtec-pro-ad-wrap {
+    display: block;
+    max-width: 700px;
+    text-decoration: none;
+}
+#rtec-admin-footer .rtec-pro-ad,
+#rtec-admin-footer .rtec-pro-features {
+    width: 100%;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+#rtec-admin-footer .rtec-pro-ad {
+    background: #CDF7F3;
+    max-width: 400px;
+}
+#rtec-admin-footer .rtec-pro-ad img,
+#rtec-admin-footer .rtec-pro-copy {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+#rtec-admin-footer .rtec-pro-copy span {
+    font-size: 14px;
+    color: #777;
+}
+#rtec-admin-footer .rtec-pro-copy span.rtec-bold {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #444;
+    line-height: 1.2;
+}
+
+#rtec-admin-footer .rtec-pro-features {
+    width: 95%;
+    padding: 12px;
+    background: #fff;
+}
+#rtec-admin-footer .rtec-pro-features h3 {
+    color: #009788;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.2;
+}
+#rtec-admin-footer .rtec-pro-features h3 span {
+    color: #777;
+    font-weight: normal;
+}
+
+#rtec-admin-footer .rtec-pro-features-list-items {
+    max-width: 600px;
+    margin: auto;
+    width: 300px;
+}
+#rtec-admin-footer .feature-feature-list-item {
+    display: inline-block;
+    position: relative;
+    color: #333;
+    line-height: 1.2;
+    width: 100%;
+}
+@media all and (min-width: 620px){
+    #rtec-admin-footer .rtec-pro-ad {
+        max-width: 700px;
+    }
+    #rtec-admin-footer .rtec-pro-ad img{
+        display: inline-block;
+    }
+    #rtec-admin-footer .rtec-pro-copy {
+        display: inline-block;
+        width: 70%;
+        max-width: 490px;
+        vertical-align: top;
+        margin-top: 50px;
+        padding: 0;
+    }
+    #rtec-admin-footer .feature-feature-list-item {
+        width: 49%;
+    }
+    #rtec-admin-footer .rtec-pro-features-list-items {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+#rtec-admin-footer .feature-feature-list-item .featured-feature-check {
+    position: absolute;
+    top: -2px;
+}
+
+#rtec-admin-footer .feature-feature-list-item .featured-feature-item {
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+#rtec-admin-footer .featured-feature-check {
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background: #009788;
+    border-radius: 50%
+}
+
+#rtec-admin-footer .featured-feature-check .dashicons {
+    position: absolute;
+    top: 1px;
+    bottom: 0;
+    right: 1px;
+    left: 0;
+    color: #fff
+}
+.rtec-pro-cta-wrap {
+    text-align: center;
+}
+#rtec-admin-footer .rtec-pro-cta {
+    color: #fff;
+    width: auto;
+    display: inline-block;
+    background: #eb5a49;
+    border: 1px solid #DA301E;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+/* Installer */
+#rtec-admin-wrap #rtec-admin-addons .addon-item .details {
+    padding: 20px
+}
+
+#rtec-admin-wrap #rtec-admin-addons .addon-item .action-button .button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 26px;
+    height: 28px;
+    margin: 0;
+    padding: 0 10px 1px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    background: #f7f7f7;
+    box-shadow: 0 1px 0 #cccccc;
+    font-weight: normal
+}
+
+#rtec-admin-wrap #rtec-admin-addons .addon-item .action-button .button:hover,#rtec-admin-wrap #rtec-admin-addons .addon-item .action-button .button:focus {
+    background: #fafafa;
+    border-color: #999;
+    color: #23282d
+}
+
+#rtec-admin-wrap #rtec-admin-addons .addon-item .action-button .button.button-primary,
+.wp-core-ui #rtec-admin-wrap #rtec-admin-addons .button[disabled]{
+    background: #0085ba !important;
+    border-color: #0073aa #006799 #006799 !important;;
+    box-shadow: 0 1px 0 #006799 !important;;
+    color: #fff;
+    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799
+}
+
+#rtec-admin-wrap #rtec-admin-addons .addon-item .action-button .button.button-primary:hover,#rtec-admin-wrap #rtec-admin-addons .addon-item .action-button .button.button-primary:focus {
+    background: #008ec2;
+    border-color: #006799;
+    color: #fff
+}
+
+#rtec-admin-wrap #rtec-admin-addons .addon-item .action-button .button.button-primary .fa-spinner {
+    color: #fff
+}
+
+#rtec-admin-wrap #rtec-admin-addons .addon-item .action-button .button.button-secondary {
+    color: #555;
+    border-color: #cccccc;
+    background: #f7f7f7;
+    box-shadow: 0 1px 0 #cccccc
+}
+
+#rtec-admin-wrap #rtec-admin-addons .addon-item .action-button .button.button-secondary:hover,#rtec-admin-wrap #rtec-admin-addons .addon-item .action-button .button.button-secondary:focus {
+    background: #fafafa;
+    border-color: #999;
+    color: #23282d
+}
+
+#rtec-admin-wrap #rtec-admin-addons .addon-item .action-button .button.disabled {
+    cursor: default
+}
+
+#rtec-admin-addons .addon-container {
+    width:100%;
+    max-width: 600px;
+}
+
+#rtec-admin-addons h4 {
+    font-size: 17px;
+    font-weight: 700
+}
+
+#rtec-admin-addons .addon-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 0
+}
+
+@media (max-width: 767px) {
+    #rtec-admin-addons .addon-item {
+        margin:0 0
+    }
+}
+
+#rtec-admin-addons .addon-item img {
+    border: 1px solid #eee;
+    float: left;
+    max-width: 75px
+}
+
+#rtec-admin-addons .addon-item h5 {
+    margin: 0 0 10px 100px;
+    font-size: 16px
+}
+
+#rtec-admin-addons .addon-item p {
+    margin: 0 0 0 100px
+}
+
+#rtec-admin-addons .addon-item .details {
+    padding: 30px 20px
+}
+
+#rtec-admin-addons .addon-item .actions {
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    position: relative
+}
+
+#rtec-admin-addons .addon-item .actions .msg {
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    background-color: #f7f7f7;
+    position: absolute;
+    text-align: center;
+    font-weight: 600;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    padding: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center
+}
+
+#rtec-admin-addons .addon-item .actions .msg.success {
+    color: #2a9b39
+}
+
+#rtec-admin-addons .addon-item .actions .msg.error {
+    color: red
+}
+
+#rtec-admin-addons .addon-item .status {
+    float: left;
+    padding-top: 8px
+}
+
+#rtec-admin-addons .addon-item .status .status-inactive {
+    color: red
+}
+
+#rtec-admin-addons .addon-item .status .status-download {
+    color: #666
+}
+
+#rtec-admin-addons .addon-item .status .status-active {
+    color: #2a9b39
+}
+
+#rtec-admin-addons .addon-item .upgrade-button {
+    text-align: center
+}
+
+#rtec-admin-addons .addon-item .upgrade-button a {
+    font-weight: 600;
+    width: 140px;
+    text-align: center;
+    padding: 8px 5px
+}
+
+#rtec-admin-addons .addon-item .action-button {
+    float: right
+}
+
+#rtec-admin-addons .addon-item .action-button button {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    cursor: pointer;
+    font-weight: 600;
+    width: 140px;
+    text-align: center;
+    padding: 8px 5px
+}
+
+#rtec-admin-addons .addon-item .action-button button:hover,#rtec-admin-addons .addon-item .action-button button.loading {
+    background-color: #e9e9e9
+}
+
+#rtec-admin-addons .addon-item .action-button button .fa {
+    margin-right: 8px
+}
+
+#rtec-admin-addons .addon-item .action-button button .fa.fa-spinner {
+    margin-right: 0
+}
+
+#rtec-admin-addons .addon-item .action-button button.status-active .fa {
+    color: #2a9b39
+}
+
+#rtec-admin-addons .addon-item .action-button button.status-inactive .fa {
+    color: red
+}
+
+#rtec-admin-addons .addon-item .action-button button.status-download .fa {
+    color: #999
+}
+
+#rtec-admin-addons .addon-item .action-button button.disabled {
+    cursor: default
+}
+
+#rtec-admin-addons .addon-item .action-button button.loading .fa {
+    color: #666
+}

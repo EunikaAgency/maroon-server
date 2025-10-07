@@ -1,0 +1,71 @@
+subtitle:
+	label: Subtitle
+	type: text
+	default:
+	help: "Text displayed with main title of service box"
+
+itemColor:
+	label: Item Color
+	type: color
+	default: ''
+	help: "Color of this Item"
+
+iconFont:
+	label: Icon Font
+	type: font-awesome-select
+	default:
+	help: "Class of icon from FontAwesome"
+
+image:
+	label: Image
+	type: image
+	default:
+	help: "URL of image displayed in service box"
+
+hoverImage:
+	label: Hover Image
+	type: image
+	default:
+	help: "URL of image displayed in service box on hover event"
+
+description:
+	label: Description
+	type: textarea
+	rows: 6
+	help: "Main text displayed in service box"
+
+readMoreText:
+	label: '"Read more" text'
+	type: text
+	default:
+	help: 'Text for "Read more" link'
+
+link:
+	label: 'Link'
+	type: url
+	default:
+	help: 'URL of "Read more" link, use valid URL format with http://'
+
+- section(title: 'Advanced Settings')
+
+iconFontMenu:
+	label: Submenu Icon Font
+	type: font-awesome-select
+	default: 'fa-th-large'
+	help: "Class of icon from FontAwesome on dropped submenu"
+
+subMenu:
+	label: Item Submenu
+	type: clone
+	max: infinity
+	help: 'Add new links for item submenu or remove existing links by clicking on red cross. Click on "Remove All Items" link to remove all existing links.'
+	items:
+		title:
+			label: Title
+			type: text
+			help: "Link title text"
+		url:
+			label: Link
+			type: url
+			help: "Link, use valid URL format with http://"
+	default: []

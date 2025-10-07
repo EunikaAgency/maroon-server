@@ -1,0 +1,259 @@
+
+/**************************************************/
+/*** && Font Mixins                             ***/
+/**************************************************/
+
+
+.font(@weight, @style = normal){
+	font-family: @theme-typography-titleFont-family;
+	font-weight: @weight;
+	font-style: @style;
+}
+
+.fontTXT(@weight, @style = normal){
+	font-family: @theme-typography-mainFont-family;
+	font-weight: @weight;
+	font-style: @style;
+}
+
+.fontface1(@type) when (@type = theme){
+
+	@font-face {
+	    font-family: 'Open Sans Condensed';
+	    src: url('@{fonts-url}/opensans/opensans-condbold.eot');
+	    src: url('@{fonts-url}/opensans/opensans-condbold.eot?#iefix') format('embedded-opentype'),
+	         url('@{fonts-url}/opensans/opensans-condbold.woff') format('woff'),
+	         url('@{fonts-url}/opensans/opensans-condbold.ttf') format('truetype'),
+	         url('@{fonts-url}/opensans/opensans-condbold.svg#OpenSansCondBold') format('svg');
+	    font-weight: 700;
+	    font-style: normal;
+	}
+
+}
+
+
+.fontface2(@type) when (@type = theme){
+
+	@font-face {
+	    font-family: 'Open Sans';
+	    src: url('@{fonts-url}/opensans/opensans-light.eot');
+	    src: url('@{fonts-url}/opensans/opensans-light.eot?#iefix') format('embedded-opentype'),
+	         url('@{fonts-url}/opensans/opensans-light.woff') format('woff'),
+	         url('@{fonts-url}/opensans/opensans-light.ttf') format('truetype'),
+	         url('@{fonts-url}/opensans/opensans-light.svg#OpenSansRegular') format('svg');
+	    font-weight: 300;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: 'Open Sans';
+	    src: url('@{fonts-url}/opensans/opensans-regular.eot');
+	    src: url('@{fonts-url}/opensans/opensans-regular.eot?#iefix') format('embedded-opentype'),
+	         url('@{fonts-url}/opensans/opensans-regular.woff') format('woff'),
+	         url('@{fonts-url}/opensans/opensans-regular.ttf') format('truetype'),
+	         url('@{fonts-url}/opensans/opensans-regular.svg#OpenSansRegular') format('svg');
+	    font-weight: 400;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: 'Open Sans';
+	    src: url('@{fonts-url}/opensans/opensans-bold.eot');
+	    src: url('@{fonts-url}/opensans/opensans-bold.eot?#iefix') format('embedded-opentype'),
+	         url('@{fonts-url}/opensans/opensans-bold.woff') format('woff'),
+	         url('@{fonts-url}/opensans/opensans-bold.ttf') format('truetype'),
+	         url('@{fonts-url}/opensans/opensans-bold.svg#OpenSansBold') format('svg');
+	    font-weight: 700;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: 'Open Sans';
+	    src: url('@{fonts-url}/opensans/opensans-italic.eot');
+	    src: url('@{fonts-url}/opensans/opensans-italic.eot?#iefix') format('embedded-opentype'),
+	         url('@{fonts-url}/opensans/opensans-italic.woff') format('woff'),
+	         url('@{fonts-url}/opensans/opensans-italic.ttf') format('truetype'),
+	         url('@{fonts-url}/opensans/opensans-italic.svg#OpenSansRegular') format('svg');
+	    font-weight: 400;
+	    font-style: italic;
+	}
+
+}
+
+
+
+
+
+/**************************************************/
+/*** && Fonts definitions                       ***/
+/**************************************************/
+
+.fontface1(@theme-typography-titleFont-type);
+.fontface2(@theme-typography-mainFont-type);
+
+
+.lang-@{current-lang}{
+
+	body					{ .fontTXT(400); }
+	strong, b				{ font-weight: bold; }
+	em						{ font-style: italic; }
+	a.post-edit-link,
+	a.comment-edit-link,
+	a.comment-reply-link	{ .fontTXT(700); }
+
+	h1		{ .font(400); }
+	h2		{ .font(700); }
+	h3		{ .font(700); }
+	h4		{ .font(700); }
+	h5		{ .font(700); }
+	h6		{ .font(700); }
+
+	/*h1, h2, h3, h4, h5, h6
+	{
+		strong		{ font-weight: normal; }
+	}*/
+
+	input, textarea, select				{ .fontTXT(400); }
+	input[type="submit"],
+	input[type="reset"]					{ .fontTXT(700); }
+
+	input[type="text"],
+	input[type="mail"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	select,
+	.sbHolder .sbSelector,
+	.sbHolder .sbOptions li				{ .fontTXT(400); }
+
+	.ui-datepicker									{ .fontTXT(400); }
+	.ui-datepicker .ui-widget-header				{ .font(700); }
+	.ui-datepicker table th							{ .fontTXT(700); }
+	.ui-datepicker table td a.ui-state-default		{ .fontTXT(400); }
+
+	.site-logo a,
+	.site-logo a:hover		{ .font(700); }
+
+	.page-share .share.share-title			{ .font(700); }
+
+	.site-search label .screen-reader-text	{ .fontTXT(700); }
+
+	.nav-menu-main > ul > li > a			{ .font(700); }
+
+	.nav-menu-main > ul ul li.current_page_item > a,
+	.nav-menu-main > ul ul li.current_page_parent > a,
+	.nav-menu-main > ul ul li.current_page_ancestor > a,
+	.nav-menu-main > ul ul li.current-menu-item > a,
+	.nav-menu-main > ul ul li.current-menu-parent > a,
+	.nav-menu-main > ul ul li.current-menu-ancestor > a		{ .fontTXT(700); }
+
+	.language-icons a						{ .font(700); }
+
+	.page-title .author						{ .font(400); }
+
+	.breadcrumb-sep 						{ .fontTXT(300); }
+
+	.search-form .search-field 				{ .font(400); }
+
+	.entry-content table thead th				{ .fontTXT(700); }
+	.entry-content table tbody th				{ .fontTXT(700); }
+	.entry-content .tabstyle1 table thead th	{ .font(700); }
+
+	/* SHORTCODES */
+
+	.wp-caption .wp-caption-text	{ .fontTXT(400,italic); }
+	.ait-sc-button .title			{ .font(700); }
+
+	/* ELEMENTS */
+
+	.elm-maintitle					{ .fontTXT(400); }
+
+	.elm-easy-slider-main .bx-wrapper li .bx-caption .bx-caption-desc span.bx-link-button	{ .font(700); }
+	.elm-easy-slider-main ul.easy-slider li .easy-title										{ .font(700); }
+
+	.elm-portfolio .filters-wrapper .filter-wrapper .selected			{ .font(700); }
+
+	.elm-services-main .rm-button										{ .font(700); }
+	.elm-posts-main .item-info											{ .font(700); }
+	.elm-posts-main .item-more											{ .font(700); }
+	.elm-posts-main .item-date											{ .font(700); }
+	.elm-events-main .item-info											{ .font(700); }
+	.elm-events-main .item-info strong									{ font-weight: normal; }
+	.elm-events-main .layout-list .event-date .entry-date .link-month   { .font(700); }
+	.elm-job-offers-main .item-duration									{ .font(700); }
+	.elm-job-offers-main .item-duration strong							{ font-weight: normal; }
+	.elm-job-offers-main .job-contact									{ .font(700); }
+	.elm-job-offers-main .job-contact strong							{ font-weight: normal; }
+	.elm-testimonials-main .item-text									{ .fontTXT(400,italic); }
+	.elm-testimonials-main .item .item-info .item-author				{ .font(700); }
+
+	.elm-toggles-main .ait-tabs ul.ait-tabs-nav li a					{ .font(700); }
+	.elm-toggles-main .ait-tabs-vertical li .ait-tab-hover				{ .font(700); }
+	.elm-toggles-main .ait-tabs .tabs-wrapper .selected					{ .font(700); }
+	.elm-toggles-main .responsive-tabs-select							{ .font(700); }
+	.local-toggles .toggle-content .toggle-container					{ .fontTXT(400); }
+
+	.elm-price-table .table-header .table-price							{ .font(400); }
+	.elm-price-table .table-button a									{ .font(700); }
+
+	.elm-opening-hours-main .day-title h5								{ .fontTXT(700); }
+	.elm-countdown-main .clock-data	.clock-value						{ .font(700); }
+	.elm-counters-main .counter-title									{ .font(700); }
+	.elm-counters-main .counter-type-textbox .type-text					{ .font(700); }
+	.elm-member-main .member-title .member-position-title				{ .fontTXT(700); }
+	.elm-google-map	 .gmap-infowindow-content p							{ .fontTXT(400); }
+	.elm-contact-form-main form p .input-row .input-label .label		{ .font(700); }
+
+	.elm-infopanel-main ul li a 										{ .font(700); }
+	.elm-infopanel-main .options-container .data-name 					{ .font(700); }
+	.elm-infopanel-main .options-container .data-value 					{ .font(700); }
+
+	.gallery .gallery-caption											{ .fontTXT(400,italic);}
+
+	/* BLOG */
+
+	.entry-date .link-day,
+	.entry-date .link-month,
+	.entry-date .link-year,
+	.entry-data 						{ .font(700); }
+	.hentry .more						{ .font(400); }
+	.comments-link .comments-count		{ .fontTXT(700); }
+	.hentry.sticky .featured-post		{ .fontTXT(700); }
+	.commentlist .comment-meta .fn		{ .fontTXT(700); }
+	#respond h3	small					{ .fontTXT(700); }
+	#respond form label					{ .font(700); }
+	#respond form label .required		{ .font(700); }
+	#respond form input[type="submit"]	{ .font(700); }
+
+	.nav-single							{ .font(700); }
+
+
+
+	/* WIDGETS */
+
+	.widget_posts a.thumb-link h4					{ .font(700); }
+	.widget_posts a.thumb-link .date				{ .font(700); }
+	.widget_calendar th								{ .fontTXT(700); }
+	.widget_calendar tbody td#today					{ .fontTXT(700); }
+	.widget_calendar tbody td a						{ .fontTXT(700); }
+	.widget_rss .widget-title 						{ .font(700); }
+	/*.widget_rss	.widget-content a.rsswidget		{ .fontTXT(700); }*/
+	.widget_posts .read-more a						{ .fontTXT(700); }
+	.widget_calendar caption						{ .font(400); }
+	.widget_recent_comments .comment-author-link	{ .font(700); }
+
+
+
+	/* FOOTER */
+
+	.site-footer .nav-menu-footer a	{ .font(700); }
+
+}
+
+/**************************************************/
+/*** && WOOCOMMERCE                             ***/
+/**************************************************/
+
+@import "woocommerce/woo-typography.less";
+
+

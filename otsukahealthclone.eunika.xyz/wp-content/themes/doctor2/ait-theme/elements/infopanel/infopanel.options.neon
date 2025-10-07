@@ -1,0 +1,12 @@
+@include: common.neon
+
+contentSize:
+	type: variable
+	default: fullsize
+
+category:
+	label: Category
+	type: categories
+	taxonomy: infopanels
+	default: 0
+	help: "Select category displayed on page"

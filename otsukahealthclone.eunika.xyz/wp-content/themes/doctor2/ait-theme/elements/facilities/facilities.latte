@@ -1,0 +1,62 @@
+{include $el->common('header')}
+
+<div id="{$htmlId}" class="{$htmlClass}">
+
+	{var $items = array()}
+
+	{if is_array($el->option(category))}
+		{* multiple categories *}
+		{foreach $el->option(category) as $cat}
+			{customQuery as $query, type => facility, tax => facilities, cat => intval($cat), limit => -1, orderby => $el->option(orderby), order => $el->option(order)}
+			{if $query->havePosts}
+				{customLoop from $query as $item}
+					{? array_push($items, $item)}
+				{/customLoop}
+			{/if}
+		{/foreach}
+	{else}
+		{* single category *}
+		{customQuery as $query, type => facility, tax => facilities, cat => $el->option(category), limit => -1, orderby => $el->option(orderby), order => $el->option(order)}
+		{if $query->havePosts}
+			{customLoop from $query as $item}
+				{? array_push($items, $item)}
+			{/customLoop}
+		{/if}
+	{/if}
+
+	{if count($items) != 0}
+		{var $numOfColumns    = $el->option->itemColumns}
+		{var $displayDesc     = $el->option->displayDesc}
+
+		<div  n:class='facilities-container, "column-{$numOfColumns}",'>
+		{foreach $items as $item}
+			{var $meta = $item->meta("facility-data")}
+			{var $hasImage = $meta->icon != '' ? true : false}
+
+			<div n:class='item, "item{$iterator->counter}", $iterator->isFirst($numOfColumns) ? item-first, $iterator->isLast($numOfColumns) ? item-last, $hasImage ? image-present, $displayDesc ? desc-on : desc-off'>
+				<div class="item-thumbnail">
+					<div class="item-icon" style="{if $el->isColor($meta->iconColor)}background-color: {!$meta->iconColor}; border-color: {!$meta->iconColor};{/if}"><img src="{$meta->icon}" alt="icon"></div>
+				</div>
+				{if $meta->link != ""}<a href="{$meta->link}">{/if}
+					<div class="item-data">
+						<h4 class="item-title">{!$item->title}</h4>
+						{if $displayDesc}
+						<div class="item-desc"><p>{!$meta->description}</p></div>
+						{/if}
+					</div>
+				{if $meta->link != ""}</a>{/if}
+			</div>
+		{/foreach}
+		</div>
+
+	{else}
+		<div class="facilities-container">
+			<div class="alert alert-info">
+				{_x 'Facilities', 'name of element'}&nbsp;&nbsp;|&nbsp;&nbsp;{__ 'Info: There are no items created, add some please.'}
+			</div>
+		</div>
+	{/if}
+
+</div>
+
+{includePart "ait-theme/elements/facilities/javascript"}

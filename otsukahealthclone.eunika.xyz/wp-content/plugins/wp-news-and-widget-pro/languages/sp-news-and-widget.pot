@@ -1,0 +1,1742 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP News and Scrolling Widgets Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-18 10:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.3; wp-5.5.1"
+
+#: edd-news-plugin.php:441
+#, php-format
+msgid ""
+"%sRegister%s your copy of WP News and Widgets Pro to receive access to "
+"automatic upgrades and support. Need a license key? %sPurchase one now%s."
+msgstr ""
+
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:43
+msgid "-- Choose Shortcode --"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:192
+msgid "5 stars!"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:132
+msgid ""
+"<b>Please make sure that Permalink link should not be \"/news\" Otherwise "
+"all your news will go to archive page. You can give it other name like "
+"\"/ournews, /latestnews etc\"</b>"
+msgstr ""
+
+#: includes/widgets/class-wpnw-cat-widget.php:29
+msgid "A list or dropdown of news categories."
+msgstr ""
+
+#: edd-news-plugin.php:178
+msgid "Account page"
+msgstr ""
+
+#: edd-news-plugin.php:177
+msgid "account page"
+msgstr ""
+
+#: edd-news-plugin.php:117 edd-news-plugin.php:126
+msgid "Activate License"
+msgstr ""
+
+#: edd-news-plugin.php:392
+msgid "Activate Plugin License"
+msgstr ""
+
+#: edd-news-plugin.php:144
+msgid "Activations Left Site(s)"
+msgstr ""
+
+#: edd-news-plugin.php:124
+msgid "Active"
+msgstr ""
+
+#: edd-news-plugin.php:143
+msgid "Active Site(s)"
+msgstr ""
+
+#: includes/wpnw-post-types.php:92
+msgid "Add New Category"
+msgstr ""
+
+#: includes/wpnw-post-types.php:31
+msgid "Add New News Item"
+msgstr ""
+
+#: includes/wpnw-post-types.php:30
+msgid "Add News Item"
+msgstr ""
+
+#: edd-news-plugin.php:172
+msgid ""
+"After save changes you can see an another button named 'Activate License'."
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:137
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:129
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:115
+#: includes/widgets/class-wpnw-latest-news-slider.php:126
+#: includes/widgets/class-wpnw-latest-news.php:110
+msgid "All"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:240
+msgid "All Categories"
+msgstr ""
+
+#: includes/wpnw-post-types.php:87
+msgid "All Category"
+msgstr ""
+
+#: includes/wpnw-post-types.php:29
+msgid "All News"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:29
+msgid "All settings reset successfully."
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:140
+msgid "All Shortcodes"
+msgstr ""
+
+#: edd-news-plugin.php:247 edd-news-plugin.php:304 edd-news-plugin.php:362
+msgid "An error occurred, please try again."
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:182
+msgid "Archive Type"
+msgstr ""
+
+#: includes/class-wpnw-script.php:58
+msgid "Are you sure you want to do this?"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:261
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:240
+#: includes/widgets/class-wpnw-latest-news-slider.php:221
+msgid "Arrows"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:196
+msgid "ASC"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:279
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:258
+#: includes/widgets/class-wpnw-latest-news-slider.php:230
+msgid "Auto Play"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:288
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:267
+#: includes/widgets/class-wpnw-latest-news-slider.php:239
+msgid "Autoplay Interval"
+msgstr ""
+
+#: templates/grid/design-1.php:37 templates/grid/design-10.php:37
+#: templates/grid/design-11.php:27 templates/grid/design-12.php:36
+#: templates/grid/design-13.php:40 templates/grid/design-14.php:37
+#: templates/grid/design-15.php:37 templates/grid/design-16.php:36
+#: templates/grid/design-17.php:38 templates/grid/design-18.php:43
+#: templates/grid/design-19.php:31 templates/grid/design-2.php:37
+#: templates/grid/design-20.php:39 templates/grid/design-21.php:37
+#: templates/grid/design-22.php:37 templates/grid/design-23.php:38
+#: templates/grid/design-24.php:37 templates/grid/design-24.php:72
+#: templates/grid/design-25.php:47 templates/grid/design-25.php:83
+#: templates/grid/design-26.php:40 templates/grid/design-27.php:37
+#: templates/grid/design-27.php:80 templates/grid/design-28.php:36
+#: templates/grid/design-29.php:37 templates/grid/design-3.php:31
+#: templates/grid/design-30.php:37 templates/grid/design-30.php:63
+#: templates/grid/design-31.php:37 templates/grid/design-32.php:36
+#: templates/grid/design-33.php:37 templates/grid/design-34.php:41
+#: templates/grid/design-35.php:36 templates/grid/design-36.php:36
+#: templates/grid/design-37.php:36 templates/grid/design-38.php:38
+#: templates/grid/design-39.php:39 templates/grid/design-4.php:37
+#: templates/grid/design-40.php:30 templates/grid/design-40.php:66
+#: templates/grid/design-41.php:38 templates/grid/design-42.php:37
+#: templates/grid/design-43.php:36 templates/grid/design-44.php:40
+#: templates/grid/design-45.php:37 templates/grid/design-45.php:72
+#: templates/grid/design-46.php:37 templates/grid/design-47.php:36
+#: templates/grid/design-48.php:38 templates/grid/design-49.php:30
+#: templates/grid/design-5.php:37 templates/grid/design-50.php:40
+#: templates/grid/design-6.php:27 templates/grid/design-7.php:36
+#: templates/grid/design-8.php:40 templates/grid/design-9.php:37
+#: templates/grid-box/design-1.php:36 templates/grid-box/design-1.php:77
+#: templates/grid-box/design-10.php:43 templates/grid-box/design-11.php:57
+#: templates/grid-box/design-12.php:53 templates/grid-box/design-13.php:53
+#: templates/grid-box/design-2.php:39 templates/grid-box/design-2.php:68
+#: templates/grid-box/design-3.php:35 templates/grid-box/design-3.php:77
+#: templates/grid-box/design-4.php:36 templates/grid-box/design-4.php:77
+#: templates/grid-box/design-5.php:35 templates/grid-box/design-5.php:77
+#: templates/grid-box/design-6.php:44 templates/grid-box/design-7.php:43
+#: templates/grid-box/design-8.php:57 templates/grid-box/design-9.php:44
+#: templates/grid-box-slider/design-1.php:47
+#: templates/grid-box-slider/design-2.php:48
+#: templates/grid-box-slider/design-3.php:61
+#: templates/grid-box-slider/design-4.php:47
+#: templates/grid-box-slider/design-5.php:49
+#: templates/grid-box-slider/design-6.php:61
+#: templates/grid-box-slider/design-7.php:60
+#: templates/grid-box-slider/design-8.php:60 templates/list/design-1.php:44
+#: templates/list/design-2.php:44 templates/list/design-3.php:43
+#: templates/list/design-3.php:83 templates/list/design-4.php:42
+#: templates/list/design-4.php:80 templates/list/design-5.php:41
+#: templates/list/design-6.php:42 templates/list/design-7.php:21
+#: templates/list/design-8.php:42 templates/list/design-8.php:80
+#: templates/slider/design-1.php:30 templates/slider/design-10.php:44
+#: templates/slider/design-11.php:37 templates/slider/design-12.php:31
+#: templates/slider/design-13.php:38 templates/slider/design-14.php:45
+#: templates/slider/design-15.php:75 templates/slider/design-16.php:37
+#: templates/slider/design-17.php:37 templates/slider/design-18.php:31
+#: templates/slider/design-19.php:37 templates/slider/design-2.php:35
+#: templates/slider/design-20.php:37 templates/slider/design-21.php:36
+#: templates/slider/design-22.php:40 templates/slider/design-23.php:38
+#: templates/slider/design-24.php:36 templates/slider/design-25.php:27
+#: templates/slider/design-26.php:43 templates/slider/design-27.php:37
+#: templates/slider/design-27.php:68 templates/slider/design-28.php:40
+#: templates/slider/design-29.php:37 templates/slider/design-29.php:76
+#: templates/slider/design-3.php:35 templates/slider/design-30.php:36
+#: templates/slider/design-31.php:37 templates/slider/design-32.php:38
+#: templates/slider/design-33.php:38 templates/slider/design-34.php:37
+#: templates/slider/design-35.php:37 templates/slider/design-36.php:36
+#: templates/slider/design-37.php:38 templates/slider/design-38.php:31
+#: templates/slider/design-39.php:38 templates/slider/design-4.php:30
+#: templates/slider/design-40.php:37 templates/slider/design-41.php:41
+#: templates/slider/design-42.php:36 templates/slider/design-43.php:31
+#: templates/slider/design-44.php:36 templates/slider/design-45.php:37
+#: templates/slider/design-5.php:30 templates/slider/design-6.php:36
+#: templates/slider/design-7.php:36 templates/slider/design-8.php:39
+#: templates/slider/design-9.php:36
+msgid "By"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:256
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:235
+msgid "By default News Display in List View"
+msgstr ""
+
+#: includes/wpnw-post-types.php:84 includes/wpnw-post-types.php:85
+#: includes/wpnw-post-types.php:94
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:124
+#: includes/widgets/class-wpnw-latest-news-slider.php:121
+#: includes/widgets/class-wpnw-latest-news.php:105
+msgid "Category"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:149
+msgid "Category Archive Slug"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:171
+msgid "Check plugin document for shortcode parameters and demo for designs."
+msgstr ""
+
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:77
+msgid ""
+"Check shortcode parameters from left hand side or You can paste shortocde to "
+"below and press Refresh button to preview so each and every time you do not "
+"have to choose each parameters!!!"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:142
+msgid "Check this box to disable news post type archive page."
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:255
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:234
+msgid "Check this box to Display News in Slider View."
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:118
+msgid "Check this box to enable Gutenberg editor for news post type."
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:77
+msgid "Choose Logo"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:77
+msgid "Clear"
+msgstr ""
+
+#: includes/widgets/shortcode/class-wpnw-abstract-widget.php:263
+msgid "Click to toggle"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:224
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:210
+#: includes/widgets/class-wpnw-latest-news.php:198
+msgid "Content words limit"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:226
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:212
+#: includes/widgets/class-wpnw-latest-news.php:200
+msgid "Content words limit will only work if Display Short Content checked."
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:240
+#: includes/widgets/class-wpnw-latest-news-slider.php:209
+msgid "Control height of the featured image."
+msgstr ""
+
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:84
+msgid "Copy or Paste Shortcode"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:180
+msgid "Custom CSS"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:171
+msgid "Custom CSS Settings"
+msgstr ""
+
+#: includes/wpnw-post-types.php:130
+msgid "Custom field deleted."
+msgstr ""
+
+#: includes/wpnw-post-types.php:129
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:186
+msgid "Daily"
+msgstr ""
+
+#: edd-news-plugin.php:123
+msgid "Deactivate License"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:73
+msgid "Default Featured Image"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:173
+msgid "Demo for Designs"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:195
+msgid "DESC"
+msgstr ""
+
+#: includes/wpnw-functions.php:404 includes/wpnw-functions.php:465
+#: includes/wpnw-functions.php:521 includes/wpnw-functions.php:540
+#: includes/wpnw-functions.php:564
+msgid "Design 1"
+msgstr ""
+
+#: includes/wpnw-functions.php:413 includes/wpnw-functions.php:474
+#: includes/wpnw-functions.php:549
+msgid "Design 10"
+msgstr ""
+
+#: includes/wpnw-functions.php:414 includes/wpnw-functions.php:475
+#: includes/wpnw-functions.php:550
+msgid "Design 11"
+msgstr ""
+
+#: includes/wpnw-functions.php:415 includes/wpnw-functions.php:476
+#: includes/wpnw-functions.php:551
+msgid "Design 12"
+msgstr ""
+
+#: includes/wpnw-functions.php:416 includes/wpnw-functions.php:477
+#: includes/wpnw-functions.php:552
+msgid "Design 13"
+msgstr ""
+
+#: includes/wpnw-functions.php:417 includes/wpnw-functions.php:478
+msgid "Design 14"
+msgstr ""
+
+#: includes/wpnw-functions.php:418 includes/wpnw-functions.php:479
+msgid "Design 15"
+msgstr ""
+
+#: includes/wpnw-functions.php:419 includes/wpnw-functions.php:480
+msgid "Design 16"
+msgstr ""
+
+#: includes/wpnw-functions.php:420 includes/wpnw-functions.php:481
+msgid "Design 17"
+msgstr ""
+
+#: includes/wpnw-functions.php:421 includes/wpnw-functions.php:482
+msgid "Design 18"
+msgstr ""
+
+#: includes/wpnw-functions.php:422 includes/wpnw-functions.php:483
+msgid "Design 19"
+msgstr ""
+
+#: includes/wpnw-functions.php:405 includes/wpnw-functions.php:466
+#: includes/wpnw-functions.php:522 includes/wpnw-functions.php:541
+#: includes/wpnw-functions.php:565
+msgid "Design 2"
+msgstr ""
+
+#: includes/wpnw-functions.php:423 includes/wpnw-functions.php:484
+msgid "Design 20"
+msgstr ""
+
+#: includes/wpnw-functions.php:424 includes/wpnw-functions.php:485
+msgid "Design 21"
+msgstr ""
+
+#: includes/wpnw-functions.php:425 includes/wpnw-functions.php:486
+msgid "Design 22"
+msgstr ""
+
+#: includes/wpnw-functions.php:426 includes/wpnw-functions.php:487
+msgid "Design 23"
+msgstr ""
+
+#: includes/wpnw-functions.php:427 includes/wpnw-functions.php:488
+msgid "Design 24"
+msgstr ""
+
+#: includes/wpnw-functions.php:428 includes/wpnw-functions.php:489
+msgid "Design 25"
+msgstr ""
+
+#: includes/wpnw-functions.php:429 includes/wpnw-functions.php:490
+msgid "Design 26"
+msgstr ""
+
+#: includes/wpnw-functions.php:430 includes/wpnw-functions.php:491
+msgid "Design 27"
+msgstr ""
+
+#: includes/wpnw-functions.php:431 includes/wpnw-functions.php:492
+msgid "Design 28"
+msgstr ""
+
+#: includes/wpnw-functions.php:432 includes/wpnw-functions.php:493
+msgid "Design 29"
+msgstr ""
+
+#: includes/wpnw-functions.php:406 includes/wpnw-functions.php:467
+#: includes/wpnw-functions.php:523 includes/wpnw-functions.php:542
+#: includes/wpnw-functions.php:566
+msgid "Design 3"
+msgstr ""
+
+#: includes/wpnw-functions.php:433 includes/wpnw-functions.php:494
+msgid "Design 30"
+msgstr ""
+
+#: includes/wpnw-functions.php:434 includes/wpnw-functions.php:495
+msgid "Design 31"
+msgstr ""
+
+#: includes/wpnw-functions.php:435 includes/wpnw-functions.php:496
+msgid "Design 32"
+msgstr ""
+
+#: includes/wpnw-functions.php:436 includes/wpnw-functions.php:497
+msgid "Design 33"
+msgstr ""
+
+#: includes/wpnw-functions.php:437 includes/wpnw-functions.php:498
+msgid "Design 34"
+msgstr ""
+
+#: includes/wpnw-functions.php:438 includes/wpnw-functions.php:499
+msgid "Design 35"
+msgstr ""
+
+#: includes/wpnw-functions.php:439 includes/wpnw-functions.php:500
+msgid "Design 36"
+msgstr ""
+
+#: includes/wpnw-functions.php:440 includes/wpnw-functions.php:501
+msgid "Design 37"
+msgstr ""
+
+#: includes/wpnw-functions.php:441 includes/wpnw-functions.php:502
+msgid "Design 38"
+msgstr ""
+
+#: includes/wpnw-functions.php:442 includes/wpnw-functions.php:503
+msgid "Design 39"
+msgstr ""
+
+#: includes/wpnw-functions.php:407 includes/wpnw-functions.php:468
+#: includes/wpnw-functions.php:524 includes/wpnw-functions.php:543
+#: includes/wpnw-functions.php:567
+msgid "Design 4"
+msgstr ""
+
+#: includes/wpnw-functions.php:443 includes/wpnw-functions.php:504
+msgid "Design 40"
+msgstr ""
+
+#: includes/wpnw-functions.php:444 includes/wpnw-functions.php:505
+msgid "Design 41"
+msgstr ""
+
+#: includes/wpnw-functions.php:445 includes/wpnw-functions.php:506
+msgid "Design 42"
+msgstr ""
+
+#: includes/wpnw-functions.php:446 includes/wpnw-functions.php:507
+msgid "Design 43"
+msgstr ""
+
+#: includes/wpnw-functions.php:447 includes/wpnw-functions.php:508
+msgid "Design 44"
+msgstr ""
+
+#: includes/wpnw-functions.php:448 includes/wpnw-functions.php:509
+msgid "Design 45"
+msgstr ""
+
+#: includes/wpnw-functions.php:449
+msgid "Design 46"
+msgstr ""
+
+#: includes/wpnw-functions.php:450
+msgid "Design 47"
+msgstr ""
+
+#: includes/wpnw-functions.php:451
+msgid "Design 48"
+msgstr ""
+
+#: includes/wpnw-functions.php:452
+msgid "Design 49"
+msgstr ""
+
+#: includes/wpnw-functions.php:408 includes/wpnw-functions.php:469
+#: includes/wpnw-functions.php:525 includes/wpnw-functions.php:544
+#: includes/wpnw-functions.php:568
+msgid "Design 5"
+msgstr ""
+
+#: includes/wpnw-functions.php:453
+msgid "Design 50"
+msgstr ""
+
+#: includes/wpnw-functions.php:409 includes/wpnw-functions.php:470
+#: includes/wpnw-functions.php:526 includes/wpnw-functions.php:545
+#: includes/wpnw-functions.php:569
+msgid "Design 6"
+msgstr ""
+
+#: includes/wpnw-functions.php:410 includes/wpnw-functions.php:471
+#: includes/wpnw-functions.php:527 includes/wpnw-functions.php:546
+#: includes/wpnw-functions.php:570
+msgid "Design 7"
+msgstr ""
+
+#: includes/wpnw-functions.php:411 includes/wpnw-functions.php:472
+#: includes/wpnw-functions.php:528 includes/wpnw-functions.php:547
+#: includes/wpnw-functions.php:571
+msgid "Design 8"
+msgstr ""
+
+#: includes/wpnw-functions.php:412 includes/wpnw-functions.php:473
+#: includes/wpnw-functions.php:548
+msgid "Design 9"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:138
+msgid "Disable Post Archieve Page"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:32
+msgid "Display archive of your News Posts."
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:207
+msgid "Display as dropdown"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:201
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:193
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:179
+#: includes/widgets/class-wpnw-latest-news-slider.php:190
+#: includes/widgets/class-wpnw-latest-news.php:181
+msgid "Display Category"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:195
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:187
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:173
+#: includes/widgets/class-wpnw-latest-news-slider.php:184
+#: includes/widgets/class-wpnw-latest-news.php:175
+msgid "Display Date"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news.php:24
+msgid "Display Latest News Items from the News  in a sidebar."
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:24
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:24
+msgid "Display Latest News Items in list view OR in Slider."
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-slider.php:24
+msgid "Display Latest News Items with slider."
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:24
+msgid ""
+"Display Latest News Vertical Scrolling  Items from the News in a sidebar."
+msgstr ""
+
+#: includes/widgets/shortcode/class-wpnw-news-gridbox-slider.php:22
+msgid "Display news gridbox in a slider view. News gridbox slider shortcode."
+msgstr ""
+
+#: includes/widgets/shortcode/class-wpnw-news-grid.php:22
+msgid "Display news in a grid view. News grid shortcode."
+msgstr ""
+
+#: includes/widgets/shortcode/class-wpnw-news-gridbox.php:22
+msgid "Display news in a gridbox view. News gridbox shortcode."
+msgstr ""
+
+#: includes/widgets/shortcode/class-wpnw-news-list.php:22
+msgid "Display news in a list view. News list shortcode."
+msgstr ""
+
+#: includes/widgets/shortcode/class-wpnw-news-masonry.php:22
+msgid "Display news in a masonry view. News masonry shortcode."
+msgstr ""
+
+#: includes/widgets/shortcode/class-wpnw-news-slider.php:22
+msgid "Display news in a slider view. News slider shortcode."
+msgstr ""
+
+#: includes/widgets/shortcode/class-wpnw-news-ticker.php:22
+msgid "Display news in a ticker view. News ticker shortcode."
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:147
+msgid "Display News in Gridbox slider view"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:146
+msgid "Display News in Gridbox view"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:145
+msgid "Display News in List view"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:149
+msgid "Display News in Masonry View"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:144
+msgid "Display News in Slider view"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:148
+msgid "Display News in Ticker Mode"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:219
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:205
+#: includes/widgets/class-wpnw-latest-news.php:193
+msgid "Display Short Content"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:185
+msgid "Display Thumbnail in left side"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:402
+msgid "Docs"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:172
+msgid "Documentation"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:270
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:249
+msgid "Dots"
+msgstr ""
+
+#: includes/wpnw-post-types.php:90
+msgid "Edit Category"
+msgstr ""
+
+#: includes/wpnw-post-types.php:32
+msgid "Edit News Item"
+msgstr ""
+
+#: includes/wpnw-functions.php:605
+msgid "Effect 1"
+msgstr ""
+
+#: includes/wpnw-functions.php:606
+msgid "Effect 2"
+msgstr ""
+
+#: includes/wpnw-functions.php:607
+msgid "Effect 3"
+msgstr ""
+
+#: includes/wpnw-functions.php:608
+msgid "Effect 4"
+msgstr ""
+
+#: includes/wpnw-functions.php:609
+msgid "Effect 5"
+msgstr ""
+
+#: includes/wpnw-functions.php:610
+msgid "Effect 6"
+msgstr ""
+
+#: includes/wpnw-functions.php:611
+msgid "Effect 7"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:114
+msgid "Enable Gutenberg Editor"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:192
+msgid "Enjoyed this plugin? You can help by rate this plugin"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:184
+msgid "Enter custom CSS to override plugin CSS."
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:153
+msgid ""
+"Enter news post type category slug. Default value is news-category. e.g. "
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:130
+msgid "Enter news post type slug. Default value is news. e.g. "
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:127
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:119
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:105
+#: includes/widgets/class-wpnw-latest-news-slider.php:116
+#: includes/widgets/class-wpnw-latest-news.php:100
+msgid "Enter number of news post to be displayed. Enter -1 to display all."
+msgstr ""
+
+#: edd-news-plugin.php:111
+msgid "Enter plugin license key."
+msgstr ""
+
+#: edd-news-plugin.php:411
+msgid "Enter valid license key for automatic updates."
+msgstr ""
+
+#: edd-news-plugin.php:171
+msgid ""
+"Enter your license key into 'License Key' field and press 'Save Changes' "
+"button."
+msgstr ""
+
+#. Author of the plugin
+msgid "Essential Plugin"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:172
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:177
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:164
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:169
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:150
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:155
+#: includes/widgets/class-wpnw-latest-news-slider.php:161
+#: includes/widgets/class-wpnw-latest-news-slider.php:166
+#: includes/widgets/class-wpnw-latest-news.php:145
+#: includes/widgets/class-wpnw-latest-news.php:150
+msgid "Exclude Author"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:264
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:273
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:282
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:303
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:312
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:243
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:252
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:261
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:282
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:291
+#: includes/widgets/class-wpnw-latest-news-slider.php:224
+#: includes/widgets/class-wpnw-latest-news-slider.php:233
+#: includes/widgets/class-wpnw-latest-news-slider.php:254
+#: includes/widgets/class-wpnw-latest-news-slider.php:263
+msgid "False"
+msgstr ""
+
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:80
+msgid "Full Preview Mode"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:63
+msgid "General Settings"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:22
+#: includes/admin/wpnw-how-it-work.php:112
+msgid "Getting Started"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:22
+msgid "Getting Started - WP News and Scrolling Widgets Pro"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:196
+msgid "Height"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:189
+msgid "Help to improve this plugin!"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:182
+msgid "Hire our experts for any WordPress task."
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:72
+msgid "How It Works"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:104
+msgid "How It Works - Display And Shortcode"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:127
+msgid "How Shortcode Works"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.essentialplugin.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid ""
+"https://www.essentialplugin.com/wordpress-plugin/sp-news-and-scrolling-"
+"widgets/"
+msgstr ""
+
+#: includes/admin/metabox/wpnw-post-sett-metabox.php:30
+msgid ""
+"If you have different URL then enter read more link for post or Leave empty "
+"for current post URL. e.g https://www.essentialplugin.com"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:207
+#: includes/widgets/class-wpnw-latest-news-slider.php:202
+msgid "Image Fit"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:238
+#: includes/widgets/class-wpnw-latest-news-slider.php:207
+msgid "Image Wrap Height(in px)"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:150
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:155
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:142
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:147
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:128
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:133
+#: includes/widgets/class-wpnw-latest-news-slider.php:139
+#: includes/widgets/class-wpnw-latest-news-slider.php:144
+#: includes/widgets/class-wpnw-latest-news.php:123
+#: includes/widgets/class-wpnw-latest-news.php:128
+msgid "Include Author"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:77
+msgid "Insert Logo"
+msgstr ""
+
+#: sp-news-and-widget.php:211
+#, php-format
+msgid ""
+"It looks like you had FREE version %s of this plugin activated. To avoid "
+"conflicts the extra version has been deactivated and we recommend you delete "
+"it."
+msgstr ""
+
+#: edd-news-plugin.php:267
+#, php-format
+msgid ""
+"Kindly <a href=\"%s\" target=\"_blank\">renew</a> it for further updates and "
+"support from your <a href=\"%s\" target=\"_blank\">account page</a>."
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:183
+msgid "Know More"
+msgstr ""
+
+#: includes/shortcode/wpnw-news-ticker.php:46
+#: includes/widgets/class-wpnw-latest-news.php:30
+msgid "Latest News"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news.php:25
+#: includes/widgets/class-wpnw-latest-news.php:215
+msgid "Latest News - Widget"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:25
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:338
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:347
+msgid "Latest News List/Slider 1 - Widget"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:25
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:317
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:326
+msgid "Latest News List/Slider 2 - Widget"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:25
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:231
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:240
+msgid "Latest News Scrolling - Widget"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-slider.php:30
+msgid "Latest News Slider"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-slider.php:25
+#: includes/widgets/class-wpnw-latest-news-slider.php:296
+#: includes/widgets/class-wpnw-latest-news-slider.php:305
+msgid "Latest News Slider - Widget"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:30
+msgid "Latest News Slider/List-1"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:30
+msgid "Latest News Slider/List-2"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:30
+msgid "Latest News Vertical Scrolling"
+msgstr ""
+
+#: edd-news-plugin.php:392
+msgid "License"
+msgstr ""
+
+#: edd-news-plugin.php:134
+msgid "License Information"
+msgstr ""
+
+#: edd-news-plugin.php:36 edd-news-plugin.php:310
+msgid "License is activated successfully."
+msgstr ""
+
+#: edd-news-plugin.php:107
+msgid "License Key"
+msgstr ""
+
+#: edd-news-plugin.php:142
+msgid "License Limit"
+msgstr ""
+
+#: edd-news-plugin.php:147
+msgid "Lifetime"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:202
+msgid "Limit"
+msgstr ""
+
+#: includes/shortcode/wpnw-news-masonry-shortcode.php:75
+#: includes/shortcode/wpnw-news-masonry-shortcode.php:116
+msgid "Load More Posts"
+msgstr ""
+
+#: templates/pagination.php:21
+msgid "Loading"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:231
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:217
+#: includes/widgets/class-wpnw-latest-news-slider.php:214
+msgid "Media Size"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:233
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:219
+#: includes/widgets/class-wpnw-latest-news-slider.php:216
+msgid "Media Size values are"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:185
+msgid "Monthly"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:179
+msgid "Need PRO Support?"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:168
+msgid "Need Support?"
+msgstr ""
+
+#: includes/wpnw-post-types.php:93
+msgid "New Category Name"
+msgstr ""
+
+#: includes/wpnw-post-types.php:33
+msgid "New News Item"
+msgstr ""
+
+#: includes/wpnw-post-types.php:27 includes/wpnw-post-types.php:28
+msgid "News"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:38
+msgid "News Archives"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:34
+#: includes/widgets/class-wpnw-archive.php:76
+msgid "News Archives - Widget"
+msgstr ""
+
+#: includes/widgets/class-wpnw-cat-widget.php:34
+msgid "News Categories"
+msgstr ""
+
+#: includes/widgets/class-wpnw-cat-widget.php:30
+#: includes/widgets/class-wpnw-cat-widget.php:51
+msgid "News Categories - Widget"
+msgstr ""
+
+#: includes/wpnw-post-types.php:138
+#, php-format
+msgid "News draft updated. <a target=\"_blank\" href=\"%s\">Preview News</a>"
+msgstr ""
+
+#: includes/wpnw-functions.php:584
+#: includes/widgets/shortcode/class-wpnw-news-grid.php:23
+msgid "News Grid"
+msgstr ""
+
+#: includes/shortcode/wpnw-news-grid-shortcode.php:18
+#: includes/widgets/shortcode/class-wpnw-news-grid.php:21
+msgid "News Grid - Shortcode"
+msgstr ""
+
+#: includes/wpnw-functions.php:586
+#: includes/widgets/shortcode/class-wpnw-news-gridbox.php:23
+msgid "News Gridbox"
+msgstr ""
+
+#: includes/shortcode/wpnw-news-gridbox-shortcode.php:18
+#: includes/widgets/shortcode/class-wpnw-news-gridbox.php:21
+msgid "News Gridbox - Shortcode"
+msgstr ""
+
+#: includes/wpnw-functions.php:587
+#: includes/widgets/shortcode/class-wpnw-news-gridbox-slider.php:23
+msgid "News Gridbox Slider"
+msgstr ""
+
+#: includes/shortcode/wpnw-news-gridbox-slider-shortcode.php:18
+#: includes/shortcode/wpnw-news-gridbox-slider-shortcode.php:26
+#: includes/shortcode/wpnw-news-gridbox-slider-shortcode.php:34
+#: includes/widgets/shortcode/class-wpnw-news-gridbox-slider.php:21
+msgid "News Gridbox Slider - Shortcode"
+msgstr ""
+
+#: includes/wpnw-post-types.php:40
+msgid "News Image"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:143
+msgid "News in Grid view"
+msgstr ""
+
+#: includes/wpnw-functions.php:588
+#: includes/widgets/shortcode/class-wpnw-news-list.php:23
+msgid "News List"
+msgstr ""
+
+#: includes/shortcode/wpnw-news-list-shortcode.php:18
+#: includes/widgets/shortcode/class-wpnw-news-list.php:21
+msgid "News List - Shortcode"
+msgstr ""
+
+#: includes/wpnw-functions.php:590
+#: includes/widgets/shortcode/class-wpnw-news-masonry.php:23
+msgid "News Masonry"
+msgstr ""
+
+#: includes/shortcode/wpnw-news-masonry-shortcode.php:18
+#: includes/shortcode/wpnw-news-masonry-shortcode.php:26
+#: includes/shortcode/wpnw-news-masonry-shortcode.php:34
+#: includes/widgets/shortcode/class-wpnw-news-masonry.php:21
+msgid "News Masonry - Shortcode"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:385
+msgid "News order saved successfully."
+msgstr ""
+
+#: edd-news-plugin.php:59
+msgid "News Plugin License"
+msgstr ""
+
+#: includes/wpnw-post-types.php:38
+msgid "News Pro"
+msgstr ""
+
+#: includes/wpnw-post-types.php:133
+#, php-format
+msgid "News published. <a href=\"%s\">View News</a>"
+msgstr ""
+
+#: includes/wpnw-post-types.php:132
+#, php-format
+msgid "News restored to revision from %s"
+msgstr ""
+
+#: includes/wpnw-post-types.php:134
+msgid "News saved."
+msgstr ""
+
+#: includes/wpnw-post-types.php:136
+#, php-format
+msgid ""
+"News scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Preview News</a>"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:68
+msgid "News Settings"
+msgstr ""
+
+#: includes/wpnw-functions.php:585
+#: includes/widgets/shortcode/class-wpnw-news-slider.php:23
+msgid "News Slider"
+msgstr ""
+
+#: includes/shortcode/wpnw-news-slider-shortcode.php:18
+#: includes/shortcode/wpnw-news-slider-shortcode.php:26
+#: includes/shortcode/wpnw-news-slider-shortcode.php:34
+#: includes/widgets/shortcode/class-wpnw-news-slider.php:21
+msgid "News Slider - Shortcode"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:252
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:231
+msgid "News Slider Setting"
+msgstr ""
+
+#: includes/wpnw-post-types.php:135
+#, php-format
+msgid "News submitted. <a target=\"_blank\" href=\"%s\">Preview News</a>"
+msgstr ""
+
+#: includes/wpnw-functions.php:589
+#: includes/widgets/shortcode/class-wpnw-news-ticker.php:23
+msgid "News Ticker"
+msgstr ""
+
+#: includes/shortcode/wpnw-news-ticker.php:18
+#: includes/shortcode/wpnw-news-ticker.php:26
+#: includes/shortcode/wpnw-news-ticker.php:34
+#: includes/widgets/shortcode/class-wpnw-news-ticker.php:21
+msgid "News Ticker - Shortcode"
+msgstr ""
+
+#: includes/wpnw-post-types.php:131
+msgid "News updated."
+msgstr ""
+
+#: includes/wpnw-post-types.php:128
+#, php-format
+msgid "News updated. <a href=\"%s\">View News</a>"
+msgstr ""
+
+#: includes/wpnw-functions.php:364
+msgid "Next"
+msgstr ""
+
+#: includes/wpnw-post-types.php:37
+msgid "No  News Items found in Trash"
+msgstr ""
+
+#: includes/wpnw-post-types.php:36
+msgid "No News Items found"
+msgstr ""
+
+#: edd-news-plugin.php:178
+msgid "Note : If your license key has expired, please renew your license from"
+msgstr ""
+
+#: edd-news-plugin.php:176
+msgid ""
+"Note: If you do not activate the license then you will not get automatic "
+"update of this plugin any more."
+msgstr ""
+
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:97
+msgid ""
+"Note: Preview will be displayed according to responsive layout mode. Live "
+"preview may display differently when added to your page based on inheritance "
+"from some styles."
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:247
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:226
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:216
+#: includes/widgets/class-wpnw-latest-news-slider.php:281
+#: includes/widgets/class-wpnw-latest-news.php:169
+msgid "Note: This will not work with limit=-1."
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:119
+msgid "Note: This will only work for WordPress 5.0 and more."
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:125
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:117
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:103
+#: includes/widgets/class-wpnw-latest-news-slider.php:114
+#: includes/widgets/class-wpnw-latest-news.php:98
+msgid "Number of Items"
+msgstr ""
+
+#: edd-news-plugin.php:149
+msgid ""
+"On purchase of any product 1 Year of Updates, 1 Year of Expert Support. "
+"After 1 Year, use without renewal OR renew manually at discounted price for "
+"further updates and support."
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:321
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:300
+#: includes/widgets/class-wpnw-latest-news-slider.php:272
+msgid "Ondemand"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:213
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:199
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:191
+#: includes/widgets/class-wpnw-latest-news-slider.php:196
+#: includes/widgets/class-wpnw-latest-news.php:187
+msgid "Open Link in a New Tab"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:303
+#: includes/widgets/class-wpnw-archive.php:193
+msgid "Order"
+msgstr ""
+
+#: includes/wpnw-post-types.php:88
+msgid "Parent Category"
+msgstr ""
+
+#: includes/wpnw-post-types.php:89
+msgid "Parent Category:"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:202
+msgid "Pause"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:309
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:288
+#: includes/widgets/class-wpnw-latest-news-slider.php:260
+msgid "Pause On Focus"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:300
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:279
+#: includes/widgets/class-wpnw-latest-news-slider.php:251
+msgid "Pause On Hover"
+msgstr ""
+
+#: edd-news-plugin.php:99
+msgid "Please activate plugin license to get automatic update of plugin."
+msgstr ""
+
+#: edd-news-plugin.php:59
+msgid "Plugin License"
+msgstr ""
+
+#: edd-news-plugin.php:95
+msgid "Plugin license is active."
+msgstr ""
+
+#: edd-news-plugin.php:279
+msgid ""
+"Plugin license is invalid. Please be sure you have entered right plugin "
+"license key."
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:103
+msgid "Post Type Settings"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:126
+msgid "Post Type Slug"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:403
+msgid "Premium Support"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:403
+msgid "Premium Support - For any Customization"
+msgstr ""
+
+#: edd-news-plugin.php:173
+msgid ""
+"Press 'Activate License'. If your key is valid then you can see green "
+"'Active' text."
+msgstr ""
+
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:87
+msgid ""
+"Preview will be displayed according to responsive layout mode. You can check "
+"with `Full Preview` mode beside `Refresh` button for better visualization."
+msgstr ""
+
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:87
+msgid "Preview Window"
+msgstr ""
+
+#: includes/wpnw-functions.php:363
+msgid "Previous"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:322
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:301
+#: includes/widgets/class-wpnw-latest-news-slider.php:273
+msgid "Progressive"
+msgstr ""
+
+#: edd-news-plugin.php:152
+msgid "Purchase ID"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:247
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:226
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:216
+#: includes/widgets/class-wpnw-latest-news-slider.php:281
+#: includes/widgets/class-wpnw-latest-news.php:169
+msgid ""
+"Query `offset` parameter to exclude number of post. Leave empty for default."
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:245
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:224
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:214
+#: includes/widgets/class-wpnw-latest-news-slider.php:279
+#: includes/widgets/class-wpnw-latest-news.php:167
+msgid "Query Offset"
+msgstr ""
+
+#: includes/shortcode/wpnw-news-grid-shortcode.php:95
+#: includes/shortcode/wpnw-news-gridbox-shortcode.php:89
+#: includes/shortcode/wpnw-news-gridbox-slider-shortcode.php:99
+#: includes/shortcode/wpnw-news-list-shortcode.php:93
+#: includes/shortcode/wpnw-news-masonry-shortcode.php:74
+#: includes/shortcode/wpnw-news-masonry-shortcode.php:115
+#: includes/shortcode/wpnw-news-slider-shortcode.php:102
+msgid "Read More"
+msgstr ""
+
+#: includes/admin/metabox/wpnw-post-sett-metabox.php:26
+msgid "Read More Link"
+msgstr ""
+
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:79
+msgid "Refresh"
+msgstr ""
+
+#: includes/wpnw-post-types.php:41
+msgid "Remove News Image"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:41
+msgid "Reset All Settings"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:52
+#: includes/admin/settings/wpnw-settings.php:91
+#: includes/admin/settings/wpnw-settings.php:159
+#: includes/admin/settings/wpnw-settings.php:189
+msgid "Save Changes"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:343
+msgid "Save Sort Order"
+msgstr ""
+
+#: includes/wpnw-post-types.php:35
+msgid "Search  News Items"
+msgstr ""
+
+#: includes/wpnw-post-types.php:86
+msgid "Search Category"
+msgstr ""
+
+#: includes/widgets/class-wpnw-cat-widget.php:88
+msgid "Select Category"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:123
+msgid "Select Day"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:320
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:299
+#: includes/widgets/class-wpnw-latest-news-slider.php:271
+msgid "Select Lazyload"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:120
+msgid "Select Month"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:129
+msgid "Select Post"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:126
+msgid "Select Week"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:117
+msgid "Select Year"
+msgstr ""
+
+#: includes/wpnw-post-types.php:39
+msgid "Set News Image"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:115
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:115
+msgid "Settings - WP News and Scrolling Widgets Pro"
+msgstr ""
+
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:76
+msgid "Shortcode"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:112
+msgid "Shortcode Builder"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:112
+msgid "Shortcode Builder - WP News and Scrolling Widgets Pro"
+msgstr ""
+
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:62
+msgid "Shortcode Parameters"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:118
+#: includes/admin/shortcode-mapper/shortcode-preview.php:49
+msgid "Shortcode Preview"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:209
+msgid "Show post counts"
+msgstr ""
+
+#: edd-news-plugin.php:142
+msgid "Sites"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:318
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:297
+#: includes/widgets/class-wpnw-latest-news-slider.php:269
+msgid "Slider Lazyload"
+msgstr ""
+
+#: includes/admin/shortcode-mapper/shortcode-preview.php:80
+msgid "Sorry, No more post to display."
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:358
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:34
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:91
+msgid "Sorry, Something happened wrong."
+msgstr ""
+
+#: includes/class-wpnw-script.php:84
+msgid ""
+"Sorry, Something happened wrong. Kindly please be sure that you have choosen "
+"relevant shortocde from the dropdown."
+msgstr ""
+
+#: edd-news-plugin.php:219
+#, php-format
+msgid ""
+"Sorry, Something happened wrong. Please contact <a href=\"%s\">site "
+"administrator</a>."
+msgstr ""
+
+#: includes/admin/shortcode-mapper/shortcode-preview.php:40
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: includes/admin/shortcode-mapper/shortcode-preview.php:72
+msgid "Sorry, You can not visit the link in preview"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:277
+msgid "Sort News"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:294
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:273
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:208
+#: includes/widgets/class-wpnw-latest-news-slider.php:245
+msgid "Speed"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:131
+msgid "Step-1. Create a page like Our News OR Latest News."
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:116
+msgid ""
+"Step-1: This plugin create a News Pro menu tab in WordPress menu with custom "
+"post type."
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:133
+msgid "Step-2. Put below shortcode as per your need."
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:117
+msgid "Step-2: Go to \"News Pro --> Add news item tab\"."
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:118
+msgid ""
+"Step-3: Add news title, description, category, and images as featured image."
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:119
+msgid "Step-4: Repeat this process and add multiple news items."
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:120
+msgid ""
+"Step-4: To display news category wise you can use category shortcode under "
+"\"News --> News category\"."
+msgstr ""
+
+#: edd-news-plugin.php:169
+msgid "Steps to Activate the License"
+msgstr ""
+
+#: sp-news-and-widget.php:210
+#, php-format
+msgid "Thank you for activating %s"
+msgstr ""
+
+#: edd-news-plugin.php:174
+msgid "That's it. Now you can get auto update of this plugin."
+msgstr ""
+
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:57
+msgid ""
+"The Shortcode Mapper allows you to preview plugin shortcode. You can choose "
+"your desired shortcode from the dropdown and check various parameters from "
+"left panel. \n"
+"\n"
+"You can paste shortocde to below and press Refresh button to preview so each "
+"and every time you do not have to choose each parameters!!!"
+msgstr ""
+
+#: edd-news-plugin.php:292
+#, php-format
+msgid "This appears to be an invalid license key for %s."
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:176
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:119
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:111
+#: includes/widgets/class-wpnw-latest-news-scrolling.php:97
+#: includes/widgets/class-wpnw-latest-news-slider.php:108
+#: includes/widgets/class-wpnw-latest-news.php:92
+#: includes/widgets/shortcode/class-wpnw-abstract-widget.php:269
+msgid "Title"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:263
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:272
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:281
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:302
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:311
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:242
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:251
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:260
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:281
+#: includes/widgets/class-wpnw-latest-news-list-slider2.php:290
+#: includes/widgets/class-wpnw-latest-news-slider.php:223
+#: includes/widgets/class-wpnw-latest-news-slider.php:232
+#: includes/widgets/class-wpnw-latest-news-slider.php:253
+#: includes/widgets/class-wpnw-latest-news-slider.php:262
+msgid "True"
+msgstr ""
+
+#: includes/admin/wpnw-how-it-work.php:151
+msgid "Try Our Shortcode Builder!!"
+msgstr ""
+
+#: edd-news-plugin.php:142
+msgid "Unlimited"
+msgstr ""
+
+#: includes/wpnw-post-types.php:91
+msgid "Update Category"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:78
+msgid ""
+"Upload default featured image or provide an external URL of image. If your "
+"post does not have featured image then this will be displayed instead of "
+"blank grey box."
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:77
+msgid "Upload Image"
+msgstr ""
+
+#: includes/wpnw-post-types.php:42
+msgid "Use as News image"
+msgstr ""
+
+#: edd-news-plugin.php:147 edd-news-plugin.php:149
+msgid "Valid Upto"
+msgstr ""
+
+#: includes/admin/class-wpnw-admin.php:402
+msgid "View Documentation"
+msgstr ""
+
+#: includes/wpnw-post-types.php:34
+msgid "View News Item"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:187
+msgid "Weekly"
+msgstr ""
+
+#: edd-news-plugin.php:78
+msgid "WP News And Scrolling Widget Pro - License Options"
+msgstr ""
+
+#. Name of the plugin
+msgid "WP News and Scrolling Widgets Pro"
+msgstr ""
+
+#: includes/admin/settings/wpnw-settings.php:21
+msgid "WP News and Scrolling Widgets Pro - Settings"
+msgstr ""
+
+#: includes/admin/shortcode-mapper/wpnw-shortcode-mapper.php:28
+msgid "WP News and Scrolling Widgets Pro - Shortcode Builder"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"WP News Pro plugin with six different types of shortcode and seven different "
+"types of widgets. Display News posts with various designs."
+msgstr ""
+
+#: includes/admin/supports/gutenberg-block.php:1041
+msgid "WPOS Blocks"
+msgstr ""
+
+#: includes/widgets/class-wpnw-archive.php:184
+msgid "Yearly"
+msgstr ""
+
+#: includes/widgets/class-wpnw-latest-news-list-slider.php:240
+#: includes/widgets/class-wpnw-latest-news-slider.php:209
+msgid ""
+"You can enter any numeric number. e.g 500. Leave empty for default height."
+msgstr ""
+
+#: edd-news-plugin.php:300
+#, php-format
+msgid ""
+"You can manage this from your <a href=\"%s\" target=\"_blank\">account</a> "
+"or Please contact <a href=\"%s\" target=\"_blank\">site administrator</a>."
+msgstr ""
+
+#: edd-news-plugin.php:177
+msgid ""
+"You will receive license key within your product purchase email. If you do "
+"not have license key then you can get it from your"
+msgstr ""
+
+#: edd-news-plugin.php:85 includes/admin/settings/wpnw-settings.php:34
+msgid "Your changes saved successfully."
+msgstr ""
+
+#: edd-news-plugin.php:286
+msgid "Your license is not active for this URL."
+msgstr ""
+
+#: edd-news-plugin.php:262
+#, php-format
+msgid "Your license key expired on %s."
+msgstr ""
+
+#: edd-news-plugin.php:24
+#, php-format
+msgid ""
+"Your license key expired on %s. Kindly <a href=\"%s\" target=\"_blank\">"
+"renew</a> it for further updates and support from your <a href=\"%s\" "
+"target=\"_blank\">account page</a>."
+msgstr ""
+
+#: edd-news-plugin.php:273
+msgid "Your license key has been disabled."
+msgstr ""
+
+#: edd-news-plugin.php:274
+#, php-format
+msgid ""
+"Your license key has been disabled. Please contact <a href=\"%s\">site "
+"administrator</a>."
+msgstr ""
+
+#: edd-news-plugin.php:298
+msgid "Your license key has reached its activation limit."
+msgstr ""

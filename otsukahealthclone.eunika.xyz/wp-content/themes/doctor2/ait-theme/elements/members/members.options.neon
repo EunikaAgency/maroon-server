@@ -1,0 +1,143 @@
+@include: common.neon
+
+category:
+	label: Category
+	type: categories
+	taxonomy: members
+	default: 0
+	help: "Select category displayed on page"
+
+orderby:
+	label: Order By
+	type: select
+	selected: menu_order
+	# see http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters
+	default:
+		title: Alphabetically
+		menu_order: Item Order
+		rand: Random
+	help: 'Select order of items listed on page'
+
+order:
+	label: Order
+	type: select
+	selected: ASC
+	default:
+		ASC: Ascending
+		DESC: Descending
+	help: 'Select order of items listed on page'
+
+count:
+	label: Count
+	type: number
+	default: 99
+	help: "Number of items listed on page"
+
+layout:
+	type: variable
+	default: box
+
+textRows:
+	label: Text Rows
+	type: select
+	selected: none	
+	default:
+		none: Unlimited
+		1: 1 row
+		2: 2 rows
+		3: 3 rows
+		4: 4 rows
+		5: 5 rows
+	help: "Number of rows for description text"
+	
+socialIconsType:
+	label: Social Icons Type
+	type: select
+	selected: font
+	default:
+		font : "Font icons"
+		icon : "Image icons"
+	help: "Select format for images in carousel"	
+
+- section(id: layout-box, title: 'Box Layout settings')
+
+boxColumns:
+	label: Columns
+	type: select
+	selected: 3
+	default: [1, 2, 3]
+	help: "Number of items in one row"
+
+boxAlign:
+	type: variable
+	default: align-center
+
+boxEnableCarousel:
+	type: variable
+	default: on
+
+boxEnableAutoplay:
+	label: Carousel Autoplay
+	type: on-off
+	default: off
+	help: "Enable or disable carousel autoplay feature"
+
+boxEnableFading:
+	label: Carousel Fading
+	type: on-off
+	default: off
+	help: "Enable or disable carousel fading feature"
+
+boxRows:
+	type: variable
+	default: 1
+
+boxImageHeight:
+	type: variable
+	default: "1:1"
+
+#- section(id: layout-list, title: 'List Layout settings')
+
+#listColumns:
+#	label: Columns
+#	type: select
+#	selected: 2
+#	default: [1, 2, 3]
+#	help: "Number of items in one row"
+
+#listEnableCarousel:
+#	label: Carousel
+#	type: on-off
+#	default: off
+#	help: "Enable or disable carousel feature"
+
+#listEnableAutoplay:
+#	label: Carousel Autoplay
+#	type: on-off
+#	default: off
+#	help: "Enable or disable carousel autoplay feature"
+
+#listEnableFading:
+#	label: Carousel Fading
+#	type: on-off
+#	default: off
+#	help: "Enable or disable carousel fading feature"
+
+#listRows:
+#	label: Carousel Rows
+#	type: select
+#	selected: 2
+#	default: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#	help: "Number of rows in carousel"
+
+#listImageHeight:
+#	label: Image Format
+#	type: select
+#	selected: "1:1"
+#	default:
+#		"1:1" : "1:1"
+#		"1:2" : "1:2"
+#		"3:4" : "3:4"
+#		"9:16" : "9:16"
+#	help: "Select format for images in carousel"
+

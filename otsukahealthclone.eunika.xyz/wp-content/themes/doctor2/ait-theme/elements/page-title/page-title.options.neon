@@ -1,0 +1,30 @@
+@display:
+	label: Display
+	type: on-off
+	default: on
+	help: "Display or hide this element on page"  
+
+title:
+	label: Title
+	type: post-title
+
+description:
+	label: Description
+	type: textarea
+	help: "Description text displayed with page title"
+	
+textColor:
+	label: Text Color
+	type: color
+	default: '#ffffff'	
+	
+customBg:
+	label: Background
+	type: background
+	default:
+		color: '#007792'
+		opacity: 90%
+		image: ''
+		repeat: no-repeat
+		position: center center
+		scroll: scroll

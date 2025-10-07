@@ -1,0 +1,57 @@
+@include: common.neon
+
+contentSize:
+	type: variable
+	default: fullsize
+
+category:
+	label: Category
+	type: categories
+	taxonomy: facilities
+	default: 0
+	multiple: true
+	help: "Select category displayed on page"
+
+orderby:
+	label: Order By
+	type: select
+	selected: menu_order
+	default:
+		title: Alphabetically
+		date: Creation Date
+		menu_order: Menu Order
+	help: 'Select order of items listed on page'
+
+order:
+	label: Order
+	type: select
+	selected: ASC
+	default:
+		ASC: Ascending
+		DESC: Descending
+	help: 'Select order of items listed on page'
+
+itemColumns:
+	label: Columns
+	type: select
+	selected: 3
+	default: [1, 2, 3]
+	help: "Number of items in one row"
+
+iconCustomColor:
+	label: Icon Color
+	type: color
+	default: ''
+	help: "Custom color of Icons"
+	
+itemCustomBg:
+	label: Items Background
+	type: color
+	default: '#6dc1d8'
+	help: "Background of the items"	
+
+displayDesc:
+	label: Display Descriptions
+	type: on-off
+	default: on
+	help: "Display item descriptions"

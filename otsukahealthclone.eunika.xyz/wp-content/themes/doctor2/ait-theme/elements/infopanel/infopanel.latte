@@ -1,0 +1,65 @@
+{include $el->common('header')}
+
+<div id="{$htmlId}" class="{$htmlClass}">
+
+	{customQuery as $query, type => infopanel, tax => infopanels, cat => $el->option('category'), limit => -1, orderby => 'menu_order', order => 'ASC'}
+
+	{if $query->havePosts}
+		<div class="data-container">
+			<div class="content">
+				{customLoop from $query as $panel}
+				{var $meta = $panel->meta('infopanel-data')}
+
+				<div id="{$htmlId}-panel-{$panel->id}" n:class="panel-container, $iterator->isFirst() ? panel-active, $panel->hasImage ? image-present, $panel->content ? content-present">
+					{if $panel->hasImage}
+					<div class="thumbnail-container" style="background-image: url('{imageUrl $panel->imageUrl, width => 480, height => 810, crop => 1, crop_from_position => 'center,center'}')">
+						<!-- <img src="{imageUrl $panel->imageUrl, width => 480, height => 810, crop => 1, crop_from_position => 'center,center'}" alt="{!$panel->title}"> -->
+					</div>
+					{/if}
+					<div class="content-container entry-content">
+						{!$panel->content}
+					</div>
+					{if ($meta->title) || ($meta->description) || ( is_array($meta->data) && count($meta->data) > 0 )}
+						<div class="options-container">
+							<h3 class="options-title">{$meta->title}</h3>
+
+							{if is_array($meta->data) && count($meta->data) > 0}
+								<div class="data-container">
+								{foreach $meta->data as $data}
+									<span class="data-row">
+										<span class="data-name">{$data['name']}</span>
+										<span class="data-value">{$data['value']}</span>
+									</span>
+								{/foreach}
+								</div>
+							{/if}
+
+							<span class="options-description">{$meta->description}</span>
+						</div>
+					{/if}
+				</div>
+				{/customLoop}
+
+				<div class="tabs-container">
+					<div class="content">
+						<ul><!--
+						{customLoop from $query as $panel}
+							--><li n:class="$iterator->isFirst() ? active" data-order="{$iterator->getCounter()}"><a href="#" data-panel="{$htmlId}-panel-{$panel->id}">{!$panel->title}</a></li><!--
+						{/customLoop}
+						--></ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	{else}
+
+		<div class="alert alert-info">
+			{_x 'Infopanel', 'name of element'}&nbsp;&nbsp;|&nbsp;&nbsp;{__ 'Info: There are no panels created, add some please.'}
+		</div>
+
+	{/if}
+</div>
+
+{includePart "ait-theme/elements/infopanel/javascript"}

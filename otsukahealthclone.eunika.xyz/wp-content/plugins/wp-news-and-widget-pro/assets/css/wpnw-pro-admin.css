@@ -1,0 +1,87 @@
+/* Builder Shortcode Preview */
+.wpnw-pro-builder-shrt-prev{background-color: #e7e7e7; padding: 10px; border: 1px solid #ccc; font-size: 15px;text-align: center;}
+.wpnw-pro-builder-shrt-title span{border-bottom: 1px solid #999; display: inline-block; padding: 0 0 5px 0;}
+
+/* Setting Page */
+.wpnw-pro-img-view{max-width: 150px;}
+.wpnw-pro-img-view img{padding: 5px; margin: 5px 0; max-width: 150px; border: 1px solid #ccc; }
+.wp-list-table .type-news .row-actions{color:#999;}
+.wpnw-clearfix:before, .wpnw-clearfix:after{content: "";display: table;}
+.wpnw-clearfix::after{clear: both;}
+.wpnw-right{float:right;}
+.wpnw-hide{display:none;}
+.wpnw-settings .wpnw-resett-sett-btn{margin: 0 0 0 5px;}
+
+.wpnw-hide{display:none;}
+.wpnw-settings .postbox-header .handle-actions{order: 1;}
+.wpnw-settings .CodeMirror{border: 1px solid #e5e5e5; height:400px;}
+.wpnw-code-editor{height:400px;}
+
+/* Widget */
+.wpnw-wdgt-accordion-wrap{position:relative;}
+.wpnw-wdgt-accordion-header{border-bottom: 2px solid #ccc; margin:8px 0 12px 0; padding:0 0 6px 0; font-weight:600; color:#555d66; cursor:pointer;}
+.wpnw-wdgt-accordion-header .dashicons-arrow-down-alt2{float: right; font-size: 22px;}
+.wpnw-wdgt-accordion-cnt{overflow: hidden;}
+.wpnw-widget-wrap hr{margin: 7px 0 !important;}
+.wpnw-widget-wrap p{margin: 10px 0;}
+.wpnw-widget-wrap p em{font-size: 12px; display: block;}
+.wpnw-widget-wrap p em span,
+.wpnw-widget-wrap p em label{cursor: pointer; font-weight: bold;}
+.so-content .wpnw-widget-wrap p label,
+.fl-builder-settings-fields .wpnw-widget-wrap p label{font-weight: 500;}
+.so-content .wpnw-widget-wrap p input,
+.so-content .wpnw-widget-wrap p select,
+.fl-builder-settings-fields .wpnw-widget-wrap p input,
+.fl-builder-settings-fields .wpnw-widget-wrap p select{width: 100%; max-width: 100%; margin: 5px 0 8px 0 !important;}
+.so-content .wpnw-widget-wrap p input[type="checkbox"],
+.fl-builder-settings-fields .wpnw-widget-wrap p input[type="checkbox"]{width: auto;}
+.wpnw-widget-wrap p .wp-picker-input-wrap .wp-color-picker{width: 4rem; margin: 0 !important;}
+.wpnw-widget-wrap p .wp-picker-input-wrap .wp-picker-clear{width: auto; margin: 0 !important; margin-left: 6px !important;}
+.fl-builder-settings-fields .wpnw-widget-wrap input,
+.fl-builder-settings-fields .wpnw-widget-wrap label{vertical-align: middle;}
+
+/***** Shortocde Mapper *****/
+.wpnw-customizer-control *{box-sizing: border-box;}
+.wpnw-customizer-control{float: left; list-style: outside none none; padding:0; position: relative; width: 300px; word-wrap: break-word; margin:0; transition: all 0.5s ease-in-out 0s; -webkit-transition: all 0.5s ease-in-out 0s;}
+.wpnw-cust-accordion{background-color: #f5f5f5; border:1px solid #e2dddb; max-height:653px; overflow:auto;}
+.wpnw-customizer-preview{margin-left: 350px;}
+.wpnw-customizer-preview *{-webkit-box-sizing: border-box; -moz-box-sizing: border-box;box-sizing: border-box; outline:none;}
+.wpnw-customizer-preview iframe{position: absolute; height: 100%; width: 100%; padding: 15px 0;}
+.wpnw-customizer-window{position: relative; min-height: 550px; background-color: #fff; border: 1px solid #e2dddb;}
+.wpnw-customizer-shrt-wrp{margin:0 0 5px 0;}
+.wpnw-customizer-shrt{width: 100%; resize: none; height: 65px;}
+.wpnw-customizer-loader{display: none; position: absolute; height: 100%; width: 100%; opacity: 0.8; background: url("../images/spinner.gif") center center no-repeat; background-color: #fff; background-position: center center;}
+.wpnw-customizer-error{display: none; position: absolute; color: #a94442; background-color: #f2dede; border:1px solid #ebccd1; max-width:300px; width: 100%; left:0; right:0; top: 49%; margin:auto; padding:10px; text-align: center;}
+.wpnw-customizer-heading{margin: 0 0 10px 0; font-size: 14px; font-weight: 600;}
+.wpnw-customizer-heading .wpnw-cust-heading-info{cursor:help;}
+.wpnw-customizer-shrt-tool{float:right;}
+.wpnw-customizer-shrt-tool .button{border-radius:0; border:0;}
+.wpnw-cust-dwp{cursor: pointer; height: auto; width: auto; border: 1px solid #ccc; padding: 2px; background-color: #fff; transition: all 0.3s ease-in-out 0s; -webkit-transition: all 0.3s ease-in-out 0s;}
+.wpnw-cust-dwp-active{background-color: #32373C; border: 1px solid #32373C; color: #fff;}
+
+.wpnw-accordion-header{background-color: #fff; padding: 12px; font-size: 14px; font-weight: 600; cursor: pointer; border-color: #e2dddb; border-style: none none solid none; border-width: 1px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+.wpnw-accordion-header span.ui-icon{float: right;}
+.wpnw-accordion-header.ui-accordion-header-active{border:0;}
+.wpnw-accordion-cnt{display: none; background-color: #fff; padding: 12px; border-bottom:1px solid #e2dddb;}
+
+.wpnw-customizer-control .wpnw-customizer-row{margin: 0 0 15px 0;}
+.wpnw-customizer-control .description{margin: 2px 0 0 0; display: block; color: #555d66; font-size: 12px; line-height: 1.5;}
+.wpnw-customizer-control .wpnw-customizer-lbl{display: block; font-size: 14px; line-height: 24px; font-weight: 600; margin-bottom: 4px;}
+.wpnw-customizer-control .wpnw-cust-field-lbl{margin:0 5px 0 0;}
+.wpnw-customizer-control input[type="number"], .wpnw-customizer-control input[type="search"], .wpnw-customizer-control input[type="tel"], .wpnw-customizer-control input[type="url"], .wpnw-customizer-control input[type="text"], .wpnw-customizer-control input[type="password"], .wpnw-customizer-control input[type="email"], .wpnw-customizer-control select{ width: 100%; margin: 0; }
+.wpnw-cust-full-preview .wpnw-customizer-control{-webkit-transform: translateX(-150%); transform: translateX(-150%); height: 0;}
+.wpnw-cust-full-preview .wpnw-customizer-preview{margin-left:0; transition: all 0.5s ease-in-out 0s; -webkit-transition: all 0.5s ease-in-out 0s;}
+
+.wpnw-customizer-toolbar{margin: 0 0 15px 0; text-align: right;}
+.wpnw-customizer-toolbar .wpnw-cust-shrt-switcher{min-width: 200px; max-width: 200px; margin-top:0; margin-bottom:0; min-height:30px;}
+.wpnw-customizer-toolbar .wpnw-cust-shrt-generate-help i{font-size: 30px; height: auto; width: auto; cursor: pointer; vertical-align: middle;}
+
+@media only screen and (max-width:320px) {
+	.wpnw-customizer-toolbar .wpnw-cust-shrt-switcher{min-width: auto; max-width: 160px;}
+}
+@media only screen and (max-width: 568px) {
+	.wpnw-customizer-control{max-height: none; width: 100%; float: none;}
+	.wpnw-customizer-preview{margin: 20px 0 0 0;}
+	.wpnw-customizer-shrt-tool .wpnw-cust-dwp{display: none;}
+	.wpnw-customizer-toolbar{margin: 15px 0;}
+}

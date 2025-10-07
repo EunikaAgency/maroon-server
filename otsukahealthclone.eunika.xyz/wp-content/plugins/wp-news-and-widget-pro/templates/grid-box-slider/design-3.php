@@ -1,0 +1,81 @@
+<?php
+/**
+ * Template for WP News and Five Widgets Pro Loop - design-3
+ *
+ * This template can be overridden by copying it to yourtheme/wp-news-and-widgets-pro/grid-box-slider/design-3.php
+ *
+ * @package WP News and Five Widgets Pro
+ * @version 2.1.4
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+} 
+
+global $post;
+
+switch ($count % 6) {
+	case '2':
+		$dynamic_cls = 'wpnews-medium-6';
+		break;
+
+	case '4':
+	case '5':
+	case '0':
+		$dynamic_cls = 'wpnews-medium-4';
+		break;
+	
+	default:
+		$dynamic_cls = 'wpnews-medium-3';
+		break;
+}
+
+$grid_box_count 	= ( $count % 6 );
+$grid_box_count 	= ! empty( $grid_box_count ) 	? $grid_box_count : 6;
+
+if( ($count % 6) == 1 ) { ?>
+<div class="wpnaw-grid-slider-wrp">
+<?php } ?>
+
+	<div class="wpnaw-news-slides wpnaw-clr-<?php echo esc_attr($grid_box_count); ?> <?php echo esc_attr($dynamic_cls); ?> wpnews-columns">
+		<a class="wpnaw-link-overlay" href="<?php echo esc_url($post_link); ?>" target="<?php echo esc_attr($link_target); ?>"></a>
+		<div class="wpnaw-news-grid-content">
+			<div class="wpnaw-news-overlay">
+				<div class="wpnaw-news-image-bg" style="<?php echo esc_attr($height_css); ?>">
+					<?php if( ! empty( $post_featured_image ) ) { ?>
+						<img src="<?php if( empty($lazyload) ) { echo esc_url($post_featured_image); } ?>" alt="<?php the_title_attribute(); ?>" <?php if($lazyload) { ?>data-lazy="<?php echo esc_url($post_featured_image); ?>" <?php } ?> />
+					<?php } ?>
+				</div>
+				<div class="wpnaw-title-content">
+					<?php if($show_category_name && $cate_name !='') { ?>
+						<div class="wpnaw-news-categories"><?php echo wp_kses_post($cate_name); ?></div>
+					<?php } ?>
+					<div class="wpnaw-bottom-content">
+						<?php if($news_post_title) { ?>
+							<h2 class="wpnaw-news-title">
+								<a href="<?php echo esc_url($post_link); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo wp_kses_post($news_post_title); ?></a>
+							</h2>
+						<?php } 
+						if($show_date || $show_author) { ?>
+							<div class="wpnaw-news-date">
+								<?php if($show_author) { ?><span><?php esc_html_e( 'By', 'sp-news-and-widget' ); ?> <a href="<?php echo esc_url( get_author_posts_url( $post->post_author ) ); ?>" target="<?php echo esc_attr($link_target); ?>"><?php the_author(); ?></a></span><?php } ?>
+								<?php echo ($show_author && $show_date) ? '&nbsp;/&nbsp;' : '' ?>
+								<?php if($show_date) { echo get_the_date(); } ?>
+							</div>
+						<?php }
+						if($show_content) { ?>
+							<div class="wpnaw-news-content">
+								<div><?php echo wpnw_pro_get_post_excerpt( NULL, get_the_content(), $content_words_limit, $content_tail ); ?></div>
+								<?php if($show_read_more) { ?>
+									<a href="<?php echo esc_url($post_link); ?>" target="<?php echo esc_attr($link_target); ?>" class="readmorebtn"><?php echo wp_kses_post($read_more_text); ?></a>
+								<?php } ?>
+							</div>
+						<?php } ?> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<?php if( ($count % 6) == 0 || ( $post_count == $count ) ) { ?>
+</div>
+<?php } ?>

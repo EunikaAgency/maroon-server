@@ -1,0 +1,645 @@
+general:
+	title: General
+	options:
+
+		layoutType:
+			label: Layout Type
+			type: image-radio
+			checked: layout-narrow
+			images:
+				layout-wide: layout-wide.png
+				layout-narrow: layout-narrow.png
+			default:
+				layout-wide: Wide Layout
+				layout-narrow: Narrow Layout
+			help: "Display full-width or fixed-width layout of website"
+
+		websiteWidth:
+			label: Website Width
+			type: range
+			unit: px
+			min: 1000
+			max: 1800
+			step: 20
+			default: 1220
+			help: "Width of the website layout"
+
+		leftSidebarWidth:
+			label: Left Sidebar Width
+			type: range
+			unit: %
+			min: 10.0
+			max: 30.0
+			step: 0.1
+			default: 21.7
+			help: "Width of left sidebar"
+
+		rightSidebarWidth:
+			label: Right Sidebar Width
+			type: range
+			unit: %
+			min: 10.0
+			max: 30.0
+			step: 0.1
+			default: 21.7
+			help: "Width of right sidebar"
+
+		sidebarGap:
+			type: variable
+			default: 5.5
+
+		progressivePageLoading:
+			label: Progressive Page Loading
+			type: on-off
+			default: off
+			help: "Enable or disable progressive loading of page"
+
+		- section(title: 'Main Theme Colors and Backgrounds')
+
+		favicon:
+			label: Favicon
+			type: image
+			default: "/design/img/favicon.png"
+			help: "Select image used as Favicon"
+
+		mainbg:
+			label: Website Background
+			type: background
+			default:
+				color: '#DAEBEF'
+				opacity: 100%
+				image: ''
+				repeat: repeat
+				position: top center
+				scroll: scroll
+			help: "Look of section background. Color, opacity and background image."
+			required: true
+
+		themeColor:
+			label: Theme Color Dark
+			type: color
+			default: '#87999E'
+			help: "Dark theme color for dark elements"
+			required: true
+
+		themeColor2:
+			label: Theme Color Light
+			type: color
+			default: '#e3e7e8'
+			help: "Main theme color for light elements"
+			required: true
+
+		pageBgColor:
+			label: Page Background
+			type: color
+			default: '#ffffff'
+			opacity: 100%
+			help: "Color and opacity of page background"
+			required: true
+
+		titColor:
+			label: Titles
+			type: color
+			default: '#333333'
+			help: "Color of titles text"
+			required: true
+
+		txtColor:
+			label: Text
+			type: color
+			default: '#777777'
+			help: "Color of main text"
+			required: true
+
+		lnkColor:
+			label: Links
+			type: color
+			default: '#6dc1d8'
+			help: "Color of links"
+			required: true
+
+		hvrColor:
+			label: Links Hover
+			type: color
+			default: '#5891af'
+			help: "Color of links with mouse cursor over"
+			required: true
+
+		decColor:
+			label: Decoration
+			type: color
+			default: '#6dc1d8'
+			help: "Decorative color of elements on website"
+			required: true
+
+		linesColor:
+			label: Lines
+			type: color
+			default: '#000000'
+			opacity: 10%
+			help: "Color of lines"
+			required: true
+
+header:
+	title: Header
+	options:
+
+		logo:
+			label: Website Logo
+			type: image
+			default: '/design/img/logo.png'
+			help: "Logo image for website header"
+
+		headbg:
+			label: Background
+			type: background
+			default:
+				color: ''
+				opacity: 100%
+				image: ''
+				repeat: repeat
+				position: top center
+				scroll: scroll
+			help: "Look of section background. Color, opacity and background image."
+
+		stickyMenu:
+			label: Sticky Menu
+			type: on-off
+			default: on
+			help: "Enable or disable sticky menu on website"
+
+		headerShare:
+			label: Header Share
+			type: select
+			selected: "enabled"
+			default:
+				"enabled": Enable
+				"disabled": Disable
+
+		- section(id: 'headerShare-enabled', title: 'Header Share Options')
+
+		headerWidgetArea:
+			label: Widget area
+			type: sidebar
+			default:
+				sidebar: __sidebar-5
+
+		enableFacebook:
+			label: "Enable Facebook"
+			type: on-off
+			default: on
+		enableTwitter:
+			label: "Enable Twitter"
+			type: on-off
+			default: on
+		enableGooglePlus:
+			label: "Enable Google+"
+			type: on-off
+			default: on
+
+		- section(title: 'Main Menu Colors and Backgrounds')
+
+		menubg:
+			label: Background
+			type: color
+			default: ''
+			opacity: 100%
+			help: "Background color and opacity of main menu"
+
+		menuColor:
+			label: Menu Items
+			type: color
+			default: '#87999E'
+			help: "Color of menu items text"
+
+		menuHover:
+			label: Menu Items Hover
+			type: color
+			default: '#5891AF'
+			help: "Color of menu items text on hover"
+
+		menuColorAct:
+			label: Active Menu Item
+			type: color
+			default: '#C23571'
+			help: "Color of active menu item text"
+
+		- section(title: Custom JavaScript Code)
+
+		customJsCode:
+			label: JavaScript Code
+			type: multiline-code
+			default: ''
+			help: "Place for your custom Javascript codes"
+
+footer:
+	title: Footer
+	options:
+		- section(title: 'Footer Widgets Area')
+
+		footerbg:
+			label: Background
+			type: background
+			default:
+				color: '#333333'
+				opacity: 100%
+				image: '/design/img/patterns/sand.png'
+				repeat: repeat
+				position: top center
+				scroll: scroll
+			help: "Look of section background. Color, opacity and background image."
+			required: true
+
+		titFwColor:
+			label: Titles
+			type: color
+			default: '#999999'
+			help: "Color of widget titles"
+
+		txtFwColor:
+			label: Text
+			type: color
+			default: '#999999'
+			help: "Color of plain text"
+
+		lnkFwColor:
+			label: Links
+			type: color
+			default: '#999999'
+			help: "Color of links"
+
+		decFwColor:
+			label: Decoration
+			type: color
+			default: '#6dc1d8'
+			help: "Decorative color of some elements and links with mouse cursor over"
+
+
+		- section(title: 'Footer Bar')
+
+		FtText:
+			label: Text Area Width
+			type: number
+			unit: %
+			default: 47
+			help: "Percentage width of area"
+
+		FtMenu:
+			label: Menu Area Width
+			type: number
+			unit: %
+			default: 47
+			help: "Percentage width of area"
+
+		bgColor:
+			label: Background
+			type: color
+			default: '#000000'
+			opacity: 100%
+			help: "Background color and opacity of footer bar"
+
+		txtColor:
+			label: Text
+			type: color
+			default: '#999999'
+			help: "Color of plain text"
+
+		lnkColor:
+			label: Links
+			type: color
+			default: '#999999'
+			help: "Color of links"
+
+		hvrColor:
+			label: Links Hover
+			type: color
+			default: '#6dc1d8'
+			help: "Color of links with mouse cursor over"
+
+		text:
+			label: Text Area
+			type: editor
+			default: '<p>&copy; 2014 Copyright by <a href="http://www.ait-themes.com">AIT-Themes</a>. All rights reserved.</p>'
+			help: "Text displayed in footer bar text area"
+
+		- section(title: Custom JavaScript Code)
+
+		customJsCode:
+			label: JavaScript Code
+			type: multiline-code
+			default: ''
+			help: "Place for your custom Javascript codes"
+
+typography:
+	title: Typography
+	options:
+
+		titleFont:
+			label: Title Website Font
+			type: font-select
+			choices:
+				theme:
+					label: Theme Default Font
+					font-family: 'Open Sans Condensed'
+				system:
+					label: System font
+					font-family: 'Arial, sans-serif'
+				google:
+					label: Google Fonts
+			default: theme
+
+		mainFont:
+			label: Main Website Font
+			type: font-select
+			choices:
+				theme:
+					label: Theme Default Font
+					font-family: 'Open Sans'
+				system:
+					label: System font
+					font-family: 'Arial, sans-serif'
+				google:
+					label: Google Fonts
+			default: theme
+
+		- section(title: Font Sizes)
+
+		txtSize:
+			label: Standard Text
+			type: number
+			unit: px
+			default: 13
+			help: "Basic text size in px"
+
+		smlSize:
+			label: Small Text
+			type: number
+			unit: px
+			default: 11
+			help: "Small text size in px"
+
+		decSize:
+			label: Decoration Text
+			type: number
+			unit: px
+			default: 14
+			help: "Size of decoration texts, buttons and other texts in px"
+
+		mnuSize:
+			label: Main Menu Text
+			type: number
+			unit: px
+			default: 18
+			help: "Menu text size in px"
+
+		h1Size:
+			label: H1
+			type: number
+			unit: px
+			default: 36
+			help: "Size of H1 titles in px"
+
+		h2Size:
+			label: H2
+			type: number
+			unit: px
+			default: 24
+			help: "Size of H2 titles in px"
+
+		h3Size:
+			label: H3
+			type: number
+			unit: px
+			default: 20
+			help: "Size of H3 titles in px"
+
+		h4Size:
+			label: H4
+			type: number
+			unit: px
+			default: 18
+			help: "Size of H4 titles in px"
+
+		h5Size:
+			label: H5
+			type: number
+			unit: px
+			default: 16
+			help: "Size of H5 titles in px"
+
+		h6Size:
+			label: H6
+			type: number
+			unit: px
+			default: 14
+			help: "Size of H6 titles in px"
+
+breadcrumbs:
+	title: Breadcrumbs
+	options:
+		separator:
+			label: Separator
+			type: code
+			default: '&raquo;'
+			help: "Separator used between links in breadcrumbs"
+
+		before:
+			label: Breadcrumbs Text
+			type: text
+			default: 'You are here:'
+			help: "Text displayed before breadcrumbs"
+
+		showHome:
+			label: Text for "Home"
+			type: text
+			default: "Home"
+			help: "Text for home link in breadcrumbs"
+
+		network:
+			label: Website Title
+			type: on-off
+			default: on
+			help: "Display current website title in breadcrumbs. Have not any effect on standard Wordpress installation, only on Wordpress Multisite installation."
+
+# Allows adding sidebars and widget areas from theme admin
+@widgetAreasAndSidebars:
+	title: 'Sidebars & Widget Areas'
+	options:
+
+		- section(title: Sidebars, help: 'Add new Sidebar by click on "+ Add New Item" link, or remove existing Sidebar by clicking on red cross.')
+
+
+		@sidebar:
+			label:
+			type: clone
+			min: 1
+			max: infinity
+			removeAll: false
+			sort: false
+			items:
+				name:
+					label: Name
+					type: text
+					help: "Name of widget area displayed in Widgets options"
+			default:
+				0:
+					name: 'General (Subpage)'
+				1:
+					name: Homepage
+				2:
+					name: Blog
+				3:
+					name: Blog Post
+				4:
+					name: Portfolio Item
+				5:
+					name: Header Share
+
+		- section(title: Footer Widget Areas, help: 'Add new Footer Widget Area by click on "+ Add New Item" link, or remove existing Footer Widget Area by clicking on red cross.')
+
+		footer:
+			type: clone
+			min: 1
+			max: 6
+			removeAll: false
+			sort: false
+			items:
+				name:
+					label: Name
+					type: text
+					default: ''
+					help: "Name of widget area displayed in Widgets options"
+				width:
+					label: Width
+					type: number
+					unit: %
+					default: 25
+					help: "Percentage width of area"
+			default:
+				0:
+					name: Footer Widget Area 1
+					width: 25
+				1:
+					name: Footer Widget Area 2
+					width: 25
+				2:
+					name: Footer Widget Area 3
+					width: 25
+				3:
+					name: Footer Widget Area 4
+					width: 25
+
+google:
+	title: Google
+	options:
+
+		analyticsTrackingId:
+			label: Google Analytics Tracking ID
+			type: code
+			help: "Google Analytics Tracking ID in form UA-XXXXX-YY"
+		anonymizeIp:
+			label: Anonymize IP address in Google Analytics
+			type: on-off
+			default: off
+			help: "This option helps to comply with your own privacy policies or, in some countries, recommendations from local data protection authorities, which may prevent the storage of full IP address information in Google Analytics"
+
+		mapsApiKey:
+			label: Google Maps API key
+			type: code
+		
+		- section(title: 'Load Google Map on Request', help: 'Google Map will be loaded for visitors after click on the button. Feature can be enabled in appropriate Element in Page Builder.')
+
+		requestBg:
+			label: Background
+			type: background
+			default:
+				color: '#f2f2f2'
+				opacity: 100%
+				image: '/design/img/map-bg.jpg'
+				repeat: no-repeat
+				position: center center
+				scroll: scroll
+			help: "Background of section while the Google Map is not loaded."
+
+		requestDescriptionText:
+			label: Description Text
+			type: text
+			default: 'Click on button to show the map.'
+			help: "Description text displayed in place of map."
+
+		requestDescriptionTextColor:
+			label: Description Text Color
+			type: color
+			default: ''
+			help: "Custom color of description text."
+
+		requestButtonText:
+			label: Button Text
+			type: text
+			default: 'Show the map'
+			help: "Text displayed on the button."
+
+social:
+
+	title: Social Icons
+	options:
+
+		enableSocialIcons:
+			label: Display
+			type: on-off
+			default: on
+			help: "Display social icons on website"
+
+		socbg:
+			label: Background
+			type: color
+			default: ''
+			opacity: 100%
+			help: "Background color and opacity of icons"
+
+		socIconsNewWindow:
+			label: Open In New Window
+			type: on-off
+			default: on
+			help: 'Open links in new window or tab'
+
+		socIcons:
+			label: Social Icons
+			type: clone
+			max: 10
+			help: 'Add new Social Icon by click on "+ Add New Item" link, or remove existing Social Icon by clicking on red cross. Click on "Remove All Items" link to remove all existing Social Icons.'
+			items:
+				title:
+					label: Title
+					type: text
+					help: "Social icon title"
+				icon:
+					label: Icon Image
+					type: image
+					less: false
+					help: "Social icon image"
+				iconFont:
+					label: Icon Font
+					type: font-awesome-select
+					less: false
+					help: "Class of icon from FontAwesome - disable Icon Image"
+				url:
+					label: Link
+					type: url
+					help: "Social icon link, use valid URL format with http://"
+			default:
+				0:
+					title: Twitter
+					icon: ''
+					iconFont: 'fa-twitter'
+					url: 'http://www.twitter.com/AitThemes'
+				1:
+					title: Facebook
+					icon: ''
+					iconFont: 'fa-facebook-square'
+					url: 'http://www.facebook.com/AitThemes'
+				2:
+					title: 'Mail'
+					icon: ''
+					iconFont: 'fa-envelope'
+					url: 'mailto:mail@mail.com'

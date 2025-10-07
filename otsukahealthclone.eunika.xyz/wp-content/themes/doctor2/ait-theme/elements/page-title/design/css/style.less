@@ -1,0 +1,15 @@
+.customBg() when not (@customBg-image = "")					{ background: @customBg-image @customBg-repeat @customBg-position @customBg-scroll @customBg-color; }
+.customBgColor() when (iscolor(@customBg-color))			{ background: @customBg-color; }
+.textColor() when (iscolor(@textColor))						{ color: @textColor !important; }
+
+.page-title													{ .customBg(); }
+.page-title .entry-header.has-image,
+.layout-wide .page-title .entry-header.has-image:before		{ .customBgColor(); }	
+
+.page-title h1,
+.page-title .page-description,
+.page-title .entry-data li a,
+.page-title .author,
+.page-title .author a,
+.page-title .nav-single a .meta-nav:before 					{ .textColor(); }
+

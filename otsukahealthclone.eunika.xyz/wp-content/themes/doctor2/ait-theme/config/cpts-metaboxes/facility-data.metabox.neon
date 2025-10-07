@@ -1,0 +1,20 @@
+icon:
+	label: Icon
+	type: image
+	default: ""
+
+iconColor:
+	label: Icon Color
+	type: color
+	default: ""
+
+description:
+	label: Description
+	type: textarea
+	default: ""
+	
+link:
+	label: 'Link'
+	type: url
+	default:
+	help: 'URL of page to be redirected, use valid URL format with http://'
