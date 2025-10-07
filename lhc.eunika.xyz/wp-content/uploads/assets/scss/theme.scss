@@ -1,0 +1,329 @@
+@import '../global.scss';
+@import '../adminlte/build/scss/adminlte.scss';
+@import './buttons.scss';
+
+
+.search_bar {
+    input {
+        display: block;
+        border: none !important;
+        padding-right: 60px !important;
+        font-style: italic;
+        background-color: $white !important;
+        color: $gray-800 !important;
+        padding: 13px 20px !important;
+        height: 60px;
+        border-radius: 3px;
+        line-height: 60px;
+        font-size: 14px !important;
+        font-family: inherit;
+        box-shadow: none;
+        width: 100% !important;
+        outline: none;
+        margin-right: -80px;
+    }
+
+    input:focus {
+        border: 1px solid $green !important;
+        box-shadow: 0 0 2pt 2pt $white;
+        outline-width: 0px;
+
+    }
+
+    button {
+        border: none;
+        background-color: $green;
+        color: $white;
+        padding: 0;
+        height: 50px;
+        width: 50px;
+        -webkit-border-radius: 2px;
+        -khtml-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        border-radius: 2px;
+        position: relative;
+        top: 50%;
+        right: -15px;
+        transform: translateY(10%);
+    }
+}
+
+.blog-post {
+    
+    p {
+        font-size: 15px;
+        line-height: 1.8;
+        overflow-x: hidden;
+        font-weight: normal;
+        letter-spacing: 0;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        font-family: "Heebo", sans-serif;
+        margin-bottom: 24px;
+
+        a {
+            color: $accent3;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: $green;
+        }
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-family: "Poppins", sans-serif;
+        color: $accent1;
+        clear: both;
+        margin: 0 0 15px;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 1.25;
+    }
+
+    h3 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    h4 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+
+
+
+.caption-text {
+    padding: .8075em 0;
+    font-size: .875em !important;
+    font-style: italic;
+}
+
+.post-heading-h2 {
+    font-weight: 700;
+}
+
+
+
+.breadcrumps {
+    a {
+        color: $white !important;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: $green !important;
+    }
+}
+
+.category_btn {
+    a:hover {
+        text-decoration: none;
+        background-color: $green !important;
+        color: $white !important;
+        transition: 0.6s;
+    }
+}
+
+.btn_glass {
+
+    a {
+        position: relative;
+        padding: 20px 35px;
+        text-decoration: none;
+        color: $accent1;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255.1);
+    }
+
+    a:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 30%;
+        height: 100%;
+        background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.30), transparent);
+        transition: 0.6s;
+        transform: skew(-25deg);
+    }
+
+    a:hover:after {
+        left: 105%;
+    }
+
+    a:hover {
+
+        background-color: $green;
+        color: $white;
+        transition: 0.4s;
+
+    }
+
+}
+
+
+.two-space {
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: $green;
+        position: absolute;
+        left: 0;
+        top: 100%;
+
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 35px;
+        height: 3px;
+        background-color: $green;
+        position: absolute;
+        left: 30px;
+        top: 100%;
+
+    }
+
+
+}
+
+.blog-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+    color: $accent1;
+    clear: both;
+    margin: 0 0 15px;
+    -webkit-font-smoothing: antialiased;
+
+    a:hover {
+        text-decoration: none;
+        color: $green;
+    }
+
+}
+
+.blog-status {
+    width: max-content;
+}
+
+.post {
+    border-bottom: none;
+    color: #666;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.cont-reading {
+
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: $accent1;
+}
+
+
+.banner-breadcrumbs {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+
+    a {
+        color: $white;
+
+        &:hover {
+            color: $green;
+            text-decoration: none;
+        }
+    }
+}
+
+.category-list {
+    list-style: none;
+    display: block;
+
+    a {
+        // display: flex;
+        width: 100%;
+        font-weight: 400;
+        font-size: 15px;
+        align-items: left;
+        padding: 14px 50px 14px 24px;
+        // margin-bottom: 20px;
+        justify-content: space-between;
+        background-color: $white;
+
+    }
+
+    li {
+        display: flex;
+        font-weight: 400;
+        font-size: 15px;
+        align-items: left;
+        margin-bottom: 20px;
+        // justify-content: space-between;
+        background-color: $white;
+    }
+
+    li a:hover {
+        text-decoration: none;
+        background-color: $green !important;
+        color: $white !important;
+        transition: 0.6s;
+    }
+
+    li:hover {
+        text-decoration: none;
+        // background-color: $green !important;
+        color: $white !important;
+        transition: 0.6s;
+    }
+
+}
+
+
+.sc-same-categories {
+    list-style: none;
+    margin: 0;
+}
+
+.sc-category-list {
+    list-style: none;
+    margin: 0;
+
+    a {
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+        justify-content: space-between;
+
+        &:hover {
+            background: green;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+.fz-48 {
+    font-size: 48px;
+}

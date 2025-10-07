@@ -1,0 +1,783 @@
+@import '../global.scss';
+
+.single-location {
+
+
+    
+    .banner {
+        h1 {
+            color: #fff !important;
+            font-family: "Poppins", Sans-serif !important;
+            font-weight: 700 !important;
+            font-size: 30px;
+        }
+        .text-white{
+            text-align: left;
+            color: #fff;
+            font-family: "Heebo", Sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+
+            a{
+                color: $accent3;
+                &:hover{
+                    color: $green;
+                }
+            }
+        }
+
+    }
+
+    h2 {
+        font-size: 48px !important;
+        line-height: 1.25 !important;
+        font-weight: 700 !important;
+        color: $accent1 !important;
+    }
+
+    h4 {
+        font-size: 22px !important;
+        line-height: 1.25 !important;
+        font-weight: 700 !important;
+        color: $accent1 !important;
+    }
+
+    h5 {
+        font-size: 22px !important;
+        color: $accent1 !important;
+        font-weight: 600 !important;
+    }
+
+    .sub-heading {
+        font-weight: bold;
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 14px;
+        color: $accent2;
+        text-transform: capitalize;
+    }
+
+    .spacer {
+        height: 70px;
+    }
+
+    .location-btn {
+        background-color: $warning;
+        font-size: 14px;
+        font-weight: 600;
+        color: #111;
+        padding: 16px 40px;
+        line-height: 1.5;
+        border-radius: 30px;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        overflow: hidden;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 30%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.30), transparent);
+            transition: 0.6s;
+            transform: skew(-25deg);
+        }
+
+        &:hover:after {
+            left: 105%;
+        }
+
+        &:hover {
+
+            background-color: $accent2;
+            color: #fff;
+            transition: 0.4s;
+            text-decoration: none;
+
+        }
+    }
+
+    .location-btn-white {
+        background-color: #ffff;
+        font-size: 15px;
+        font-weight: 600;
+        color: $accent1;
+        padding: 16px 40px;
+        line-height: 1.5;
+        border-radius: 30px;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        overflow: hidden;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 30%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.30), transparent);
+            transition: 0.6s;
+            transform: skew(-25deg);
+        }
+
+        &:hover:after {
+            left: 105%;
+        }
+
+        &:hover {
+
+            background-color: $accent2;
+            color: #fff;
+            transition: 0.4s;
+            text-decoration: none;
+
+        }
+    }
+
+    .location-btn-blue {
+        background-color: $accent1;
+        font-size: 15px;
+        font-weight: 600;
+        color: #ffff;
+        padding: 16px 40px;
+        line-height: 1.5;
+        border-radius: 30px;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        overflow: hidden;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 30%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.30), transparent);
+            transition: 0.6s;
+            transform: skew(-25deg);
+        }
+
+        &:hover:after {
+            left: 105%;
+        }
+
+        &:hover {
+
+            background-color: $accent2;
+            color: #fff;
+            transition: 0.4s;
+            text-decoration: none;
+
+        }
+    }
+
+    .location-btn-grey {
+        background-color: #eeeff2;
+        border-radius: 30px;
+        text-align: center;
+        padding: 18px 42px;
+        font-weight: 600;
+        color: $accent1;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 30%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.30), transparent);
+            transition: 0.6s;
+            transform: skew(-25deg);
+        }
+
+        &:hover:after {
+            left: 105%;
+        }
+
+        &:hover {
+
+            background-color: $accent2;
+            color: #fff;
+            transition: 0.4s;
+            text-decoration: none;
+
+        }
+    }
+
+    .location-btn-grey {
+        background-color: #eeeff2;
+        font-size: 15px;
+        font-weight: 600;
+        color: $accent1;
+        padding: 16px 40px;
+        line-height: 1.5;
+        border-radius: 30px;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        overflow: hidden;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 30%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.30), transparent);
+            transition: 0.6s;
+            transform: skew(-25deg);
+        }
+
+        &:hover:after {
+            left: 105%;
+        }
+
+        &:hover {
+
+            background-color: $accent2;
+            color: #fff;
+            transition: 0.4s;
+            text-decoration: none;
+
+        }
+    }
+
+    #about-company {
+
+        h3 span {
+            font-size: 80px !important;
+            color: $accent2;
+        }
+
+        h3 {
+            font-weight: 700 !important;
+            color: $accent1 !important;
+            font-weight: 36px !important;
+            text-align: left !important;
+        }
+
+        .about-us-btn {
+            background-color: $warning;
+            font-size: 15px;
+            font-weight: 600;
+            color: #111;
+            padding: 18px 42px;
+            line-height: 1.5;
+            border-radius: 30px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+        img{
+            max-width: 100%;
+            max-height: 500px;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+    }
+
+    #what-we-do {
+
+        background-color: #eff2f7;
+    }
+
+    #why-choose-us {
+        .sub-heading {
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 14px;
+            color: $accent2;
+            text-transform: capitalize !important;
+        }
+
+        .spacer {
+            height: 70px;
+        }
+
+        .spacer-inner {
+            height: 500px;
+        }
+
+        .center {
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Set the height as per your requirement */
+            // background-image: url('https://cdn-kicmn.nitrocdn.com/qsmLuGXwNbMBYnrxzisZvAhVVOhOZPjt/assets/images/optimized/rev-fe3ad50/demo.7iquid.com/queak/wp-content/uploads/2020/03/about_man.jpg');
+            /* URL or path to your background image */
+            background-size: cover;
+            /* Cover the entire container */
+            background-position: top center;
+            /* Center the background image */
+            background-repeat: no-repeat;
+            /* Do not repeat the background image */
+        }
+        ul{
+            margin-left: 20px;
+        }
+    }
+
+    #cleaning-prices {
+
+        background-color: #eff2f7;
+
+        h3 {
+            color: $accent1;
+        }
+
+        .pricing-price-value {
+            font-size: 30px;
+            color: $accent1;
+            font-weight: 700;
+
+        }
+
+        .pricing-list {
+            list-style-type: none;
+        }
+
+        .pricing-list li {
+            font-size: 15px;
+            margin-bottom: 10px;
+            color: $gray-600;
+        }
+
+        .pricing-list i {
+            color: $accent2;
+        }
+
+        .icon-wrap img {
+            max-height: 70px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    }
+
+    #what-we-do {
+        .card {
+            .content h3 {
+                font-size: 22px;
+                color: $accent1;
+                font-weight: 600;
+                margin-bottom: 23px;
+            }
+
+            .icon-wrap {
+                width: 109px;
+                height: 104px;
+                align-items: center;
+            }
+
+            img {
+                max-height: 72px;
+            }
+
+            .entry-readmore {
+                font-weight: 700;
+            }
+
+        }
+    }
+
+
+    .heading-icon {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .heading-icon img {
+        max-height: 47px;
+    }
+
+    #reviews {
+
+        background-color: #eff2f7;
+
+        .reviews-card {
+            background-color: #fff;
+
+            img {
+                width: 51px;
+                height: 44px;
+            }
+
+            h5 {
+                font-size: 22px;
+                color: $accent1;
+                font-weight: 600;
+            }
+        }
+
+
+    }
+
+    .icon-svg {
+        width: 5em;
+        height: 5em;
+        position: relative;
+        display: block;
+        margin-bottom: 15px;
+        margin-top: 25px;
+    }
+
+    #how-to-book {
+        h4 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+
+    #certificate {
+
+        background-image: url(https://cdn-kicmn.nitrocdn.com/qsmLuGXwNbMBYnrxzisZvAhVVOhOZPjt/assets/images/optimized/rev-fe3ad50/londonhousecleaners.co.uk/wp-content/uploads/2020/03/about_overlay.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 16px;
+            padding-bottom: 20px;
+            color: $accent2;
+            text-transform: capitalize;
+            line-height: 2;
+        }
+
+    }
+
+    #service-offer {
+        background-color: #eff2f7;
+
+
+        .main-container {
+            max-width: 1190px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .spacer {
+            height: 70px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 36px;
+            color: $accent1;
+            font-family: "Poppins", Sans-serif;
+            font-weight: 700;
+        }
+
+        .description {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 16px;
+            padding-bottom: 20px;
+            color: $accent2;
+            text-transform: capitalize;
+            line-height: 2;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        li {
+            font-size: 15px;
+
+            a {
+                color: #066aab;
+            }
+
+            a:hover {
+                color: $accent2;
+            }
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        button {
+            padding: 18px 42px;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+        }
+
+
+    }
+
+    #our-team {
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 16px;
+            padding-bottom: 20px;
+            color: $accent2;
+            text-transform: capitalize;
+            line-height: 2;
+        }
+
+        .spacer {
+            height: 70px;
+        }
+
+        .middle {
+
+            color: #111;
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            padding: 10px;
+        }
+
+        .text {
+            text-transform: capitalize;
+            color: $accent1;
+
+        }
+
+        .image-card:hover .middle {
+            opacity: 1;
+        }
+
+        .image-card:hover .image {
+            opacity: 0.3;
+
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .job {
+            font-size: 16px;
+            color: $gray-600;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+    }
+
+    #accordion button {
+        background-color: #fff !important;
+        text-decoration: none !important;
+    }
+
+    #testimonial {
+        background-color: #eff2f7;
+        overflow:hidden;
+
+        .testimonial-icon {
+            width: 51px;
+            height: 44px;
+            background-image: url(https://cdn-kicmn.nitrocdn.com/qsmLuGXwNbMBYnrxzisZvAhVVOhOZPjt/assets/images/optimized/rev-fe3ad50/londonhousecleaners.co.uk/wp-content/themes/queak/assets/images/left-quote-gray.png);
+            margin-bottom: 22px;
+        }
+
+        .testimonial-card {
+            padding: 40px 40px 30px;
+            border-radius: 5px;
+            position: relative;
+            cursor: pointer;
+            background-color: #ffff;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        .line {
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 30px;
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -40px;
+                right: -40px;
+                height: 1px;
+                background-color: #dcdfe2;
+            }
+
+            .client-info {
+                display: block;
+            }
+
+            .sub-heading {
+                font-family: "Poppins", sans-serif;
+                font-weight: bold;
+                font-weight: 600;
+                font-size: 16px;
+                margin-bottom: 14px;
+                color: $accent2;
+            }
+
+        }
+        
+        @media screen and (max-width: 360px){
+            .slick-next{
+                position: fixed;
+            }
+            .slick-prev{
+                position: fixed;
+            }
+        }
+    }
+
+    #statistics {
+
+        background-color: $accent1;
+        background-image: url(https://cdn-kicmn.nitrocdn.com/qsmLuGXwNbMBYnrxzisZvAhVVOhOZPjt/assets/images/optimized/rev-fe3ad50/demo.7iquid.com/queak/wp-content/uploads/2020/03/Line-Pattern.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 1;
+
+        .icon-container {
+            width: 120px;
+            height: 120px;
+            border: 2px dashed #fff;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+
+        }
+        .content-container{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .element-container {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stat-icon {
+            height: auto;
+            width: 45px;
+            flex: none;
+            fill: #fff !important;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 56px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        p {
+            font-size: 15px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+
+
+    @media screen and (min-width: 768px){
+        h1{
+            font-size: 70px !important;
+        }
+    }
+
+    @media screen and (max-width: 992px){
+        h1{
+            text-align: center!important;
+            font-size: 56px!important;
+        }
+
+        .clean-price-location-btn {
+            background-color: $warning;
+            font-size: 14px;
+            font-weight: 600;
+            color: #111;
+            padding: 16px 40px;
+            line-height: 1.5;
+            border-radius: 30px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            overflow: hidden;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        h1,h2{
+            font-size: 36px!important;
+        }
+
+        #instant-quote .column1 {
+            height: 430px;
+
+        }
+    }
+
+    #wpforms-5844-field_1 label{
+        max-width: 150px;
+    }
+
+    #wpforms-5493-field_51 label{
+
+        max-width: 150px;
+    }
+}

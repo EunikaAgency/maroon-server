@@ -1,0 +1,83 @@
+@import '../global.scss';
+
+footer {
+  a {
+    color: $gray-600;
+    font-size: 15px;
+    
+
+    &:hover {
+      color: $accent2 !important;
+      text-decoration: none;
+    }
+  }
+
+  .login-btn,
+  .book-btn {
+    color: $white !important;
+    padding: 18px 42px;
+    font-size: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .icon-list-items i {
+    color: $accent2;
+  }
+
+
+  .icon-list-items span {
+    color: $gray-600;
+  }
+
+  li {
+    list-style-type: none;
+    line-height: 2.3;
+  }
+  
+  span:hover {
+    color: $accent2 !important;
+    text-decoration: none;
+  }
+
+  h3 {
+    font-size: 22px;
+    color: $accent1;
+    font-weight: 600;
+    text-align: left!important;
+  }
+
+  p{
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .fa-chevron-right {
+    font-size:12px;
+  }
+
+  .services{
+    padding-left:60px;
+    }
+
+  @media screen and (max-width: 992px){
+      .services, .company {
+        padding-left: 70px;
+      }
+    }
+
+    @media screen and (max-width: 767px){
+      .services, .company, .coverage {
+        padding-left: 30px;
+      }
+
+      .logo img {
+        width: 40%;
+      }
+    }
+ 
+
+  
+}

@@ -1,0 +1,1321 @@
+********************************************************************************
+* DUPLICATOR LITE: Install-Log
+* STEP-0 START @ 07:26:37
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ ORIGINAL SERVER                        |CURRENT SERVER
+OS__________________: Linux                                 |Linux
+PHP VERSION_________: 7.4.33                                |7.4.33
+********************************************************************************
+CURRENT SERVER INFO
+PHP_________________: 7.4.33 | SAPI: apache2handler
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+ARCHITECTURE________: 64-bit
+SERVER______________: Apache/2.4.58 (Ubuntu)
+DOC ROOT____________: "/var/www/html/lhc"
+REQUEST URL_________: "http://londonhousecleaners.site"
+********************************************************************************
+OVERWRITE PARAMS
+ *** FROM PACKAGE
+PARAM SET KEY[blogname]
+********************************************************************************
+MAINTENANCE MODE DISABLE
+INSTALLER INFO
+
+TEMPLATE____________: "base"
+SECURE MODE_________: "none"
+URL PLUGINS_________: http://londonhousecleaners.eunika.agency/wp-content/plugins
+VALIDATE ON START___: "normal"
+PATH_NEW____________: "/var/www/html/lhc"
+URL_NEW_____________: "http://londonhousecleaners.site"
+********************************************************************************
+ARCHIVE INFO
+
+ARCHIVE NAME________: "/var/www/html/lhc/20240613_londonhousecleaners_[HASH]_20240613051310_archive.zip"
+ARCHIVE SIZE________: 137.54MB
+CREATED_____________: 2024-06-13 05:13:10
+WP VERSION__________: 6.4.3
+DUP VERSION_________: 1.5.9
+LICENSE_____________: Free version
+DB VERSION__________: 8.0.37
+DB FILE SIZE________: 337.88MB
+DB TABLES___________: 57
+DB ROWS_____________: 174529
+URL HOME____________: http://londonhousecleaners.eunika.agency
+URL CORE____________: http://londonhousecleaners.eunika.agency
+URL CONTENT_________: http://londonhousecleaners.eunika.agency/wp-content
+URL UPLOAD__________: http://londonhousecleaners.eunika.agency/wp-content/uploads
+URL PLUGINS_________: http://londonhousecleaners.eunika.agency/wp-content/plugins
+URL MU PLUGINS______: http://londonhousecleaners.eunika.agency/wp-content/mu-plugins
+URL THEMES__________: http://londonhousecleaners.eunika.agency/wp-content/themes
+PATH HOME___________: /var/www/html/london-house-cleaners
+PATH ABS____________: /var/www/html/london-house-cleaners
+PATH WPCONFIG_______: /var/www/html/london-house-cleaners
+PATH WPCONTENT______: /var/www/html/london-house-cleaners/wp-content
+PATH UPLOADS________: /var/www/html/london-house-cleaners/wp-content/uploads
+PATH PLUGINS________: /var/www/html/london-house-cleaners/wp-content/plugins
+PATH MUPLUGINS______: /var/www/html/london-house-cleaners/wp-content/mu-plugins
+PATH THEMES_________: /var/www/html/london-house-cleaners/wp-content/themes
+
+SUBSITES
+SUBSITE [ID:   1] "londonhousecleaners.eunika.agency/"
+
+PLUGINS
+PLUGIN [SLUG:advanced-custom-fields-pro/acf.php                ][ON:true ]  Advanced Custom Fields PRO
+PLUGIN [SLUG:all-in-one-seo-pack/all_in_one_seo_pack.php       ][ON:true ]  All in One SEO
+PLUGIN [SLUG:compare-pages-plugin/compare-pages-plugin.php     ][ON:true ]  Compare Pages Plugin
+PLUGIN [SLUG:duplicate-page/duplicatepage.php                  ][ON:true ]  Duplicate Page
+PLUGIN [SLUG:duplicator/duplicator.php                         ][ON:true ]  Duplicator
+PLUGIN [SLUG:flying-scripts/flying-scripts.php                 ][ON:true ]  Flying Scripts
+PLUGIN [SLUG:generateblocks/plugin.php                         ][ON:true ]  GenerateBlocks
+PLUGIN [SLUG:generateblocks-pro/plugin.php                     ][ON:true ]  GenerateBlocks Pro
+PLUGIN [SLUG:gp-premium/gp-premium.php                         ][ON:true ]  GP Premium
+PLUGIN [SLUG:rocket-lazy-load/rocket-lazy-load.php             ][ON:true ]  Lazy Load - Optimize Images
+PLUGIN [SLUG:permalink-manager/permalink-manager.php           ][ON:true ]  Permalink Manager Lite
+PLUGIN [SLUG:post-type-switcher/post-type-switcher.php         ][ON:true ]  Post Type Switcher
+PLUGIN [SLUG:redirection/redirection.php                       ][ON:true ]  Redirection
+PLUGIN [SLUG:wp-smushit/wp-smush.php                           ][ON:true ]  Smush
+PLUGIN [SLUG:wordfence/wordfence.php                           ][ON:true ]  Wordfence Security
+PLUGIN [SLUG:wp-postviews/wp-postviews.php                     ][ON:true ]  WP-PostViews
+PLUGIN [SLUG:wp-scss/wp-scss.php                               ][ON:true ]  WP-SCSS
+PLUGIN [SLUG:wp-duplicate-page/wp-duplicate-page.php           ][ON:true ]  WP Duplicate Page
+PLUGIN [SLUG:wpforms-lite/wpforms.php                          ][ON:true ]  WPForms Lite
+PLUGIN [SLUG:wp-mail-smtp/wp_mail_smtp.php                     ][ON:true ]  WP Mail SMTP
+PLUGIN [SLUG:wp-map-block/wp-map-block.php                     ][ON:true ]  WP Map Block
+
+********************************************************************************
+[PHP ERR][E_WARNING] MSG:fsockopen(): unable to connect to londonhousecleaners.site:2083 (Connection refused) [CODE:2|FILE:/var/www/html/lhc/dup-installer/classes/class.http.php|LINE:189]
+LOG-TIME[/var/www/html/lhc/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.04481]  MESSAGE:END RENDER PAGE
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [sparam_s1] START
+AJAX ACTION [sparam_s1] SUCCESS
+-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+STEP ACTION: "on-validate"
+[PHP ERR][E_WARNING] MSG:fsockopen(): unable to connect to londonhousecleaners.site:2083 (Connection refused) [CODE:2|FILE:/var/www/html/lhc/dup-installer/classes/class.http.php|LINE:189]
+LOG-TIME[/var/www/html/lhc/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.01335]  MESSAGE:END RENDER PAGE
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [validate] START
+START TEST "Archive Check" [CLASS: DUPX_Validation_test_archive_check]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Archive Check" RESULT: passed
+
+START TEST "Duplicator importer version" [CLASS: DUPX_Validation_test_importer_version]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Duplicator importer version" RESULT: skip
+
+START TEST "Overwrite Install" [CLASS: DUPX_Validation_test_owrinstall]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Overwrite Install" RESULT: skip
+
+START TEST "Recovery Point" [CLASS: DUPX_Validation_test_recovery]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Recovery Point" RESULT: skip
+
+START TEST "Package is Importable" [CLASS: DUPX_Validation_test_importable]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Package is Importable" RESULT: skip
+
+START TEST "REST API test" [CLASS: DUPX_Validation_test_rest_api]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "REST API test" RESULT: skip
+
+START TEST "Manual extraction detected" [CLASS: DUPX_Validation_test_manual_extraction]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Manual extraction detected" RESULT: good
+
+START TEST "Database Only" [CLASS: DUPX_Validation_test_dbonly_iswordpress]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database Only" RESULT: skip
+
+START TEST "Package Age" [CLASS: DUPX_Validation_test_package_age]
+LOG-TIME[DELTA:   0.00024]  MESSAGE:TEST "Package Age" RESULT: good
+
+START TEST "Package Size" [CLASS: DUPX_Validation_test_package_size]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Package Size" RESULT: good
+
+START TEST "Replace PATHs in database" [CLASS: DUPX_Validation_test_replace_paths]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Replace PATHs in database" RESULT: skip
+
+START TEST "Managed hosting supported" [CLASS: DUPX_Validation_test_managed_supported]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Managed hosting supported" RESULT: skip
+
+START TEST "Siteground" [CLASS: DUPX_Validation_test_siteground]
+LOG-TIME[DELTA:   0.00006]  MESSAGE:TEST "Siteground" RESULT: skip
+
+START TEST "Addon Sites" [CLASS: DUPX_Validation_test_addon_sites]
+--------------------------------------
+PATHS MAPPING : "/var/www/html/lhc"
+--------------------------------------
+LOG-TIME[DELTA:   0.00654]  MESSAGE:TEST "Addon Sites" RESULT: good
+
+START TEST "Wordfence" [CLASS: DUPX_Validation_test_wordfence]
+LOG-TIME[DELTA:   0.00037]  MESSAGE:TEST "Wordfence" RESULT: good
+
+START TEST "Table prefix of managed hosting" [CLASS: DUPX_Validation_test_managed_tprefix]
+LOG-TIME[DELTA:   0.00011]  MESSAGE:TEST "Table prefix of managed hosting" RESULT: skip
+
+START TEST "PHP Version Mismatch" [CLASS: DUPX_Validation_test_php_version]
+LOG-TIME[DELTA:   0.00010]  MESSAGE:TEST "PHP Version Mismatch" RESULT: good
+
+START TEST "PHP Open Base" [CLASS: DUPX_Validation_test_open_basedir]
+LOG-TIME[DELTA:   0.00010]  MESSAGE:TEST "PHP Open Base" RESULT: good
+
+START TEST "PHP Memory Limit" [CLASS: DUPX_Validation_test_memory_limit]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Memory Limit" RESULT: good
+
+START TEST "PHP Extensions" [CLASS: DUPX_Validation_test_extensions]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Extensions" RESULT: good
+
+START TEST "PHP Mysqli" [CLASS: DUPX_Validation_test_mysql_connect]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Mysqli" RESULT: passed
+
+START TEST "PHP Tokenizer" [CLASS: DUPX_Validation_test_tokenizer]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Tokenizer" RESULT: passed
+
+START TEST "PHP Timeout" [CLASS: DUPX_Validation_test_timeout]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Timeout" RESULT: good
+
+START TEST "Disk Space" [CLASS: DUPX_Validation_test_disk_space]
+LOG-TIME[DELTA:   0.00968]  MESSAGE:TEST "Disk Space" RESULT: good
+
+START TEST "Permissions: General" [CLASS: DUPX_Validation_test_iswritable]
+LOG-TIME[DELTA:   0.00580]  MESSAGE:TEST "Permissions: General" RESULT: passed
+
+START TEST "Permissions: Configs Files " [CLASS: DUPX_Validation_test_iswritable_configs]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Permissions: Configs Files " RESULT: passed
+
+START TEST "Host Name" [CLASS: DUPX_Validation_test_db_host_name]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Host Name" RESULT: passed
+
+START TEST "Host Connection" [CLASS: DUPX_Validation_test_db_connection]
+LOG-TIME[DELTA:   0.00080]  MESSAGE:TEST "Host Connection" RESULT: passed
+
+START TEST "Database Version" [CLASS: DUPX_Validation_test_db_version]
+LOG-TIME[DELTA:   0.00219]  MESSAGE:TEST "Database Version" RESULT: passed
+
+START TEST "Create New Database" [CLASS: DUPX_Validation_test_db_create]
+LOG-TIME[DELTA:   0.00391]  MESSAGE:TEST "Create New Database" RESULT: passed
+
+START TEST "Database Engine Support" [CLASS: DUPX_Validation_test_db_supported_engine]
+LOG-TIME[DELTA:   0.00059]  MESSAGE:TEST "Database Engine Support" RESULT: passed
+
+START TEST "Database GTID Mode" [CLASS: DUPX_Validation_test_db_gtid_mode]
+LOG-TIME[DELTA:   0.00077]  MESSAGE:TEST "Database GTID Mode" RESULT: passed
+
+START TEST "Privileges: User Visibility" [CLASS: DUPX_Validation_test_db_visibility]
+LOG-TIME[DELTA:   0.00020]  MESSAGE:TEST "Privileges: User Visibility" RESULT: passed
+
+START TEST "Manual Table Check" [CLASS: DUPX_Validation_test_db_manual_tabels_count]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Manual Table Check" RESULT: skip
+
+START TEST "Multiple WordPress Installs" [CLASS: DUPX_Validation_test_db_multiple_wp_installs]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Multiple WordPress Installs" RESULT: skip
+
+START TEST "Privileges: User Resources" [CLASS: DUPX_Validation_test_db_user_resources]
+LOG-TIME[DELTA:   0.00051]  MESSAGE:TEST "Privileges: User Resources" RESULT: passed
+
+START TEST "Privileges: User Table Access" [CLASS: DUPX_Validation_test_db_user_perms]
+LOG-TIME[DELTA:   0.04643]  MESSAGE:TEST "Privileges: User Table Access" RESULT: passed
+
+START TEST "Privileges: 'Show Variables' Query" [CLASS: DUPX_Validation_test_db_custom_queries]
+LOG-TIME[DELTA:   0.00609]  MESSAGE:TEST "Privileges: 'Show Variables' Query" RESULT: passed
+
+START TEST "Source Database Triggers" [CLASS: DUPX_Validation_test_db_triggers]
+LOG-TIME[DELTA:   0.00014]  MESSAGE:TEST "Source Database Triggers" RESULT: passed
+
+START TEST "Character Set and Collation Support" [CLASS: DUPX_Validation_test_db_supported_default_charset]
+LOG-TIME[DELTA:   0.00193]  MESSAGE:TEST "Character Set and Collation Support" RESULT: passed
+
+START TEST "Character Set and  Collation Capability" [CLASS: DUPX_Validation_test_db_supported_charset]
+LOG-TIME[DELTA:   0.00016]  MESSAGE:TEST "Character Set and  Collation Capability" RESULT: passed
+
+START TEST "Tables Case Sensitivity" [CLASS: DUPX_Validation_test_db_case_sensitive_tables]
+LOG-TIME[DELTA:   0.00010]  MESSAGE:TEST "Tables Case Sensitivity" RESULT: skip
+
+START TEST "Tables Flagged for Removal or Backup" [CLASS: DUPX_Validation_test_db_affected_tables]
+LOG-TIME[DELTA:   0.00012]  MESSAGE:TEST "Tables Flagged for Removal or Backup" RESULT: skip
+
+START TEST "Prefix too long" [CLASS: DUPX_Validation_test_db_prefix_too_long]
+LOG-TIME[DELTA:   0.00008]  MESSAGE:TEST "Prefix too long" RESULT: passed
+
+START TEST "Database cleanup" [CLASS: DUPX_Validation_test_db_cleanup]
+LOG-TIME[DELTA:   0.00302]  MESSAGE:TEST "Database cleanup" RESULT: passed
+
+
+CTRL PARAMS AFTER VALIDATION
+AJAX ACTION [validate] SUCCESS
+-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [proceed_confirm_dialog] START
+AJAX ACTION [proceed_confirm_dialog] SUCCESS
+-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [sparam_s1] START
+AJAX ACTION [sparam_s1] SUCCESS
+-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+INITIALIZE FILTERS
+--------------------------------------
+PATHS MAPPING : "/var/www/html/lhc"
+--------------------------------------
+********************************************************************************
+* DUPLICATOR LITE: Install-Log
+* STEP-1 START @ 07:27:32
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+INSTALL TYPE________: single site
+BLOG NAME___________: "London House Cleaners"
+HOME URL NEW________: "http://londonhousecleaners.site"
+SITE URL NEW________: "http://londonhousecleaners.site"
+CONTENT URL NEW_____: "http://londonhousecleaners.site/wp-content"
+UPLOAD URL NEW______: "http://londonhousecleaners.site/wp-content/uploads"
+PLUGINS URL NEW_____: "http://londonhousecleaners.site/wp-content/plugins"
+MUPLUGINS URL NEW___: "http://londonhousecleaners.site/wp-content/mu-plugins"
+HOME PATH NEW_______: "/var/www/html/lhc"
+SITE PATH NEW_______: "/var/www/html/lhc"
+CONTENT PATH NEW____: "/var/www/html/lhc/wp-content"
+UPLOAD PATH NEW_____: "/var/www/html/lhc/wp-content/uploads"
+PLUGINS PATH NEW____: "/var/www/html/lhc/wp-content/plugins"
+MUPLUGINS PATH NEW__: "/var/www/html/lhc/wp-content/mu-plugins"
+ARCHIVE ACTION______: "donothing"
+SKIP WP FILES_______: "none"
+ARCHIVE ENGINE______: "shellexec_unzip"
+SET DIR PERMS_______: true
+DIR PERMS VALUE_____: 0755
+SET FILE PERMS______: true
+FILE PERMS VALUE____: 0644
+SAFE MODE___________: 0
+LOGGING_____________: 1
+ZIP THROTTLING______: false
+WP CONFIG___________: "modify"
+HTACCESS CONFIG_____: "new"
+OTHER CONFIG________: "new"
+FILE TIME___________: "current"
+********************************************************************************
+
+REMOVE FILTERS
+	DIR : "/var/www/html/lhc/dup-installer"
+	FILE: "/var/www/html/lhc/20240613_londonhousecleaners_[HASH]_20240613051310_installer-backup.php"
+	FILE: "/var/www/html/lhc/20240613_londonhousecleaners_[HASH]_20240613051310_archive.zip"
+	FILE: "/var/www/html/lhc/installer.php"
+	FILE: "/var/www/html/lhc/dup-installer-bootlog__198327c-13051310.txt"
+EXTRACTION FILTERS
+	DIR : "dup-installer"
+	FILE: "20240613_londonhousecleaners_[HASH]_20240613051310_installer-backup.php"
+--------------------------------------
+
+
+EXTRACTION: ZIP SHELL >>> START
+MAINTENANCE MODE ENABLE
+BEFORE EXTRACION ACTIONS
+
+*** RESET CONFIG FILES IN CURRENT HOSTING >>> START
+
+*** RESET CONFIG FILES IN CURRENT HOSTING >>> END
+MAINTENANCE MODE ENABLE
+
+*** CREATE FOLDER AND PERMISSION PREPARE
+SHELL COMMAND: "find '/var/www/html/lhc' -type d -exec chmod u+rwx {} \;"
+SHELL COMMAND: "find '/var/www/html/lhc' -type f -exec chmod u+rw {} \;"
+FOLDER PREPARE DONE
+SHELL COMMAND: "unzip -o -qq '/var/www/html/lhc/20240613_londonhousecleaners_[HASH]_20240613051310_archive.zip' -d '/var/www/html/lhc/' 2>&1"
+
+EXTRACTION: ZIP SHELL >>> DONE
+
+EXTRACTION COMPLETE @ 07:27:40 - RUNTIME: 7.7434 sec. - Files processed: 17,614 of 17,614
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [dbinstall] START
+ADD PREFIX META MAP ID 0 wp_
+
+
+
+********************************************************************************
+* DUPLICATOR LITE: INSTALL-LOG
+* STEP-2 START @ 07:27:41
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+DB ENGINE___________: "chunk"
+VIEW MODE___________: "basic"
+DB ACTION___________: "create"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+USER MODE___________: "overwrite"
+TABLE PREFIX________: "wp_"
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8mb4"
+COLLATE_____________: ""
+CUNKING_____________: true
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+FUNCTIONS___________: true
+REMOVE DEFINER______: false
+SPLIT CREATES_______: true
+--------------------------------------
+TABLES
+--------------------------------------
+TABLE "wp_actionscheduler_actions"______________________[ROWS:      99] [EXTRACT|REPLACE] [INST NAME: wp_actionscheduler_actions]
+TABLE "wp_actionscheduler_claims"_______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_actionscheduler_claims]
+TABLE "wp_actionscheduler_groups"_______________________[ROWS:       4] [EXTRACT|REPLACE] [INST NAME: wp_actionscheduler_groups]
+TABLE "wp_actionscheduler_logs"_________________________[ROWS:     279] [EXTRACT|REPLACE] [INST NAME: wp_actionscheduler_logs]
+TABLE "wp_aioseo_cache"_________________________________[ROWS:      33] [EXTRACT|REPLACE] [INST NAME: wp_aioseo_cache]
+TABLE "wp_aioseo_crawl_cleanup_blocked_args"____________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_aioseo_crawl_cleanup_blocked_args]
+TABLE "wp_aioseo_crawl_cleanup_logs"____________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_aioseo_crawl_cleanup_logs]
+TABLE "wp_aioseo_notifications"_________________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: wp_aioseo_notifications]
+TABLE "wp_aioseo_posts"_________________________________[ROWS:     274] [EXTRACT|REPLACE] [INST NAME: wp_aioseo_posts]
+TABLE "wp_commentmeta"__________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_commentmeta]
+TABLE "wp_comments"_____________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_comments]
+TABLE "wp_duplicator_packages"__________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: wp_duplicator_packages]
+TABLE "wp_links"________________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_links]
+TABLE "wp_options"______________________________________[ROWS:     334] [EXTRACT|REPLACE] [INST NAME: wp_options]
+TABLE "wp_postmeta"_____________________________________[ROWS:  157946] [EXTRACT|REPLACE] [INST NAME: wp_postmeta]
+TABLE "wp_posts"________________________________________[ROWS:    4230] [EXTRACT|REPLACE] [INST NAME: wp_posts]
+TABLE "wp_redirection_404"______________________________[ROWS:    1698] [EXTRACT|REPLACE] [INST NAME: wp_redirection_404]
+TABLE "wp_redirection_groups"___________________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: wp_redirection_groups]
+TABLE "wp_redirection_items"____________________________[ROWS:      97] [EXTRACT|REPLACE] [INST NAME: wp_redirection_items]
+TABLE "wp_redirection_logs"_____________________________[ROWS:     246] [EXTRACT|REPLACE] [INST NAME: wp_redirection_logs]
+TABLE "wp_smush_dir_images"_____________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_smush_dir_images]
+TABLE "wp_term_relationships"___________________________[ROWS:     124] [EXTRACT|REPLACE] [INST NAME: wp_term_relationships]
+TABLE "wp_term_taxonomy"________________________________[ROWS:      15] [EXTRACT|REPLACE] [INST NAME: wp_term_taxonomy]
+TABLE "wp_termmeta"_____________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_termmeta]
+TABLE "wp_terms"________________________________________[ROWS:      15] [EXTRACT|REPLACE] [INST NAME: wp_terms]
+TABLE "wp_usermeta"_____________________________________[ROWS:      45] [EXTRACT|REPLACE] [INST NAME: wp_usermeta]
+TABLE "wp_users"________________________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: wp_users]
+TABLE "wp_wfblockediplog"_______________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wfblockediplog]
+TABLE "wp_wfblocks7"____________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wfblocks7]
+TABLE "wp_wfconfig"_____________________________________[ROWS:     270] [EXTRACT|REPLACE] [INST NAME: wp_wfconfig]
+TABLE "wp_wfcrawlers"___________________________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: wp_wfcrawlers]
+TABLE "wp_wffilechanges"________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wffilechanges]
+TABLE "wp_wffilemods"___________________________________[ROWS:   13688] [EXTRACT|REPLACE] [INST NAME: wp_wffilemods]
+TABLE "wp_wfhits"_______________________________________[ROWS:      38] [EXTRACT|REPLACE] [INST NAME: wp_wfhits]
+TABLE "wp_wfhoover"_____________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wfhoover]
+TABLE "wp_wfissues"_____________________________________[ROWS:      12] [EXTRACT|REPLACE] [INST NAME: wp_wfissues]
+TABLE "wp_wfknownfilelist"______________________________[ROWS:   13688] [EXTRACT|REPLACE] [INST NAME: wp_wfknownfilelist]
+TABLE "wp_wflivetraffichuman"___________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wflivetraffichuman]
+TABLE "wp_wflocs"_______________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wflocs]
+TABLE "wp_wflogins"_____________________________________[ROWS:      83] [EXTRACT|REPLACE] [INST NAME: wp_wflogins]
+TABLE "wp_wfls_2fa_secrets"_____________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wfls_2fa_secrets]
+TABLE "wp_wfls_role_counts"_____________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wfls_role_counts]
+TABLE "wp_wfls_settings"________________________________[ROWS:      30] [EXTRACT|REPLACE] [INST NAME: wp_wfls_settings]
+TABLE "wp_wfnotifications"______________________________[ROWS:       3] [EXTRACT|REPLACE] [INST NAME: wp_wfnotifications]
+TABLE "wp_wfpendingissues"______________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wfpendingissues]
+TABLE "wp_wfreversecache"_______________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wfreversecache]
+TABLE "wp_wfsecurityevents"_____________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wfsecurityevents]
+TABLE "wp_wfsnipcache"__________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wfsnipcache]
+TABLE "wp_wfstatus"_____________________________________[ROWS:     951] [EXTRACT|REPLACE] [INST NAME: wp_wfstatus]
+TABLE "wp_wftrafficrates"_______________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wftrafficrates]
+TABLE "wp_wfwaffailures"________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wfwaffailures]
+TABLE "wp_wpforms_logs"_________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wpforms_logs]
+TABLE "wp_wpforms_payment_meta"_________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wpforms_payment_meta]
+TABLE "wp_wpforms_payments"_____________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wpforms_payments]
+TABLE "wp_wpforms_tasks_meta"___________________________[ROWS:      13] [EXTRACT|REPLACE] [INST NAME: wp_wpforms_tasks_meta]
+TABLE "wp_wpmailsmtp_debug_events"______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wpmailsmtp_debug_events]
+TABLE "wp_wpmailsmtp_tasks_meta"________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: wp_wpmailsmtp_tasks_meta]
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 8.0.37 -- Build Server: 8.0.37
+FILE SIZE:	dup-database__[HASH].sql (296.09MB)
+TIMEOUT:	5000
+MAXPACK:	67108864
+SQLMODE-GLOBAL:	ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+SQLMODE-SESSION:NO_AUTO_VALUE_ON_ZERO
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+QUERY FIXES
+GLOBAL RULES ADDED: PROC AND VIEWS
+
+QUERY FIXES GLOBAL RULES
+	SEARCH  => /^(\s*(?:\/\*!\d+\s)?\s*(?:CREATE.+)?DEFINER\s*=)([^\*\s]+)(.*)$/m
+	REPLACE => $1`root`@`localhost`$3
+
+	SEARCH  => /^(\s*CREATE.+(?:PROCEDURE|FUNCTION)[\s\S]*)(BEGIN)([\s\S]*)$/
+	REPLACE => $1SQL SECURITY INVOKER
+$2$3
+
+--------------------------------------
+** DATABASE CHUNK install start
+--------------------------------------
+DATABASE CHUNK SEEK POSITION: 0
+Auto Commit set to false successfully
+NO TABLE TO SKIP
+Auto Commit set to true successfully
+--------------------------------------
+** DATABASE CHUNK install end
+--------------------------------------
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	809
+
+TABLES ROWS IN DATABASE AFTER EXTRACTION
+
+TABLE "wp_actionscheduler_actions"______________________[ROWS:    99]
+TABLE "wp_actionscheduler_claims"_______________________[ROWS:     0]
+TABLE "wp_actionscheduler_groups"_______________________[ROWS:     4]
+TABLE "wp_actionscheduler_logs"_________________________[ROWS:   279]
+TABLE "wp_aioseo_cache"_________________________________[ROWS:    33]
+TABLE "wp_aioseo_crawl_cleanup_blocked_args"____________[ROWS:     0]
+TABLE "wp_aioseo_crawl_cleanup_logs"____________________[ROWS:     0]
+TABLE "wp_aioseo_notifications"_________________________[ROWS:     2]
+TABLE "wp_aioseo_posts"_________________________________[ROWS:   274]
+TABLE "wp_commentmeta"__________________________________[ROWS:     0]
+TABLE "wp_comments"_____________________________________[ROWS:     0]
+TABLE "wp_duplicator_packages"__________________________[ROWS:     1]
+TABLE "wp_links"________________________________________[ROWS:     0]
+TABLE "wp_options"______________________________________[ROWS:   334]
+TABLE "wp_postmeta"_____________________________________[ROWS:157946]
+TABLE "wp_posts"________________________________________[ROWS:  4230]
+TABLE "wp_redirection_404"______________________________[ROWS:  1698]
+TABLE "wp_redirection_groups"___________________________[ROWS:     2]
+TABLE "wp_redirection_items"____________________________[ROWS:    97]
+TABLE "wp_redirection_logs"_____________________________[ROWS:   246]
+TABLE "wp_smush_dir_images"_____________________________[ROWS:     0]
+TABLE "wp_term_relationships"___________________________[ROWS:   124]
+TABLE "wp_term_taxonomy"________________________________[ROWS:    15]
+TABLE "wp_termmeta"_____________________________________[ROWS:     0]
+TABLE "wp_terms"________________________________________[ROWS:    15]
+TABLE "wp_usermeta"_____________________________________[ROWS:    45]
+TABLE "wp_users"________________________________________[ROWS:     1]
+TABLE "wp_wfblockediplog"_______________________________[ROWS:     0]
+TABLE "wp_wfblocks7"____________________________________[ROWS:     0]
+TABLE "wp_wfconfig"_____________________________________[ROWS:   270]
+TABLE "wp_wfcrawlers"___________________________________[ROWS:     2]
+TABLE "wp_wffilechanges"________________________________[ROWS:     0]
+TABLE "wp_wffilemods"___________________________________[ROWS: 13688]
+TABLE "wp_wfhits"_______________________________________[ROWS:    38]
+TABLE "wp_wfhoover"_____________________________________[ROWS:     0]
+TABLE "wp_wfissues"_____________________________________[ROWS:    12]
+TABLE "wp_wfknownfilelist"______________________________[ROWS: 13688]
+TABLE "wp_wflivetraffichuman"___________________________[ROWS:     0]
+TABLE "wp_wflocs"_______________________________________[ROWS:     0]
+TABLE "wp_wflogins"_____________________________________[ROWS:    83]
+TABLE "wp_wfls_2fa_secrets"_____________________________[ROWS:     0]
+TABLE "wp_wfls_role_counts"_____________________________[ROWS:     0]
+TABLE "wp_wfls_settings"________________________________[ROWS:    30]
+TABLE "wp_wfnotifications"______________________________[ROWS:     3]
+TABLE "wp_wfpendingissues"______________________________[ROWS:     0]
+TABLE "wp_wfreversecache"_______________________________[ROWS:     0]
+TABLE "wp_wfsecurityevents"_____________________________[ROWS:     0]
+TABLE "wp_wfsnipcache"__________________________________[ROWS:     0]
+TABLE "wp_wfstatus"_____________________________________[ROWS:   951]
+TABLE "wp_wftrafficrates"_______________________________[ROWS:     0]
+TABLE "wp_wfwaffailures"________________________________[ROWS:     0]
+TABLE "wp_wpforms_logs"_________________________________[ROWS:     0]
+TABLE "wp_wpforms_payment_meta"_________________________[ROWS:     0]
+TABLE "wp_wpforms_payments"_____________________________[ROWS:     0]
+TABLE "wp_wpforms_tasks_meta"___________________________[ROWS:    13]
+TABLE "wp_wpmailsmtp_debug_events"______________________[ROWS:     0]
+TABLE "wp_wpmailsmtp_tasks_meta"________________________[ROWS:     1]
+
+INSERT DATA RUNTIME: 11.0511 sec.
+STEP-2 COMPLETE @ 07:27:52 - RUNTIME: 11.0511 sec.
+AJAX ACTION [dbinstall] SUCCESS
+-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+
+====================================
+SET SEARCH AND REPLACE LIST INSTALL TYPE single site
+====================================
+SEARCH ITEM[T:path |P:12] SEARCH: /var/www/html/london-house-cleaners REPLACE: /var/www/html/lhc [SCOPE: ALL]
+SEARCH ITEM[T:urlnd|P:12] SEARCH: http://londonhousecleaners.eunika.agency REPLACE: http://londonhousecleaners.site [SCOPE: ALL]
+CHUNK LOAD DATA: IS NULL 
+CHUNK ACTION: CURRENT [start][][]
+
+
+********************************************************************************
+DUPLICATOR LITE: INSTALL-LOG
+STEP-3 START @ 07:27:53
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8mb4"
+CHARSET CLIENT:	"utf8mb4"
+********************************************************************************
+OPTIONS:
+SKIP PATH REPLACE_____: false
+DISALLOW_FILE_EDIT____: [value = ], [inWpConfig = ]
+DISALLOW_FILE_MODS____: [value = ], [inWpConfig = ]
+AUTOSAVE_INTERVAL_____: [value = 60], [inWpConfig = ]
+WP_POST_REVISIONS_____: [value = 1], [inWpConfig = ]
+FORCE_SSL_ADMIN_______: [value = ], [inWpConfig = ]
+WP_AUTO_UPDATE_CORE___: [value = false], [inWpConfig = ]
+WP_CACHE______________: [value = ], [inWpConfig = ]
+WPCACHEHOME___________: [value = /], [inWpConfig = ]
+WP_DEBUG______________: [value = ], [inWpConfig = 1]
+WP_DEBUG_LOG__________: [value = ], [inWpConfig = 1]
+WP_DEBUG_DISPLAY______: [value = 1], [inWpConfig = 1]
+WP_DISABLE_FATAL_ERROR_HANDLER: [value = ], [inWpConfig = ]
+SCRIPT_DEBUG__________: [value = ], [inWpConfig = ]
+CONCATENATE_SCRIPTS___: [value = ], [inWpConfig = ]
+SAVEQUERIES___________: [value = ], [inWpConfig = ]
+ALTERNATE_WP_CRON_____: [value = ], [inWpConfig = ]
+DISABLE_WP_CRON_______: [value = ], [inWpConfig = ]
+WP_CRON_LOCK_TIMEOUT__: [value = 60], [inWpConfig = ]
+COOKIE_DOMAIN_________: [value = ], [inWpConfig = ]
+WP_MEMORY_LIMIT_______: [value = 40M], [inWpConfig = ]
+WP_MAX_MEMORY_LIMIT___: [value = 2048M], [inWpConfig = ]
+WP_TEMP_DIR___________: [value = ], [inWpConfig = ]
+********************************************************************************
+
+********************************************************************************
+CHUNK PARAMS:
+maxIteration__________: 0
+timeOut_______________: 5000
+throttling____________: 2
+rowsPerPage___________: 1000
+********************************************************************************
+
+CHUNK ACTION: CURRENT [cleanup_trans][][]
+[PHP ERR][E_WARNING] MSG:Invalid argument supplied for foreach() [CODE:2|FILE:/var/www/html/lhc/dup-installer/src/Core/Deploy/Database/DbCleanup.php|LINE:95]
+CLEAN OPTIONS [wp_options]
+	`option_name` = "duplicator_plugin_data_stats"
+	`option_name` LIKE "\_transient%"
+	`option_name` LIKE "\_site\_transient%"
+DATABASE OPTIONS DELETED [ROWS:    51]
+CHUNK ACTION: CURRENT [cleanup_extra][][]
+CLEANUP EXTRA
+	- SKIP DROP VIEWS
+	- SKIP DROP PROCS
+	- SKIP DROP FUNCS
+CHUNK ACTION: CURRENT [cleanup_packages][][]
+EMPTY PACKAGES TABLE
+CLEAN PACKAGES
+DATABASE PACKAGE DELETED [ROWS:     1]
+CHUNK ACTION: CURRENT [init][][]
+
+EVALUATE TABLE: "wp_actionscheduler_actions"______________________[ROWS:    99][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_actionscheduler_actions][0]
+
+EVALUATE TABLE: "wp_actionscheduler_claims"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_actionscheduler_groups"_______________________[ROWS:     4][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_actionscheduler_groups][0]
+
+EVALUATE TABLE: "wp_actionscheduler_logs"_________________________[ROWS:   279][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_actionscheduler_logs][0]
+
+EVALUATE TABLE: "wp_aioseo_cache"_________________________________[ROWS:    33][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_aioseo_cache][0]
+
+EVALUATE TABLE: "wp_aioseo_crawl_cleanup_blocked_args"____________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_aioseo_crawl_cleanup_logs"____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_aioseo_notifications"_________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_aioseo_notifications][0]
+
+EVALUATE TABLE: "wp_aioseo_posts"_________________________________[ROWS:   274][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_aioseo_posts][0]
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   283][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_options][0]
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:157946][PG: 158][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][0]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][1]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][2]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][3]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][4]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][5]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][6]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][7]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][8]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][9]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][10]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][11]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][12]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][13]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][14]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][15]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][16]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][17]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][18]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][19]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][20]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][21]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][22]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][23]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][24]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][25]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][26]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][27]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][28]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][29]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][30]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][31]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][32]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][33]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][34]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][35]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][36]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][37]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][38]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][39]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][40]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][41]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][42]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][43]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][44]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][45]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][46]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][47]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][48]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][49]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][50]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][51]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][52]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][53]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][54]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][55]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][56]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][57]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][58]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][59]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][60]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][61]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][62]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][63]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][64]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][65]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][66]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][67]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][68]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][69]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][70]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][71]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][72]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][73]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][74]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][75]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][76]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][77]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][78]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][79]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][80]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][81]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][82]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][83]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][84]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][85]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][86]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][87]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][88]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][89]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][90]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][91]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][92]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][93]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][94]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][95]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][96]
+	
+STEP-3 CHUNK STOP @ 07:27:58 - RUNTIME: 5.0315 sec. 
+
+
+	AJAX ACTION [webupdate] SUCCESS
+	-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][97]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][98]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][99]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][100]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][101]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][102]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][103]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][104]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][105]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][106]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][107]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][108]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][109]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][110]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][111]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][112]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][113]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][114]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][115]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][116]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][117]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][118]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][119]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][120]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][121]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][122]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][123]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][124]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][125]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][126]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][127]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][128]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][129]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][130]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][131]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][132]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][133]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][134]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][135]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][136]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][137]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][138]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][139]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][140]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][141]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][142]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][143]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][144]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][145]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][146]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][147]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][148]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][149]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][150]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][151]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][152]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][153]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][154]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][155]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][156]
+CHUNK ACTION: CURRENT [search_replace][wp_postmeta][157]
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:  4230][PG:   5][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_posts][0]
+	
+STEP-3 CHUNK STOP @ 07:28:07 - RUNTIME: 7.7133 sec. 
+
+
+	AJAX ACTION [webupdate] SUCCESS
+	-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+CHUNK ACTION: CURRENT [search_replace][wp_posts][1]
+CHUNK ACTION: CURRENT [search_replace][wp_posts][2]
+
+STEP-3 CHUNK STOP @ 07:28:14 - RUNTIME: 6.9399 sec. 
+
+
+AJAX ACTION [webupdate] SUCCESS
+-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+CHUNK ACTION: CURRENT [search_replace][wp_posts][3]
+CHUNK ACTION: CURRENT [search_replace][wp_posts][4]
+
+EVALUATE TABLE: "wp_redirection_404"______________________________[ROWS:  1698][PG:   2][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_redirection_404][0]
+	CHUNK ACTION: CURRENT [search_replace][wp_redirection_404][1]
+
+EVALUATE TABLE: "wp_redirection_groups"___________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_redirection_groups][0]
+
+EVALUATE TABLE: "wp_redirection_items"____________________________[ROWS:    97][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_redirection_items][0]
+
+EVALUATE TABLE: "wp_redirection_logs"_____________________________[ROWS:   246][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_redirection_logs][0]
+
+EVALUATE TABLE: "wp_smush_dir_images"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:   124][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:    15][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_term_taxonomy][0]
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:    15][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_terms][0]
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:    45][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_usermeta][0]
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_users][0]
+
+EVALUATE TABLE: "wp_wfblockediplog"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfblocks7"____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfconfig"_____________________________________[ROWS:   270][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_wfconfig][0]
+
+EVALUATE TABLE: "wp_wfcrawlers"___________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_wfcrawlers][0]
+
+EVALUATE TABLE: "wp_wffilechanges"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wffilemods"___________________________________[ROWS: 13688][PG:  14][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][0]
+	CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][1]
+	
+STEP-3 CHUNK STOP @ 07:28:20 - RUNTIME: 5.4748 sec. 
+
+
+	AJAX ACTION [webupdate] SUCCESS
+	-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][2]
+CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][3]
+CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][4]
+CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][5]
+CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][6]
+CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][7]
+CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][8]
+
+STEP-3 CHUNK STOP @ 07:28:28 - RUNTIME: 5.6752 sec. 
+
+
+AJAX ACTION [webupdate] SUCCESS
+-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][9]
+CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][10]
+CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][11]
+CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][12]
+CHUNK ACTION: CURRENT [search_replace][wp_wffilemods][13]
+
+EVALUATE TABLE: "wp_wfhits"_______________________________________[ROWS:    38][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_wfhits][0]
+
+EVALUATE TABLE: "wp_wfhoover"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfissues"_____________________________________[ROWS:    12][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_wfissues][0]
+
+EVALUATE TABLE: "wp_wfknownfilelist"______________________________[ROWS: 13688][PG:  14][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][0]
+	CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][1]
+	
+STEP-3 CHUNK STOP @ 07:28:34 - RUNTIME: 5.3963 sec. 
+
+
+	AJAX ACTION [webupdate] SUCCESS
+	-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][2]
+CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][3]
+CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][4]
+CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][5]
+CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][6]
+CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][7]
+CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][8]
+
+STEP-3 CHUNK STOP @ 07:28:40 - RUNTIME: 5.4798 sec. 
+
+
+AJAX ACTION [webupdate] SUCCESS
+-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][9]
+CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][10]
+CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][11]
+CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][12]
+CHUNK ACTION: CURRENT [search_replace][wp_wfknownfilelist][13]
+
+EVALUATE TABLE: "wp_wflivetraffichuman"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wflocs"_______________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wflogins"_____________________________________[ROWS:    83][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_wflogins][0]
+
+EVALUATE TABLE: "wp_wfls_2fa_secrets"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfls_role_counts"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfls_settings"________________________________[ROWS:    30][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_wfls_settings][0]
+
+EVALUATE TABLE: "wp_wfnotifications"______________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_wfnotifications][0]
+
+EVALUATE TABLE: "wp_wfpendingissues"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfreversecache"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfsecurityevents"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfsnipcache"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfstatus"_____________________________________[ROWS:   951][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_wfstatus][0]
+
+EVALUATE TABLE: "wp_wftrafficrates"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfwaffailures"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wpforms_logs"_________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wpforms_payment_meta"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wpforms_payments"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wpforms_tasks_meta"___________________________[ROWS:    13][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_wpforms_tasks_meta][0]
+
+EVALUATE TABLE: "wp_wpmailsmtp_debug_events"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wpmailsmtp_tasks_meta"________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/london-house-cleaners" =============> "/var/www/html/lhc"
+	SEARCH[urlnd]  2:"http://londonhousecleaners.eunika.agency" ========> "http://londonhousecleaners.site"
+	CHUNK ACTION: CURRENT [search_replace][wp_wpmailsmtp_tasks_meta][0]
+--------------------------------------
+SCANNED:	Tables:57 	|	 Rows:194048 	|	 Cells:956243 
+UPDATED:	Tables:15 	|	 Rows:41163 	|	 Cells:45655 
+ERRORS:		0 
+RUNTIME:	51.370700 sec
+CHUNK ACTION: CURRENT [rem_maintenance][][]
+
+====================================
+REMOVE MAINTENANCE MODE
+====================================
+MAINTENANCE MODE DISABLE
+CHUNK ACTION: CURRENT [config_update][][]
+SET CONFIG FILES
+Retained original entry wpconfig target:/var/www/html/lhc/wp-config.php
+New htaccess file created:/var/www/html/lhc/.htaccess
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE ABSPATH "dirname(__FILE__) . '/'"
+	UPDATE DB_NAME ""lhc""
+	UPDATE DB_USER "** OBSCURED **"
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	UPDATE DB_CHARSET "utf8mb4"
+	UPDATE DB_COLLATE ""
+	WP CONFIG UPDATE WP_DEBUG "false"
+	WP CONFIG UPDATE WP_DEBUG_LOG "false"
+	WP CONFIG UPDATE WP_DEBUG_DISPLAY "true"
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE
+====================================
+
+WEB SERVER CONFIGURATION FILE UPDATED:
+- Preparing .htaccess file with basic setup.
+HTACCESS FILE - Successfully updated the .htaccess file setting.
+
+====================================
+INDEX.PHP UPDATE
+====================================
+INDEX.PHP updated with new blog header "dirname(__FILE__) . '/wp-blog-header.php'"
+
+CHUNK ACTION: CURRENT [gen_update][][]
+
+====================================
+GENERAL UPDATES
+====================================
+
+====================================
+MANAGE PLUGINS
+====================================
+CHUNK ACTION: CURRENT [gen_clean][][]
+
+====================================
+GENERAL CLEANUP
+====================================
+RESET ALL USERS SESSION TOKENS
+MIGRATION INFO SET
+CHUNK ACTION: CURRENT [create_admin][][]
+
+====================================
+RESET USERS PASSWORD
+====================================
+CHUNK ACTION: CURRENT [notice_test][][]
+
+====================================
+CHECK FOR INDEX.HTML
+====================================
+NO INDEX.HTML WAS FOUND
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+CHUNK ACTION: CURRENT [cleanup_tmp_files][][]
+
+====================================
+CLEANUP TMP FILES
+====================================
+CHUNK ACTION: CURRENT [set_files_perms][][]
+
+====================================
+SET PARAMS PERMISSION
+====================================
+
+*** SET FOLDER PERMISSION AFTER EXTRACTION
+SHELL COMMAND: "find '/var/www/html/lhc' -type d ! -path '/var/www/html/lhc/dup-installer*' -exec chmod 0755 {} \;"
+SHELL COMMAND: "find '/var/www/html/lhc' -type f ! -path '/var/www/html/lhc/dup-installer*' -exec chmod 0644 {} \;"
+SET FOLDER PERMISSION DONE
+
+STEP-3 CHUNK STOP @ 07:28:57 - RUNTIME: 16.0833 sec. 
+
+
+AJAX ACTION [webupdate] SUCCESS
+-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+CHUNK ACTION: CURRENT [final_report][][]
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 07:28:57 - RUNTIME: 0.0069 sec. 
+
+
+AJAX ACTION [webupdate] SUCCESS
+-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [finalpre] START
+AJAX ACTION [finalpre] SUCCESS
+-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [finalafter] START
+AJAX ACTION [finalafter] SUCCESS
+-------------------------
+
+LOG-TIME[/var/www/html/lhc/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+====================================
+NEXT STEP NOTICES
+====================================
+-----------------------
+[FATAL ERROR] Fatal error on WordPress login tests!
+	SECTIONS: general
+	LONG MSG: SCRIPT FILE TEST: /var/www/html/lhc/wp-login.php
+E_COMPILE_ERROR require(): Failed opening required '/var/www/html/lhc/wp-content/plugins/wordfence/lib/wfVersionSupport.php' (include_path='.:/usr/share/php')
+	FILE: /var/www/html/lhc/wp-content/plugins/wordfence/wordfence.php[70]
+	--- TRACE ---
+	CLASS___: Duplicator\Installer\Utils\Tests\WP\TestsErrorHandler::shutdownFILE: [-1]
+-----
+For solutions to these issues see the online FAQs 
+https://duplicator.com/knowledge-base/ 
+
+
+====================================
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[FATAL ERROR] Fatal error on WordPress login tests!
+	SECTIONS: general
+	LONG MSG: SCRIPT FILE TEST: /var/www/html/lhc/wp-login.php
+E_COMPILE_ERROR require(): Failed opening required '/var/www/html/lhc/wp-content/plugins/wordfence/lib/wfVersionSupport.php' (include_path='.:/usr/share/php')
+	FILE: /var/www/html/lhc/wp-content/plugins/wordfence/wordfence.php[70]
+	--- TRACE ---
+	CLASS___: Duplicator\Installer\Utils\Tests\WP\TestsErrorHandler::shutdownFILE: [-1]
+-----
+For solutions to these issues see the online FAQs 
+https://duplicator.com/knowledge-base/ 
+
+
+-----------------------
+[ERROR] Fatal error on WordPress front-end tests!
+	SECTIONS: general
+	LONG MSG: SCRIPT FILE TEST: /var/www/html/lhc/index.php
+E_COMPILE_ERROR require(): Failed opening required '/var/www/html/lhc/wp-content/plugins/wordfence/lib/wfVersionSupport.php' (include_path='.:/usr/share/php')
+	FILE: /var/www/html/lhc/wp-content/plugins/wordfence/wordfence.php[70]
+	--- TRACE ---
+	CLASS___: Duplicator\Installer\Utils\Tests\WP\TestsErrorHandler::shutdownFILE: [-1]
+-----
+For solutions to these issues see the online FAQs 
+https://duplicator.com/knowledge-base/ 
+
+
+-----------------------
+[NOTICE] Warnings or notices on WordPress front-end tests!
+	SECTIONS: general
+	LONG MSG: SCRIPT FILE TEST: /var/www/html/lhc/index.php
+E_WARNING require(/var/www/html/lhc/wp-content/plugins/wordfence/lib/wfVersionSupport.php): failed to open stream: No such file or directory
+	FILE: /var/www/html/lhc/wp-content/plugins/wordfence/wordfence.php[70]
+	--- TRACE ---
+	FUNCTION: require                       FILE: /var/www/html/lhc/wp-content/plugins/wordfence/wordfence.php[70]
+	FUNCTION: include_once                  FILE: /var/www/html/lhc/wp-settings.php[473]
+	FUNCTION: require_once                  FILE: /var/www/html/lhc/wp-config.php[100]
+	FUNCTION: require_once                  FILE: /var/www/html/lhc/wp-load.php[50]
+	FUNCTION: require_once                  FILE: /var/www/html/lhc/wp-blog-header.php[13]
+	FUNCTION: require                       FILE: /var/www/html/lhc/index.php[17]
+	FUNCTION: require_once                  FILE: /var/www/html/lhc/wp-content/wp_test_script_198327c-13051310.php[117]
+-----
+For solutions to these issues see the online FAQs 
+https://duplicator.com/knowledge-base/ 
+
+
+-----------------------
+[NOTICE] Warnings or notices on WordPress backend tests!
+	SECTIONS: general
+	LONG MSG: SCRIPT FILE TEST: /var/www/html/lhc/wp-login.php
+E_WARNING require(/var/www/html/lhc/wp-content/plugins/wordfence/lib/wfVersionSupport.php): failed to open stream: No such file or directory
+	FILE: /var/www/html/lhc/wp-content/plugins/wordfence/wordfence.php[70]
+	--- TRACE ---
+	FUNCTION: require                       FILE: /var/www/html/lhc/wp-content/plugins/wordfence/wordfence.php[70]
+	FUNCTION: include_once                  FILE: /var/www/html/lhc/wp-settings.php[473]
+	FUNCTION: require_once                  FILE: /var/www/html/lhc/wp-config.php[100]
+	FUNCTION: require_once                  FILE: /var/www/html/lhc/wp-load.php[50]
+	FUNCTION: require                       FILE: /var/www/html/lhc/wp-login.php[12]
+	FUNCTION: require_once                  FILE: /var/www/html/lhc/wp-content/wp_test_script_198327c-13051310.php[117]
+-----
+For solutions to these issues see the online FAQs 
+https://duplicator.com/knowledge-base/ 
+
+
+====================================
+LOG-TIME[/var/www/html/lhc/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.01378]  MESSAGE:END RENDER PAGE

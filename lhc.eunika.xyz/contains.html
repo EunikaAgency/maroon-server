@@ -1,0 +1,39 @@
+<script>
+    var links_detected = []
+    var visited_links = []
+    var queue_links = []
+
+
+    function crawl() {
+        while (queue_links.length > 0) {
+            let link = queue_links.shift()
+
+            if (!visited_links.includes(link)) {
+
+                if (!link.includes('#') && !link.includes('mailto:') && links.includes('tel:')) {
+
+                }
+
+            }
+        }
+    }
+
+    async function fetchContent(url) {
+        const response = await fetch(url)
+        const pageContent = await response.text()
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(pageContent, 'text/html');
+
+        let links = doc.querySelectorAll('a[href]:not(#wpadminbar a)')
+
+        links.forEach(() => {
+            let href = this.getAttribute('href')
+            if (href) queue_links.push(href)
+        })
+
+        crawlPages()
+    }
+
+    let home_url = new URL(window.location.href).origin
+    fetchContent(home_url)
+</script>

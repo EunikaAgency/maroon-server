@@ -1,0 +1,246 @@
+@import '../global.scss';
+
+// Sticky header for admin bar
+.admin-bar {
+  .sticky-header {
+    top: 20px !important;
+  }
+}
+
+// Sticky header styles
+.sticky-header {
+  position: sticky !important;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+// Responsive adjustments for sticky header
+@include media-breakpoint-up(md) {
+
+  header nav {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
+
+  .sticky-header {
+    .navbar {
+      .primary-menu {
+        display: none !important;
+      }
+    }
+  }
+
+
+        // on hover effects
+        .nav-item.dropdown:hover > .dropdown-menu {
+          display: block;
+        }
+
+       
+
+        .navbar-nav .dropdown-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: auto;
+          margin-top: .125rem;
+          background-color: $chinese-blue;
+        }
+
+
+}
+
+// Header styles
+header {
+
+
+
+
+
+
+  .navbar-nav .dropdown-menu {
+    background-color: $chinese-blue;
+  }
+
+
+  background-color: $chinese-blue !important;
+
+  li.nav-item a{
+    color: #fff;
+    &:hover{
+      color: $warning;
+    }
+  }
+
+  .dropdown-item:hover, .dropdown-item:focus{
+    color: $warning;
+    background-color: transparent !important;
+
+  }
+
+
+    
+
+
+
+
+
+
+  // Responsive adjustments for header navigation
+  @include media-breakpoint-up(md) {
+    nav {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+    }
+  }
+
+  // Navigation buttons
+  .nav-buttons {
+    padding-left: 0;
+    list-style: none;
+    margin: 0.5rem auto !important;
+    // display: flex !important;
+
+    .btn {
+      font-size: 10px; // on mobile
+      @include media-breakpoint-up(md) {
+        font-size: 16px; // on tablet and desktop
+      }
+    }
+  }
+
+  // Navbar brand logo size adjustments
+  .navbar-brand {
+    @include media-breakpoint-down(sm) {
+      img {
+        height: 28px;
+        width: auto;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      img {
+        height: 48px;
+        width: auto;
+      }
+    }
+  }
+
+  // Navbar link styles
+  ul.navbar-nav {
+    a:not(.cdropdown ul a) {
+      // color: #fff;
+    }
+  }
+
+  // Navbar toggler styles
+  .navbar-toggler {
+    border: 1px solid #fff !important;
+    color: #fff !important;
+    .navbar-toggler-icon {
+      background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(225, 225, 225, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+    }
+  }
+}
+
+// Additional header styles for specific screen sizes
+@media screen and (max-width: 768px) {
+  header {
+    a {
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    .cdropdown {
+      position: relative;
+      padding-right: 15px;
+      z-index: 999;
+      &::before {
+        content: "";
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 5px;
+        border-top: .3em solid;
+        border-right: .3em solid rgba(0, 0, 0, 0);
+        border-bottom: 0;
+        border-left: .3em solid rgba(0, 0, 0, 0);
+      }
+      &:hover > ul {
+        display: block;
+      }
+      & > ul {
+        display: none;
+        position: absolute;
+        // background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+    }
+    a {
+      text-wrap: wrap;
+    }
+    .cdropleft::before {
+      border-left: 0 !important;
+      border-right: .3em solid !important;
+      border-top: .3em solid rgba(0, 0, 0, 0) !important;
+      border-bottom: .3em solid rgba(0, 0, 0, 0) !important;
+    }
+    .cdropright::before {
+      border-right: 0 !important;
+      border-left: .3em solid !important;
+      border-top: .3em solid rgba(0, 0, 0, 0) !important;
+      border-bottom: .3em solid rgba(0, 0, 0, 0) !important;
+    }
+    .cdropleft > ul,
+    .cdropright > ul {
+      position: absolute;
+      top: 0;
+    }
+    .cdropdown > ul,
+    .cdropleft > ul,
+    .cdropright > ul {
+      width: max-content;
+      max-width: 200px;
+      margin: 0 2px;
+    }
+    .cdropleft > ul {
+      right: 100%;
+    }
+    .cdropright > ul {
+      left: 100%;
+    }
+    .focus-line {
+      position: relative;
+      &::after {
+        content: '';
+        background: #fff;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        transition: all 500ms ease;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Navbar link hover styles
+.nav-link {
+  &.btn:hover:after {
+    display: none;
+  }
+}
+
+.item-3879:hover:after,
+.item-3880:hover:after {
+  display: none;
+}

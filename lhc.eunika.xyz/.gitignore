@@ -1,0 +1,26 @@
+# Ignore uploads directory
+wp-content/uploads/*
+!wp-content/uploads/assets/
+wp-content/wflogs/
+
+# Ignore database backups
+*.sql
+
+# Ignore compressed files
+*.zip
+
+# Ignore JSON files
+*.json
+
+# Ignore all types of images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.ico
+*.tif
+*.tiff
+*.webp
+.DS_Store
