@@ -1,0 +1,103 @@
+# -------------------------------------------------------------------
+# WordPress Core and Installation Files
+# -------------------------------------------------------------------
+
+# Exclude all WordPress core files but *include* content, plugins,
+# themes, and configuration files that should be tracked.
+/wp-admin/
+/wp-includes/
+/wp-content/cache/
+/wp-content/upgrade/
+
+# Installation/Root Files to Ignore
+index.php
+license.txt
+readme.html
+wp-config-sample.php
+xmlrpc.php
+
+# Common Backup/Export/Log Files
+*.log
+*.sql
+*.tar
+*.gz
+*.zip
+
+# -------------------------------------------------------------------
+# User-Uploaded Content (Often Large and Unnecessary for Repository)
+# -------------------------------------------------------------------
+
+# Ignoring the uploads folder is highly recommended as it contains
+# user-uploaded media which can quickly balloon the repo size.
+/wp-content/uploads/
+
+# -------------------------------------------------------------------
+# IDE, OS, and Dependency Files (Standard Exclusions)
+# -------------------------------------------------------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Visual Studio Code
+.vscode/
+
+# Composer/PHP Dependencies
+/vendor/
+/composer.lock
+
+# Node/npm Dependencies (if using a build process)
+/node_modules/
+/package-lock.json
+
+# -------------------------------------------------------------------
+# Images (All Types)
+# -------------------------------------------------------------------
+
+# Standard web and print image formats
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.webp
+*.tiff
+*.tif
+*.ico
+*.psd
+*.ai
+
+# -------------------------------------------------------------------
+# Large Files and Archives (10MB and up)
+#
+# NOTE: Git's .gitignore can only ignore by filename patterns, NOT by
+# file *size*. The following entries are based on *common file types*
+# that are *likely* to exceed 10MB, but they will ignore *all* files
+# of that type, even small ones.
+#
+# To strictly ignore based on size, you would need a pre-commit hook
+# or an external tool.
+# -------------------------------------------------------------------
+
+# Common video and large media types
+*.mov
+*.mp4
+*.avi
+*.mkv
+*.wmv
+*.flv
+*.pdf  # Can often be large
+
+# All other common archive types
+*.7z
+*.rar
+*.iso
+*.dmg
+*.zip
+
+# -------------------------------------------------------------------
+# End of .gitignore
+# -------------------------------------------------------------------
