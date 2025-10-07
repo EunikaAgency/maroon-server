@@ -1,0 +1,107 @@
+@import "../bootstrap/functions";
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins/breakpoints";
+@import "../global.scss";
+@import "../custom/typography.scss";
+
+
+footer{
+    padding-top: 3rem !important;
+    margin-top: 3rem !important;
+    font-family: $font-secondary;
+    border-top: 10px solid $brown;
+    color: $gray-light !important;
+
+    p{
+        font-family: $font-secondary; 
+        color: $gray-light;
+    }
+
+    img.overlay-left{
+        
+        height: 416px;
+        position: absolute;
+        float: left;
+        width: auto;
+        left: 10px;
+        opacity: 0.4;
+
+
+        @include media-breakpoint-down(md) {
+            display: none; // For tablets and below (desktop mode)
+        }
+    }
+
+    img.overlay-right{
+        
+        height: 448px;
+        position: absolute;
+        width: auto;
+        right: 0;
+        opacity: .4;
+
+        @include media-breakpoint-down(md) {
+            display: none; // For tablets and below (desktop mode)
+        }
+    }
+
+ 
+
+
+    h5 {
+        color: $light;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: $light;
+
+    img.logo{
+        max-width: 200px;
+        margin-bottom: 1rem !important;
+    }
+
+    
+    ul li{
+        
+        line-height: 2em;
+        i{
+            margin-right: 4px;
+            margin-bottom: 18px;
+        }
+
+
+        a{
+
+            &:hover{
+                text-decoration: none !important;
+                color: $light !important;    
+            }
+
+            color: $gray-light !important;
+        }
+    }
+
+    .footer-bottom{
+        color: $gray-light;
+        a{
+            color: $gray-light !important;
+        }
+    }
+}

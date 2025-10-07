@@ -1,0 +1,92 @@
+// Updated color definitions arranged by visual similarity
+$light-cream: #ececd6 !default;  // Light, neutral cream
+$gray-light: #D3CFC3 !default;   // Light neutral gray
+$gray: #405848 !default;         // Neutral with a cool undertone
+$deep-gray: #171a1c !default;    // Dark gray with a slight cool undertone
+$black: #150D03 !default;        // Dark, near-black tone
+
+$olive-green: #6A7F40 !default;  // Earthy green, muted
+$teal-blue: #192E32 !default;    // Deep, muted teal-blue
+$deep-teal: #004f59 !default;    // Dark teal
+$navy-blue: #2C3E50 !default;    // Cool, deep blue tone
+
+$brown: #b2936d !default;        // Warm brown
+$chocolate: #362524 !default;    // Deep brown
+$muted-rose: #7c605f !default;   // Soft muted rose
+$bean: #421009 !default;         // Dark, rich brown-red
+$maroon: #4e0002 !default;       // Warm, deep red
+
+$terracotta: #C7632D !default;   // Warm, earthy orange-brown
+
+// Reassigning theme colors with the new palette
+$theme-colors: (
+  "primary" : $gray,
+  "secondary" : $gray-light,
+  "success" : $olive-green,
+  "danger" : $maroon,
+  "warning" : $terracotta,
+  "info" : $navy-blue,
+  "light" : $gray-light,
+  "dark" : $black,
+  "maroon": $maroon,  
+  "bean": $bean,       
+  "brown": $brown,   
+  "deep-gray": $deep-gray,
+  "olive-green": $olive-green,
+  "terracotta": $terracotta,
+  "navy-blue": $navy-blue,
+  "chocolate": $chocolate,      
+  "light-cream": $light-cream,  
+  "muted-rose": $muted-rose,    
+  "deep-teal": $deep-teal,
+  "teal-blue": $teal-blue       
+);
+
+// Updating navbar colors
+$navbar-light-color: $black !default;
+$navbar-light-hover-color: $brown !default;
+
+// Spacing and sizing (unchanged)
+$spacer: 1rem;
+$spacers: (
+  6: ($spacer * 4),
+  7: ($spacer * 6),
+  8: ($spacer * 8)
+);
+
+$sizes: (
+  10: 10%,
+  20: 20%,
+  30: 30%,
+  40: 60%,
+  50: 50%,
+  60: 60%,
+  70: 70%,
+  80: 80%,
+  90: 90%,
+);
+
+// Link styles with new colors
+$link-color: $gray;
+$link-decoration: none !default;
+$link-hover-color: $brown;
+$link-hover-decoration: underline !default;
+
+// Gradient support (unchanged)
+$enable-gradients: true !default;
+
+
+// .semi-transparent{
+//   opacity: .05 !important;
+// }
+
+/* If the user is identified as a specific type, set opacity to 1 */
+body.not-identified .semi-transparent {
+  opacity: 1;
+}
+
+/* If the user is identified as another type, make the element semi-transparent */
+body.identified .semi-transparent {
+  // opacity: 0.05 !important;
+  display: none;
+}

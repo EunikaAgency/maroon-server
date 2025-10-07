@@ -1,0 +1,104 @@
+.swiper-container-wrapper {
+
+    padding: 0 20px;
+
+}
+
+
+
+.swiper-button-prev,
+
+.swiper-button-next {
+
+    color: black;
+
+}
+
+
+
+.product-slide {
+
+    text-align: center;
+
+}
+
+
+
+.image-wrapper {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+}
+
+
+
+.product-title h3 {
+
+    font-size: 20px;
+
+    height: 50px;
+
+    font-family: 'Lora', serif;
+
+}
+
+
+
+.price {
+
+    font-family: 'Lora', serif;
+
+    color: #800000; /* Maroon color */
+
+}
+
+
+
+.button {
+
+    background-color: #f0ad4e;
+
+    border: none;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 14px;
+
+    margin-top: 10px;
+
+    cursor: pointer;
+
+}
+
+
+
+.button:hover {
+
+    background-color: #ec971f;
+
+}
+
+
+
+.cart-button-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 10px;
+
+}
+

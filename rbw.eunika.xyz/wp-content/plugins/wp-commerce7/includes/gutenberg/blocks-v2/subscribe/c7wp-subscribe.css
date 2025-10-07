@@ -1,0 +1,10 @@
+.wp-block-c7wp-subscribe {
+    overflow: hidden;
+    z-index: 1;
+}
+.wp-block-c7wp-subscribe > div {
+    max-width: 100%;
+}
+.wp-block-c7wp-subscribe .c7-form {
+    pointer-events: none;
+}

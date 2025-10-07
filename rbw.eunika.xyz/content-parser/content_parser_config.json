@@ -1,0 +1,23 @@
+{
+    
+    "simple-events-plugin": [
+       
+        "/wp-content/plugins/simple-events-plugin"
+    ],
+
+    "product-attiributes": [
+       
+        "/wp-content/themes/classic-theme/woocommerce/"
+    ],
+    "floating-cart": [
+       
+        "/wp-content/plugins/custom-floating-cart"
+    ],
+    "custom-checkout": [
+        "/wp-content/plugins/custom-checkout-form"
+    ], 
+    "product-slider": [
+        "/wp-content/plugins/product-slider-plugin"
+    ]
+    
+}

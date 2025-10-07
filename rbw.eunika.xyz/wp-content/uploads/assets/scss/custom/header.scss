@@ -1,0 +1,148 @@
+@import "../bootstrap/functions";
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins/breakpoints";
+@import "../global.scss";
+
+
+header {
+  width: 100%;
+  z-index: 999;
+  // transition: all 500ms ease-in-out;
+  transition: all 0.3s ease;
+  position: absolute;
+  background: transparent;
+  top: unset;
+  height: 90px;
+
+
+  .header-top{
+
+     
+    
+      .navbar-nav{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        transition: all 0.3s ease;
+      }
+   
+
+
+
+    ul li{
+      margin-left: 1em;
+      margin-right: 1em;
+      
+
+     
+  
+     
+
+      a{
+        color: $light !important;
+
+
+        @include media-breakpoint-down(sm) {
+          font-size: 6px;
+        }
+
+        @include media-breakpoint-up(md) {
+          font-size: 1em;
+        }
+
+
+       
+      }
+    }
+  }
+
+  .navbar-brand {
+    .logo {
+      max-width: 200px;
+    }
+  }
+
+
+  nav {
+    height: 100%;
+
+    li {
+
+      margin-left: 6px;
+      margin-right: 6px;
+
+      a {
+        font-family: Lora, sans-serif;
+        font-size: 1em;
+        line-height: 1.2857em;
+        font-weight: 400;
+        display: block;
+        text-transform: uppercase;
+        padding: 1.8em .98em;
+        color: $light !important;
+
+        &:hover {
+          color: $gray-light !important; /* Set link color to $maroon on hover */
+        }
+      }
+    }
+
+    &.nav-expanded {
+      background-color: rgba($light, 0.9) !important;
+      height: 100%;
+      backdrop-filter: blur(8px);
+
+      li {
+        a {
+          color: $dark !important;
+
+          &:hover {
+            color: $maroon !important; /* Ensure hover effect is consistent */
+          }
+        }
+      }
+
+      .navbar-collapse.show {
+        background-color: $light;
+      }
+    }
+
+    &.navbar-dark {
+      background: linear-gradient(to bottom, rgb(0 0 0) 0%, rgba(0, 0, 0, 0.01) 100%);
+      // height: 160px;
+      height: 90;
+    
+
+      .dropdown-menu {
+        &:hover {
+          background-color: #0000008f;
+        }
+
+        background-color: #0000008f;
+      }
+
+      li {
+        a {
+          color: $light !important;
+
+          &:hover {
+            color: $maroon !important; /* Hover effect for dark mode */
+          }
+        }
+      }
+
+      .navbar-collapse.show {
+        background-color: $dark;
+      }
+
+      .brand img {
+        filter: brightness(0) invert(1) !important;
+      }
+    }
+  }
+
+  .top-header {
+    background: #343a40;
+  }
+}

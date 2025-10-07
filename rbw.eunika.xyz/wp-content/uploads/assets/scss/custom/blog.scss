@@ -1,0 +1,87 @@
+@import "../bootstrap/functions";
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins/breakpoints";
+@import "../global.scss";
+@import "./buttons.scss";
+
+body.page-id-5835{
+
+    .banner-image{
+        width: 100% !important;
+        max-height: 300px !important;
+        object-fit: cover;
+        margin-bottom: 2em;
+      }
+
+      h1{
+        color: $deep-teal;
+      }
+
+
+      .blog-list{
+        .wp-block-post-title{
+            a{
+                &:hover{
+                    color: $maroon;
+                    text-decoration: none;    
+                }
+                
+                 color: $deep-teal;
+            }
+        }
+      }
+  
+      
+}
+
+
+body.single{
+
+.attachment-banner-image{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.featured-thumb{
+    width: 100% !important;
+    max-height: 370px !important;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
+.blog-content{
+    margin-top: 4em;
+
+    h1,h2,h3,h4,h5{
+    // color: $deep-teal;
+    color: $maroon;
+    }
+
+    .wp-block-post-author{
+
+    .wp-block-post-author__avatar img{
+        height: 140px;
+        width: 140px;
+    }
+    .wp-block-post-author__name{
+        font-size: 1.2em !important;
+        color: $maroon;
+        font-family: "Lora", serif;
+    }
+
+    .wp-block-post-author__bio{
+        font-size: .9em;
+    }
+
+    }
+
+    
+}
+
+.sidebar{
+    margin-top: 4em;
+}
+
+
+}

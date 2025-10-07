@@ -1,0 +1,13 @@
+.wp-block-c7wp-buyslug {
+    overflow: hidden;
+    z-index: 1;
+}
+.wp-block-c7wp-buyslug > div {
+    max-width: 100%;
+}
+.wp-block-c7wp-buyslug .c7-product__add-to-cart {
+    pointer-events: none;
+}
+.wp-block-c7wp-buyslug .c7-message {
+    pointer-events: none;
+}

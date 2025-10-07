@@ -1,0 +1,50 @@
+/* Style the Event Details meta box */
+#event_meta_box .inside p {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#event_meta_box .inside label {
+    width: 150px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#event_meta_box .inside input[type="text"],
+#event_meta_box .inside input[type="date"],
+#event_meta_box .inside input[type="time"],
+#event_meta_box .inside input[type="number"],
+#event_meta_box .inside textarea {
+    width: calc(100% - 160px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#event_meta_box .inside textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+#event_meta_box .inside {
+    padding: 10px 20px;
+}
+
+/* Style the two-column layout */
+.event-meta-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-meta-row .meta-half {
+    width: 48%;
+}
+
+.event-meta-row input[type="text"],
+.event-meta-row input[type="date"],
+.event-meta-row input[type="time"],
+.event-meta-row input[type="number"] {
+    width: 100%;
+}

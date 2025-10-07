@@ -1,0 +1,7 @@
+p¸Fh<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:248:"
+          SELECT DISTINCT t.trigger_key
+          FROM `wp_mailpoet_automations` AS a
+          JOIN `wp_mailpoet_automation_triggers` as t
+          WHERE a.status = 'active' AND a.id = t.automation_id
+          ORDER BY trigger_key DESC
+        ";s:11:"last_result";a:0:{}s:8:"col_info";a:1:{i:0;O:8:"stdClass":13:{s:4:"name";s:11:"trigger_key";s:7:"orgname";s:11:"trigger_key";s:5:"table";s:1:"t";s:8:"orgtable";s:31:"wp_mailpoet_automation_triggers";s:3:"def";s:0:"";s:2:"db";s:17:"redbrickwinery_db";s:7:"catalog";s:3:"def";s:10:"max_length";i:0;s:6:"length";i:764;s:9:"charsetnr";i:246;s:5:"flags";i:4097;s:4:"type";i:253;s:8:"decimals";i:0;}}s:8:"num_rows";i:0;s:10:"return_val";i:0;}

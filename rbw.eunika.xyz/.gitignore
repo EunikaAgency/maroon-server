@@ -1,0 +1,17 @@
+# Package files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# images
+*.jpg
+*.jpeg
+*.JPEG
+*.gif
+*.png
+*.PNG

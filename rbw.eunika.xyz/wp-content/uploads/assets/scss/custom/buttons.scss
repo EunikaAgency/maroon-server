@@ -1,0 +1,102 @@
+@import "../bootstrap/functions";
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins/breakpoints";
+@import "../global.scss";
+
+.input-flat {
+  border-radius: 0;
+  min-width: 120px;
+  border: 1px solid;
+  padding-left: 25px;
+  padding-right: 30px;
+  border-color: var(--border);
+  color: var(--accent);
+  -moz-appearance: textfield;
+  text-align: left;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  font-size: 20px;
+}
+
+// Base button style
+.btn-flat {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px !important;
+  white-space: nowrap;
+  padding: 18px !important;
+  line-height: 1.8 !important;
+  border: none !important;
+  letter-spacing: 0.1em;
+  border-radius: 0 !important;
+  text-decoration: none !important; // Remove text decorations
+}
+
+// Loop through the theme colors to create button variations
+@each $name, $color in $theme-colors {
+  .btn-flat-#{$name} {
+    @extend .btn-flat;
+    background-color: $color !important;
+
+    // Set text color for light buttons
+    @if $name == "light" {
+      color: $black !important; // Set contrasting text color for light bg
+    } @else if ($name == "maroon") {
+      color: $light !important; // Set light text color for dark backgrounds
+    } @else if ($color == $gray-light or $color == $gray) {
+      color: $black !important; // Use black text for very light colors
+    } @else {
+      color: white !important; // Default to white text for darker backgrounds
+    }
+
+    // Add hover effect to contrast background and text color
+    &:hover {
+      background-color: darken($color, 10%) !important; // Darken background on hover
+      color: white !important; // Set text color to white for contrast
+      text-decoration: none !important;
+    }
+  }
+}
+
+.gb-button-text, button {
+  @extend .btn-flat;
+}
+
+// Add class for btn-flat-outline
+.btn-flat-outline {
+  @extend .btn-flat;
+  background-color: transparent !important;
+  border: 2px solid !important;
+  color: var(--accent) !important;
+  text-decoration: none !important; // Remove text decorations
+}
+
+// Loop through the theme colors for outline variations
+@each $name, $color in $theme-colors {
+  .btn-flat-outline-#{$name} {
+    @extend .btn-flat-outline;
+    border-color: $color !important;
+
+    // Set text color for outlined buttons based on color
+    @if $name == "light" {
+      color: $light !important; // Set the text color to light for outlined-light button
+    } @else if ($color == $gray-light or $color == $gray) {
+      color: $black !important; // Use black for very light colors
+    } @else {
+      color: $color !important; // Default to color for outlined buttons
+    }
+
+    // Add hover effect for outlined buttons
+    &:hover {
+      background-color: $color !important; // Set background to the button color on hover
+      color: white !important; // Set text color to white for contrast on hover
+      text-decoration: none !important;
+    }
+  }
+}
+
+
+.gb-accordion button{
+  outline: none !important;
+}

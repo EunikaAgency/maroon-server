@@ -1,0 +1,107 @@
+// Import Montserrat and Lora fonts from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+// also import Parisienne font
+
+
+// Import your custom variables first
+@import "global.scss";
+
+// Then, import Bootstrap's SCSS files
+@import "bootstrap/bootstrap.scss";
+
+// Import your custom SCSS files
+@import "custom/header.scss";
+@import "custom/footer.scss";
+
+@import "custom/product-page.scss";
+
+@import "custom/buttons.scss";
+@import "custom/typography.scss";
+
+@import "custom/events.scss";
+@import "custom/blog.scss";
+
+
+@import "custom/woo.scss";
+
+
+@media (min-width: 992px) { /* Bootstrap's breakpoint for lg (desktop) */
+    .navbar-toggler {
+      display: none !important;
+    }
+  }
+
+  body{
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+
+
+  body.page-template-template-basic{
+   main.container{
+    margin-top: 140px;
+   }
+
+  }
+
+  body.page-template-template-full-width{
+
+    // .banner-image{
+    //   width: 100% !important;
+    //   max-height: 300px !important;
+    //   object-fit: cover;
+    //   margin-bottom: 2em;
+    // }
+
+    
+
+   
+ 
+  }
+
+
+  
+
+.product-slide{
+  img{
+    height: 450px !important;
+    object-fit: contain !important;
+  }
+}
+
+
+.product-slide{
+  img{
+    height: 450px !important;
+    object-fit: contain !important;
+  }
+}
+
+
+
+.divider-line{
+  max-width: 300px !important;
+}
+
+
+.product-slider {
+  min-height: 660px !important;
+}
+
+.product-title {
+  margin-top: 20px;
+}
+
+   
+  
+  // mobile and tablet
+  @include media-breakpoint-only(sm) {
+    
+    
+  }
+
+

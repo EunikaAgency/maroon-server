@@ -1,0 +1,10 @@
+.wp-block-c7wp-loginform {
+    overflow: hidden;
+    z-index: 1;
+}
+.wp-block-c7wp-loginform > div {
+    max-width: 100%;
+}
+.wp-block-c7wp-loginform .c7-form {
+    pointer-events: none;
+}

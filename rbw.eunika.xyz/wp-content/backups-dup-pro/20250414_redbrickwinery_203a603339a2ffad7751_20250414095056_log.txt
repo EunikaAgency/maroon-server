@@ -1,0 +1,252 @@
+********************************************************************************
+********************************************************************************
+DUPLICATOR PRO PACKAGE-LOG: 2025-04-14 09:53:19
+NOTICE: Do NOT post to public sites or forums 
+PACKAGE CREATION START
+********************************************************************************
+********************************************************************************
+VERSION:	4.5.18.2
+WORDPRESS:	6.7.1
+PHP INFO:	7.4.33 | SAPI: apache2handler
+SERVER:		Apache/2.4.58 (Ubuntu) 
+ARCHITECTURE:	64-bit 
+CLIENT KICKOFF: off 
+PHP TIME LIMIT: [7200] not allowed 
+PHP MAX MEMORY: 256M (256M default) 
+RUN TYPE:	Manual
+MEMORY STACK:	44MB
+ARCHIVE ENGINE: DupArchive
+PACKAGE COMPONENTS:
+	Database,
+	Core,
+	Plugins,
+	Themes,
+	Media,
+	Other
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP + CHUNKING (query size limit - 131072 )
+
+TABLES: total: 149 | filtered:0 | create:149
+REWIND DATABASE ITERATOR
+INSERT ROWS TABLE[INDEX:0] wp_users NUM ROWS: 2
+REWIND DATABASE ITERATOR
+INSERT ROWS TABLE[INDEX:0] wp_users NUM ROWS: 2
+INSERT ROWS TABLE[INDEX:1] wp_usermeta NUM ROWS: 169
+INSERT ROWS TABLE[INDEX:2] _wp_woocommerce_tax_rates NUM ROWS: 5030
+INSERT ROWS TABLE[INDEX:3] wp_actionscheduler_actions NUM ROWS: 17373
+INSERT ROWS TABLE[INDEX:4] wp_actionscheduler_claims NUM ROWS: 28
+INSERT ROWS TABLE[INDEX:5] wp_actionscheduler_groups NUM ROWS: 11
+INSERT ROWS TABLE[INDEX:6] wp_actionscheduler_logs NUM ROWS: 52089
+INSERT ROWS TABLE[INDEX:7] wp_aioseo_cache NUM ROWS: 23
+INSERT ROWS TABLE[INDEX:8] wp_aioseo_crawl_cleanup_blocked_args NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:9] wp_aioseo_crawl_cleanup_logs NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:10] wp_aioseo_notifications NUM ROWS: 12
+INSERT ROWS TABLE[INDEX:11] wp_aioseo_posts NUM ROWS: 512
+INSERT ROWS TABLE[INDEX:12] wp_aioseo_writing_assistant_keywords NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:13] wp_aioseo_writing_assistant_posts NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:14] wp_benchmark_test NUM ROWS: 4
+INSERT ROWS TABLE[INDEX:15] wp_commentmeta NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:16] wp_comments NUM ROWS: 321
+INSERT ROWS TABLE[INDEX:17] wp_duplicator_backups NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:18] wp_duplicator_entities NUM ROWS: 9
+INSERT ROWS TABLE[INDEX:19] wp_eb_form_settings NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:20] wp_gla_attribute_mapping_rules NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:21] wp_gla_budget_recommendations NUM ROWS: 4230
+INSERT ROWS TABLE[INDEX:22] wp_gla_merchant_issues NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:23] wp_gla_shipping_rates NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:24] wp_gla_shipping_times NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:25] wp_jetpack_sync_queue NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:26] wp_links NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:27] wp_litespeed_avatar NUM ROWS: 21
+INSERT ROWS TABLE[INDEX:28] wp_litespeed_img_optming NUM ROWS: 73
+INSERT ROWS TABLE[INDEX:29] wp_litespeed_url NUM ROWS: 16
+INSERT ROWS TABLE[INDEX:30] wp_litespeed_url_file NUM ROWS: 21
+INSERT ROWS TABLE[INDEX:31] wp_mailpoet_automation_run_logs NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:32] wp_mailpoet_automation_run_subjects NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:33] wp_mailpoet_automation_runs NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:34] wp_mailpoet_automation_triggers NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:35] wp_mailpoet_automation_versions NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:36] wp_mailpoet_automations NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:37] wp_mailpoet_custom_fields NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:38] wp_mailpoet_dynamic_segment_filters NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:39] wp_mailpoet_feature_flags NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:40] wp_mailpoet_forms NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:41] wp_mailpoet_log NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:42] wp_mailpoet_migrations NUM ROWS: 33
+INSERT ROWS TABLE[INDEX:43] wp_mailpoet_newsletter_links NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:44] wp_mailpoet_newsletter_option NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:45] wp_mailpoet_newsletter_option_fields NUM ROWS: 31
+INSERT ROWS TABLE[INDEX:46] wp_mailpoet_newsletter_posts NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:47] wp_mailpoet_newsletter_segment NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:48] wp_mailpoet_newsletter_templates NUM ROWS: 76
+INSERT ROWS TABLE[INDEX:49] wp_mailpoet_newsletters NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:50] wp_mailpoet_scheduled_task_subscribers NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:51] wp_mailpoet_scheduled_tasks NUM ROWS: 6222
+INSERT ROWS TABLE[INDEX:52] wp_mailpoet_segments NUM ROWS: 3
+INSERT ROWS TABLE[INDEX:53] wp_mailpoet_sending_queues NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:54] wp_mailpoet_settings NUM ROWS: 19
+INSERT ROWS TABLE[INDEX:55] wp_mailpoet_statistics_bounces NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:56] wp_mailpoet_statistics_clicks NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:57] wp_mailpoet_statistics_forms NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:58] wp_mailpoet_statistics_newsletters NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:59] wp_mailpoet_statistics_opens NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:60] wp_mailpoet_statistics_unsubscribes NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:61] wp_mailpoet_statistics_woocommerce_purchases NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:62] wp_mailpoet_stats_notifications NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:63] wp_mailpoet_subscriber_custom_field NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:64] wp_mailpoet_subscriber_ips NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:65] wp_mailpoet_subscriber_segment NUM ROWS: 3
+INSERT ROWS TABLE[INDEX:66] wp_mailpoet_subscriber_tag NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:67] wp_mailpoet_subscribers NUM ROWS: 7
+INSERT ROWS TABLE[INDEX:68] wp_mailpoet_tags NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:69] wp_mailpoet_user_agents NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:70] wp_mailpoet_user_flags NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:71] wp_options NUM ROWS: 1870
+INSERT ROWS TABLE[INDEX:72] wp_postmeta NUM ROWS: 8877
+INSERT ROWS TABLE[INDEX:73] wp_posts NUM ROWS: 5688
+INSERT ROWS TABLE[INDEX:74] wp_redirection_404 NUM ROWS: 3280
+INSERT ROWS TABLE[INDEX:75] wp_redirection_groups NUM ROWS: 2
+INSERT ROWS TABLE[INDEX:76] wp_redirection_items NUM ROWS: 18
+INSERT ROWS TABLE[INDEX:77] wp_redirection_logs NUM ROWS: 53
+INSERT ROWS TABLE[INDEX:78] wp_smush_dir_images NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:79] wp_term_relationships NUM ROWS: 152
+INSERT ROWS TABLE[INDEX:80] wp_term_taxonomy NUM ROWS: 40
+INSERT ROWS TABLE[INDEX:81] wp_termmeta NUM ROWS: 15
+INSERT ROWS TABLE[INDEX:82] wp_terms NUM ROWS: 40
+INSERT ROWS TABLE[INDEX:83] wp_wc_admin_note_actions NUM ROWS: 116
+INSERT ROWS TABLE[INDEX:84] wp_wc_admin_notes NUM ROWS: 89
+INSERT ROWS TABLE[INDEX:85] wp_wc_category_lookup NUM ROWS: 5
+INSERT ROWS TABLE[INDEX:86] wp_wc_customer_lookup NUM ROWS: 6
+INSERT ROWS TABLE[INDEX:87] wp_wc_download_log NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:88] wp_wc_order_addresses NUM ROWS: 8
+INSERT ROWS TABLE[INDEX:89] wp_wc_order_coupon_lookup NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:90] wp_wc_order_operational_data NUM ROWS: 5
+INSERT ROWS TABLE[INDEX:91] wp_wc_order_product_lookup NUM ROWS: 6
+INSERT ROWS TABLE[INDEX:92] wp_wc_order_stats NUM ROWS: 5
+INSERT ROWS TABLE[INDEX:93] wp_wc_order_tax_lookup NUM ROWS: 9
+INSERT ROWS TABLE[INDEX:94] wp_wc_orders NUM ROWS: 5
+INSERT ROWS TABLE[INDEX:95] wp_wc_orders_meta NUM ROWS: 118
+INSERT ROWS TABLE[INDEX:96] wp_wc_product_attributes_lookup NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:97] wp_wc_product_download_directories NUM ROWS: 2
+INSERT ROWS TABLE[INDEX:98] wp_wc_product_meta_lookup NUM ROWS: 39
+INSERT ROWS TABLE[INDEX:99] wp_wc_rate_limits NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:100] wp_wc_reserved_stock NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:101] wp_wc_tax_rate_classes NUM ROWS: 2
+INSERT ROWS TABLE[INDEX:102] wp_wc_webhooks NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:103] wp_wfauditevents NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:104] wp_wfblockediplog NUM ROWS: 245
+INSERT ROWS TABLE[INDEX:105] wp_wfblocks7 NUM ROWS: 2
+INSERT ROWS TABLE[INDEX:106] wp_wfconfig NUM ROWS: 284
+INSERT ROWS TABLE[INDEX:107] wp_wfcrawlers NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:108] wp_wffilechanges NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:109] wp_wffilemods NUM ROWS: 36696
+INSERT ROWS TABLE[INDEX:110] wp_wfhits NUM ROWS: 1680
+INSERT ROWS TABLE[INDEX:111] wp_wfhoover NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:112] wp_wfissues NUM ROWS: 42
+INSERT ROWS TABLE[INDEX:113] wp_wfknownfilelist NUM ROWS: 36697
+INSERT ROWS TABLE[INDEX:114] wp_wflivetraffichuman NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:115] wp_wflocs NUM ROWS: 3
+INSERT ROWS TABLE[INDEX:116] wp_wflogins NUM ROWS: 1487
+INSERT ROWS TABLE[INDEX:117] wp_wfls_2fa_secrets NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:118] wp_wfls_role_counts NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:119] wp_wfls_settings NUM ROWS: 30
+INSERT ROWS TABLE[INDEX:120] wp_wfnotifications NUM ROWS: 4
+INSERT ROWS TABLE[INDEX:121] wp_wfpendingissues NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:122] wp_wfreversecache NUM ROWS: 3
+INSERT ROWS TABLE[INDEX:123] wp_wfsecurityevents NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:124] wp_wfsnipcache NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:125] wp_wfstatus NUM ROWS: 949
+INSERT ROWS TABLE[INDEX:126] wp_wftrafficrates NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:127] wp_wfwaffailures NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:128] wp_woocommerce_api_keys NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:129] wp_woocommerce_attribute_taxonomies NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:130] wp_woocommerce_downloadable_product_permissions NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:131] wp_woocommerce_log NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:132] wp_woocommerce_order_itemmeta NUM ROWS: 749
+INSERT ROWS TABLE[INDEX:133] wp_woocommerce_order_items NUM ROWS: 17
+INSERT ROWS TABLE[INDEX:134] wp_woocommerce_payment_tokenmeta NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:135] wp_woocommerce_payment_tokens NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:136] wp_woocommerce_sessions NUM ROWS: 574
+INSERT ROWS TABLE[INDEX:137] wp_woocommerce_shipping_zone_locations NUM ROWS: 91
+INSERT ROWS TABLE[INDEX:138] wp_woocommerce_shipping_zone_methods NUM ROWS: 6
+INSERT ROWS TABLE[INDEX:139] wp_woocommerce_shipping_zones NUM ROWS: 4
+INSERT ROWS TABLE[INDEX:140] wp_woocommerce_tax_rate_locations NUM ROWS: 5029
+INSERT ROWS TABLE[INDEX:141] wp_woocommerce_tax_rates NUM ROWS: 41673
+INSERT ROWS TABLE[INDEX:142] wp_wpfm_backup NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:143] wp_wpforms_logs NUM ROWS: 5
+INSERT ROWS TABLE[INDEX:144] wp_wpforms_payment_meta NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:145] wp_wpforms_payments NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:146] wp_wpforms_tasks_meta NUM ROWS: 14
+INSERT ROWS TABLE[INDEX:147] wp_wpmailsmtp_debug_events NUM ROWS: 260
+INSERT ROWS TABLE[INDEX:148] wp_wpmailsmtp_tasks_meta NUM ROWS: 1
+SQL FILE SIZE CHECK OK, SIZE: 563456838
+SQL CREATED: 20250414_redbrickwinery_203a603339a2ffad7751_20250414095056_database.sql
+SQL FILE SIZE: 537.35MB
+SQL FILE TIME: 2025-04-14 09:59:18
+SQL RUNTIME: 359.116 sec.
+MEMORY STACK: 2MB
+
+********************************************************************************
+ARCHIVE Type=DUP Mode=DupArchive
+********************************************************************************
+ARCHIVE DIR:  /var/www/html/redbrickwinery
+ARCHIVE FILE: 20250414_redbrickwinery_203a603339a2ffad7751_20250414095056_archive.daf
+FILTERS: *ON*
+DIRS:  not set
+EXTS:  not set
+FILES:  /var/www/html/rbw-staging/20240907_redbrickwinery_414b5d7183e5bd6f7533_20240907034537_database.sql
+	/var/www/html/rbw-staging/20240907_redbrickwinery_7937d2a9679023017818_20240907035106_database.sql
+	/var/www/html/rbw-staging/extras
+----------------------------------------
+COMPRESSING
+SIZE:	2.14GB
+STATS:	Dirs 6,520 | Files 40,402 | Total 46,922
+CREATE ARCHIVE STATE FOR DUP ARCHIVE
+COMPRESSED SIZE: 872.65MB
+ARCHIVE RUNTIME: 250.382 sec.
+MEMORY STACK: 4MB
+CREATE WARNINGS: No warnings.
+VALIDATION WARNINGS: No warnings.
+
+********************************************************************************
+STORAGE:
+********************************************************************************
+DEFAULT LOCAL: Default, /var/www/html/redbrickwinery/wp-content/backups-dup-pro
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 537.35MB
+INSTALLER FILE: 167.71KB
+ARCHIVE FILE: 872.65MB 
+EXPECTED FILE/DIRECTORY COUNT: 46,922
+ACTUAL FILE/DIRECTORY COUNT: 46,923
+
+********************************************************************************
+RECORD ID:[7]
+TOTAL PROCESS RUNTIME: 621.534 sec.
+PEAK PHP MEMORY USED: 2MB
+DONE PROCESSING => 20250414_redbrickwinery 2025-04-14 10:03:40
+
+-----------------------------------------
+STORAGE PROCESSING THREAD INITIATED
+** DEFAULT LOCAL [Name: Default] [ID: 3] **
+SUCCESS: package is in default location: /var/www/html/redbrickwinery/wp-content/backups-dup-pro
+-----------------------------------------
+STORAGE PROCESSING THREAD INITIATED
+STORAGE PROCESSING COMPLETED
+Attempting to purge old packages at Default[ID: 3] type: Default Local
+Purge of old packages at Default[ID: 3] storage completed. Num packages deleted 0
+[PHP ERR][WARN] MSG:chmod(): Operation not permitted [CODE:2|FILE:/var/www/html/redbrickwinery/wp-content/plugins/wordfence/vendor/wordfence/wf-waf/src/lib/storage/file.php|LINE:442]
+
+********************************************************************************
+********************************************************************************
+DUPLICATOR PRO PACKAGE CREATION OR MANUAL STORAGE TRANSFER END: 2025-04-14 10:03:49
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+********************************************************************************
+
+[PHP ERR][WARN] MSG:chmod(): Operation not permitted [CODE:2|FILE:/var/www/html/redbrickwinery/wp-content/plugins/wordfence/vendor/wordfence/wf-waf/src/lib/storage/file.php|LINE:442]

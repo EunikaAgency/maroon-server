@@ -1,0 +1,110 @@
+body.woocommerce-checkout #floating-cart, 
+body.woocommerce-cart #floating-cart,
+body.page-id-7359 .woocommerce-cart #floating-cart{
+    display: none;
+}
+
+
+
+/* Mobile-specific styling for WooCommerce floating cart */
+@media only screen and (max-width: 768px) {
+   
+    #floating-cart-icon {
+        display: none;
+    }
+
+    #floating-cart-icon {
+        bottom: 15px;
+        right: 16px;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+
+    #floating-cart-count {
+        background-color: maroon;
+        color: white;
+        border-radius: 50%;
+        padding: 3px 7px;
+        font-size: 12px;
+    }
+
+
+    
+
+    #floating-cart {
+        bottom: 0  !important;
+        right: 0 !important;
+        z-index: 999;
+        width: 75% !important;
+    }
+
+    /* Customize your cart styling here */
+    #floating-cart .cart-item .cart-item-thumbnail img {
+        max-height: 60px;
+        max-width: 40px;
+        object-fit: cover;
+    }
+
+    #floating-cart .cart-item .product-name {
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+#floating-cart-icon-img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Customize your cart styling here */
+#floating-cart .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#floating-cart .cart-item .product-name{
+    font-family: Lora, serif;
+    font-weight: 100;
+}
+
+#floating-cart .cart-item .cart-item-qty-btn{
+    font-size: 14px !important;
+    color: #150d03;
+    border: 1px solid #d3cfc3 !important;
+    width: 26px;
+}
+
+
+/* --- */
+/* Hide floating cart icon on desktop */
+#floating-cart-icon {
+    display: none;
+}
+
+/* Display icon when cart is minimized */
+.minimized #floating-cart-icon {
+    display: block !important;
+}
+
+#minimize-cart{
+    height: 6px;
+    margin: 0;
+    padding: 0 !important;
+}

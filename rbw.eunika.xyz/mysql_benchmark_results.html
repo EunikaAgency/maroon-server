@@ -1,0 +1,51 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MySQL Benchmark Test Results</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <style>
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+            th, td { padding: 8px 12px; border: 1px solid #ccc; text-align: center; }
+            th { background-color: #f4f4f4; }
+        </style>
+    </head>
+    <body>
+        <h1>MySQL Benchmark Test Results</h1>
+        
+        <table>
+            <tr>
+                <th>Test</th>
+                <th>Avg Time (ms)</th>
+                <th>Min Time (ms)</th>
+                <th>Max Time (ms)</th>
+                <th>Score</th>
+            </tr>
+            <tr><td>Table Creation</td><td>34.99</td><td>-</td><td>-</td><td>10</td></tr><tr><td>Insert Test</td><td>6.06</td><td>5.09</td><td>9.70</td><td>10</td></tr><tr><td>Bulk Insert Test</td><td>7.52</td><td>-</td><td>-</td><td>10</td></tr><tr><td>Update Test</td><td>6.99</td><td>-</td><td>-</td><td>10</td></tr><tr><td>Join Test</td><td>0.44</td><td>-</td><td>-</td><td>10</td></tr><tr><td>Aggregate Test</td><td>0.26</td><td>-</td><td>-</td><td>10</td></tr>        </table>
+
+        <h2>Performance Chart</h2>
+        <canvas id="performanceChart" width="400" height="200"></canvas>
+        <script>
+            const ctx = document.getElementById('performanceChart').getContext('2d');
+            const performanceChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["Table Creation","Insert Test","Bulk Insert Test","Update Test","Join Test","Aggregate Test"],
+                    datasets: [{
+                        label: 'Average Time (ms)',
+                        data: ["34.99","6.06","7.52","6.99","0.44","0.26"],
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+        </script>
+    </body>
+    </html>
+    
