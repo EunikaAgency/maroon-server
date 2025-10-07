@@ -1,0 +1,17 @@
+/* .content-wrapper {
+    background: linear-gradient(0deg, #65a3d6, transparent 50%, transparent 50%, #65a3d6);
+} */
+
+.dashboard-template .brand-text {
+    color: #1472f0;
+    font-weight: bold !important;
+}
+
+/* .nav-sidebar .nav-link.active {
+    border-radius: 25px;
+} */
+
+.card {
+    border-radius: 25px;
+    overflow: hidden;
+}

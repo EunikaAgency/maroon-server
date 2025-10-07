@@ -1,0 +1,18 @@
+.loginContainer {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, transparent, #65a3d6);
+}
+
+.loginContainer .card {
+    box-shadow: 0 0 10px gray;
+    max-width: 400px;
+    width: 100%;
+}
+
+.loginContainer img {
+    width: 200px;
+}

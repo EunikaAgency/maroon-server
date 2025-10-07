@@ -1,0 +1,44 @@
+.calling_card_profile {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    background: linear-gradient(153deg, transparent, #65a3d6);
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+}
+
+.profile-logo {
+    width: 175px;
+}
+
+.profile-image {
+    width: 200px;
+    border-radius: 25px;
+}
+
+.profile-info {
+    background: #fff;
+    box-shadow: 0 0 10px gray;
+    padding: 1rem;
+    border-radius: 25px 25px 0 0;
+    margin: auto;
+    width: 100%;
+    max-width: 992px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+    .profile-info {
+        padding-bottom: 3rem;
+    }
+
+    #saveContactBtn {
+        position: fixed;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
