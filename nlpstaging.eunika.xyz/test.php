@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>Header haha</title>
+</head>
+
+    <style>
+        /*********************/
+        /* NAVBAR 
+        **********************/
+        .custom-nav {
+            padding: 0;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .custom-nav .navbar-brand{
+            background: linear-gradient(
+                109deg,
+                #262626 0%,
+                #262626 80.3%,
+                #d51a0a 80.3%,
+                #d51a0a 81.4%,
+                #ffffff 81.6%,
+                #ffffff 100%
+            );
+            padding: 10px 140px 13px 80px;
+            margin-right: 0;
+        }
+
+        .custom-nav ul{
+            margin: 0;
+            gap: 30px;
+        }
+        .custom-nav ul li {
+            padding-top: 28px;
+            padding-bottom: 22px;
+        }
+        .custom-nav ul li a {
+            font-size: 17px;
+            font-weight: 500;
+            color: #9f9292;
+            letter-spacing: 0.5px;
+        }
+
+        .custom-nav  .fa-bars{
+            color: #d51a0a;
+
+        }
+        /*********************/
+        /* OFFCANVAS
+        **********************/
+        .custom-nav .offcanvas {
+            background-color: #262626;
+        }
+
+
+        /*********************/
+        /* NAVBAR RIGHT BTN
+        **********************/
+        .custom-nav .navright {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .custom-nav .custom-btn {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            outline: none !important;
+            background-color: #d51a0a;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 15px 50px 15px;
+            -webkit-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            overflow: hidden;
+            z-index: 1;
+            text-decoration: none;
+        }
+
+        .custom-nav .custom-btn:hover {
+            color: #ffffff;
+        }
+
+        .custom-nav .custom-btn:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 3px;
+            background-color: #262626;
+            transition-delay: 0.1s;
+            transition-timing-function: ease-in-out;
+            transition-duration: 0.5s;
+            transition-property: all;
+            opacity: 1;
+            z-index: -1;
+        }
+
+        .custom-nav .custom-btn:hover:after {
+            opacity: 1;
+            width: 100%;
+        }
+
+
+        .custom-nav .custom-number a {
+            color: #9f9292;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 20px;
+        }
+
+        .custom-nav .custom-number a:hover {
+            color: #d51a0a;
+        }
+
+
+        .custom-nav .custom-contact a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .custom-nav .custom-contact i {
+            background-color: #d51a0a;
+            color: white;
+            font-size: 14px;
+            padding: 10px;
+            margin-right: 8px;
+        }
+
+
+        /* 768 */
+        @media only screen and (max-width: 768px) {
+            .custom-nav .navbar-brand{
+                background: linear-gradient(
+                    109deg,
+                    #262626 0%,
+                    #262626 80.3%,
+                    #d51a0a 80.3%,
+                    #d51a0a 81.4%,
+                    #ffffff 81.6%,
+                    #ffffff 100%
+                );
+                padding: 10px 150px 13px 40px;
+                margin-right: 0;
+            }
+            .custom-nav ul {
+                gap: 10px;
+            }
+            .custom-nav ul li {
+                padding: 0px;
+            }
+
+            .custom-nav ul li a {
+                color: #fff;
+            }
+            .custom-nav .navright {
+                display: none !important;
+            }
+            
+
+
+        }
+        /* 1024 */
+        @media only screen and (min-width: 1024px) {
+            .custom-nav .navbar-brand{
+                background: linear-gradient(
+                    109deg,
+                    #262626 0%,
+                    #262626 85.3%,
+                    #d51a0a 85.3%,
+                    #d51a0a 86.4%,
+                    #ffffff 86.6%,
+                    #ffffff 100%
+                );
+                padding: 10px 65px 13px 30px;
+                margin-right: 0;
+            }
+
+            .custom-nav .custom-number {
+                display: none;
+            }
+            .custom-nav ul {
+                gap:10px;
+            }
+
+            .custom-nav ul li {
+                padding-top: 17px;
+                padding-bottom: 14px;
+            }
+
+            .custom-nav .custom-btn {
+                text-align: center;
+                padding: 15px 25px 15px;
+                margin-right: 30px;
+                font-size: 14px;
+                width: 200px;
+            }
+        }
+
+        /* 1440 */
+        @media only screen and (min-width: 1440px) {
+            .custom-nav .navbar-brand{
+                background: linear-gradient(
+                    109deg,
+                    #262626 0%,
+                    #262626 80.3%,
+                    #d51a0a 80.3%,
+                    #d51a0a 81.4%,
+                    #ffffff 81.6%,
+                    #ffffff 100%
+                );
+                padding: 10px 140px 13px 80px;
+                margin-right: 0;
+            }
+            .custom-nav .navbar-brand{
+                padding: 10px 140px 13px 80px;
+                margin-right: 0;
+            }
+            .custom-nav .custom-number {
+                display: block;
+            }
+            
+            .custom-nav ul li {
+                padding-top: 18px;
+                padding-bottom: 12px;
+            }
+            .custom-nav .navright {
+                gap: 10px;
+                padding-right: 3rem;
+            }
+
+            .custom-nav .custom-btn {
+                font-size: 18px;
+                font-weight: 700;
+                padding: 15px 50px 15px;
+                width: 260px;
+                margin-right: 0px;
+            }
+        }
+    </style>
+<body>
+
+    <nav class="custom-nav navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid p-0">
+
+        <div class="navbar-brand">
+            <a href="#">
+                <img decoding="async" class="img-fluid" width="140" height="45" src="https://www.newlinepainting.com.au/wp-content/uploads/2025/02/Newline-Painting-Logo-White.png" alt="Newline Painting">
+            </a>
+        </div>
+
+
+        <a class="navbar-toggler border border-0 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <img decoding="async" class="img-fluid" width="140" height="45" src="https://www.newlinepainting.com.au/wp-content/uploads/2025/02/Newline-Painting-Logo-White.png" alt="Newline Painting">
+            </div>
+            <div class="offcanvas-body d-flex justify-content-between">
+                <ul class="navbar-nav mb-3 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Painting Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+
+                <!-- desktop -->
+                    <div class="navright">
+                    <div class="getinstant">
+                        <a href="/quote/" class="custom-btn">Get Instant Quote</a>
+                    </div>
+                    <div class="custom-number">
+                        <a href="tel:1300044206">
+                            <svg fill="#d51a0a" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-256 -256 1024.00 1024.00" xml:space="preserve" stroke="#d51a0a"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M492.557,400.56L392.234,300.238c-11.976-11.975-31.458-11.975-43.435,0l-26.088,26.088 c-8.174,8.174-10.758,19.845-7.773,30.241l-9.843,9.843c-0.003,0.003-0.005,0.005-0.008,0.008 c-6.99,6.998-50.523-3.741-103.145-56.363c-52.614-52.613-63.356-96.139-56.366-103.142c0-0.002,0.002-0.002,0.002-0.002 l9.852-9.851c2.781,0.799,5.651,1.207,8.523,1.207c7.865,0,15.729-2.993,21.718-8.98l26.088-26.088 c11.975-11.975,11.975-31.458,0-43.434L111.436,19.441c-5.8-5.8-13.513-8.994-21.716-8.994c-8.205,0-15.915,3.196-21.716,8.994 l-26.09,26.09c-8.174,8.174-10.758,19.846-7.773,30.241c0,0-8.344,8.424-8.759,8.956c-27.753,30.849-32.96,79.418-14.561,137.487 c18.017,56.857,56.857,117.088,109.367,169.595c52.508,52.508,112.739,91.348,169.596,109.367 C312.624,508.414,333.991,512,353.394,512c31.813,0,58.337-9.648,77.35-28.66l5.474-5.474c2.74,0.788,5.602,1.213,8.532,1.213 c8.205,0,15.917-3.196,21.716-8.994l26.09-26.09C504.531,432.02,504.531,412.536,492.557,400.56z M89.72,41.157l100.324,100.325 l-26.074,26.102c0,0-0.005-0.005-0.014-0.014l-0.375-0.375l-49.787-49.787L63.631,67.247L89.72,41.157z M409.029,461.623 c-0.002,0.002-0.003,0.003-0.005,0.005c-22.094,22.091-61.146,25.74-109.961,10.27c-52.252-16.558-108.065-52.714-157.156-101.806 C92.814,321,56.658,265.189,40.101,212.936c-15.47-48.817-11.821-87.87,10.275-109.967l0.002-0.002l2.77-2.77l77.857,77.856 l-7.141,7.141c-0.005,0.005-0.009,0.011-0.015,0.017c-29.585,29.622,5.963,96.147,56.378,146.562 c37.734,37.734,84.493,67.14,118.051,67.14c11.284,0,21.076-3.325,28.528-10.778c0.003-0.003,0.005-0.005,0.008-0.008l7.133-7.133 l77.857,77.856L409.029,461.623z M444.752,448.368L344.428,348.044l26.088-26.088L470.84,422.278 C470.84,422.278,444.761,448.377,444.752,448.368z"></path> </g> </g> <g> <g> <path d="M388.818,123.184c-29.209-29.209-68.042-45.294-109.344-45.293c-8.481,0-15.356,6.875-15.356,15.356 c0,8.481,6.876,15.356,15.356,15.356c33.1-0.002,64.219,12.89,87.628,36.297c23.406,23.406,36.295,54.525,36.294,87.624 c0,8.481,6.875,15.358,15.356,15.358c8.48,0,15.356-6.875,15.356-15.354C434.109,191.224,418.023,152.393,388.818,123.184z"></path> </g> </g> <g> <g> <path d="M443.895,68.107C399.972,24.186,341.578-0.002,279.468,0c-8.481,0-15.356,6.876-15.356,15.356 c0,8.481,6.876,15.356,15.356,15.356c53.907-0.002,104.588,20.992,142.709,59.111c38.118,38.118,59.111,88.799,59.11,142.706 c0,8.481,6.875,15.356,15.356,15.356c8.48,0,15.356-6.875,15.356-15.354C512.001,170.419,487.813,112.027,443.895,68.107z"></path> </g> </g> <g> <g> <path d="M333.737,178.26c-14.706-14.706-33.465-22.477-54.256-22.477c0,0-0.005,0-0.006,0 c-8.481,0.002-15.356,6.876-15.354,15.358c0.002,8.481,6.878,15.356,15.358,15.354c0.002,0,0.003,0,0.005,0 c12.644,0,23.593,4.536,32.539,13.481c8.819,8.82,13.481,20.075,13.479,32.544c-0.002,8.481,6.875,15.356,15.354,15.358h0.002 c8.481,0,15.354-6.875,15.356-15.354C356.215,211.732,348.444,192.968,333.737,178.26z"></path> </g> </g> </g></svg>
+                            1300 044 206
+                        </a>
+                    </div>
+                    </div>
+                <!-- mobile -->
+                <div class="custom-contact row d-block d-lg-none">
+                    <div class="mb-3">
+                        <a href="mailto:support@www.newlinepainting.com.au"><i class="fas fa-envelope rounded-circle"></i> support@www.newlinepainting.com.au</a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="tel:1300044206"><i class="fa fa-phone rounded-circle"></i> 1300 044 206</a>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <a href="https://www.facebook.com/NewlinePaintingAustralia/" class="me-2"><i class="fab fa-facebook rounded-circle"></i></a>
+                        <a href="https://www.instagram.com/newlinepainting_official/" class="me-2"><i class="fab fa-instagram rounded-circle"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+        </div>
+    </nav>
+    
+</body>
+</html>

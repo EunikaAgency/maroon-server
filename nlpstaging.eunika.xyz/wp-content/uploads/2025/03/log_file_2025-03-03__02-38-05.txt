@@ -1,0 +1,58 @@
+
+---Downloaded files---
+The import files for: Ambed Demo Import were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://nlpstaging.eunika.xyz
+Data file = /var/www/html/nlp/wp-content/uploads/2025/03/demo-content-import-file_2025-03-03__02-38-05.xml
+Widget file = /var/www/html/nlp/wp-content/uploads/2025/03/demo-widgets-import-file_2025-03-03__02-38-05.json
+Customizer file = /var/www/html/nlp/wp-content/uploads/2025/03/demo-customizer-import-file_2025-03-03__02-38-05.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Sidebar : 
+
+Block - No Title - Imported
+Recent Posts With Thumbnails - Recent Posts - Imported
+Block - No Title - Imported
+Block - No Title - Imported
+Block - No Title - Imported
+
+Shop Sidebar : 
+
+Block - No Title - Imported
+Block - No Title - Imported
+Block - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

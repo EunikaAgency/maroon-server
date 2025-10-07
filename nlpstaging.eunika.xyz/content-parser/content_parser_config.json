@@ -1,0 +1,80 @@
+{
+    
+    "nav": [
+        "/wp-content/plugins/custom-navbar-widget/"
+      
+    ],
+
+    "banner": [
+        "/wp-content/plugins/elementor-faq-gravity-form/includes",
+        "/wp-content/plugins/elementor-faq-gravity-form/elementor-faq-gravity-form.php"
+    ],
+
+    "cew":[
+        "/wp-content/plugins/cew-addons/views/navbar-template/navbar-template.php"
+        ,"/wp-content/plugins/cew-addons/widgets/custom-header/custom-navbar-widget-class.php"
+        ,"/wp-content/plugins/cew-addons/cew-addons.php"
+    ],
+
+    "cew1":[
+        "/wp-content/plugins/cew-addons",
+        "/wp-content/plugins/cew-addons"
+    ]
+
+    ,"footer":[
+        "/wp-content/plugins/cew-addons/cew-addons.php",
+        "/wp-content/plugins/cew-addons/widgets/custom-footer/custom-footer.php"
+    ]
+
+    ,"scripted":[
+        "/wp-content/plugins/cew-addons/views"
+    ],  
+
+    "bannered":[
+        "/wp-content/plugins/cew-addons/views/custom-banner/assets/css/style.css",
+        "/wp-content/plugins/cew-addons/views/custom-banner/assets/js/script.js",
+        "/wp-content/plugins/cew-addons/views/custom-banner/custom-banner.php",
+        "/wp-content/plugins/cew-addons/widgets/custom-banner/custom-banner.php",
+        "/wp-content/plugins/cew-addons/cew-addons.php"
+    ],
+
+    "team":[
+        "/wp-content/plugins/cew-addons/views/custom-newline-team",
+        "/wp-content/plugins/cew-addons/widgets/custom-newline-team",
+        "/wp-content/plugins/cew-addons/cew-addons.php"
+    ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    "sample":[
+        "/wp-content/plugins/cew-addons/widgets/custom-footer/custom-footer.php",
+        "/wp-content/plugins/cew-addons/views/custom-footer/custom-footer.php",
+        "/wp-content/plugins/cew-addons/views/custom-footer/assets/css/style.css",
+        "/wp-content/plugins/cew-addons/views/custom-footer/assets/js/script.js",
+        "/wp-content/plugins/cew-addons/cew-addons.php"
+    ]
+
+
+
+
+
+
+
+}

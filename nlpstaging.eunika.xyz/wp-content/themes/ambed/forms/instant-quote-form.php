@@ -1,0 +1,1 @@
+<?php echo do_shortcode('[gravityform id="6" title="false" description="false" ajax="true"]') ?>

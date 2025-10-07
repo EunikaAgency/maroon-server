@@ -1,0 +1,30 @@
+[Jun 20 03:48:06] 
+[Jun 20 03:48:06] ==DUPLICATOR INSTALLER BOOTSTRAP v4.5.18.2==
+[Jun 20 03:48:06] ----------------------------------------------------
+[Jun 20 03:48:06] Installer bootstrap start
+[Jun 20 03:48:06] Target dir dup folder \"/var/www/html/newlinepainting.com.au/dup-installer\"
+[Jun 20 03:48:06] Ready to extract the installer
+[Jun 20 03:48:06] Checking permission of destination folder
+[Jun 20 03:48:06] Expand directory from offset 1028042803
+[Jun 20 03:48:06] No need to create /var/www/html/newlinepainting.com.au/dup-installer/.htaccess or /var/www/html/newlinepainting.com.au/dup-installer/.user.ini
+[Jun 20 03:48:06] SAPI: apache2handler
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/addons<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/api<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/assets<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/classes<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/ctrls<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/favicon<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/libs<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/original_files_[HASH]<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/src<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/templates<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/vendor<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/vendor-prefixed<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/dup-archive__[HASH].txt<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/dup-scan__[HASH].json<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/dup-scanned-dirs__[HASH].txt<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/dup-scanned-files__[HASH].txt<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/index.php<br/>
+[Jun 20 03:48:06] Set permissions of /var/www/html/newlinepainting.com.au/dup-installer/main.installer.php<br/>
+[Jun 20 03:48:06] DONE: No detected errors so redirecting to the main installer. Main Installer URI = https://nlpstaging.eunika.xyz/dup-installer/main.installer.php

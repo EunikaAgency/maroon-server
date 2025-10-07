@@ -1,0 +1,149 @@
+.gform_heading .gform_required_legend {
+    display: none !important;
+}
+
+#gform_6 .gfield_label {
+    font-weight: 600 !important;
+    font-family: "Rubik", sans-serif !important;
+    color: #262626 !important;
+}
+
+#gform_6 #gform_submit_button_6,
+#gform_7 #gform_submit_button_7 {
+    border: none !important;
+    background: linear-gradient(to right, #262626 50%, #d51c0b 50%) !important;
+    background-size: 200% 100% !important;
+    background-position: right !important;
+    color: #fff !important;
+    padding: 16px 32px !important;
+    opacity: 0.9 !important;
+    transition: background-position 0.4s ease, opacity 0.4s ease !important;
+    cursor: pointer !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    display: block !important;
+    font-family: "Rubik", sans-serif !important;
+}
+
+#gform_6 #gform_submit_button_6:hover,
+#gform_7 #gform_submit_button_7:hover {
+    background-position: left !important;
+    opacity: 1 !important;
+}
+
+
+#gform_5 .gf_step {
+    font-weight: bold !important;
+}
+
+/* #gform_5 .gfield_radio {
+    display: flex !important;
+} */
+
+#gform_5 .gfield_radio li input {
+    display: none !important;
+}
+
+#gform_5 .gfield_radio li {
+    display: inline;
+}
+
+#gform_5 .gfield_radio li label {
+    padding: 0.75rem 1rem;
+    border: 1px solid #666;
+    margin: 0;
+}
+
+#gform_5 .gfield_radio input[type="radio"]:checked+label,
+.Checked+label {
+    background: #fff;
+    border-bottom: 2px solid #d51c0b;
+}
+
+#gform_5 #label_5_24_0,
+#gform_5 #label_5_15_0,
+#gform_5 #label_5_38_0,
+#gform_5 #label_5_22_0,
+#gform_5 #label_5_30_0,
+#gform_5 #label_5_31_0,
+#gform_5 #label_5_25_0 {
+    border-radius: 4px 0 0 4px;
+}
+
+#gform_5 #label_5_24_1,
+#gform_5 #label_5_15_1,
+#gform_5 #label_5_38_1,
+#gform_5 #label_5_22_2,
+#gform_5 #label_5_30_1,
+#gform_5 #label_5_30_1,
+#gform_5 #label_5_25_2 {
+    border-radius: 0 4px 4px 0;
+}
+
+#gform_5 #gform_previous_button_5 {
+    border: none !important;
+    background-size: 200% 100% !important;
+    background-position: right !important;
+    padding: 16px 32px !important;
+    opacity: 0.9 !important;
+    transition: background-position 0.4s ease, opacity 0.4s ease !important;
+    cursor: pointer !important;
+    border-radius: 0 !important;
+    font-family: "Rubik", sans-serif !important;
+}
+
+#gform_5 #gform_next_button_5_11,
+#gform_5 #gform_submit_button_5 {
+    border: none !important;
+    background: linear-gradient(to right, #262626 50%, #d51c0b 50%) !important;
+    background-size: 200% 100% !important;
+    background-position: right !important;
+    color: #fff !important;
+    padding: 16px 32px !important;
+    opacity: 0.9 !important;
+    transition: background-position 0.4s ease, opacity 0.4s ease !important;
+    cursor: pointer !important;
+    border-radius: 0 !important;
+    font-family: "Rubik", sans-serif !important;
+}
+
+
+#gform_5 input::placeholder {
+    color: #aaa;
+}
+
+
+#gform_fields_5 {
+    position: relative !important;
+}
+
+.door-estimate-number {
+    padding: 0;
+    height: 0;
+    position: absolute !important;
+    z-index: 1000000;
+    margin-top: -40px !important;
+    right: -200px !important;
+    background: green !important;
+
+}
+
+.door-estimate-number input {
+    background: none !important;
+    border: none !important;
+    font-weight: bold !important;
+}
+
+
+#gform_6 #gform_next_button_5_11:hover,
+#gform_6 #gform_submit_button_5:hover {
+    background-position: left !important;
+    opacity: 1 !important;
+}
+
+
+#field_5_60 .gfield-mobile-hide {
+    font-size: 12px;
+}
+
+

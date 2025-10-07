@@ -1,0 +1,16 @@
+[id*="-ambed_"] .customize-control-radio {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+[id*="-ambed_"]
+  .customize-control-radio
+  .customize-control-notifications-container,
+[id*="-ambed_"] .customize-control-radio .customize-control-title {
+  flex: 0 0 100%;
+}
+
+.select2-dropdown {
+  z-index: 9999991;
+}

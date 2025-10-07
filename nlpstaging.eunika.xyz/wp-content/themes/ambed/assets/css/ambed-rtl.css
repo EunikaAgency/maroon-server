@@ -1,0 +1,52 @@
+body {
+	overflow-x: hidden;
+}
+
+.list-unstyled {
+	padding-right: 0;
+}
+
+a[href*=tel],
+a[href^=tel] {
+	display: inline-block;
+}
+
+a[href*=tel],
+a[href^=tel],
+.owl-carousel {
+	direction: ltr;
+}
+
+.owl-carousel .owl-item {
+	direction: rtl;
+}
+
+.testimonial-one__right {
+	margin-top: -40px;
+}
+
+.testimonial-one__carousel.owl-carousel .owl-stage-outer {
+	overflow: hidden;
+	margin-left: -450px;
+}
+
+@media (min-width: 992px) {
+	.testimonial-one__carousel.owl-carousel .owl-stage-outer {
+		margin-left: -450px;
+	}
+}
+
+.testimonial-one__carousel.owl-carousel .owl-item {
+	opacity: 1;
+	visibility: visible;
+	padding-top: 40px;
+}
+
+.quality-work__curved-circle-box .curved-circle {
+	display: none;
+}
+
+.footer-widget__explore-list li a:before,
+.footer-widget__services-list li a:before {
+	content: "\f104";
+}

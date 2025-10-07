@@ -1,0 +1,213 @@
+.nlp-feature-section {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.nlp-feature-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: stretch;
+}
+
+.nlp-feature-card {
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f5f7;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nlp-feature-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: #d21b09;
+    transition: height 0.3s ease-in;
+    z-index: 1;
+}
+
+.nlp-feature-card:hover::before {
+    height: 100%;
+}
+
+.nlp-feature-card > * {
+    position: relative;
+    z-index: 2;
+    text-align: start;
+}
+
+.nlp-feature-card:hover .nlp-feature-title,
+.nlp-feature-card:hover .nlp-feature-text {
+    color: white;
+    transition: color 0.3s ease 0.2s;
+}
+
+.nlp-feature-icon {
+    margin-bottom: 20px;
+    transition: filter 0.3s ease 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nlp-feature-card:hover .nlp-feature-icon {
+    filter: brightness(0) invert(1);
+}
+
+.nlp-feature-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #3c3531;
+    transition: color 0.3s ease;
+}
+
+.nlp-feature-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nlp-feature-text {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    flex-grow: 1;
+    transition: color 0.3s ease;
+}
+
+.nlp-feature-arrow-container {
+    margin-top: auto;
+}
+
+.nlp-feature-arrow {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d32f2f;
+    text-decoration: none;
+    background-color: white;
+    transition: all 0.3s ease 0.2s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nlp-feature-card:hover .nlp-feature-arrow {
+    background-color: #3c3531;
+    color: white;
+}
+
+.nlp-carousel-container {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: grab;
+    scroll-behavior: smooth;
+    padding-bottom: 15px;
+}
+
+.nlp-carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.nlp-carousel-list {
+    display: flex;
+    flex-wrap: nowrap;
+    user-select: none;
+    cursor: grab;
+    min-width: 100%;
+}
+
+.nlp-grabbing {
+    cursor: grabbing;
+}
+
+.nlp-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.nlp-pagination-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 0;
+}
+
+.nlp-pagination-dot.active {
+    background-color: black;
+}
+
+/* Desktop styles */
+.nlp-feature-card:nth-child(2) {
+    border-left: 1px solid #3c353123;
+    border-right: 1px solid #3c353123;
+    box-sizing: border-box;
+}
+
+.nlp-feature-card:nth-child(3) {
+    border-right: 1px solid #3c353123;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nlp-feature-section {
+        background: #f2f5f7;
+    }
+
+    .nlp-feature-list {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 15px;
+        padding: 0 15px 20px;
+    }
+
+    .nlp-feature-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nlp-feature-card {
+        background: white;
+        scroll-snap-align: center;
+        flex: 0 0 calc(85% - 15px);
+        min-width: calc(100%);
+        margin-right: 0;
+        border: none !important;
+    }
+
+    .nlp-feature-section {
+        padding: 20px 0;
+    }
+
+    .nlp-carousel-container {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nlp-pagination {
+        display: none;
+    }
+}

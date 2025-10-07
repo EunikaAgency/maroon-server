@@ -1,0 +1,77 @@
+.elementor-3644 .elementor-element.elementor-element-84739ed{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-heading .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );color:var( --e-global-color-primary );}.elementor-3644 .elementor-element.elementor-element-d3e0cbd{margin:50px 0px calc(var(--kit-widget-spacing, 0px) + 50px) 0px;text-align:center;}.elementor-3644 .elementor-element.elementor-element-d3e0cbd .elementor-heading-title{font-family:"Rubik", Sans-serif;font-size:40px;font-weight:700;line-height:50px;color:#3C3531;}.elementor-3644 .elementor-element.elementor-element-71e96f3 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-3644 .elementor-element.elementor-element-71e96f3 .feature-one__title a,.elementor-3644 .elementor-element.elementor-element-71e96f3 .feature-two__title a,.elementor-3644 .elementor-element.elementor-element-71e96f3 .feature-three__top-title a{font-size:18px;}@media(max-width:1024px){.elementor-3644 .elementor-element.elementor-element-84739ed{--padding-top:15px;--padding-bottom:15px;--padding-left:15px;--padding-right:15px;}}@media(max-width:767px){.elementor-3644 .elementor-element.elementor-element-d3e0cbd .elementor-heading-title{font-size:30px;line-height:40px;}}/* Start custom CSS for ambed-info-box, class: .elementor-element-71e96f3 */.feature-one__content{
+    background-color: #F2F5F7;
+    height:420px;
+}
+
+.elementor-widget-ambed-info-box ul li:first-child .feature-one__arrow,
+.elementor-widget-ambed-info-box ul li:nth-child(2) .feature-one__arrow {
+    margin-top: 50px
+}
+
+
+/* Ensure horizontal scrolling is smooth */
+#infobox-carousel > div > section > div {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: grab;
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar in Webkit browsers */
+#infobox-carousel > div > section > div::-webkit-scrollbar {
+    display: none;
+}
+
+/* Keep items in a row */
+#infobox-carousel > div > section > div > ul {
+    display: flex;
+    flex-wrap: nowrap;
+    user-select: none;
+    cursor: grab;
+}
+
+.grabbing {
+    cursor: grabbing;
+}
+
+/* Pagination Dots */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.pagination-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.pagination-dot.active {
+    background-color: black;
+}
+
+@media screen and (min-width: 769px) {
+    .pagination {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #infobox-carousel > div > section > div > ul {
+        gap: 30px;
+    }
+
+    #infobox-carousel > div > section > div > ul > li > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 400px;
+    }
+}/* End custom CSS */
