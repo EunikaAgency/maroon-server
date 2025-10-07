@@ -1,0 +1,82 @@
+/* Custom CSS for side navigation */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #f8f9fa;
+  padding-top: 20px;
+}
+
+.sidenav ul {
+  padding-left: 10px;
+  list-style: none;
+}
+
+.sidenav li {
+  list-style: none;
+}
+
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+}
+
+.sidenav a:hover {
+  background-color: #e9ecef;
+}
+
+.has-submenu {
+  max-width: 260px;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.sub-menu.show {
+  display: inherit;
+}
+
+/* Styles for layer-1 horizontal alignment */
+.layer-1 {
+  display: flex;
+  flex-direction: row;
+  background-color: #fffffff2; /* Adjust background color as needed */
+  border: 1px solid #c1c1c1;
+  display: none;
+}
+
+.layer-1.show {
+  display: flex;
+  position: fixed;
+  top: 168px;
+  left: 10px;
+}
+
+.layer-2 {
+  max-width: 280px;
+  max-inline-size: -webkit-fill-available;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.sidenav .active {
+  font-weight: bold;
+}
+
+
+/* Add caret icon for submenus */
+.sidenav .has-submenu::after {
+  content: '\203A'; /* Unicode character for right-pointing triangle */
+  float: right;
+  margin-left: 5px;
+}
+
+/* Rotate the caret for expanded submenus */
+.sidenav .has-submenu.expanded::after {
+  transform: rotate(90deg);
+}

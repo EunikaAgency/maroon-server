@@ -1,0 +1,64 @@
+/* .home-header {
+  height: 604px;
+  min-height: 604px;
+} */
+/* 
+.inner-header{
+  height: 375px;
+  min-height: 375px;
+} */
+
+.home-header p, .inner-header p {
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+  }
+  
+  .h-100 {
+    height: 100%;
+  }
+  
+  .section-4 .col-lg-12 > p {
+    color:#595959;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .image-handler {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  
+  .image-handler.inner-header {
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  
+  .image-handler.home-header {
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  
+  .banner-content h1 {
+    color: #fff;
+  }
+  .banner-content h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .home-header .banner-content {
+    position: relative;
+    top: 210px;
+}
+
+.category-dear-attorney .image-handler.inner-header {
+  background-image: url(https://www.duranschulze.com/wp-content/uploads/2019/04/dds-blog-banner-1.jpg) !important;
+}

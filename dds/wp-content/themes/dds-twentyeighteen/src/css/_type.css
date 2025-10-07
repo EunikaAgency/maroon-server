@@ -1,0 +1,120 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+/* h4, */
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+}
+h4{
+  color: #595959;
+  font-size: 16px;
+  font-weight: 800;
+}
+.about-us h2 {
+  color: #044f83;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800;
+}
+.about-us h3 {
+  color: #595959;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: normal;
+}
+.highlight_list_content ul li {
+  padding: 6px 5px;
+}
+.highlight_list_title {
+  cursor: pointer;
+}
+a {
+  font-weight: 600;
+}
+
+.accordion-header {
+  color: #044f83;
+  font-size: 22px;
+  font-weight: 800;
+}
+.panel-body p {
+  margin: 20px 0;
+}
+
+.partner-name-pos h3 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+}
+.partner-name-pos h4 {
+  color: #595959;
+  font-size: 16px;
+  font-weight: 800;
+}
+.profile-header {
+  color: #044f83;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 50px;
+}
+
+.sidebar-widget-title {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+
+.col-md-12 .banner-content h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h1.entry-title {
+  color: #044f83;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+/*   margin-bottom: 0; */
+}
+h3 a {
+  font-weight: 900;
+}
+h3 a:hover {
+  color: #044f83;
+  text-decoration: none;
+}
+
+h4 {
+  color: #595959;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+
+.entry-title {
+  margin-bottom: 30px;
+}
+.blog-page h4 {
+  margin-top: 70px;
+  margin-bottom: 35px;
+}
+.blog-page p {
+  color: #595959;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.search-title span {
+  font-weight: 400;
+}

@@ -1,0 +1,32 @@
+# Ignore uploads directory
+wp-content/uploads
+!wp-content/uploads/assets
+wp-content/wflogs
+wp-content/debug.log
+wp-content/backups-dup-pro
+wp-content/mmr
+wp-content/litespeed
+wp-content/mu-plugins
+staging
+
+# Ignore database backups
+*.sql
+
+# Ignore compressed files
+*.zip
+
+# Ignore JSON files
+*.json
+
+# Ignore all types of images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.ico
+*.tif
+*.tiff
+*.webp
+*.bk

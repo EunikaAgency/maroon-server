@@ -1,0 +1,65 @@
+#submit{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 50%;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight:500;
+}
+#submit:hover{
+    background-color: #018ced;
+    border: 1px solid white;
+}
+
+#comment,#author, #email, #url{
+    border: none;
+    border-bottom:#c1c1c1aa solid 3px;
+}
+label{
+    padding-bottom: 30px;
+}
+
+#author:focus,#email:focus,#url:focus{
+    outline: none;
+    border-bottom: #044e83 solid 3px;
+}
+
+#comment:focus{
+    outline: none;
+    border-bottom: #044e83 solid 3px;
+    height: 45px;
+}
+
+#comment{
+    resize: vertical;
+    height: 45px;
+    overflow-y: hidden; 
+}
+
+
+.comment-reply-title{
+    color: #044F83;
+}
+.logged-in-as a:hover {
+    text-decoration: underline !important;
+}
+
+.elementor-widget-post-comments{
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+}
+label{
+    transform: translateY(35px); 
+    color: #c1c1c1;
+    user-select: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #submit{
+        width: 100%;
+    }
+}
+

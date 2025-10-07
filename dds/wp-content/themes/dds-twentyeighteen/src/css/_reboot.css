@@ -1,0 +1,28 @@
+html {
+  background-color: #fafafa;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: rgba(4, 79, 131, 0.9);
+}
+
+::selection {
+  color: #fff;
+  background: rgba(4, 79, 131, 0.9);
+}
+
+:focus,
+.no-focus:focus {
+  outline: none;
+}
+
+.keyboard-in-use :focus {
+  outline: 4px auto #044f83;
+}

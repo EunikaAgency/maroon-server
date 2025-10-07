@@ -1,0 +1,382 @@
+
+@media only screen and (max-width: 1444px) {
+  .primary-menu a {
+    font-size: 11px;
+    padding: 0.5rem 0.8rem 0 0;
+  }
+}
+@media only screen and (max-width: 1333px) {
+
+    .primary-menu a{
+      padding: 0.5rem 0.8rem 0 0;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 1218px) {
+  
+    .primary-menu a{
+      padding: 0.5rem 0.5rem 0 0;
+    }
+  
+  }
+  
+  
+  @media only screen and (min-width: 1200px) {
+    .inner-header {
+      min-height: 30vw;
+    }
+    .home-header {
+      min-height: 45vw;
+    }
+  }
+  
+  @media only screen and (max-width: 1199px) {
+      #showRight {
+        display: block;
+      }
+      .site-nav__block--cta,
+      .site-nav__additional-contact,
+      .main-navigation{
+        display: none;
+      }
+      .site-nav__block--cta {
+        margin: 0;
+      }
+      .site-nav__block--social {
+        margin-right: 5.5em;
+      }
+      .nav-icon3{
+        margin-top: 30px;
+      }
+      
+      .primary-menu{
+        display: block;
+      }
+      .primary-menu ul {
+          background-color: transparent;
+          box-shadow: none;
+          position: initial;
+      }
+      .site-nav__additional-contact {
+        margin-left: 0;
+      }
+      .image-handler.home-header {
+        height: 100%;
+        min-height: 500px;
+      }
+      .image-handler.home-header .banner-content {
+        margin-top: 85px;
+      }
+      .image-handler.inner-header {
+        min-height: 30vw;
+      }
+      .site-branding.site-nav__block {
+        margin: 0 auto;
+      }
+
+      .home-header .banner-content {
+        top: 90px;
+        }
+    }
+  
+  @media only screen and (max-width: 1024px) {
+    #showRight {
+      display: block;
+    }
+    .main-navigation{
+      display: none;
+    }
+    .site-nav__block--cta {
+      margin: 0;
+    }
+    .site-nav__block--social {
+      margin-right: 4.5em;
+    }
+    .nav-icon3{
+      margin-top: 32px;
+    }
+    .primary-menu{
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 991px) {
+      #showRight {
+        display: block;
+      }
+      .main-navigation{
+        display: none;
+      }
+  
+      .site-nav__block--cta {
+        margin: 0;
+      }
+      .site-nav__block--social {
+        margin-right: 4.5em;
+      }
+      .nav-icon3{
+        margin-top: 5px;
+      }
+  
+      .primary-menu{
+        display: block;
+      }
+      .partner-image,
+      .partner-name-pos,
+      .team-image,
+      .d-flex.flex-row-reverse .partner-image {
+          text-align: center !important;
+      }
+      .partner-name-pos {
+          margin-bottom: 10px;
+      }
+      .search-bar .searchform,
+      .custom-archive {
+          width: 100%;
+      }
+      .archive-posts {
+          margin: 10px auto !important;
+      }
+      .image-handler.home-header {
+        height: 100%;
+        min-height: 400px;
+      }
+      .image-handler.inner-header {
+        min-height: 29vw;
+      }
+      .flex-mobile {
+        display: flex;
+      }
+      .flex-mobile .row [class*="col-"]:first-child {
+        order: 1;
+      }
+      .flex-mobile .row [class*="col-"]:last-child {
+        order: 0;
+      }
+
+      .home-header .banner-content h1 {
+        font-size: 36px;
+        }
+
+        .home-header .banner-content p {
+            font-size: 25px;
+        }
+
+        .home-header .banner-content {
+            top: 75px;
+        }
+    }
+  
+  @media only screen and (max-width: 767px) {
+      #showRight {
+        display: block;
+      }
+      .main-navigation{
+        display: none;
+      }
+      .site-nav__block--social {
+        margin-right: 0;
+      }
+      .nav-icon3 {
+        margin-top: 5px;
+      }
+      .primary-menu{
+        display: block;
+      }
+      .banner-content h1 {
+        font-size: 36px;
+      }
+      .banner-content p,
+      .banner-content h3 {
+        font-size: 22px;
+      }
+      .image-handler.home-header,
+      .inner-header {
+        min-height: 43vw;
+        
+      }
+      .image-handler.home-header {
+        align-items: flex-end;
+        display: flex;
+      }
+      .section-image-banner {
+        height: 100%;
+        min-height: 170px;
+        background-position-x: 62%;  
+      }
+      .cbp-spmenu-vertical {
+        padding-top: 70px;
+      }
+      .site-branding.site-nav__block {
+        margin: 0;
+      }
+      .practice-card {
+        margin: 0 auto 15px auto;
+        width: 300px;
+      }
+
+      .home-header .banner-content h1 {
+        font-size: 24px;
+        line-height: 23px;
+        }
+
+        .home-header .banner-content p {
+            font-size: 21px;
+        }
+
+        .home-header .banner-content {
+            top: 0;
+        }
+          .single-post .post-355 table {
+              display: block;
+              overflow-x: auto;
+              width: 100%;
+          }
+      
+          .single-post .post-355 table td{
+              min-width: 150px;
+          }
+    }
+    @media only screen and (max-width: 565px) {
+      .image-handler.home-header {
+        /* height: 100%;
+        min-height: 200px; */
+      }
+      .home-header .banner-content h1 {
+        font-size: 28px;
+      }
+      .home-header .banner-content p {
+        font-size: 18px;
+      }
+      .nav-icon3 {
+        margin-right: 5px;
+      }
+      .cbp-spmenu-vertical {
+        padding-top: 70px;
+      }
+    }
+  @media only screen and (max-width: 640px) {
+    .image-handler.home-header {
+      min-height: 40vw;
+    }
+    .image-handler.inner-header {
+      min-height: 30vw;
+    }
+    .page-id-154 .image-handler.inner-header {
+      background-position-x: 80%;
+    }
+    .image-handler.inner-header .banner-content h1 {
+      font-size: 30px;
+    }
+    .image-handler.inner-header .banner-content h3 {
+      font-size: 20px;
+    }
+    .practice-card {
+      margin: 0 auto 20px auto;
+      width: 300px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /*
+    * BANNER HOMEPAGE AND INNER PAGE RESPONSIVE CSS
+    */
+    .image-handler.home-header{
+      min-height: 48vw;
+    }
+    .image-handler.inner-header {
+      align-items: flex-end;
+      display: flex;
+    }
+    .image-handler.home-header .banner-content {
+      margin-top: 0;
+    }
+    .image-handler.inner-header .banner-content h1 {
+      margin-bottom: 0;
+    }
+    .image-handler.inner-header .banner-content h1,
+    .home-header .banner-content h1 {
+      font-size: 1.1rem;
+      text-shadow: 1px 1px 10px #000;
+    }
+    .image-handler.inner-header .banner-content h3 {
+      margin-bottom: 28px;
+    }
+    .image-handler.inner-header .banner-content h3,
+    .image-handler.inner-header .banner-content p,
+    .home-header .banner-content p {
+      font-size: 0.8rem;
+      text-shadow: 1px 1px 10px #000;
+    }
+    .image-handler.inner-header {
+      min-height: 31vw;
+    }
+  
+    .panel-title {
+      font-size: 1.1rem;
+    }
+    .panel-body {
+      font-size: 0.9rem;
+    }
+    .accordion-header {
+      font-size: 24px;
+    }
+    .partner-image img {
+      height: 300px;
+    }
+    .h2-blue h2 {
+      font-size: 22px;
+    }
+    .remove-pad-mobile {
+      padding: 0 !important;
+    }
+    .reduce-pad-mobile {
+      padding: 50px !important;
+    }
+
+   
+
+    .home-header .banner-content h1 {
+        line-height: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 496px) {
+    .banner-content h1 {
+      font-size: 28px;
+    }
+    .banner-content h3 {
+      font-size: 18px;
+    }
+  }
+  @media only screen and (max-width: 395px) {
+    .banner-content h1 {
+      font-size: 22px;
+    }
+    .home-header .banner-content p,
+    .banner-content h3 {
+      font-size: 14px;
+    }
+    .home-mobile-img img {
+      height: 170px;
+      margin: 0;
+    }
+  }
+  /* @media only screen and (max-width: 384px) {
+    .nav-icon3 {
+      margin-top: -4px;
+    }
+    .cbp-spmenu-vertical {
+      padding-top: 60px;
+    }
+  } */
+  
+  @media only screen and (max-width: 320px) {
+    .image-handler.inner-header .banner-content h3 {
+      margin-bottom: 5px;
+    }
+    .reduce-pad-mobile {
+      padding: 30px !important;
+    }
+  }

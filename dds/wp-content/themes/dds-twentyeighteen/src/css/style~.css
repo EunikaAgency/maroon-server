@@ -1,0 +1,145 @@
+@import url(./_reboot.css);
+@import url(./_type.css);
+@import url(./_links.css);
+@import url(./_buttons.css);
+@import url(./_forms.css);
+@import url(./_navigation.css);
+@import url(./_header.css);
+@import url(./_footer.css);
+@import url(./_social.css);
+@import url(./_sections.css);
+@import url(./_vendors.css);
+@import url(./_media-queries.css);
+
+.overlay-black {
+    background-color: #000;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.2;
+    width: 100%;
+}
+
+.blog-featured {
+  max-width: 100%;
+  height: auto;
+}
+
+.panel {
+    border-bottom: 1px solid #ececec;
+    padding: 24px 0;
+}
+.panel-heading h4 {
+    margin: 0;
+}
+.panel-heading .fa {
+    transition: .3s transform ease-in-out;
+}
+.panel-heading .collapsed .fa {
+    transform: rotate(90deg);
+}
+.panel-collapse {
+    padding-top: 32px;
+}
+
+ul li {
+    color: #595959;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+
+.partner-image img {
+    max-height: 435px;
+    max-width: 350px;
+}
+.d-flex.flex-row-reverse .partner-image,
+.d-flex.flex-row-reverse .team-image {
+    text-align: right;
+}
+.team-image img {
+    max-height: 340px;
+    max-width: 540px;
+    width: 100%;
+}
+
+.blog-card {
+    margin-bottom: 30px;
+    position: relative;
+}
+.blog-card-image {
+    height: 245px;
+}
+.blog-card-image img {
+    height: 100%;
+    width: 100%;
+}
+.blog-card-description {
+    bottom: 0;
+    margin-bottom: 24px;
+    padding: 0 28px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.blog-card-description p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.blog-card-description a {
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.blog-overlay {
+    background-image: linear-gradient( transparent, #000 );
+    background-position: center;
+    background-size: cover;
+    bottom: 0;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    z-index: -0;
+}
+
+.custom-archives {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.custom-archive-year__months {
+    display: none;
+}
+.display-block {
+    display: block;
+}
+.custom-archive-year__month {
+    display: none;
+}
+
+.archive-posts {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.practice-card {
+    margin-bottom: 15px;
+}
+.practice-card h5 {
+    color: #044f83;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 0;
+}

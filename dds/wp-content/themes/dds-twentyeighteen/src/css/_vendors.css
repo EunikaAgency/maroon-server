@@ -1,0 +1,42 @@
+/**
+ * Superfish
+ */
+.sf-arrows > .sfHover > .sf-with-ul:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > li > .sf-with-ul:focus:after {
+}
+
+/**
+ * CF7
+ */
+div.wpcf7-response-output {
+  background-color: #fff;
+  border-color: #888;
+  border-width: 0 0 0 4px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.035);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.035);
+  color: #404040;
+  line-height: normal;
+  margin: 0;
+  padding: 0.5em 0.5em 0.5em 1em;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+  border-color: #ff802c;
+}
+
+span.wpcf7-not-valid-tip {
+  display: none;
+}
+
+.wpcf7-not-valid:focus {
+  outline-color: hsl(0, 100%, 50%);
+}
+
+.wpcf7-not-valid,
+.wpcf7-not-valid:focus {
+  background-color: hsl(0, 100%, 90%);
+  border-color: hsl(0, 100%, 75%);
+}

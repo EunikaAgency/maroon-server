@@ -1,0 +1,240 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package DDS_2018
+ */
+
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <?php wp_head(); ?>
+    <!-- Global site tag (gtag.js) - Google Ads: 10838755768 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10838755768"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-10838755768');
+    </script>
+</head>
+
+
+<body <?php body_class("cbp-spmenu-push"); ?>>
+
+<!-- Mobile Menu -->
+<!-- <div id="showRight">
+    <div class="nav-icon3"><span></span><span></span><span></span><span></span></div>
+</div>
+<div class="body-overlay overlay"></div>
+<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+< ?php
+            wp_nav_menu( array(
+                'theme_location' => 'menu-1',
+                'menu_id'        => 'primary-menu',
+                'menu_class'     => 'primary-menu',
+            ) );
+            ?>
+</div> -->
+<!-- Mobile Menu  #end -->
+
+<!-- Mobile Menu -->
+<div id="showRight">
+    <div class="nav-icon3"><span></span><span></span><span></span><span></span></div>
+</div>
+<div class="body-overlay overlay"></div>
+<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+    <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu-mobile' ) ); ?>
+
+    <div class="mobile-additional-contact">
+        <ul class="mobile-additional-contact__ul">
+            <li><a href="tel:+63284785826"><i class="fa fa-phone fa-fw"></i>+632 8478-5826</a></li>
+            <li><a href="mailto:info@duranschulze.com?subject=Inquire"><i class="fa fa-envelope fa-fw"></i>info@duranschulze.com</a></li>
+        </ul>
+    </div>
+    <div class="mobile-cta">
+        <ul class="mobile-cta__ul">
+            <li><a href="#wpcf7-f38-o1" class="site-cta-btn">Consult Now</a> <a href="https://www.facebook.com/duranschulze" class="site-cta-btn-social"><i class="fa fa-facebook-f fa-fw"></i></a></li>
+        </ul>
+    </div>
+</div>
+<!-- Mobile Menu  #end -->
+
+
+<div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'dds-twentyeighteen' ); ?></a>
+    <header id="masthead" class="site-header">
+        <div class="container">
+            <div class="site-nav__block site-nav__block--right site-nav__block--quick site-nav__additional-contact">
+                <ul class="site-nav__entry site-nav__entry--inline">
+                    <li class="site-nav__item"><a href="tel:+63284785826" class="site-quick site-phone">+632 8478-5826</a></li>
+                    <li class="site-nav__item"><a href="mailto:info@duranschulze.com?subject=Inquire" class="site-quick site-email">info@duranschulze.com</a></li>
+                </ul>
+            </div><!-- .site-nav__block -->
+
+            <div class="site-branding site-nav__block">
+                <?php
+                the_custom_logo();
+                if ( is_front_page()) :
+                    ?>
+                    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                <?php
+                else :
+                    ?>
+                    <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+                <?php
+                endif;
+                $dds_twentyeighteen_description = get_bloginfo( 'description', 'display' );
+                if ( $dds_twentyeighteen_description || is_customize_preview() ) :
+                    ?>
+                    <p class="site-description"><?php echo $dds_twentyeighteen_description; /* WPCS: xss ok. */ ?></p>
+                <?php endif; ?>
+            </div><!-- .site-branding -->
+
+            <nav id="site-navigation" class="main-navigation site-nav__block">
+                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dds-twentyeighteen' ); ?></button>
+                <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'menu-1',
+                    'menu_id'        => 'primary-menu',
+                    'menu_class'     => 'primary-menu',
+                ) );
+                ?>
+            </nav> <!--#site-navigation -->
+
+            <div class="site-nav__block site-nav__block--right site-nav__block--cta" id="navCta">
+                <ul class="site-nav__entry">
+                    <li class="site-nav__item w-100">
+                        <a href="#colophon" class="site-cta-btn">Consult Now</a>
+                    </li>
+                </ul>
+            </div><!-- .site-nav__block -->
+
+            <!-- <div class="site-nav__block site-nav__block-/-right site-nav__block-/-social">
+                <ul class="social-links__list social-links__list-/-dark">
+                    <li class="social__item"><a href="javascript:;" class="social-link"><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a></li>
+                </ul>
+            </div>.site-nav__block -->
+        </div><!-- .container -->
+
+    </header><!-- #masthead -->
+
+    <!-- BANNER -->
+    <?php
+    $logo = get_field('site_logo', 'option');
+    $banner = get_field('banner_image');
+    $title = get_field('banner_content');
+    $logo_quote = get_field('site_quote', 'option');
+
+    if (!$banner)
+        $banner = get_template_directory_uri() . '/src/images/default.jpg'; // Default Banner Image
+
+    $bg = 'style="background-image: url(' . $banner . ')"';
+    $class =  is_front_page() ? 'home-header' : 'inner-header';
+
+    if (is_archive()) {
+        $title = get_the_archive_title();
+    }
+    else if (is_404())  {
+        $title = 'Error 404';
+    }
+    else if ( is_search()) {
+        $title = 'Search Results';
+    }
+    ?>
+
+    <?php if(is_front_page()) : ?>
+
+        <div class="image-handler <?php echo $class; ?>" <?php echo ($bg ? $bg : '' ); ?>>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="banner-content">
+                            <?php  echo $title; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <?php elseif(is_home()) : ?>
+        <div class="image-handler <?php echo $class; ?>" style="background-image: url(<?php the_field('banner_image', get_option( 'page_for_posts' )); ?>)">
+            <div class="container h-100">
+                <div class="row  h-100 align-items-center">
+                    <div class="col-md-12">
+                        <div class="banner-content">
+                            <h3>Blog</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <?php elseif(is_single()) : ?>
+
+        <?php
+        $banner_image = get_field('banner_image');
+
+        if ( empty( $banner_image ) ) {
+            $banner_image = get_field('banner_image', get_option( 'page_for_posts' ) );
+        }
+        ?>
+
+        <div class="image-handler <?php echo $class; ?>" style="background-image: url(<?php echo $banner_image ?>)">
+            <div class="container h-100">
+                <div class="row  h-100 align-items-center">
+                    <div class="col-md-12">
+                        <div class="banner-content">
+                            <h3>
+                                <?php foreach((get_the_category()) as $category)
+                                {
+                                    echo $category->cat_name . ' ';
+                                } ?>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <?php elseif( is_404() || is_archive() || is_search()) : ?>
+        <div class="image-handler <?php echo $class; ?>" style="background-image: url(<?php the_field('banner_image', get_option( 'page_for_posts' )); ?>)">
+            <div class="container h-100">
+                <div class="row  h-100 align-items-center">
+                    <div class="col-md-12">
+                        <div class="banner-content">
+                            <h3><?php echo $title; ?></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <?php else : ?>
+
+        <div class="image-handler <?php echo $class; ?>" <?php echo ($bg ? $bg : '' ); ?>>
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="banner-content">
+                            <?php echo $title; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <?php endif; ?>
+
+    <div id="content" class="site-content">
